@@ -1,0 +1,602 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors (s7 and s8). The values for these sensors have been consistently high over the past few cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of a worn-out engine, indicating a remaining useful life (RUL) estimate of approximately 30 cycles."
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently low across the last 15 cycles, indicating a potential issue with the engine's fuel system or combustion process."
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors, indicating advanced wear. The engine's performance has been declining over the last 15 cycles, with decreasing values for sensors s9 and increasing values for sensors s7 and s8, suggesting a need for maintenance or replacement of worn-out components."
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently high, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors. This suggests advanced wear and tear on the engine, which is consistent with a Remaining Useful Life (RUL) estimate of around 50 cycles."
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate advanced wear, with significant deviations in efficiency sensors. The pattern of decreasing performance and increasing variability in the last 15 cycles suggests a remaining useful life (RUL) estimate of approximately 50 cycles."
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors. This suggests advanced wear and tear on the engine, which is consistent with a Remaining Useful Life (RUL) estimate of around 30 cycles remaining before major repairs are needed."
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This is consistent with the patterns observed in previous examples, indicating that the engine is likely to fail within the next 30 cycles."
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of the previously evaluated engines, indicating a high likelihood of failure within the next 50 cycles."
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s9 and s8 are consistently low, indicating a potential issue with fuel flow or combustion, which could be causing the engine to degrade faster than expected."
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors (s7 and s8). The values for these sensors have been consistently lower than normal over the past 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), which are often indicative of advanced wear. This pattern is consistent with the provided examples, suggesting that the engine has approximately 30 cycles remaining before it requires maintenance or replacement."
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors, indicating advanced wear. The engine's performance has been declining over the past few cycles, with decreasing values for sensors s9 and increasing values for sensors s7 and s8, suggesting a potential issue with the engine's combustion or fuel system."
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant drop in performance, with multiple sensors showing values below normal operating ranges. This pattern is consistent with advanced wear and suggests that the engine may be nearing the end of its service life."
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear and significant deviations in efficiency sensors. The patterns observed are consistent with those of a failing engine, indicating a remaining useful life (RUL) estimate of approximately 50 cycles."
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a pattern of advanced wear, particularly in the efficiency sensors. This is consistent with the patterns observed in previous engines, suggesting that the engine has approximately 30 cycles remaining before it requires significant maintenance or replacement."
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently higher than normal, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 10,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns of degradation are consistent with those observed in previous engines, indicating a high likelihood of failure within the next 10 cycles."
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of advanced wear, particularly in the efficiency sensors. This is consistent with the patterns observed in previous engines, suggesting that the engine has approximately 45 cycles remaining before it requires significant maintenance or replacement."
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This is consistent with the patterns observed in previous engines, indicating that the engine has approximately 50 cycles of remaining useful life before it requires maintenance or replacement."
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the provided sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors (s7 and s8). The values for these sensors have been consistently high throughout the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors (s7 and s8). The values for these sensors have been consistently low over the past 15 cycles, indicating a significant deviation from normal operation."
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values are trending downwards over the last 15 cycles, indicating a potential decrease in performance and lifespan."
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns of decline in performance are consistent with those observed in previous engines with similar issues, indicating a high likelihood of failure within the next 45 cycles."
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with the previous examples provided, indicating that the engine is likely to fail within the next 30 cycles."
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high throughout the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high throughout the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the provided sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently low, indicating a potential issue with the engine's combustion process, which could lead to a reduced lifespan of approximately 30 cycles."
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high over the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors, indicating advanced wear. The engine's performance has been declining over the past few cycles, with decreasing values for sensors s7 and s8, suggesting that the engine is nearing the end of its lifespan."
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s8 and s12 are consistently low, indicating a potential issue with the fuel injection system or other related components."
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors. This suggests advanced wear and tear on the engine, which is consistent with a Remaining Useful Life (RUL) estimate of around 60 cycles remaining before major repairs are needed."
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s8 and s9 are consistently high, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s8 and s9 are consistently high, indicating a potential issue with the engine's fuel system or combustion process."
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently below average, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high over the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors, indicating advanced wear. The engine's performance has been declining over the past few cycles, with decreasing values in sensors s7 and s8, suggesting a potential issue with fuel injection or combustion."
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of an engine nearing the end of its lifespan, indicating a remaining useful life estimate of approximately 50 cycles."
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently lower than normal, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s8 and s9 are consistently low, indicating a potential issue with fuel flow or combustion, which could lead to premature failure within the next 30 cycles."
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s9 and s11 are consistently low, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently high, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns of decline are consistent with a moderate level of degradation, indicating an estimated remaining useful life of approximately 30 cycles."
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently higher than normal, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in the efficiency sensors (s7 and s8) indicating advanced wear. The engine's performance has been declining over the last 15 cycles, with a noticeable drop in efficiency and power output."
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high across the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high across the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors, indicating advanced wear. The engine's performance has been declining over the past few cycles, with decreasing values in sensors s9 and increasing values in sensors s8, suggesting a need for maintenance or replacement of worn-out components."
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in the efficiency sensors (s7 and s8) indicating advanced wear. The engine's performance has been declining over the past few cycles, suggesting that it may need maintenance or replacement soon."
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors. This suggests advanced wear and tear on the engine, which is consistent with a Remaining Useful Life (RUL) estimate of around 30 cycles."
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with previous evaluations of similar engines, indicating a need for maintenance or replacement within the next 45 cycles."
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently higher than normal, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 5,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of the previous examples, indicating a high likelihood of engine failure within a short time frame."
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of an engine nearing the end of its lifespan, indicating a remaining useful life estimate of approximately 50 cycles."
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors, indicating advanced wear. The engine's performance has been declining over the past few cycles, with decreasing values for s9 and increasing values for other sensors, suggesting a need for maintenance or replacement."
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high, indicating potential issues with the engine's performance."
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the last 15 cycles, with significant deviations in efficiency sensors. This pattern is consistent with advanced wear and tear on the engine, suggesting that it has approximately 20% of its remaining lifespan left."
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns of deviation are consistent with those observed in previous engines with similar issues, indicating a high likelihood of impending failure within the next 50 cycles."
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in the efficiency sensors (s7 and s8) indicating advanced wear. The engine's performance has been declining over the last 15 cycles, with some fluctuations, but overall trending towards failure."
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s4 and s7 are consistently higher than normal, indicating potential issues with the engine's performance."
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high throughout the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s8 and s9 are consistently low, indicating a potential issue with fuel injection or combustion."
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently lower than normal, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of a worn-out engine, indicating a remaining useful life estimate of approximately 50 cycles."
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of advanced wear, particularly in the efficiency sensors. This suggests that the engine is nearing the end of its lifespan and may require maintenance or replacement soon."
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors (s7 and s8). The values for these sensors have been consistently high throughout the last 15 cycles, indicating a significant deviation from normal operation."
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors, indicating advanced wear. The engine's performance has been declining over the past few cycles, with a noticeable drop in efficiency and power output."
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns of decline in performance are consistent with those observed in previous examples, indicating a high likelihood of failure within the next 50 cycles."
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with previous observations of engines exhibiting similar symptoms, indicating a potential failure within the next 30 cycles."
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of the provided examples, indicating a high likelihood of engine failure within the next 50 cycles."
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with previous observations of similar engines experiencing mechanical issues around this stage of their lifespan."
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with previous observations of similar engines, indicating a potential need for maintenance or replacement within the next few cycles."
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently high, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with previous observations of similar engines experiencing similar issues, indicating a high likelihood of failure within the next 45 cycles."
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values are fluctuating and deviating from normal ranges, indicating a potential issue with the engine's performance and longevity."
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns of decreasing values over time are consistent with the previous examples, indicating a need for maintenance within the next 30 cycles."
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 5,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of a previously evaluated engine exhibiting similar symptoms, indicating a high likelihood of imminent failure."
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors (s7 and s8). The values for these sensors have been consistently high over the last 15 cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently high, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in efficiency sensors across multiple cycles, indicating advanced wear. The engine's performance has been declining over the past few cycles, with some sensors showing values below normal ranges, suggesting that maintenance or replacement may be necessary soon."
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s9 and s11 are consistently low, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high across the last 15 cycles, indicating a significant deviation from normal operation."
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a pattern of advanced wear, particularly in the efficiency sensors. This is consistent with the patterns observed in previous engines, suggesting that the engine has approximately 30 cycles remaining before it requires significant maintenance or replacement."
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high over the past few cycles, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors. This suggests advanced wear and tear on the engine, which is consistent with a Remaining Useful Life (RUL) estimate of around 30 cycles."
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of a worn-out engine, indicating a remaining useful life estimate of approximately 50 cycles."
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 50,
+    "reasoning": "Based on the provided sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The patterns observed are consistent with those seen in previous engines, indicating a moderate level of degradation and suggesting that the engine has approximately 50 cycles remaining before it reaches the end of its useful life."
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in multiple sensors across various cycles, indicating advanced wear and potential issues with the engine's performance. The pattern of deviations suggests that the engine may be nearing the end of its lifespan, requiring immediate attention to prevent further damage or failure."
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors. This suggests advanced wear and tear on the engine, which is consistent with a Remaining Useful Life (RUL) estimate of around 45 cycles."
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 are consistently lower than normal, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s8 and s9 are consistently low, indicating a potential issue with fuel injection or combustion, which could lead to reduced performance and increased emissions."
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 30,
+    "reasoning": "Based on the sensor readings, there is a significant deviation in the efficiency sensors (s7 and s8) over the last 15 cycles, indicating advanced wear. The engine's performance has been declining steadily, with a noticeable drop in efficiency and power output, suggesting that the Remaining Useful Life (RUL) of the engine is approximately 30 cycles."
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, the engine is showing signs of advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently high over the last few cycles, indicating a potential issue with the engine's combustion process."
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns of decline in performance are consistent with those observed in previous engines, indicating a likely Remaining Useful Life (RUL) estimate of around 30 cycles."
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors (s7 and s8). The values for these sensors have been consistently low over the past few cycles, indicating a potential issue with the engine's performance."
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 50,
+    "reasoning": "The engine's sensor readings indicate advanced wear, with significant deviations in efficiency sensors. This pattern is consistent with the provided examples and suggests that the engine has approximately 50 cycles remaining before it requires maintenance or replacement."
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 30,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from normal behavior, particularly in the efficiency sensors. This suggests advanced wear and tear on the engine, which is consistent with a Remaining Useful Life (RUL) estimate of around 30 cycles remaining before major repairs are needed."
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 5,
+    "reasoning": "The engine's sensor readings indicate significant deviations from normal behavior, particularly in the efficiency sensors (s7 and s8), suggesting advanced wear. The patterns observed are consistent with those of a worn-out engine, indicating a Remaining Useful Life (RUL) estimate of 5 cycles."
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the sensor readings, it appears that the engine is experiencing advanced wear, particularly in the efficiency sensors. The values for s7 and s8 have been consistently lower than normal, indicating a potential issue with the engine's combustion process."
+  }
+]

@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite both the paper and this repository."
+title: "LLM-RUL-CMAPSS: code and results for LLMs as implicit classifiers in turbofan RUL prediction"
+authors:
+  - family-names: "De Carlo"
+    given-names: "Filippo"
+    affiliation: "University of Florence"
+version: "1.0.0"
+date-released: "2026-06-23"
+license: MIT
+repository-code: "https://github.com/<your-username>/LLM-RUL-CMAPSS"
+keywords:
+  - large language models
+  - remaining useful life
+  - predictive maintenance
+  - NASA CMAPSS
+  - prognostics and health management
+  - explainability
+preferred-citation:
+  type: article
+  title: "Large Language Models as Implicit Classifiers in Predictive Maintenance: A Diagnostic Study on Turbofan Remaining Useful Life"
+  authors:
+    - family-names: "De Carlo"
+      given-names: "Filippo"
+      affiliation: "University of Florence"
+  journal: "Reliability Engineering & System Safety"
+  year: 2026
+  notes: "DOI to be added on acceptance."

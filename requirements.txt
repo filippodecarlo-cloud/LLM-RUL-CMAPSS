@@ -1,0 +1,6 @@
+openai>=1.0
+numpy
+pandas
+scikit-learn
+tensorflow
+matplotlib

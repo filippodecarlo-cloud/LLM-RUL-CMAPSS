@@ -1,0 +1,2 @@
+label,RMSE,MAE,NASA_Score,dataset,model,k,n_cycles,temperature,suffix
+Llama-ZeroShot | FD001,61.80889903565667,51.34,45488.09436347326,FD001,Llama-ZeroShot,0,30,0.1,n30_run2

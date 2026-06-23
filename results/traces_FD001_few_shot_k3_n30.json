@@ -1,0 +1,602 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a significant increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is likely experiencing wear and tear, but has not yet reached critical failure levels."
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. While there are some fluctuations, the overall trend suggests that the engine is likely to fail within the next 10-20 cycles."
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing wear and tear, but it is not yet at critical levels. However, the rate of degradation is increasing, indicating that maintenance or replacement may be necessary soon."
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on the engine components, suggesting that it is nearing the end of its service life."
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on various components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some sensors are still within acceptable ranges, others indicate significant degradation, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. This is likely due to wear and tear on critical components, such as valves and piston rings, which are causing a decrease in fuel efficiency and overall engine health."
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on various components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components such as valves, pistons, or cylinders."
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some readings suggest minor fluctuations, the overall trend indicates a moderate level of degradation, warranting an estimated Remaining Useful Life (RUL) of approximately 105 cycles."
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with a noticeable drop in efficiency and power output. This suggests that the engine is experiencing wear and tear, likely due to aging or excessive use, which would put its Remaining Useful Life (RUL) at around 105 cycles."
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is likely experiencing wear and tear, but has not yet reached critical failure levels."
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is likely experiencing internal wear and tear, but has not yet reached critical failure levels."
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing wear and tear, but it is still functioning within acceptable limits. However, the rate of degradation is moderate to high, indicating that the engine may require maintenance or replacement soon."
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with a noticeable drop in efficiency and power output. This suggests that the engine is experiencing wear and tear, likely due to aging or excessive use, which would put its Remaining Useful Life (RUL) at around 105 cycles."
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. However, there is no indication of catastrophic failure or sudden loss of functionality, suggesting that the engine still has some remaining useful life."
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing signs of degradation. However, the overall trend suggests that the engine is still operational and has not yet reached its end-of-life threshold."
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on critical components. While some readings suggest minor fluctuations, the overall trend indicates a moderate level of degradation, warranting an estimated Remaining Useful Life (RUL) of approximately 105 cycles."
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful time before it needs to be replaced or overhauled."
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some readings are still within acceptable ranges, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is likely experiencing internal wear and tear, but has not yet reached a critical failure point."
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some time left before it becomes critical."
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing internal wear and tear, likely due to aging or excessive use, which may lead to a failure within the next 20-40 cycles."
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. This suggests that the engine is nearing the end of its service life, but it still has some remaining useful life before requiring major repairs or replacement."
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in emissions. The sensor readings indicate a gradual degradation of the engine's components, particularly in the fuel injection system, which is likely causing the observed issues. Based on this trend, it is estimated that the engine will fail within the next 95 cycles."
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components such as fuel injectors or ignition coils."
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing minor fluctuations. However, the overall trend suggests that the engine is still operational but nearing the end of its lifespan."
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. However, there are no signs of catastrophic failure or sudden drops in performance, indicating that the engine is likely to continue running for several more cycles before requiring significant maintenance or replacement."
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual readings, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components such as sensors and actuators."
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful time before it needs to be replaced or overhauled."
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components such as valves, pistons, or cylinders."
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual degradation of the engine's components, particularly in the fuel injection system, which is likely causing the observed issues."
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "Based on the provided sensor data, the engine's Remaining Useful Life (RUL) is estimated to be around 45 hours. The data shows a gradual decline in performance over time, with some fluctuations, indicating that the engine is likely nearing the end of its service life."
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual readings, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components such as valves, pistons, or cylinders."
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 95,
+    "reasoning": "The sensor readings show a gradual decline in performance over the past few cycles, with some fluctuations. However, the overall trend suggests that the system is still functioning within acceptable limits, but nearing the end of its expected lifespan."
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful time before it requires replacement or significant repair."
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 83,
+    "reasoning": "Based on the sensor data, there is a significant drop in performance starting from t-10, with some fluctuations. The engine's efficiency and power output have been decreasing steadily over time, indicating a potential issue that needs to be addressed. However, the rate of decline has slowed down slightly in recent cycles, suggesting that the engine may still have some life left before it requires major repairs."
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 85,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual readings, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components such as sensors and actuators."
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on critical components. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. While there are some fluctuations, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components."
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and an increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful time before it needs to be replaced or overhauled."
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on critical components. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While there are some fluctuations in the data, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is likely experiencing wear and tear, but has not yet reached critical failure levels."
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with a noticeable drop in efficiency and power output. This suggests that the engine is likely experiencing wear and tear, but has not yet reached critical failure levels."
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point. However, the rate of degradation is accelerating, indicating that the engine's remaining useful life (RUL) is likely to be relatively short."
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. While there are some fluctuations, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components."
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some readings are still within acceptable ranges, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on critical components. While there are some fluctuations in individual readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on various components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual readings, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components such as fuel injectors or cylinder walls."
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some readings are still within acceptable ranges, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 90,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is likely experiencing wear and tear, but not yet at critical levels. However, the rate of degradation appears to be accelerating, indicating a need for maintenance or replacement within the next 20-30 cycles."
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful life before it needs to be replaced or overhauled."
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on various components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with a noticeable drop in efficiency and power output. This suggests that the engine is experiencing wear and tear, likely due to aging or excessive use, which would put its Remaining Useful Life (RUL) at approximately 45 cycles."
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. However, there is no indication of sudden or catastrophic failure, suggesting that the engine still has a relatively long remaining useful life."
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past 30 cycles, with a noticeable drop in efficiency starting from cycle t-10. However, the rate of degradation has slowed down significantly since then, suggesting that the engine is likely to continue operating for several more cycles before reaching its end-of-life threshold."
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some readings suggest minor fluctuations, the overall trend indicates a moderate level of degradation, warranting an estimated Remaining Useful Life (RUL) of approximately 83 cycles."
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some sensors are still reporting within normal ranges, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on various components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful time before it needs to be replaced or overhauled."
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on various components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing signs of degradation. However, the overall trend suggests that the engine is still operational and has not yet reached a critical failure point."
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful time before it needs to be replaced or overhauled."
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. This suggests that the engine is nearing the end of its service life, but still has some remaining useful time before it needs to be replaced or overhauled."
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 115,
+    "reasoning": "Based on the provided sensor data, the engine's performance has been steadily declining over time, with a noticeable drop in efficiency and power output. The data suggests that the engine is likely to fail within the next few cycles, indicating a Remaining Useful Life (RUL) of approximately 115 cycles."
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual degradation of the engine's components, suggesting that it is nearing the end of its service life."
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on various components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with a noticeable drop in efficiency and power output. This suggests that the engine is experiencing wear and tear, likely due to aging or excessive use, which is consistent with an estimated Remaining Useful Life (RUL) of 23 cycles."
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. While there are some fluctuations, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components."
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in wear on certain components. While some readings are still within normal ranges, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 85,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing minor fluctuations. However, there are no significant anomalies or drastic changes that would suggest an imminent failure. Based on this trend, it is estimated that the engine has approximately 15-20% of its remaining useful life left."
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's performance is trending downward, with a gradual decrease in efficiency and increase in variability across the sensors. While some readings are within normal ranges, others indicate potential issues with fuel flow, temperature regulation, and exhaust gas recirculation. Overall, these trends suggest that the engine has approximately 17% of its remaining useful life (RUL) left before requiring significant repairs or replacement."
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 85,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point."
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in emissions. While there are some fluctuations in the data, the overall trend suggests that the engine is nearing the end of its service life, likely due to wear and tear on critical components."
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing wear and tear, but it is not yet at critical levels."
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance, with most sensors showing values within the normal range but trending downwards. However, some sensors such as s8 and s9 show more significant deviations from the norm, suggesting potential issues with fuel efficiency or combustion. Overall, the data suggests that the engine is likely to fail within the next 100-125 cycles."
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. The sensor readings indicate a gradual increase in wear and tear on critical components, suggesting that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and increase in variability. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing a combination of wear and tear, likely due to aging or high mileage, which is affecting its overall reliability."
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing minor deviations from normal ranges. However, there are no significant anomalies or warning signs that would suggest imminent failure, suggesting a remaining useful life of approximately 5% (95 out of 125)."
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance over the past few cycles, with some sensors showing significant deviations from normal operating ranges. This suggests that the engine is experiencing wear and tear, but it is not yet at critical failure levels."
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 118,
+    "reasoning": "The engine's performance has been steadily declining over the past few cycles, with a noticeable drop in efficiency and power output. While there are some fluctuations in individual sensor readings, the overall trend suggests that the engine is nearing the end of its service life."
+  }
+]

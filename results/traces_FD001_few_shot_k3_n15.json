@@ -1,0 +1,602 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of wear, with increasing deviations in efficiency sensors (s7 and s8) over the last 15 cycles. This is consistent with the reference example of advanced wear, suggesting that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in sensors s7 and s8. This is consistent with the reference example of advanced wear, where efficiency sensors show significant deviation. Based on this analysis, I estimate the Remaining Useful Life (RUL) to be approximately 23 cycles."
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over the last 15 cycles, indicating advanced wear and potential issues with turbine performance."
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of wear, with increasing deviations from normal readings in sensors s7 and s8, indicating potential issues with the compressor or turbine. Additionally, there is a noticeable trend of decreasing efficiency sensor values (s2-s5), suggesting advanced wear on the engine's components."
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the reference example provided."
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 23,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the overall trend suggests that the engine is not yet at critical failure point, but rather experiencing advanced wear, similar to Example 1."
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of wear, with significant deviations in efficiency sensors (s7 and s8) and moderate changes in other sensor readings. This is consistent with the reference example of advanced wear, suggesting that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in values over time, indicating advanced wear on the engine's compressor or turbine blades. This is consistent with the reference example provided, which also showed significant deviation in efficiency sensors at an RUL of 0."
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in performance, indicating advanced wear on the turbofan engine. This trend is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the provided reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a consistent decline in readings over time, indicating advanced wear on the engine's compressor or turbine blades. This pattern is similar to that observed in Example 1, which had a true RUL of 0, suggesting that this engine may be nearing the end of its service life."
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in sensors s7 and s12. This is consistent with the reference example of advanced wear, where efficiency sensors show significant deviation. Based on this analysis, I estimate the Remaining Useful Life (RUL) to be approximately 45 cycles."
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of increasing wear, with significant deviations in efficiency sensors (s7 and s8) and moderate changes in other sensor readings. This is consistent with the reference example of advanced wear, suggesting that the engine has approximately 23 cycles remaining before failure."
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a gradual decline in performance, with increasing deviations from normal operating ranges in sensors s7 and s8. This pattern suggests advanced wear on the compressor or turbine blades, consistent with the provided reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of increasing wear, with significant deviations in efficiency sensors (s7 and s8) and temperature sensors (s11 and s12). This is consistent with the reference example of advanced wear, suggesting that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of wear, with increasing deviations in efficiency sensors (s7 and s8) over the last 15 cycles. This is consistent with advanced wear, similar to Example 1, but at an earlier stage, suggesting a remaining useful life of approximately 45 cycles."
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the overall trend is not as severe as Example 1, suggesting that the engine still has some useful life left."
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual decline in efficiency, with significant deviations in sensors s7 and s8. This pattern is consistent with advanced wear, similar to the reference example provided, indicating that the engine has approximately 45 cycles of remaining useful life before it fails."
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with fuel flow or compressor performance, consistent with the reference example provided."
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the provided reference example."
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in values over time, indicating advanced wear on the engine's compressor and turbine components."
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 42,
+    "reasoning": "The engine exhibits a gradual decline in performance, with increasing deviations from normal operating ranges in sensors s7 and s8. This pattern is consistent with advanced wear and reduced efficiency, similar to the reference example provided."
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over time, indicating advanced wear on the engine's compressor or turbine blades. This is consistent with the reference example of an engine with a true RUL of 0, which also showed significant deviations in efficiency sensors due to advanced wear."
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in sensors s7 and s8. This is consistent with the reference example of advanced wear, indicating that the engine's Remaining Useful Life (RUL) is likely to be relatively short."
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of increasing wear, with significant deviations in efficiency sensors (s7 and s8) and moderate deviations in other sensors. This is consistent with the reference example of advanced wear, suggesting that the engine has approximately 23 cycles remaining before failure."
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of increasing wear, with significant deviations in efficiency sensors (s7 and s8) and a gradual decline in performance indicators (s11 and s12). This trend is consistent with the reference example of advanced wear, suggesting that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with fuel flow or compressor performance, consistent with the reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over time, indicating advanced wear on the engine's compressor blades. This is consistent with the reference example provided, which also showed significant deviation in efficiency sensors due to advanced wear."
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings, indicating advanced wear on the engine's compressor or turbine blades. This trend is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with increasing deviations from normal operating conditions over the last 15 cycles. Specifically, sensors s7 and s8 show significant increases in readings, indicating potential issues with efficiency and temperature control. This pattern suggests that the engine has approximately 45 cycles remaining before it reaches its end-of-life threshold."
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual decline in efficiency, with significant deviations in sensors s7 and s8. This pattern is consistent with advanced wear, similar to the reference example provided, indicating that the engine has approximately 45 cycles of remaining useful life before it fails."
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of increasing wear, with significant deviations in efficiency sensors (s7 and s8) and moderate deviations in other sensors. This is consistent with the reference example of advanced wear, suggesting that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the reference example provided."
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with fuel flow or compressor performance, consistent with the reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11). However, the overall trend is not as severe as Example 1, suggesting a more gradual degradation process."
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 42,
+    "reasoning": "The engine's sensor readings indicate a gradual decline in performance, with significant deviations in efficiency sensors (s7 and s8) and moderate changes in other parameters. This pattern is consistent with advanced wear, similar to the reference example provided, suggesting that the engine has approximately 42 cycles of remaining useful life before it reaches its end-of-life condition."
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating ranges in sensors s7 and s8. This is consistent with the reference example of advanced wear, indicating that the engine has likely reached a critical stage where maintenance is required to prevent further damage."
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over time, indicating advanced wear on the engine's compressor or turbine blades. This trend is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing trends in other sensors (s11, s12). This is consistent with the reference example provided, which also showed advanced wear patterns. Based on this analysis, I estimate the Remaining Useful Life (RUL) to be approximately 23 cycles."
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11). However, the overall trend is not as severe as Example 1, suggesting that the engine still has a considerable amount of life left."
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the overall trend is not as severe as Example 1, suggesting that the engine still has a considerable amount of life left."
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a gradual decline in performance, with increasing deviations from normal operating ranges in sensors s4 (efficiency) and s7 (temperature). This pattern suggests advanced wear and potential efficiency issues, consistent with the reference example of an engine with true RUL = 0."
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the overall trend is not as severe as Example 1, suggesting a remaining useful life of approximately 45 cycles."
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in values over time, indicating advanced wear on the engine's compressor or turbine blades. This suggests that the engine has approximately 45 cycles remaining before it reaches the end of its useful life."
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a gradual decline in performance, with increasing deviations from normal operating ranges in sensors s7 and s8. This pattern is consistent with advanced wear on the compressor blades, which would lead to reduced efficiency and increased vibration, causing the observed sensor readings."
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over time, indicating advanced wear on the engine's compressor or turbine blades. This is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in performance, indicating advanced wear and potential issues with fuel flow or combustion."
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the reference example provided."
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the provided reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 23,
+    "reasoning": "The engine's sensor readings indicate a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and moderate deviations in other sensors. This is consistent with the reference example provided, which also showed advanced wear and similar patterns in its sensor readings. Based on this analysis, I estimate the Remaining Useful Life (RUL) to be approximately 23 cycles."
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in performance, indicating advanced wear on the engine's compressor or turbine blades. This trend is consistent with the reference example of an engine with a true RUL of 0, which also showed significant deviation in efficiency sensors."
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in sensors s7 and s8. This is consistent with the reference example of advanced wear, where efficiency sensors show significant deviation. Based on this analysis, I estimate the Remaining Useful Life (RUL) to be approximately 23 cycles."
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a gradual decline in performance, with increasing deviations from normal operating ranges in sensors s7 and s8. This pattern is consistent with advanced wear on the compressor blades, which would lead to reduced efficiency and increased vibration, causing the observed sensor readings."
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing values for temperature-related sensors (s11 and s12). This is consistent with the reference example provided, which also showed a similar pattern of wear."
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over the last 15 cycles, indicating advanced wear and potential issues with fuel flow or combustion. This trend suggests that the engine has approximately 45 cycles remaining before it reaches the end of its useful life."
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 42,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the reference example provided."
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady increase in values over time, indicating a potential issue with the engine's performance. This trend is consistent with the reference example of advanced wear, suggesting that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with deviations from normal behavior observed in efficiency sensors (s7 and s8). This pattern is consistent with the reference example of advanced wear, suggesting that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing trends in temperature-related sensors (s11 and s12). This suggests that the engine is experiencing a combination of thermal and mechanical degradation, which is consistent with an RUL estimate of 45 cycles."
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in values over time, indicating advanced wear on the engine's components. This trend is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with some sensors showing significant deviations from normal values. Specifically, the efficiency sensors (s7 and s8) show increasing degradation over time, which is consistent with the pattern observed in Example 1. However, the rate of change is not as rapid as in the example engine, suggesting that the current engine has a longer remaining useful life."
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the pattern is not as severe as in Example 1, suggesting that the engine still has some useful life left."
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the overall trend suggests that the engine is not yet at critical failure point, but rather experiencing a gradual degradation."
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over the last 15 cycles, indicating advanced wear and potential issues with turbine performance."
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing values for temperature-related sensors (s11 and s12). This suggests that the engine is experiencing a critical failure mode, likely related to overheating or lubrication issues."
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operation in efficiency sensors (s7 and s8) over the last 15 cycles. This is consistent with advanced wear, similar to Example 1, but at an earlier stage, suggesting a remaining useful life of approximately 23 cycles."
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the provided reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with fuel flow or combustion, which is consistent with the provided reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 23,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). This pattern is consistent with the provided reference example of an advanced wear condition, suggesting that the engine has approximately 23 cycles remaining before failure."
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with some sensors showing significant deviations from the reference example. Specifically, the efficiency sensors (s7 and s8) show increasing values over time, indicating potential issues with fuel flow or combustion, which is consistent with the pattern observed in the reference example."
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing trends in temperature-related sensors (s11 and s12). This suggests that the engine is experiencing a gradual degradation of its performance, which is consistent with an RUL estimate of 45 cycles."
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings, indicating advanced wear on the engine's compressor and turbine components. This is consistent with the reference example of an engine with a true RUL of 0, which also showed significant deviation in efficiency sensors due to advanced wear."
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the provided reference example of an engine with similar characteristics."
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating ranges in sensors s7 and s8. This is indicative of advanced wear on the compressor and turbine components, consistent with the provided reference example. Based on this analysis, an estimated Remaining Useful Life (RUL) of 23 cycles is predicted."
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a gradual increase in sensor readings for efficiency sensors (s7, s8) and a decrease in temperature sensors (s11, s12), indicating advanced wear. This pattern is consistent with the reference example of an engine with a true RUL of 0, suggesting that this engine has approximately 45 cycles left before failure."
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with increasing deviations from normal operating conditions over the last 15 cycles. Specifically, sensors s7 and s8 show a gradual decline in readings, indicating potential issues with efficiency and performance. This pattern is consistent with an advanced wear scenario, similar to Example 1, but not as severe, suggesting a remaining useful life of approximately 45 cycles."
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with deviations in efficiency sensors (s7 and s8) and some signs of advanced wear. However, the pattern is not as severe as in Example 1, suggesting that the engine still has significant life left but may require maintenance soon."
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing values for temperature sensors (s11 and s12). This suggests that the engine is experiencing severe degradation, likely due to worn-out components or inefficient operation."
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 42,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady increase in values over time, indicating a potential issue with turbine performance. This is consistent with the reference example of advanced wear, suggesting that the engine has approximately 42 cycles remaining before failure."
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in performance, indicating advanced wear on the turbofan engine. This trend is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in values over time, indicating advanced wear and potential issues with fuel flow or combustion. This trend is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in readings over time, indicating advanced wear on the engine's compressor or turbine blades. This is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in values, indicating advanced wear on the engine's compressor or turbine blades. This is consistent with the reference example provided, which also showed significant deviation in efficiency sensors due to advanced wear."
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 23,
+    "reasoning": "The engine's sensor readings show a gradual decline in efficiency, particularly in sensors s7 and s8, indicating advanced wear. This pattern is consistent with the reference example of an engine with a true RUL of 0, suggesting that this engine may be nearing the end of its service life."
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a gradual decline in efficiency sensors (s7, s8) and a moderate increase in temperature sensors (s11, s12), indicating advanced wear. However, the rate of degradation is slower compared to Example 1, suggesting a remaining useful life of approximately 45 cycles."
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating conditions. Specifically, the efficiency sensors (s7 and s8) show a steady decline in performance, indicating advanced wear on the engine's compressor or turbine blades. This trend is consistent with the reference example provided, which also showed significant deviation in efficiency sensors leading to an RUL of 0."
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 23,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing trends in temperature-related sensors (s11 and s12). This suggests that the engine is nearing the end of its useful life, likely due to thermal degradation or other wear-related issues."
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the overall trend suggests that the engine is not yet at critical failure point, but rather experiencing advanced wear, similar to Example 1."
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the reference example provided."
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating ranges in sensors s7 and s8. This is consistent with the reference example of advanced wear, indicating that the engine's Remaining Useful Life (RUL) is likely to be around 45 cycles before it reaches critical failure."
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal operating ranges in sensors s2 and s4. This is indicative of advanced wear on the turbofan's compressor blades, which typically occurs within 40-60 cycles before catastrophic failure."
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some anomalies in temperature sensors (s11 and s12). However, the overall trend is not as severe as Example 1, suggesting that the engine still has a considerable amount of life left."
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with deviations from normal behavior observed in efficiency sensors (s7 and s8). The pattern of increasing deviation over time suggests that the engine is experiencing advanced wear, similar to Example 1. However, the rate of change is slower than in the reference example, indicating a potentially longer remaining useful life."
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 23,
+    "reasoning": "The engine's sensor readings indicate a pattern of gradual degradation, with increasing deviations from normal values over the last 15 cycles. Specifically, sensors s4 and s7 show significant drops in their readings, indicating potential issues with compressor efficiency and bearing wear, respectively. This suggests that the engine has been experiencing advanced wear for some time, which is consistent with an estimated RUL of 23 cycles remaining before failure."
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of gradual degradation, with increasing deviations from normal behavior in efficiency sensors (s7 and s8) over the last 15 cycles. This suggests advanced wear and potential issues with turbine performance, consistent with the reference example provided."
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of increasing wear on the efficiency sensors (s7, s8), with values trending upwards over time. This is consistent with the reference example of advanced wear, and suggests that the engine has approximately 45 cycles remaining before failure."
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the reference example, indicating advanced wear and efficiency issues. Specifically, sensors s7 (efficiency) and s8 (temperature) exhibit significant deviations, consistent with the pattern observed in the reference example."
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a gradual decline in performance, with increasing deviations from normal operating ranges in sensors s7 and s8. This pattern is consistent with advanced wear on the compressor blades, which would lead to reduced efficiency and increased vibration, causing the observed sensor readings."
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 45,
+    "reasoning": "The engine exhibits a pattern of advanced wear, with significant deviations in efficiency sensors (s7 and s8) and increasing values for temperature sensors (s11 and s12). This suggests that the engine is experiencing severe degradation, likely due to worn-out components or inefficient operation."
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 42,
+    "reasoning": "The engine's sensor readings indicate a moderate level of wear, with significant deviations in efficiency sensors (s7 and s8) and some signs of advanced wear. However, the pattern is not as pronounced as in Example 1, suggesting that the engine may still have some useful life left before requiring replacement or major maintenance."
+  }
+]

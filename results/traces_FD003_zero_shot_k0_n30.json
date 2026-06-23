@@ -1,0 +1,602 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 44.0,
+    "pred_rul": 23,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.480 to 0.524) and s12 (0.569), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.312) and s14 (0.310) are trending downwards, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure within the next few cycles."
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 51.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 27.0,
+    "pred_rul": 23,
+    "reasoning": "The efficiency-related sensors s9 and s14 show a steady decrease in value, indicating advanced wear. Meanwhile, the degradation-related sensors s11 and s12 exhibit increasing values, suggesting accelerated degradation. These opposing trends indicate that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 120.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in variance, particularly for s11 (0.526 to 0.457) and s12 (0.192 to 0.197), indicating advanced wear. Additionally, efficiency-related sensors such as s9 (0.181 to 0.140) and s14 (0.176 to 0.179) show a decreasing trend, suggesting an approaching failure."
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 101.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, efficiency-related sensors like s9 and s14 show decreasing values, further indicating approaching failure. The monotonic drift of these sensors suggests that the engine is likely to fail within the next 42 cycles."
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 99.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, efficiency-related sensors like s9 and s14 show decreasing values, further indicating approaching failure. The monotonic drift of these sensors suggests that the engine is likely to fail within the next 23 operational cycles."
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 71.0,
+    "pred_rul": 23,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.651 to 0.594) and s12 (0.147 to 0.133). Conversely, efficiency-related sensors like s9 (0.077 to 0.114) and s14 (0.102 to 0.111) are decreasing, indicating a decline in performance. The overall trend suggests that the engine is approaching failure within the next few cycles."
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 55.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated RUL of 23 cycles remaining."
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 55.0,
+    "pred_rul": 42,
+    "reasoning": "The data shows a gradual increase in s11, s12, and s15 values, indicating advanced wear. Meanwhile, s9 and s14 show decreasing values, suggesting efficiency loss. Additionally, there is an increasing variance in some sensor readings, which further supports the indication of approaching failure."
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 66.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated RUL of 23 cycles remaining."
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 77.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 115.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15 values, indicating advanced wear. Conversely, s9 and s14 values are decreasing, suggesting reduced efficiency. Additionally, the variance of these sensors is increasing, further supporting the conclusion that failure is imminent within the next 23 cycles."
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 115.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet imminent, hence an RUL estimate of 42 cycles."
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 31.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, efficiency-related sensors like s9 and s14 show decreasing values, further indicating approaching failure. The variance of these sensors also shows an increasing trend, supporting the conclusion that the engine is nearing its end-of-life."
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 108.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 56.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but there is still some operational life left."
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing values, suggesting a decline in performance. The overall trend suggests that the engine is approaching failure, with an estimated 42 operational cycles remaining before imminent failure."
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit lower values, consistent with the expected trend of decreasing performance."
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 85.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15 values, indicating advanced wear. Conversely, s9 and s14 values are decreasing, suggesting reduced efficiency. Additionally, the variance of these sensors is increasing, further supporting the conclusion that the engine is approaching failure."
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 56.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 18.0,
+    "pred_rul": 23,
+    "reasoning": "The efficiency-related sensors s9 and s14 show a steady decrease in values, indicating advanced wear. Meanwhile, the degradation-related sensors s11 and s12 exhibit increasing variance and monotonic drift, suggesting an approaching failure. These trends are consistent with a moderate to high level of engine degradation, corresponding to an estimated RUL of 23 cycles."
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 119.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but there is still some operational life left."
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 78.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 9.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing values, further supporting the indication of approaching failure."
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 58.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. Conversely, efficiency-related sensors like s9 and s14 exhibit decreasing values, further supporting the trend of increasing degradation."
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 11.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 88.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Conversely, efficiency-related sensors like s9 and s14 show decreasing values, consistent with the expected trend of approaching failure."
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining."
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 124.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 89.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 79.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 55.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing or stable trends, suggesting a decline in performance. The monotonic drift of these sensors suggests that the engine is approaching failure within the next 23 operational cycles."
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 71.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 65.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing values, further supporting the trend of increasing degradation."
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 87.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit lower values, further supporting the indication of approaching failure."
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15 values, indicating advanced wear. Conversely, s9 and s14 values are decreasing, suggesting reduced efficiency. Additionally, the variance of these sensors is increasing over time, further supporting the conclusion that failure is imminent within 42 cycles."
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Meanwhile, efficiency-related sensors like s9 and s14 show relatively stable or slightly decreasing values, which is consistent with the expected behavior of an engine approaching failure."
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 22.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting efficiency loss. The overall trend suggests that the engine is approaching failure, but there is still some operational life left."
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 8.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing values, further supporting the trend of increasing degradation."
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 41.0,
+    "pred_rul": 23,
+    "reasoning": "The efficiency-related sensors s9 and s14 show a consistent decrease in values, indicating advanced wear. Meanwhile, the degradation-related sensors s11 and s12 exhibit increasing variance and monotonic drift, suggesting an approaching failure. These trends are indicative of a moderate to severe level of engine degradation, corresponding to an estimated RUL of 23 cycles."
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. Additionally, there is an increasing variance in some sensors, hinting at approaching failure."
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 115.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. In contrast, efficiency-related sensors like s9 and s14 show relatively stable or decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining."
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 69.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15 values, indicating advanced wear. Conversely, s9 and s14 values are decreasing, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but there is still some operational life left."
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 111.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit lower values, suggesting decreased performance. The monotonic drift of these trends suggests that the engine is approaching failure within the next 23 operational cycles."
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 7.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing values, suggesting a decline in performance. The increasing variance and monotonic drift observed in these trends indicate an approaching failure, warranting a RUL estimate of 23 cycles."
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit lower values, suggesting decreased performance. Additionally, the variance of some sensors has increased over time, further supporting the indication of impending failure."
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 55.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting efficiency loss. The variance of these sensors also shows an increasing trend, consistent with approaching failure."
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. Conversely, efficiency-related sensors like s9 and s14 exhibit decreasing values, further supporting the trend of increasing degradation."
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 11.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but there is still some operational life left."
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 78.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. In contrast, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. Additionally, the variance of these sensors has increased over time, further supporting the conclusion that failure is imminent within 23 cycles."
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 120.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit relatively stable or decreasing trends, suggesting a decline in engine performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining."
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 87.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting efficiency loss. These trends suggest that the engine is approaching failure, with an estimated RUL of 23 cycles remaining."
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 87.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 55.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. In contrast, efficiency-related sensors like s9 and s14 show relatively stable or decreasing values, which is consistent with the expected behavior of a failing engine. The overall trend suggests that the engine has approximately 42 operational cycles remaining before failure."
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 93.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 88.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in degradation-related sensors such as s11, s12, and s15, indicating advanced wear. Additionally, there is a slight decrease in efficiency-related sensors like s9 and s14, further suggesting approaching failure."
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 40.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. Conversely, efficiency-related sensors like s9 and s14 exhibit lower values, further supporting the indication of approaching failure."
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 49.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing or stable values, suggesting a decline in performance. The overall trend suggests that the engine is approaching failure within the next 23 operational cycles."
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, efficiency-related sensors like s9 and s14 show decreasing values, further indicating approaching failure. The monotonic drift of these sensors suggests that the engine is likely to fail within the next 42 cycles."
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, efficiency-related sensors like s9 and s14 show decreasing values, further supporting the indication of approaching failure."
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 58.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. In contrast, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining."
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 117.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, there is a noticeable decrease in efficiency-related sensors like s9 and s14, further indicating approaching failure."
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 23,
+    "reasoning": "The efficiency-related sensors s9 and s14 show a consistent decrease in value, indicating advanced wear. Meanwhile, the degradation-related sensors s11 and s12 exhibit increasing values, suggesting an accelerated degradation process. These trends indicate that the engine is approaching failure, with approximately 23 operational cycles remaining before imminent failure."
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 115.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining."
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 87.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing or stable trends, suggesting a decline in engine performance. The increasing variance of these signals also suggests that the engine is approaching failure."
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 92.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 103.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. In contrast, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining."
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 100.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. In contrast, efficiency-related sensors like s9 and s14 show relatively stable or decreasing values, which is consistent with the expected behavior of an engine approaching failure."
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 63.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit lower values, suggesting decreased performance. The monotonic drift of these trends suggests that the engine is approaching failure within the next 23 cycles."
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 35.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 45.0,
+    "pred_rul": 23,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (trend: 0.360 -> 0.537) and s12 (trend: 0.351 -> 0.496). Conversely, efficiency-related sensors like s9 (trend: 0.206 -> 0.288) and s14 (trend: 0.258 -> 0.308) are decreasing, indicating a decline in performance. The engine's RUL is estimated to be around 23 cycles before failure."
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 99.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 117.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at imminent risk."
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 45.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting efficiency loss. The variance of these sensors also shows an increasing trend, consistent with approaching failure."
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 27.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Conversely, efficiency-related sensors like s9 and s14 show decreasing values, further indicating impending failure. Additionally, the variance of some sensors has increased over time, supporting the conclusion that the engine is approaching its end-of-life."
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 86.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit lower values, suggesting decreased performance. The monotonic drift of these trends suggests that the engine is approaching failure within the next 42 operational cycles."
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 20.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing values, further supporting the indication of approaching failure."
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 18.0,
+    "pred_rul": 23,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.811 at t-4) and s12 (0.128 at t-3), indicating a trend towards failure. In contrast, efficiency-related sensors like s9 and s14 show lower values, further supporting this conclusion. The overall pattern suggests that the engine is approaching imminent failure within the next 23 operational cycles."
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, efficiency-related sensors like s9 and s14 show decreasing values, further indicating approaching failure. The monotonic drift of these sensors over the last few cycles suggests that the engine is nearing its end-of-life."
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 15.0,
+    "pred_rul": 23,
+    "reasoning": "The efficiency-related sensors s9 and s14 show a decreasing trend, indicating advanced wear. Meanwhile, the degradation-related sensors s11 and s12 exhibit an increasing trend, suggesting accelerated degradation. These opposing trends indicate that the engine is approaching failure, but still has some operational cycles left."
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 6.0,
+    "pred_rul": 23,
+    "reasoning": "The efficiency-related sensors s9 and s14 show a consistent decrease in value over time, indicating advanced wear. Meanwhile, the degradation-related sensors s11 and s12 exhibit an increasing trend, suggesting accelerated degradation. These trends collectively indicate that the engine is approaching failure within the next few cycles."
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 104.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit decreasing or stable trends, suggesting a decline in engine performance."
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 56.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15 values, indicating advanced wear. Conversely, s9 and s14 values are decreasing, suggesting reduced efficiency. Additionally, the variance of some sensors (e.g., s8) is increasing, further supporting the indication of approaching failure."
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 25.0,
+    "pred_rul": 23,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.731 at t-20 to 0.651 at t-3) and s12 (0.173 at t-24 to 0.157 at t-2). Conversely, efficiency-related sensors like s9 (0.387 at t-19 to 0.436 at t-1) and s14 (0.346 at t-19 to 0.437 at t-1) are decreasing, indicating a decline in performance. The increasing variance in these sensor readings also suggests that the engine is approaching failure."
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 68.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Additionally, efficiency-related sensors like s9 and s14 show decreasing values, further supporting the indication of approaching failure."
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in values for degradation-related sensors such as s11, s12, and s15, indicating advanced wear. In contrast, efficiency-related sensors like s9 and s14 exhibit lower values, suggesting decreased performance. Additionally, the variance of some sensors has increased over time, further supporting the indication of impending failure."
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 41.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in variance for efficiency-related sensors s9 (trend: 0.162 -> 0.235) and s14 (trend: 0.217 -> 0.280), indicating potential wear on the engine's components. Conversely, degradation-related sensors s11 (trend: 0.257 -> 0.309) and s12 (trend: 0.253 -> 0.395) exhibit a steady increase in values, suggesting advanced wear and tear on the engine's mechanical systems."
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 51.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but there is still some operational life left."
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 81.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated remaining useful life of 23 cycles."
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 14.0,
+    "pred_rul": 23,
+    "reasoning": "The efficiency-related sensors s9 and s14 show a decreasing trend, indicating advanced wear. Meanwhile, the degradation-related sensors s11 and s12 exhibit an increasing trend, suggesting accelerated degradation. These opposing trends indicate that the engine is approaching failure, with approximately 23 operational cycles remaining before imminent failure."
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 67.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. Additionally, there is an increasing variance in some sensors, which further supports the indication of approaching failure."
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 10.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15 values, indicating advanced wear. Conversely, s9 and s14 values are decreasing, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, with an estimated RUL of 23 cycles remaining."
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. In contrast, efficiency-related sensors like s9 and s14 show relatively stable or decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining."
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 113.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a gradual increase in degradation-related sensors such as s11, s12, and s15, suggesting advanced wear. Conversely, efficiency-related sensors like s9 and s14 show decreasing values, consistent with the expected pattern of approaching failure."
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 123.0,
+    "pred_rul": 42,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (average increase of 0.15 over last 30 cycles) and s12 (average increase of 0.08). Conversely, efficiency-related sensors like s9 and s14 are trending downwards, indicating a decline in performance. The overall trend suggests that the engine is approaching failure, with an estimated RUL of 42 operational cycles remaining."
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 17.0,
+    "pred_rul": 23,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (average increase of 0.13) and s15 (average increase of 0.14). Conversely, efficiency-related sensors like s9 and s14 are trending downwards, indicating a decline in performance."
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 8.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Conversely, s9 and s14 exhibit decreasing values, suggesting efficiency loss. These trends suggest the engine is approaching failure, with an estimated RUL of 23 cycles remaining."
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 28.0,
+    "pred_rul": 42,
+    "reasoning": "The turbofan engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.651 to 0.583) and s12 (0.527 to 0.602), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.275 to 0.353) and s14 (0.306 to 0.364) are showing lower values, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, with increasing variance and monotonic drift observed in several sensor readings."
+  }
+]
