@@ -1,0 +1,802 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, with some sensors (e.g., s7) consistently reading high values. This suggests that the engine is experiencing wear, but not to the extent seen in Example 5, which had significant deviations in efficiency sensors. Based on this pattern, I estimate the Remaining Useful Life (RUL) of the engine to be around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the reference examples, this engine's readings are closer to those of Example 1 (True RUL: 113), suggesting a moderate level of wear and an estimated Remaining Useful Life of approximately 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the overall pattern suggests stable operation with some minor wear, consistent with an RUL of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the patterns do not show significant deviations or advanced wear like Example 5, suggesting a more stable operation with some minor anomalies.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating wear and tear. However, unlike Example 5, which showed significant deviations in efficiency sensors, this engine's readings are more stable, suggesting that it is not yet at an advanced stage of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating wear and tear. However, the deviations are not as significant as those observed in Example 5 (advanced wear), suggesting that the engine is still operating within a relatively stable range, but with some degradation occurring.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those seen in Example 5, suggesting that the engine has some remaining life but is likely nearing the end of its useful lifespan.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly increasing values, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those observed in Example 5, suggesting that the engine has some remaining life left before reaching critical failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, with some sensors (e.g., s7) consistently high and others (e.g., s11) fluctuating. This pattern is indicative of an engine in the early stages of wear, but not yet experiencing significant degradation, suggesting a Remaining Useful Life estimate of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to baseline values, suggesting a more moderate level of deterioration.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a mix of stable and slightly deviating patterns, with some sensors showing increased activity (e.g., s7, s12) while others remain near baseline. This pattern is consistent with an intermediate level of wear, suggesting that the engine has around 60 cycles left before reaching its end-of-life.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those seen in Example 5, suggesting that the engine has some remaining life left before reaching critical failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in efficiency sensors (s7, s8) and a slight decrease in temperature sensors (s9), indicating a moderate level of wear. However, the deviations are not as significant as those observed in Example 5, suggesting that the engine is still operating within a relatively stable range, but with some signs of degradation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's sensors are closer to baseline values, suggesting it is still in an intermediate stage of wear rather than near failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the pattern is not as extreme as Example 5, which had advanced wear, but rather more similar to Examples 1-4 with stable operation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly increasing values, indicating some wear but not severe degradation. Compared to the reference examples, this pattern is more similar to Example 1 (True RUL: 113) than Examples 3-4 (True RUL: 125), suggesting a moderate level of wear rather than advanced or catastrophic failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8). This pattern suggests advanced wear, but not as severe as Example 5. The RUL estimate is based on the assumption that the engine will continue to degrade at a moderate rate, resulting in an estimated remaining life of approximately 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme, suggesting that the engine has some remaining life before reaching critical failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating advanced wear and efficiency issues. This pattern is consistent with Example 5, where the true RUL was 36, suggesting that the engine has significant degradation but still some remaining life.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (Example 5), this engine's sensors are closer to baseline values, suggesting a more moderate level of wear, consistent with an estimated RUL of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating advanced wear and potential efficiency issues. This pattern is consistent with Example 5, which had a true RUL of 36, suggesting that the engine has approximately 24 cycles left before failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8), indicating advanced wear. This pattern is consistent with Example 5, which had a true RUL of 36, suggesting that the engine has approximately 24 cycles left before failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and increasing values, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to baseline, suggesting it is still operational but nearing the end of its life.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the deviations are not as pronounced as in Example 5, suggesting that the engine is still operating within normal parameters but with some signs of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the pattern is not as extreme as Example 5, suggesting that the wear is not yet advanced, but rather at an intermediate stage.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not yet advanced degradation. Compared to the reference examples, this engine's readings are more similar to Example 4 (True RUL: 125), with sensors near baseline values, but also exhibit some deviations in efficiency sensors, suggesting an intermediate level of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear, consistent with an estimated RUL of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear, which corresponds to an estimated RUL of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the deviations are not as significant as those observed in Example 5, suggesting that the engine is still operating within normal parameters but with some signs of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 25,
+    "reasoning": "The engine's sensor readings show significant deviations from the baseline, indicating advanced wear and potential efficiency issues. Specifically, sensors s7 (efficiency) and s15 (temperature) exhibit high values, suggesting a decline in performance. This pattern is consistent with Example 5, which had a true RUL of 36.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, particularly in sensors s7 and s12. This pattern is consistent with advanced wear and efficiency issues, similar to Example 5, but not as severe. Based on this analysis, I estimate the Remaining Useful Life (RUL) of the engine to be approximately 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, indicating advanced wear and potential efficiency issues. This pattern is consistent with Example 5, where the true RUL was 36, but the current trend suggests a more moderate level of degradation, leading to an estimated RUL of 80.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 25,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from baseline values, particularly in efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with Example 5, where the true RUL was 36, indicating that the engine is likely experiencing similar degradation issues.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating advanced wear and potential efficiency issues. This pattern is similar to Example 5, which had a true RUL of 36, suggesting that the engine may have already exceeded its expected lifespan by about 24 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those seen in Example 5, suggesting that the engine has some remaining life left.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating advanced wear. Specifically, sensors s7 and s8 exhibit significant deviations, consistent with Example 5's pattern of advanced wear. However, the overall trend is not as extreme as Example 5, suggesting an RUL estimate between Examples 4 and 5.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, indicating advanced wear and potential efficiency issues. This pattern is consistent with Example 5, which had a true RUL of 36, but the current engine's readings are not as extreme, suggesting an intermediate level of degradation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 113,
+    "reasoning": "The engine's sensor readings indicate a stable operation pattern, with most sensors near baseline values. However, there are some deviations in efficiency sensors (s7 and s8) that suggest advanced wear, but not to the extent seen in Example 5. Overall, the engine's condition is consistent with a moderate level of degradation, suggesting an RUL estimate of around 113 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating advanced wear and potential efficiency issues. This pattern is consistent with Example 5, where the true RUL was 36, but the current trend suggests a longer remaining life compared to that example.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating wear and tear. However, unlike Example 5, which showed significant deviations in efficiency sensors, this engine's readings are more stable, suggesting that it is not yet at an advanced stage of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a mix of stable and increasing values, indicating some wear but not extreme degradation. Compared to the reference examples, this engine's readings are more similar to Example 5 (True RUL: 36), which also shows advanced wear with significant deviation in efficiency sensors.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, with some sensors indicating potential wear or inefficiencies. However, the deviations are not as pronounced as in Example 5 (advanced wear), suggesting that the engine is likely experiencing moderate degradation rather than severe failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings indicate a stable operation with sensors near baseline, similar to Examples 1 and 2. However, there is a slight deviation in efficiency sensors (s7) compared to the reference examples, suggesting some wear but not as severe as Example 5. Based on this pattern, I estimate the Remaining Useful Life of the engine to be around 95 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, with some sensors (e.g., s7) indicating potential issues. However, the overall trend is not as severe as in Example 5, which had advanced wear and significant deviations in efficiency sensors.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating advanced wear and potential efficiency issues. This pattern is consistent with Example 5, which had a true RUL of 36, suggesting that the engine has approximately two-thirds of its remaining useful life left.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the overall pattern suggests stable operation with some minor wear, which is consistent with an RUL of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the reference examples, this engine's readings are closer to those of Example 1 (True RUL: 113), suggesting a remaining useful life estimate around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, indicating advanced wear and potential efficiency issues. This pattern is consistent with Example 5, which had a true RUL of 36, suggesting that the engine may have already exceeded its expected lifespan by approximately 24 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those seen in Example 5, suggesting that the engine has some remaining life before reaching critical failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the reference examples, this engine's readings are more similar to Example 5 (True RUL: 36), which also showed advanced wear, but with less severe deviations in efficiency sensors.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating wear and tear. However, unlike Example 5, which showed significant deviations in efficiency sensors, this engine's readings are more stable, suggesting that it is not yet experiencing advanced wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the overall pattern is not as extreme as Example 5, which exhibited advanced wear, suggesting that the engine has some remaining life but is likely nearing the end of its useful lifespan.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those observed in Example 5, suggesting that the engine has some remaining life left before reaching critical failure conditions.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's sensor readings indicate a stable operation pattern, with most sensors near baseline values. However, there are some deviations in efficiency sensors (s7 and s12) that suggest advanced wear, but not as severe as Example 5. Considering the overall trend and the fact that the deviations are not extreme, an RUL of 83 seems reasonable.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 25,
+    "reasoning": "The engine's sensor readings indicate significant deviations from baseline values, particularly in efficiency sensors (s7 and s8), suggesting advanced wear. This pattern is consistent with Example 5, where the true RUL was 36, indicating a more severe condition than Examples 1-4.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the reference examples, this engine's readings are closer to those in Example 5 (True RUL: 36), which also showed advanced wear, suggesting an estimated Remaining Useful Life of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not as severe as in Example 5. The efficiency sensors (s7, s8) are near baseline, suggesting that the engine is still operating within normal limits, but with some degradation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s12) and a slight deviation from baseline values. This pattern is consistent with advanced wear, similar to Example 5, but not as severe, suggesting an RUL of around 45 cycles before failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the overall pattern suggests stable operation with no significant signs of advanced wear or failure, indicating an RUL estimate of around 80 cycles remaining before potential engine failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, indicating advanced wear and potential efficiency issues. This pattern is consistent with Example 5, which had a true RUL of 36, suggesting that the engine may have around 24 cycles left before failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the overall pattern is not as extreme as Example 5, suggesting that the engine has not yet reached advanced wear stage, but rather is experiencing some degradation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8), indicating advanced wear. This pattern is consistent with Example 5, which had a true RUL of 36, suggesting that the engine has approximately 24 cycles left before failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those observed in Example 5, suggesting that the engine has some remaining life before reaching critical failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a significant deviation from baseline values, particularly in efficiency sensors (s7 and s12), suggesting advanced wear. This pattern is consistent with Example 5, which had a true RUL of 36, indicating that the engine is likely nearing the end of its useful life.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those observed in Example 5, suggesting that the engine has some remaining life but is likely nearing the end of its useful lifespan.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear, which corresponds to an estimated RUL of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 64,
+    "reasoning": "The engine's sensor readings show a significant deviation from the baseline, indicating advanced wear and potential efficiency issues. Specifically, sensors s7 (efficiency) and s15 (temperature) exhibit notable deviations in multiple cycles, suggesting a decline in performance.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the reference examples, this engine's readings are more similar to those in Example 1 (True RUL: 113), suggesting an estimated Remaining Useful Life of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's sensors are closer to baseline values, suggesting it is still in a relatively healthy state, but likely nearing the end of its useful life given the slight deviations from normal operation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a mix of stable and increasing deviations from baseline, suggesting advanced wear. Efficiency sensors (s7, s8) show significant increases in values, consistent with Example 5's pattern of advanced wear, but the overall trend is not as extreme, indicating an RUL estimate between Examples 4 and 5.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the reference examples, this engine's readings are closer to those of Example 1 (True RUL: 113), suggesting a moderate level of wear and an estimated Remaining Useful Life of approximately 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the pattern is not as extreme as Example 5, which showed advanced wear, but rather suggests an intermediate level of degradation, likely corresponding to a Remaining Useful Life of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 83,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, particularly in sensors s7 and s12. This pattern is indicative of advanced wear, but not as severe as Example 5, suggesting an RUL estimate between Examples 1-4.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, indicating wear and tear. However, the deviations are not as extreme as those seen in Example 5 (advanced wear), suggesting that the engine is still operating within a relatively stable range, but with some signs of degradation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a decrease in temperature sensors (s11, s12), suggesting advanced wear. However, the deviations are not as significant as those observed in Example 5, indicating that the engine is still operational but nearing the end of its life.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear, which corresponds to an estimated RUL of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 25,
+    "reasoning": "The engine's sensor readings indicate significant deviations from baseline values, particularly in efficiency sensors (s7 and s12), suggesting advanced wear. This pattern is consistent with Example 5, where the true RUL was 36, indicating a more severe degradation than Examples 1-4.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a pattern of stable operation with sensors near baseline, similar to Examples 1 and 2. However, there is a slight deviation in the efficiency sensors (s7) compared to Example 1, indicating some wear but not as severe as Example 5. Based on this analysis, I estimate the Remaining Useful Life (RUL) of the engine to be around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear, which corresponds to an estimated RUL of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 36,
+    "reasoning": "The engine's sensor readings indicate advanced wear, with significant deviations from baseline values in efficiency sensors (s7 and s8). This pattern is consistent with Example 5, where the true RUL was also 36.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those observed in Example 5, suggesting that the engine has some remaining life before reaching critical failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and increasing deviations from baseline, indicating advanced wear. Specifically, the efficiency sensors (s7, s8) are consistently high, while other sensors exhibit varying degrees of deviation, suggesting a complex degradation pattern that is not as severe as Example 5 but more pronounced than Examples 1-4.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear, which corresponds to an estimated RUL of around 80 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not extreme degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's sensors are closer to baseline values, suggesting it is still in an early stage of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings indicate a gradual increase in efficiency sensors (s7, s8) and a slight deviation from baseline values. However, the overall pattern suggests stable operation with no significant signs of advanced wear or failure, indicating an RUL estimate of around 80 cycles remaining before potential engine failure.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings indicate a mix of stable and unstable patterns, with some sensors deviating significantly from baseline values. Specifically, the efficiency sensors (s7, s8) show high values, indicating potential issues with fuel flow or combustion, while other sensors remain near baseline. This pattern is consistent with an intermediate level of wear, suggesting a Remaining Useful Life estimate of 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the reference examples, this engine's readings are more similar to Example 1 (True RUL: 113), with sensors near baseline values, suggesting a moderate level of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, indicating wear and tear. However, the deviations are not as significant as those observed in Example 5 (advanced wear), suggesting that the engine is still operating within a relatively stable range, but with some degradation occurring.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear, consistent with an estimated RUL of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the reference examples, this engine's readings are more similar to Example 5 (True RUL: 36), which also showed advanced wear with significant deviation in efficiency sensors, suggesting an estimated RUL of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s8). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those observed in Example 5, suggesting that the engine has some remaining life left before catastrophic failure occurs.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 73,
+    "reasoning": "The engine's sensor readings indicate a mix of stable and slightly deviating patterns, with some sensors showing significant deviations from baseline values. This suggests that the engine is experiencing wear and degradation, but not to the extent seen in Example 5 (advanced wear). The RUL estimate of 73 is based on the assumption that the engine will continue to degrade at a moderate rate, consistent with Examples 1-4.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 63,
+    "reasoning": "The engine's sensor readings show a mix of stable and increasing deviations from baseline, indicating wear but not yet severe degradation. Compared to the reference examples, this pattern is more similar to Example 5 (True RUL: 36), which also shows advanced wear with significant deviation in efficiency sensors, suggesting an estimated RUL of around 63 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and slightly deviating patterns, indicating some wear but not severe degradation. Compared to the examples with advanced wear (e.g., Example 5), this engine's readings are closer to those in Examples 1-4, suggesting a more moderate level of wear.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a gradual increase in efficiency sensors (s7, s12) and a slight deviation from baseline values. However, unlike Example 5, the deviations are not as extreme, indicating that the wear is not as advanced. This suggests an RUL of around 60 cycles before significant degradation occurs.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 60,
+    "reasoning": "The engine's sensor readings show a mix of stable and increasing deviations from the baseline, indicating wear but not yet severe degradation. Compared to Example 5 (advanced wear), this engine's sensors are not as significantly deviated, suggesting a more moderate level of wear, consistent with an estimated RUL of around 60 cycles.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from the baseline, indicating advanced wear and potential efficiency issues. This pattern is similar to Example 5, where the true RUL was 36, but with less extreme deviations, suggesting an intermediate level of degradation.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual increase in deviation from baseline values, particularly in efficiency sensors (s7 and s12). This pattern is consistent with advanced wear, similar to Example 5. However, the deviations are not as extreme as those observed in Example 5, suggesting that the engine has some remaining life but is likely nearing the end of its useful lifespan.",
+    "condition": "random",
+    "seed": 3
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 80,
+    "reasoning": "The engine's sensor readings show a mix of stable and increasing deviations from baseline, indicating wear but not yet severe degradation. Compared to Example 5 (advanced wear), the current engine's readings are closer to those in Examples 1-4 (stable operation), suggesting a moderate level of wear rather than advanced failure.",
+    "condition": "random",
+    "seed": 3
+  }
+]

@@ -1,28 +1,37 @@
 cff-version: 1.2.0
 message: "If you use this software or data, please cite both the paper and this repository."
-title: "LLM-RUL-CMAPSS: code and results for LLMs as implicit classifiers in turbofan RUL prediction"
+title: "LLM-RUL-CMAPSS: an evaluation protocol for large language models on turbofan RUL prediction"
 authors:
   - family-names: "De Carlo"
     given-names: "Filippo"
     affiliation: "University of Florence"
-version: "1.0.0"
-date-released: "2026-06-23"
+version: "2.0.0"
+date-released: "2026-09-03"
 license: MIT
-repository-code: "https://github.com/<your-username>/LLM-RUL-CMAPSS"
+repository-code: "https://github.com/filippodecarlo-cloud/LLM-RUL-CMAPSS"
+doi: "10.5281/zenodo.20820859"
 keywords:
   - large language models
   - remaining useful life
   - predictive maintenance
   - NASA CMAPSS
   - prognostics and health management
-  - explainability
+  - model evaluation
+  - explanation faithfulness
+abstract: >-
+  Code, inference traces and analysis for a four-part protocol for evaluating
+  large language models on remaining useful life prediction: no-skill baselines,
+  rank correlation, output entropy, and a faithfulness test for the generated
+  explanations. Applied to five open-weight models at two quantisation levels
+  across all four CMAPSS sub-datasets. Version 2.0.0 also corrects two defects
+  present in version 1.0.0, in the LSTM baseline and in the few-shot example
+  selection; both are documented in the README and in Appendix A of the paper.
 preferred-citation:
   type: article
-  title: "Large Language Models as Implicit Classifiers in Predictive Maintenance: A Diagnostic Study on Turbofan Remaining Useful Life"
+  title: "Evaluating large language models for remaining useful life prediction: a protocol, and what it reveals on CMAPSS"
   authors:
     - family-names: "De Carlo"
       given-names: "Filippo"
       affiliation: "University of Florence"
-  journal: "Reliability Engineering & System Safety"
   year: 2026
-  notes: "DOI to be added on acceptance."
+  notes: "Under review. Journal and DOI to be added on acceptance."

@@ -1,0 +1,702 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings indicate a gradual increase in s7 (temperature) and s12 (vibration), suggesting a growing thermal and mechanical stress on the engine. Meanwhile, s2 (pressure) and s3 (flow rate) show a slight decrease, indicating some level of degradation or wear on these components. These trends suggest that the engine is experiencing a moderate to high level of degradation, consistent with an RUL estimate of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Meanwhile, s9 (pressure) remains relatively stable, suggesting that the engine's pressure system is not yet affected by the degradation.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s8 (pressure), indicating a potential thermal or mechanical issue. Additionally, s11 (vibration) shows an increasing trend, suggesting a possible imbalance or wear on the engine's components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a growing thermal and mechanical stress on the engine. Meanwhile, s9 (pressure) remains relatively stable, suggesting that the engine's pressure regulation is still within normal limits.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (0.662 to 0.554) and s12 (0.458 to 0.493), indicating potential bearing or seal issues, while other sensors like s2 and s3 exhibit more stable trends. This suggests that the engine is experiencing a moderate level of degradation, likely due to wear and tear on critical components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, sensors s2, s3, and s4 exhibit fluctuations but do not indicate significant degradation.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Additionally, s2 (pressure) and s3 (flow rate) exhibit a slight decrease, suggesting a potential issue with the engine's aerodynamics or fuel system.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings indicate a gradual degradation of the engine's health, with increasing values in sensors s7 (temperature) and s8 (pressure), suggesting a potential issue with the compressor or turbine. Additionally, sensors s2 and s3 show a slight increase in values over time, which may be indicative of a developing problem.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s2 and s9 exhibit a more erratic behavior, but overall, the trend suggests that the engine is experiencing a moderate level of degradation, consistent with an RUL estimate of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, some sensors like s4 (pressure) and s9 (flow rate) exhibit fluctuations, suggesting a degradation pattern that may lead to engine failure within the next 40-50 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s9 shows a consistent low value, suggesting a possible problem with the engine's fuel system or combustion chamber. These trends suggest that the engine is experiencing a moderate level of degradation, likely due to wear and tear on its rotating components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a consistent decrease, which may be related to the increasing temperature and vibration trends.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Meanwhile, other sensors like s2 (pressure) and s3 (flow rate) exhibit more stable trends, suggesting that the engine's performance is being compromised by a specific component or system.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, sensors s2, s3, and s4 exhibit varying trends, but overall, the degradation pattern suggests that the engine is experiencing a moderate level of wear, warranting an RUL estimate of 23 cycles before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s17 (pressure) shows a consistent trend of increasing values, suggesting a possible degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings indicate a gradual increase in s7 (temperature) and s12 (vibration), suggesting a degradation of the engine's thermal and mechanical health. Additionally, s2 (pressure) and s3 (flow rate) show a slight decrease, which may be indicative of an impending failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, some sensors like s8 (pressure) and s9 (flow rate) exhibit fluctuations, suggesting a possible degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a slight decrease, which may be related to the increasing temperature trend.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a slight decrease, which may be related to the increasing temperature trend.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. However, other sensors like s11 and s17 exhibit more erratic behavior, suggesting that the engine is experiencing a complex degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s4 (pressure) shows a slight decrease, which may be related to the increasing temperature and vibration trends, suggesting a degradation pattern that could lead to engine failure within 23 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a growing thermal and mechanical stress on the engine. Additionally, s4 (pressure) and s8 (flow rate) are also trending upwards, suggesting a degradation of the engine's performance over time.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Additionally, s2 (pressure) and s3 (flow rate) exhibit increasing deviations from their normal ranges, suggesting a growing imbalance in the engine's performance.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s7, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s8 shows a consistent decrease, suggesting a possible problem with the engine's fuel system or combustion chamber.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Meanwhile, other sensors like s2 (pressure) and s3 (flow rate) exhibit relatively stable or decreasing trends, suggesting that these components are not yet significantly affected by the degradation process.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, some sensors like s4 (pressure) and s15 (flow rate) exhibit fluctuations, suggesting a degradation pattern that is not yet critical but warrants monitoring.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s8 (pressure), indicating thermal and mechanical stress on the engine. Meanwhile, s11 (vibration) and s12 (acceleration) exhibit oscillatory behavior with increasing amplitude, suggesting a potential imbalance or wear issue affecting the engine's rotational dynamics.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a slight decrease, which may be related to the increasing temperature trend. These trends suggest that the engine is experiencing degradation, but not yet at critical levels, resulting in an estimated RUL of 23 cycles before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a slight decrease, which may be related to the increasing temperature trend.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (0.560 to 0.663) and s8 (0.288 to 0.333), indicating potential bearing or seal issues. Meanwhile, s2 and s3 exhibit oscillating trends with increasing amplitude, suggesting a possible imbalance or vibration problem.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s4 (temperature) and s7 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a slight decrease, which may be related to the increasing temperature. These trends suggest that the engine is experiencing degradation, but not yet at critical levels.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Meanwhile, other sensors like s2 (pressure) and s8 (oil consumption) exhibit relatively stable or decreasing trends, suggesting that these components are not yet critical to failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 43,
+    "reasoning": "The sensor readings show a gradual increase in s7 (0.610 to 0.597) and s12 (0.603 to 0.482), indicating potential bearing or seal issues, while other sensors like s2 and s3 exhibit more erratic behavior. This suggests that the engine is experiencing a mix of normal wear and tear with some signs of impending failure in specific components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s7 and s8 exhibit a more erratic behavior, but overall, the trend suggests a moderate to high level of degradation, consistent with an RUL estimate of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s17, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s8 shows a steady decrease, which could be related to oil degradation or contamination. These trends suggest that the engine is experiencing a moderate level of degradation, consistent with an RUL estimate of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s8 shows a consistent decrease, suggesting a possible problem with the engine's fuel system or combustion chamber.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s8 (pressure), indicating thermal and mechanical stress on the engine. Meanwhile, s11 (vibration) and s12 (acceleration) exhibit oscillatory behavior, suggesting a potential imbalance or wear issue affecting the engine's rotational dynamics.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s9 values over time, indicating potential degradation of the engine's compressor or turbine components. Meanwhile, sensors s2, s3, and s4 exhibit more erratic behavior, but overall, the trend suggests a moderate to high level of degradation, consistent with an RUL estimate of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a growing thermal and mechanical stress on the engine. Meanwhile, s4 (pressure) and s9 (flow rate) remain relatively stable, suggesting that other components are not yet significantly affected by the degradation process.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s2, s7, and s8, indicating a potential issue with the engine's compressor or turbine. However, other sensors such as s3, s4, and s11 are showing more erratic behavior, suggesting that the engine is experiencing a complex degradation pattern. Overall, the data suggests that the engine has around 42 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s4 (pressure) and s8 (flow rate) exhibit some fluctuations, but the overall trend is more pronounced in s7 and s12, suggesting that these sensors are driving the degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s7 and s8 exhibit a more erratic behavior, but overall, the trend suggests that the engine is experiencing a moderate level of degradation, consistent with an RUL of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 22,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s4 (pressure) and s8 (flow rate) exhibit some fluctuations, but the overall trend is not as clear-cut.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Additionally, s2 (pressure) and s3 (flow rate) exhibit a slight decrease, suggesting a potential imbalance or blockage issue affecting the engine's performance.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings indicate a gradual increase in s7, s12, and s21 values over time, suggesting a potential issue with the engine's compressor or turbine. Additionally, s2 and s3 show some fluctuations, but overall, the degradation pattern is relatively slow, indicating that the engine still has a significant number of operational cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. However, other sensors such as s3, s8, and s9 remain relatively stable, suggesting that the degradation is not uniform across all components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings indicate a gradual increase in s7, s8, and s12 values over time, suggesting a potential issue with the engine's compressor or turbine. Meanwhile, s2 and s3 show some fluctuations but generally remain within normal limits, while other sensors like s9 and s14 exhibit minor deviations that do not seem to be indicative of impending failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a growing thermal and mechanical stress on the engine. Meanwhile, s2 (pressure) and s3 (flow rate) exhibit a relatively stable trend, suggesting that the engine's aerodynamic performance is not significantly compromised yet.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s11, indicating a potential issue with the engine's compressor or turbine. However, other sensors such as s3, s7, and s8 exhibit more erratic behavior, suggesting that the degradation is not uniform across all components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, some sensors like s9 (pressure) and s15 (flow rate) exhibit oscillating behavior, suggesting a possible degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (vibration) and s12 (temperature), indicating a potential imbalance or overheating issue. Additionally, s9 (pressure) shows a slight decrease over time, which may be related to the degradation of other components, contributing to an estimated RUL of 42 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s12, and s21, indicating a potential issue with the engine's compressor or turbine. Meanwhile, other sensors like s2, s3, and s4 exhibit more stable behavior, suggesting that the degradation is not uniform across all components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. However, the other sensors remain relatively stable, suggesting that the engine is not yet experiencing catastrophic failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 43,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, some sensors like s2 (pressure) and s15 (flow rate) exhibit oscillatory behavior, suggesting a possible degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (0.639 to 0.567) and s12 (0.635 to 0.689), indicating a potential issue with the engine's compressor or turbine blades. Meanwhile, other sensors like s2, s3, and s4 exhibit more stable trends, suggesting that the engine's overall health is still relatively good, but the increasing values of s7 and s12 indicate a need for maintenance within the next 40-50 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s11, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s7 and s8 exhibit a more erratic behavior, but overall, the degradation pattern suggests that the engine is experiencing a moderate level of wear, consistent with an RUL estimate of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s9 shows a consistent decrease, suggesting a possible problem with the engine's lubrication system. These trends suggest that the engine is experiencing a moderate level of degradation, warranting an RUL estimate of 23 cycles before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s8 shows a consistent decrease, suggesting a possible problem with the engine's fuel system or lubrication. These trends indicate that the engine is likely experiencing a moderate level of degradation, resulting in an estimated RUL of 23 cycles before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual degradation of the engine's health, with increasing values in sensors s7 (temperature) and s12 (vibration), suggesting overheating and mechanical stress. Meanwhile, sensors s2 (pressure) and s3 (flow rate) show a slight decrease, possibly indicating reduced performance or efficiency.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a slight decrease, which may be related to the increasing temperature trend.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s9 over time, indicating a potential issue with the engine's compressor or turbine. Meanwhile, sensors s2, s3, and s4 exhibit oscillating behavior, but overall tend to decrease, suggesting some level of degradation in the engine's performance.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a growing thermal and mechanical stress on the engine. Meanwhile, s8 (pressure) remains relatively stable, while other sensors exhibit minor fluctuations. This suggests that the engine is experiencing a moderate level of degradation, likely due to wear and tear, but not yet at critical levels.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s9 shows a consistent decrease, suggesting a possible problem with the engine's lubrication system. These trends suggest that the engine is experiencing a moderate level of degradation, likely due to wear and tear on its internal components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s8 (pressure), indicating thermal and mechanical stress on the engine. Additionally, s11 (vibration) shows an increasing trend, suggesting wear and tear on the engine's components. These trends indicate that the engine is experiencing degradation and is likely to fail within the next 23 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Additionally, s2 (pressure) and s3 (flow rate) exhibit fluctuations, suggesting an ongoing decline in performance, which is consistent with a moderate level of wear and tear.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s11, indicating a potential issue with the engine's compressor or turbine. Additionally, s7 shows a consistent decrease, suggesting wear on the engine's bearings or seals. These trends suggest that the engine is experiencing degradation, but not yet at critical levels, resulting in an estimated RUL of 23 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Meanwhile, other sensors like s2 (pressure) and s3 (flow rate) exhibit relatively stable behavior, suggesting that the engine's aerodynamic performance is not significantly impacted by the current issues.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s4 (indicating high temperature) and s7 (indicating low oil pressure), indicating a potential engine degradation. Additionally, s2 and s3 are showing some fluctuations, but overall the trend is towards increased stress on the engine, suggesting a relatively short remaining useful life.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s8 (pressure) shows a slight decrease, which may be related to the increasing temperature trend.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. However, other sensors such as s3, s8, and s11 remain relatively stable, suggesting that the engine is not yet severely degraded.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s4 (pressure) shows a slight decrease over time, which may be related to the increasing temperature and vibration trends.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, some sensors like s2 and s3 exhibit oscillatory behavior, suggesting a possible imbalance or wear on the engine's components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a steady degradation of the engine's thermal and mechanical health. Additionally, s2 (pressure) and s3 (flow rate) exhibit some fluctuations, but overall, the trends suggest that the engine is experiencing a moderate level of wear and tear, consistent with an estimated RUL of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (0.581 to 0.697) and s12 (0.620 to 0.559), indicating potential bearing or seal issues, while other sensors like s2 and s3 exhibit more stable trends. This suggests that the engine is experiencing wear and tear on its bearings and seals, leading to a moderate degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s4 (pressure) and s9 (flow rate) exhibit some fluctuations, but the overall trend suggests a moderate degradation pattern, consistent with an RUL of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s7 and s8 exhibit a more erratic behavior, but overall, the trend suggests that the engine is experiencing a moderate level of degradation, consistent with an RUL of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s7 and s8 exhibit fluctuations, but overall, the trend suggests a moderate degradation pattern, consistent with an RUL of around 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s17 (pressure) shows a consistent trend of increasing values, which may be related to the engine's degradation pattern.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Meanwhile, other sensors like s2 (pressure) and s3 (flow rate) exhibit relatively stable or decreasing trends, suggesting that these components are not yet critical to failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s2 (pressure) and s3 (flow rate) exhibit a slight decrease, suggesting a possible degradation of the engine's performance over time.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s11, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s7 and s8 exhibit a more erratic behavior, but overall, the trend suggests a moderate degradation of the engine's performance over the last 30 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s7, and s11, indicating a potential issue with the engine's compressor or turbine. However, other sensors such as s3, s4, and s8 exhibit more erratic behavior, suggesting that the degradation is not uniform across all components.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Additionally, s2 (pressure) and s3 (flow rate) exhibit a slight decrease, suggesting a potential imbalance or blockage issue, which may further contribute to the engine's deterioration.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. Meanwhile, sensors s9 and s11 exhibit a more erratic behavior, but overall, the trend suggests a moderate degradation pattern, consistent with an RUL of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s9 (pressure) shows a slight decrease, which may be related to the increasing temperature and vibration trends.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s2 (pressure) and s3 (flow rate) exhibit fluctuations, suggesting a possible degradation of the engine's performance over time.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a progressive degradation of the engine's thermal and mechanical health. Meanwhile, other sensors like s2 (pressure) and s3 (flow rate) exhibit more stable or even decreasing trends, suggesting that these components are not yet significantly affected by the degradation process.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s12, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s9 shows a consistent low value, suggesting a possible problem with the engine's fuel system or combustion process. These trends suggest that the engine is experiencing degradation, but not yet at critical levels, resulting in an estimated RUL of 23 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s8, and s12, indicating potential bearing or seal issues. Meanwhile, s9 shows a consistent decrease, suggesting a possible oil flow problem. These trends suggest that the engine is experiencing a combination of mechanical and lubrication-related degradation, leading to an estimated RUL of 23 cycles before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s8 shows a consistent decrease, suggesting a possible problem with the engine's fuel system or combustion chamber.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s11, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s9 shows a consistent decrease, suggesting a possible problem with the engine's lubrication system.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. However, the majority of sensors (s3, s8, s9, s11) are trending downwards, suggesting that the engine is experiencing a more complex degradation pattern, likely related to bearing or seal issues.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s4, and s7, indicating a potential issue with the engine's compressor or turbine. However, other sensors such as s11 and s12 exhibit more erratic behavior, suggesting that the degradation is not uniform across all components. Overall, the data suggests that the engine has around 23 operational cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s2, s7, and s8, indicating a potential issue with temperature or pressure. Meanwhile, s15 shows a significant spike at t-1, suggesting a rapid degradation of the engine's performance, which is likely to lead to failure within the next few cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s4 (pressure) and s8 (flow rate) exhibit some fluctuations, but the overall trend is dominated by the increasing values of s7 and s12, suggesting a moderate to high level of degradation.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, some sensors like s2 (pressure) and s9 (flow rate) exhibit oscillating behavior, suggesting a degradation pattern that may be indicative of an impending failure within the next 50-100 cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings indicate a gradual degradation of the engine's health, with increasing values in sensors s7 (temperature) and decreasing values in sensors s8 (vibration). This trend suggests that the engine is experiencing thermal issues, which are likely to lead to failure within the next few cycles.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s7, s12, and s21, indicating a potential issue with the engine's compressor or turbine. Meanwhile, s2 and s11 exhibit a more erratic behavior, but overall, the trend suggests a moderate degradation of the engine's performance, consistent with an RUL estimate of 23 cycles remaining before failure.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor readings show a gradual increase in s7 (temperature) and s12 (vibration), indicating a potential thermal or mechanical issue. Additionally, s15 (pressure) shows a slight decrease, which may be related to the increasing temperature and vibration trends.",
+    "arm": "nocue"
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor readings show a gradual increase in s4, s7, and s12, indicating a potential issue with the engine's compressor or turbine. Additionally, s2 and s8 exhibit fluctuations, suggesting some level of vibration or imbalance affecting the engine's performance.",
+    "arm": "nocue"
+  }
+]

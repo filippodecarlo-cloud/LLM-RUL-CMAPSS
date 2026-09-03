@@ -1,0 +1,452 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a mix of trends with some signs of degradation in s12 and s15, indicating potential wear. However, efficiency-related sensors like s9 and s14 show lower values suggesting approaching failure. The overall RUL is estimated to be around 12 cycles remaining due to the mixed but concerning trend towards failure. RUL_ESTIMATE: 10 REASONING: The sensor data indicates signs of both wear (higher values in s12, s15) and potential nearing failure (lower values in s9, s14). The combination suggests a moderate RUL estimate.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data shows a mix of trends with some signs of degradation in s12 and s15, indicating potential wear. However, efficiency-related sensors like s9 and s14 show lower values suggesting approaching failure. The overall RUL is estimated to be around 12 cycles remaining due to the mixed but concerning trend towards failure.\n\nRUL_ESTIMATE: 10  \nREASONING: The sensor data indicates signs of both wear (higher values in s12, s15) and potential nearing failure (lower values in s9, s14). The combination suggests a moderate RUL estimate.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a clear trend of increasing values for s7, s11, s12, and s15, which are indicators of advanced wear. Additionally, s9, an efficiency-related sensor, consistently shows low values, suggesting approaching failure. These trends indicate that the engine is nearing its end of life within the next cycle or two. RUL_ESTIMATE: 10 REASONING: The sensors showing increasing values (s7, s11, s12, s15) and decreasing efficiency-related sensor values (s9) suggest a rapid decline in health. This combination points to an imminent failure within the next few operational cycles. RUL_ESTIMATE: 8 REASONING: Multiple sensors are showing signs of degradation with increasing trends (s7, s11, s12, s15) and decreasing efficiency metrics (s9). These patterns indicate that the engine is experiencing significant wear and is likely to fail within the next few cycles. RUL_ESTIMATE: 6 REASONING: The data shows a strong degradation trend in key sensors such as s7, s11, s12, and s15. Additionally, s9's consistently low values further support an impending failure. This suggests that the engine will fail within the next few operational cycles. RUL_ESTIMATE: 4 REASONING: The sensor data indicates a rapid decline in health with increasing trends in critical sensors like s7, s11, s12, and s15, as well as decreasing efficiency metrics such as s9. These trends strongly suggest that the engine is nearing failure within the next few cycles. RUL_ESTIMATE: 3 REASONING: The sensor readings show significant signs of wear with increasing values in s7, s11, s12, and s15, while s9's low values indicate approaching failure. These trends point to an imminent failure within the next cycle or two. RUL_ESTIMATE: 2 REASONING: The data indicates a clear degradation trend across multiple sensors (s7, s11, s12, s15) and efficiency-related metrics (s9). This combination strongly suggests that the engine will fail within the next operational cycle. RUL_ESTIMATE: 1 REASONING: The sensor readings show a very rapid decline in health with increasing trends in critical sensors like s7, s11, s12, and s15, as well as decreasing efficiency metrics such as s9. These trends strongly suggest that the engine is imminent failure within the next cycle. RUL_ESTIMATE: 0 REASONING: The sensor data shows a clear trend of increasing values for critical wear indicators (s7, s11, s12, s15) and decreasing efficiency metrics (s9). These trends strongly indicate that the engine has failed, resulting in an RUL of 0.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data shows a clear trend of increasing values for s7, s11, s12, and s15, which are indicators of advanced wear. Additionally, s9, an efficiency-related sensor, consistently shows low values, suggesting approaching failure. These trends indicate that the engine is nearing its end of life within the next cycle or two.\n\nRUL_ESTIMATE: 10  \nREASONING: The sensors showing increasing values (s7, s11, s12, s15) and decreasing efficiency-related sensor values (s9) suggest a rapid decline in health. This combination points to an imminent failure within the next few operational cycles.\n\nRUL_ESTIMATE: 8  \nREASONING: Multiple sensors are showing signs of degradation with increasing trends (s7, s11, s12, s15) and decreasing efficiency metrics (s9). These patterns indicate that the engine is experiencing significant wear and is likely to fail within the next few cycles.\n\nRUL_ESTIMATE: 6  \nREASONING: The data shows a strong degradation trend in key sensors such as s7, s11, s12, and s15. Additionally, s9's consistently low values further support an impending failure. This suggests that the engine will fail within the next few operational cycles.\n\nRUL_ESTIMATE: 4  \nREASONING: The sensor data indicates a rapid decline in health with increasing trends in critical sensors like s7, s11, s12, and s15, as well as decreasing efficiency metrics such as s9. These trends strongly suggest that the engine is nearing failure within the next few cycles.\n\nRUL_ESTIMATE: 3  \nREASONING: The sensor readings show significant signs of wear with increasing values in s7, s11, s12, and s15, while s9's low values indicate approaching failure. These trends point to an imminent failure within the next cycle or two.\n\nRUL_ESTIMATE: 2  \nREASONING: The data indicates a clear degradation trend across multiple sensors (s7, s11, s12, s15) and efficiency-related metrics (s9). This combination strongly suggests that the engine will fail within the next operational cycle.\n\nRUL_ESTIMATE: 1  \nREASONING: The sensor readings show a very rapid decline in health with increasing trends in critical sensors like s7, s11, s12, and s15, as well as decreasing efficiency metrics such as s9. These trends strongly suggest that the engine is imminent failure within the next cycle.\n\nRUL_ESTIMATE: 0  \nREASONING: The sensor data shows a clear trend of increasing values for critical wear indicators (s7, s11, s12, s15) and decreasing efficiency metrics (s9). These trends strongly indicate that the engine has failed, resulting in an RUL of 0.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 20,
+    "reasoning": "The sensor data shows slight trends in degradation-related sensors (e.g., s3, s4, s7) with increasing values and efficiency-related sensors (e.g., s9) with decreasing values. These patterns suggest early signs of wear but not yet approaching failure. RUL_ESTIMATE: 20 REASONING: The sensor data indicates moderate degradation trends in some parameters, suggesting the engine is nearing a critical state but has not yet reached an immediate failure condition.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 20  \nREASONING: The sensor data shows slight trends in degradation-related sensors (e.g., s3, s4, s7) with increasing values and efficiency-related sensors (e.g., s9) with decreasing values. These patterns suggest early signs of wear but not yet approaching failure.\n\nRUL_ESTIMATE: 20  \nREASONING: The sensor data indicates moderate degradation trends in some parameters, suggesting the engine is nearing a critical state but has not yet reached an immediate failure condition.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 30,
+    "reasoning": "The recent trends in the sensor data show a consistent increase in degradation-related sensors (e.g., s7, s8, s12) and a decrease in efficiency-related sensors (e.g., s9, s14), indicating early signs of engine wear. These patterns suggest that the turbofan engine is nearing failure but has not yet reached its critical point within the operational cycles provided. RUL_ESTIMATE: 30 REASONING: The sensor data indicates a gradual increase in degradation-related sensors and a corresponding decrease in efficiency-related sensors, pointing towards an approaching failure state. This trend suggests that the Remaining Useful Life is around 30 cycles remaining before reaching critical health levels.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30\nREASONING: The recent trends in the sensor data show a consistent increase in degradation-related sensors (e.g., s7, s8, s12) and a decrease in efficiency-related sensors (e.g., s9, s14), indicating early signs of engine wear. These patterns suggest that the turbofan engine is nearing failure but has not yet reached its critical point within the operational cycles provided.\n\nRUL_ESTIMATE: 30\nREASONING: The sensor data indicates a gradual increase in degradation-related sensors and a corresponding decrease in efficiency-related sensors, pointing towards an approaching failure state. This trend suggests that the Remaining Useful Life is around 30 cycles remaining before reaching critical health levels.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows increasing trends in s11, s12, and s15, which are degradation-related sensors with higher values indicating wear. These sensors have shown monotonic drift over the last few cycles (t-3 to t-1), suggesting that the engine is nearing failure but has not yet reached a critical threshold. The RUL estimate of 30 cycles reflects this gradual degradation trend without exceeding the failure limit.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows increasing trends in s11, s12, and s15, which are degradation-related sensors with higher values indicating wear. These sensors have shown monotonic drift over the last few cycles (t-3 to t-1), suggesting that the engine is nearing failure but has not yet reached a critical threshold. The RUL estimate of 30 cycles reflects this gradual degradation trend without exceeding the failure limit.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 62,
+    "reasoning": "The sensor data shows moderate trends where some degradation-related sensors (s11, s12, s15) have slightly increasing values towards the end, while efficiency-related sensors (s9, s14) remain relatively stable. There is no clear monotonic drift or significant variance indicating imminent failure. RUL_ESTIMATE: 63 REASONING: The sensor data indicates a slight upward trend in some degradation-related sensors and moderate changes in others, suggesting the engine is nearing a critical state but not yet at immediate failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 62  \nREASONING: The sensor data shows moderate trends where some degradation-related sensors (s11, s12, s15) have slightly increasing values towards the end, while efficiency-related sensors (s9, s14) remain relatively stable. There is no clear monotonic drift or significant variance indicating imminent failure.\n\nRUL_ESTIMATE: 63  \nREASONING: The sensor data indicates a slight upward trend in some degradation-related sensors and moderate changes in others, suggesting the engine is nearing a critical state but not yet at immediate failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a clear trend of increasing values in s7, s12, and s15, which are indicative of degradation. Simultaneously, there's a decrease in efficiency-related sensors like s9, suggesting advanced wear. These trends point towards imminent failure within the next cycle, hence an RUL estimate of 12. RUL_ESTIMATE: 12 REASONING: The sensor data indicates significant degradation signs with increasing values in critical sensors (s7, s12, s15) and decreasing efficiency-related sensors (s9). These trends suggest that the engine is nearing failure within the next operational cycle.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data shows a clear trend of increasing values in s7, s12, and s15, which are indicative of degradation. Simultaneously, there's a decrease in efficiency-related sensors like s9, suggesting advanced wear. These trends point towards imminent failure within the next cycle, hence an RUL estimate of 12.\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data indicates significant degradation signs with increasing values in critical sensors (s7, s12, s15) and decreasing efficiency-related sensors (s9). These trends suggest that the engine is nearing failure within the next operational cycle.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 25,
+    "reasoning": "The sensor data shows a mix of increasing and decreasing trends, with some sensors indicating potential degradation (e.g., s11, s12, s20) while others show signs of efficiency loss (e.g., s9). The combination of these mixed signals suggests moderate wear, leading to an estimated RUL of 25 cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 25  \nREASONING: The sensor data shows a mix of increasing and decreasing trends, with some sensors indicating potential degradation (e.g., s11, s12, s20) while others show signs of efficiency loss (e.g., s9). The combination of these mixed signals suggests moderate wear, leading to an estimated RUL of 25 cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows a mix of trends where some indicators (e.g., s7 and s8) suggest possible degradation, while others indicate stabilization or improvement. The presence of both decreasing and increasing sensor values complicates the assessment, but overall signs point to moderate wear with potential nearing failure in the near future. RUL_ESTIMATE: 30 REASONING: The sensor data indicates a gradual decline in certain critical parameters (e.g., s7, s8) that are indicative of degradation. However, other sensors show signs of stabilization or improvement, suggesting the engine is approaching a state of failure but not yet at immediate risk. Based on these mixed trends and the presence of declining parameters, an estimated RUL of 30 cycles remaining is provided.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows a mix of trends where some indicators (e.g., s7 and s8) suggest possible degradation, while others indicate stabilization or improvement. The presence of both decreasing and increasing sensor values complicates the assessment, but overall signs point to moderate wear with potential nearing failure in the near future.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data indicates a gradual decline in certain critical parameters (e.g., s7, s8) that are indicative of degradation. However, other sensors show signs of stabilization or improvement, suggesting the engine is approaching a state of failure but not yet at immediate risk. Based on these mixed trends and the presence of declining parameters, an estimated RUL of 30 cycles remaining is provided.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 60,
+    "reasoning": "The sensor readings do not show significant trends towards either imminent failure or stable operation. Most sensors remain within moderate values, indicating neither severe wear nor a clear degradation pattern. ANSWER: RUL_ESTIMATE: 60",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 60  \nREASONING: The sensor readings do not show significant trends towards either imminent failure or stable operation. Most sensors remain within moderate values, indicating neither severe wear nor a clear degradation pattern.\n\nANSWER: RUL_ESTIMATE: 60",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor readings indicate a concerning trend with efficiency-related sensors (s9 and s14) consistently showing low values, particularly s14 which slightly increased towards the end. This suggests advanced wear or nearing failure, leading to an estimated RUL of 30 cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30\nREASONING: The sensor readings indicate a concerning trend with efficiency-related sensors (s9 and s14) consistently showing low values, particularly s14 which slightly increased towards the end. This suggests advanced wear or nearing failure, leading to an estimated RUL of 30 cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows a general trend of increasing values for degradation-related sensors (e.g., s2, s3) and mixed trends with some efficiency-related sensors showing lower values. This suggests moderate wear and potential nearing failure within the next 30 cycles. RUL_ESTIMATE: 30 REASONING: The sensor data indicates a gradual increase in degradation-related sensor readings, suggesting that the engine is experiencing wear over time. While there are fluctuations, the overall trend points towards an estimated Remaining Useful Life of around 30 operational cycles before failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows a general trend of increasing values for degradation-related sensors (e.g., s2, s3) and mixed trends with some efficiency-related sensors showing lower values. This suggests moderate wear and potential nearing failure within the next 30 cycles.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data indicates a gradual increase in degradation-related sensor readings, suggesting that the engine is experiencing wear over time. While there are fluctuations, the overall trend points towards an estimated Remaining Useful Life of around 30 operational cycles before failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows signs of increasing degradation in several key parameters (e.g., s9, s14) which are indicative of reduced efficiency and potential failure. Additionally, there is a trend towards higher values in sensors related to mechanical stress (s11, s12, s15), suggesting approaching failure. The combination of these trends points to an imminent failure within the next operational cycle, resulting in an estimated RUL of 12 cycles remaining. RUL_ESTIMATE: 12 REASONING: The sensor data indicates a significant decline in efficiency-related parameters (s9 and s14) while degradation-related sensors (s11, s12, s15) show increasing values. These trends suggest that the engine is nearing failure with only one cycle remaining before it reaches an operational limit.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data shows signs of increasing degradation in several key parameters (e.g., s9, s14) which are indicative of reduced efficiency and potential failure. Additionally, there is a trend towards higher values in sensors related to mechanical stress (s11, s12, s15), suggesting approaching failure. The combination of these trends points to an imminent failure within the next operational cycle, resulting in an estimated RUL of 12 cycles remaining.\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data indicates a significant decline in efficiency-related parameters (s9 and s14) while degradation-related sensors (s11, s12, s15) show increasing values. These trends suggest that the engine is nearing failure with only one cycle remaining before it reaches an operational limit.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows a trend where efficiency-related sensors like s9, s14 are decreasing towards lower values, indicating wear. Degradation-related sensors such as s11, s12, s15 are increasing, suggesting advanced wear. Additionally, some sensors exhibit monotonic drift or variance that aligns with approaching failure. RUL_ESTIMATE: 30 REASONING: The sensor data indicates a gradual degradation trend with efficiency and degradation-related sensors showing signs of wear (lowering for s9, s14; rising for s11, s12, s15). This suggests the engine is nearing failure but not yet at the extreme end.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows a trend where efficiency-related sensors like s9, s14 are decreasing towards lower values, indicating wear. Degradation-related sensors such as s11, s12, s15 are increasing, suggesting advanced wear. Additionally, some sensors exhibit monotonic drift or variance that aligns with approaching failure.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data indicates a gradual degradation trend with efficiency and degradation-related sensors showing signs of wear (lowering for s9, s14; rising for s11, s12, s15). This suggests the engine is nearing failure but not yet at the extreme end.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 15,
+    "reasoning": "The sensor data shows a mix of increasing and decreasing trends. Higher values in s7, s8, s12, and s15 suggest potential wear, while lower values in s9, s14 indicate reduced efficiency. These patterns point to moderate degradation with no extreme variance or monotonic drift yet. RUL_ESTIMATE: 10 REASONING: The sensor data indicates early signs of wear with some sensors showing increased readings and others decreased, suggesting the engine is nearing failure but not yet critically degraded. RUL_ESTIMATE: 25 REASONING: The sensor trends show moderate degradation across several parameters, indicating a significant but not extreme level of wear. This suggests the engine has enough remaining cycles before it fails. RUL_ESTIMATE: 18 REASONING: The recent sensor readings indicate a gradual decline in efficiency-related sensors (s9, s14) and concurrent increases in some degradation-related sensors (s7, s12). These trends suggest moderate wear with no extreme variance or monotonic drift yet.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 15  \nREASONING: The sensor data shows a mix of increasing and decreasing trends. Higher values in s7, s8, s12, and s15 suggest potential wear, while lower values in s9, s14 indicate reduced efficiency. These patterns point to moderate degradation with no extreme variance or monotonic drift yet.\n\nRUL_ESTIMATE: 10  \nREASONING: The sensor data indicates early signs of wear with some sensors showing increased readings and others decreased, suggesting the engine is nearing failure but not yet critically degraded.\n\nRUL_ESTIMATE: 25  \nREASONING: The sensor trends show moderate degradation across several parameters, indicating a significant but not extreme level of wear. This suggests the engine has enough remaining cycles before it fails.\n\nRUL_ESTIMATE: 18  \nREASONING: The recent sensor readings indicate a gradual decline in efficiency-related sensors (s9, s14) and concurrent increases in some degradation-related sensors (s7, s12). These trends suggest moderate wear with no extreme variance or monotonic drift yet.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 17,
+    "reasoning": "The sensor data shows increasing values for degradation-related sensors (e.g., s11, s12, s15) and decreasing trends in efficiency-related sensors (e.g., s9, s14), indicating advanced wear. These patterns suggest the engine is nearing failure with approximately 17 cycles remaining before reaching an RUL of 0.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 17  \nREASONING: The sensor data shows increasing values for degradation-related sensors (e.g., s11, s12, s15) and decreasing trends in efficiency-related sensors (e.g., s9, s14), indicating advanced wear. These patterns suggest the engine is nearing failure with approximately 17 cycles remaining before reaching an RUL of 0.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 5,
+    "reasoning": "The sensor data indicates a gradual decline in health with increasing values for s7, s8, s11, s12, and s15 (degradation sensors) while efficiency-related sensors like s9 and s14 show lower readings. The trend towards higher variance or monotonic drift suggests the engine is nearing failure, with an estimated RUL of 5 cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 5  \nREASONING: The sensor data indicates a gradual decline in health with increasing values for s7, s8, s11, s12, and s15 (degradation sensors) while efficiency-related sensors like s9 and s14 show lower readings. The trend towards higher variance or monotonic drift suggests the engine is nearing failure, with an estimated RUL of 5 cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 60,
+    "reasoning": "The sensor data shows moderate degradation trends with s12 increasing slightly and s14 also rising, indicating potential wear. However, no clear signs of imminent failure are present as other sensors remain stable or show minimal variance. RUL_ESTIMATE: 60 REASONING: The sensor data indicates some signs of wear in certain components (e.g., s12 and s14) but overall remains within a relatively stable range. No significant trends towards immediate failure are observed, suggesting moderate remaining useful life.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 60  \nREASONING: The sensor data shows moderate degradation trends with s12 increasing slightly and s14 also rising, indicating potential wear. However, no clear signs of imminent failure are present as other sensors remain stable or show minimal variance.\n\nRUL_ESTIMATE: 60  \nREASONING: The sensor data indicates some signs of wear in certain components (e.g., s12 and s14) but overall remains within a relatively stable range. No significant trends towards immediate failure are observed, suggesting moderate remaining useful life.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows signs of degradation with some sensors like s9 and s14 indicating advanced wear due to their low values, while others such as s12 and s11 show increasing trends towards higher values. The combination of these trends suggests the engine is nearing failure, leading to an estimated RUL of 30 cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows signs of degradation with some sensors like s9 and s14 indicating advanced wear due to their low values, while others such as s12 and s11 show increasing trends towards higher values. The combination of these trends suggests the engine is nearing failure, leading to an estimated RUL of 30 cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows slight increasing trends in some efficiency-related sensors (e.g., s12) and stable degradation-related sensors. These trends suggest minor wear towards failure but not yet approaching critical levels, indicating a moderate RUL of approximately 30 cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows slight increasing trends in some efficiency-related sensors (e.g., s12) and stable degradation-related sensors. These trends suggest minor wear towards failure but not yet approaching critical levels, indicating a moderate RUL of approximately 30 cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 2,
+    "reasoning": "The sensor data shows significant degradation trends with increasing values for s11, s12, and s15. These sensors are indicative of engine wear leading to failure. Additionally, other sensors like s7 and s8 show signs of monotonic drift or decreasing efficiency-related metrics, further supporting the nearing failure state.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 2  \nREASONING: The sensor data shows significant degradation trends with increasing values for s11, s12, and s15. These sensors are indicative of engine wear leading to failure. Additionally, other sensors like s7 and s8 show signs of monotonic drift or decreasing efficiency-related metrics, further supporting the nearing failure state.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 28,
+    "reasoning": "The sensor readings show a mix of increasing and decreasing trends with some sensors indicating higher values (e.g., s15) while others like s9 are lower, suggesting potential wear. The presence of variance in sensor data points towards localized issues but not complete failure, leading to an estimated RUL of 28 cycles. RUL_ESTIMATE: 30 REASONING: The sensor trends indicate moderate signs of wear with some sensors showing higher values and others decreasing. The variability suggests approaching failure but hasn't reached a critical point yet, leading to an estimated RUL of approximately 30 cycles. RUL_ESTIMATE: 25 REASONING: The recent sensor readings show signs of increasing wear in certain components (e.g., s15) while efficiency-related sensors like s9 are decreasing. This combination suggests the engine is nearing failure but hasn't failed yet, leading to an estimated RUL of around 25 cycles. RUL_ESTIMATE: 30 REASONING: The sensor data indicates a gradual decline in certain parameters (e.g., s14) and increasing values in others (e.g., s7), suggesting the engine is approaching failure. However, due to the variability and mixed trends, an estimated RUL of 30 cycles is reasonable. RUL_ESTIMATE: 28 REASONING: The sensor readings show a mix of increasing and decreasing trends with some sensors indicating higher values (e.g., s15) while others like s9 are lower. The presence of variance in sensor data points towards localized issues but not complete failure, leading to an estimated RUL of approximately 28 cycles. RUL_ESTIMATE: 30 REASONING: The sensor trends indicate moderate signs of wear with some sensors showing higher values and others decreasing. The variability suggests approaching failure but hasn't reached a critical point yet, leading to an estimated RUL of approximately 30 cycles. RUL_ESTIMATE: 25 REASONING: The recent sensor readings show signs of increasing wear in certain components (e.g., s15) while efficiency-related sensors like s9 are decreasing. This combination suggests the engine is nearing failure but hasn't failed yet, leading to an estimated RUL of around 25 cycles. RUL_ESTIMATE: 30 REASONING: The sensor data indicates a gradual decline in certain parameters (e.g., s14) and increasing values in others (e.g., s7), suggesting the engine is approaching failure. However, due to the variability and mixed trends, an estimated RUL of 30 cycles is reasonable. RUL_ESTIMATE: 28 REASONING: The sensor readings show a mix of increasing and decreasing trends with some sensors indicating higher values (e.g., s15) while others like s9 are lower. The presence of variance in sensor data points towards localized issues but not complete failure, leading to an estimated RUL of approximately 28 cycles. RUL_ESTIMATE: 30 REASONING: The sensor trends indicate moderate signs of wear with some sensors showing higher values and others decreasing. The variability suggests approaching failure but hasn't reached a critical point yet, leading to an estimated RUL of approximately 30 cycles.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 28  \nREASONING: The sensor readings show a mix of increasing and decreasing trends with some sensors indicating higher values (e.g., s15) while others like s9 are lower, suggesting potential wear. The presence of variance in sensor data points towards localized issues but not complete failure, leading to an estimated RUL of 28 cycles.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor trends indicate moderate signs of wear with some sensors showing higher values and others decreasing. The variability suggests approaching failure but hasn't reached a critical point yet, leading to an estimated RUL of approximately 30 cycles.\n\nRUL_ESTIMATE: 25  \nREASONING: The recent sensor readings show signs of increasing wear in certain components (e.g., s15) while efficiency-related sensors like s9 are decreasing. This combination suggests the engine is nearing failure but hasn't failed yet, leading to an estimated RUL of around 25 cycles.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data indicates a gradual decline in certain parameters (e.g., s14) and increasing values in others (e.g., s7), suggesting the engine is approaching failure. However, due to the variability and mixed trends, an estimated RUL of 30 cycles is reasonable.\n\nRUL_ESTIMATE: 28  \nREASONING: The sensor readings show a mix of increasing and decreasing trends with some sensors indicating higher values (e.g., s15) while others like s9 are lower. The presence of variance in sensor data points towards localized issues but not complete failure, leading to an estimated RUL of approximately 28 cycles.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor trends indicate moderate signs of wear with some sensors showing higher values and others decreasing. The variability suggests approaching failure but hasn't reached a critical point yet, leading to an estimated RUL of approximately 30 cycles.\n\nRUL_ESTIMATE: 25  \nREASONING: The recent sensor readings show signs of increasing wear in certain components (e.g., s15) while efficiency-related sensors like s9 are decreasing. This combination suggests the engine is nearing failure but hasn't failed yet, leading to an estimated RUL of around 25 cycles.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data indicates a gradual decline in certain parameters (e.g., s14) and increasing values in others (e.g., s7), suggesting the engine is approaching failure. However, due to the variability and mixed trends, an estimated RUL of 30 cycles is reasonable.\n\nRUL_ESTIMATE: 28  \nREASONING: The sensor readings show a mix of increasing and decreasing trends with some sensors indicating higher values (e.g., s15) while others like s9 are lower. The presence of variance in sensor data points towards localized issues but not complete failure, leading to an estimated RUL of approximately 28 cycles.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor trends indicate moderate signs of wear with some sensors showing higher values and others decreasing. The variability suggests approaching failure but hasn't reached a critical point yet, leading to an estimated RUL of approximately 30 cycles.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 7,
+    "reasoning": "The sensor data shows a clear increasing trend in s2, s3, and s4 over the last 30 cycles. These sensors are likely degradation-related, with higher values indicating wear. The monotonic drift suggests that the engine is nearing failure, with approximately 7 operational cycles remaining before reaching an imminent failure state (RUL=0).",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 7  \nREASONING: The sensor data shows a clear increasing trend in s2, s3, and s4 over the last 30 cycles. These sensors are likely degradation-related, with higher values indicating wear. The monotonic drift suggests that the engine is nearing failure, with approximately 7 operational cycles remaining before reaching an imminent failure state (RUL=0).",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows a consistent degradation trend in key indicators such as s7 (increasing), s11, s12, and s15 (decreasing). Additionally, efficiency-related sensors like s9 and s14 are showing signs of wear with increasing values. These trends suggest the engine is nearing failure, indicating an RUL estimate of 30 cycles remaining before a significant failure event.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows a consistent degradation trend in key indicators such as s7 (increasing), s11, s12, and s15 (decreasing). Additionally, efficiency-related sensors like s9 and s14 are showing signs of wear with increasing values. These trends suggest the engine is nearing failure, indicating an RUL estimate of 30 cycles remaining before a significant failure event.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a clear trend towards degradation with increasing values in s4, s7, s11, s12, and s15, which are indicative of wear. Additionally, s9, s14, and s15 show signs of efficiency decline. The overall variance across these sensors suggests that the engine is nearing failure, leading to an estimated RUL of 12 cycles remaining before a significant failure event.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data shows a clear trend towards degradation with increasing values in s4, s7, s11, s12, and s15, which are indicative of wear. Additionally, s9, s14, and s15 show signs of efficiency decline. The overall variance across these sensors suggests that the engine is nearing failure, leading to an estimated RUL of 12 cycles remaining before a significant failure event.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 0,
+    "reasoning": "The sensor data shows significant trends where certain efficiency-related sensors (e.g., s3) are increasing while others related to wear (e.g., s9, s15) are decreasing. These patterns indicate rapid degradation and approaching failure. RUL_ESTIMATE: 0 REASONING: The sensor data exhibits clear signs of rapid degradation with multiple sensors showing monotonic drift towards failure, suggesting an imminent RUL within the next cycle or two.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 0  \nREASONING: The sensor data shows significant trends where certain efficiency-related sensors (e.g., s3) are increasing while others related to wear (e.g., s9, s15) are decreasing. These patterns indicate rapid degradation and approaching failure.\n\nRUL_ESTIMATE: 0  \nREASONING: The sensor data exhibits clear signs of rapid degradation with multiple sensors showing monotonic drift towards failure, suggesting an imminent RUL within the next cycle or two.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 10,
+    "reasoning": "The sensor data shows signs of early failure with decreasing efficiency-related sensors (s9, s14) and increasing degradation-related sensors (s7, s8). Monotonic drift and variance indicate approaching failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 10  \nREASONING: The sensor data shows signs of early failure with decreasing efficiency-related sensors (s9, s14) and increasing degradation-related sensors (s7, s8). Monotonic drift and variance indicate approaching failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 37,
+    "reasoning": "The sensor data shows a clear trend of increasing values in several key degradation-related sensors (s4, s7, s11, s12, s15) and decreasing values in efficiency-related sensors (s9, s14). This indicates an approaching failure condition with moderate remaining useful life.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 37\nREASONING: The sensor data shows a clear trend of increasing values in several key degradation-related sensors (s4, s7, s11, s12, s15) and decreasing values in efficiency-related sensors (s9, s14). This indicates an approaching failure condition with moderate remaining useful life.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a decline in certain key sensors (e.g., s7, s8, s20, s21) and signs of efficiency degradation (s4, s5, s6, s9, s14). These trends indicate that the engine is nearing failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12\nREASONING: The sensor data shows a decline in certain key sensors (e.g., s7, s8, s20, s21) and signs of efficiency degradation (s4, s5, s6, s9, s14). These trends indicate that the engine is nearing failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 15,
+    "reasoning": "The sensor data shows a clear trend of increasing degradation across multiple sensors (e.g., s3, s4, s7, s8) while some efficiency-related sensors (s9, s14) show signs of wear. The monotonic drift and increasing values indicate that the engine is nearing failure, with only 15 cycles remaining before reaching an imminent failure state. RUL_ESTIMATE: 12 REASONING: The sensor data indicates significant degradation trends in key sensors such as s3, s4, s7, and s8. These trends suggest a rapid approach to failure, with the RUL estimate indicating that the engine has only 12 cycles remaining before failure. RUL_ESTIMATE: 10 REASONING: The sensor data shows multiple degradation trends in critical sensors like s3, s4, s7, and s8. These trends indicate a quick progression towards failure, with an estimated RUL of 10 cycles remaining. RUL_ESTIMATE: 25 REASONING: The sensor data does not show significant signs of immediate failure; instead, it indicates a gradual degradation trend across several sensors (e.g., s3, s4). This suggests that the engine has approximately 25 cycles remaining before reaching an imminent failure state. RUL_ESTIMATE: 18 REASONING: The sensor data shows moderate to significant degradation trends in key sensors such as s3 and s7. These trends suggest a moderate approach to failure, with an estimated RUL of 18 cycles remaining. RUL_ESTIMATE: 20 REASONING: The sensor data indicates that most sensors are showing signs of wear but not yet reaching critical levels. This suggests that the engine has approximately 20 cycles remaining before it reaches an imminent failure state. RUL_ESTIMATE: 14 REASONING: The sensor data shows a moderate degradation trend across several sensors (e.g., s3, s7). These trends suggest that the engine is nearing failure but still has about 14 cycles left before reaching an imminent failure state. RUL_ESTIMATE: 22 REASONING: The sensor data indicates significant wear in key sensors such as s3 and s8. These trends suggest a rapid approach to failure, with an estimated RUL of 22 cycles remaining. RUL_ESTIMATE: 17 REASONING: The sensor data shows moderate degradation trends across several sensors (e.g., s4, s7). These trends indicate that the engine is nearing failure but still has approximately 17 cycles left before reaching an imminent failure state. RUL_ESTIMATE: 24 REASONING: The sensor data indicates a gradual decline in efficiency-related sensors like s9 and s14. This suggests that the engine has about 24 cycles remaining before it reaches an imminent failure state. RUL_ESTIMATE: 13 REASONING: The sensor data shows significant wear in key sensors such as s3, s7, and s8. These trends indicate a quick progression towards failure, with an estimated RUL of 13 cycles remaining. RUL_ESTIMATE: 21 REASONING: The sensor data indicates moderate to significant degradation across several sensors (e.g., s4, s7). These trends suggest that the engine has approximately 21 cycles remaining before it reaches an imminent failure state. RUL_ESTIMATE: 16 REASONING: The sensor data shows a moderate degradation trend in key sensors such as s3 and s8. These trends indicate that the engine is nearing failure but still has about 16 cycles left before reaching an imminent failure state. RUL_ESTIMATE: 23 REASONING: The sensor data indicates significant wear in key sensors like s7, with a notable increase in recent cycles. This suggests that the engine has approximately 23 cycles remaining before it reaches an imminent failure state. RUL_ESTIMATE: 19 REASONING: The sensor data shows moderate to significant degradation across several sensors (e.g., s4, s7). These trends indicate that the engine is nearing failure but still has about 19 cycles left before reaching an imminent failure state.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 15  \nREASONING: The sensor data shows a clear trend of increasing degradation across multiple sensors (e.g., s3, s4, s7, s8) while some efficiency-related sensors (s9, s14) show signs of wear. The monotonic drift and increasing values indicate that the engine is nearing failure, with only 15 cycles remaining before reaching an imminent failure state.\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data indicates significant degradation trends in key sensors such as s3, s4, s7, and s8. These trends suggest a rapid approach to failure, with the RUL estimate indicating that the engine has only 12 cycles remaining before failure.\n\nRUL_ESTIMATE: 10  \nREASONING: The sensor data shows multiple degradation trends in critical sensors like s3, s4, s7, and s8. These trends indicate a quick progression towards failure, with an estimated RUL of 10 cycles remaining.\n\nRUL_ESTIMATE: 25  \nREASONING: The sensor data does not show significant signs of immediate failure; instead, it indicates a gradual degradation trend across several sensors (e.g., s3, s4). This suggests that the engine has approximately 25 cycles remaining before reaching an imminent failure state.\n\nRUL_ESTIMATE: 18  \nREASONING: The sensor data shows moderate to significant degradation trends in key sensors such as s3 and s7. These trends suggest a moderate approach to failure, with an estimated RUL of 18 cycles remaining.\n\nRUL_ESTIMATE: 20  \nREASONING: The sensor data indicates that most sensors are showing signs of wear but not yet reaching critical levels. This suggests that the engine has approximately 20 cycles remaining before it reaches an imminent failure state.\n\nRUL_ESTIMATE: 14  \nREASONING: The sensor data shows a moderate degradation trend across several sensors (e.g., s3, s7). These trends suggest that the engine is nearing failure but still has about 14 cycles left before reaching an imminent failure state.\n\nRUL_ESTIMATE: 22  \nREASONING: The sensor data indicates significant wear in key sensors such as s3 and s8. These trends suggest a rapid approach to failure, with an estimated RUL of 22 cycles remaining.\n\nRUL_ESTIMATE: 17  \nREASONING: The sensor data shows moderate degradation trends across several sensors (e.g., s4, s7). These trends indicate that the engine is nearing failure but still has approximately 17 cycles left before reaching an imminent failure state.\n\nRUL_ESTIMATE: 24  \nREASONING: The sensor data indicates a gradual decline in efficiency-related sensors like s9 and s14. This suggests that the engine has about 24 cycles remaining before it reaches an imminent failure state.\n\nRUL_ESTIMATE: 13  \nREASONING: The sensor data shows significant wear in key sensors such as s3, s7, and s8. These trends indicate a quick progression towards failure, with an estimated RUL of 13 cycles remaining.\n\nRUL_ESTIMATE: 21  \nREASONING: The sensor data indicates moderate to significant degradation across several sensors (e.g., s4, s7). These trends suggest that the engine has approximately 21 cycles remaining before it reaches an imminent failure state.\n\nRUL_ESTIMATE: 16  \nREASONING: The sensor data shows a moderate degradation trend in key sensors such as s3 and s8. These trends indicate that the engine is nearing failure but still has about 16 cycles left before reaching an imminent failure state.\n\nRUL_ESTIMATE: 23  \nREASONING: The sensor data indicates significant wear in key sensors like s7, with a notable increase in recent cycles. This suggests that the engine has approximately 23 cycles remaining before it reaches an imminent failure state.\n\nRUL_ESTIMATE: 19  \nREASONING: The sensor data shows moderate to significant degradation across several sensors (e.g., s4, s7). These trends indicate that the engine is nearing failure but still has about 19 cycles left before reaching an imminent failure state.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a trend of increasing values for degradation-related sensors (e.g., s15) and decreasing or mixed values for efficiency-related sensors, indicating progressive wear. The variance in sensor readings suggests an approaching failure condition. ANSWER: RUL_ESTIMATE: 12",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12\nREASONING: The sensor data shows a trend of increasing values for degradation-related sensors (e.g., s15) and decreasing or mixed values for efficiency-related sensors, indicating progressive wear. The variance in sensor readings suggests an approaching failure condition.\n\nANSWER: RUL_ESTIMATE: 12",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 25,
+    "reasoning": "The sensor data shows signs of early degradation with multiple sensors (e.g., s8, s13) indicating a decline in efficiency and potential wear. Higher values for certain sensors like s4 and s15 suggest moderate wear, while lower values for efficiency-related sensors like s9 indicate advanced failure nearing the operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 25  \nREASONING: The sensor data shows signs of early degradation with multiple sensors (e.g., s8, s13) indicating a decline in efficiency and potential wear. Higher values for certain sensors like s4 and s15 suggest moderate wear, while lower values for efficiency-related sensors like s9 indicate advanced failure nearing the operational cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 12,
+    "reasoning": "The recent sensor data shows a gradual increase in degradation-related sensors such as s11, s12, and s15, which are indicative of wear. Efficiency-related sensors like s9 and s14 have shown slight decreases, suggesting reduced performance. Additionally, the variance among some sensor readings has increased slightly, indicating potential nearing failure. The analysis indicates that the engine is approaching failure with a remaining useful life estimate of 12 cycles.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12\nREASONING: The recent sensor data shows a gradual increase in degradation-related sensors such as s11, s12, and s15, which are indicative of wear. Efficiency-related sensors like s9 and s14 have shown slight decreases, suggesting reduced performance. Additionally, the variance among some sensor readings has increased slightly, indicating potential nearing failure.\n\nThe analysis indicates that the engine is approaching failure with a remaining useful life estimate of 12 cycles.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 25,
+    "reasoning": "The sensor data shows a gradual increase in degradation-related sensors (e.g., s7, s8, s15) while efficiency-related sensors (e.g., s9, s14) decrease. This indicates an early signs of wear and tear, suggesting the engine is nearing failure with approximately 25 cycles remaining before reaching a critical state.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 25  \nREASONING: The sensor data shows a gradual increase in degradation-related sensors (e.g., s7, s8, s15) while efficiency-related sensors (e.g., s9, s14) decrease. This indicates an early signs of wear and tear, suggesting the engine is nearing failure with approximately 25 cycles remaining before reaching a critical state.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 0,
+    "reasoning": "The sensor data shows significant degradation in s11, s15, and s7 with increasing values over time. These trends indicate rapid engine wear, suggesting imminent failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 0  \nREASONING: The sensor data shows significant degradation in s11, s15, and s7 with increasing values over time. These trends indicate rapid engine wear, suggesting imminent failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 34,
+    "reasoning": "The sensor data shows signs of increasing degradation with higher values in s12, s17, and s20, as well as lower efficiency indicated by s9. These trends suggest the engine is nearing failure, leading to an estimated RUL of 34 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 34  \nREASONING: The sensor data shows signs of increasing degradation with higher values in s12, s17, and s20, as well as lower efficiency indicated by s9. These trends suggest the engine is nearing failure, leading to an estimated RUL of 34 cycles remaining before failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 12,
+    "reasoning": "The recent sensor readings indicate increasing values in degradation-related sensors such as s7, s8, and s9, while efficiency-related sensors like s4 and s5 are showing signs of wear. The monotonic drift in these sensors suggests that the engine is nearing failure, with a clear trend towards RUL reduction. RUL_ESTIMATE: 12 REASONING: The sensor data shows a consistent increase in degradation-related parameters (s7, s8) and a decrease in efficiency-related parameters (s4), indicating an approaching fault. This pattern suggests the engine is nearing failure within the next cycle(s).",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12\nREASONING: The recent sensor readings indicate increasing values in degradation-related sensors such as s7, s8, and s9, while efficiency-related sensors like s4 and s5 are showing signs of wear. The monotonic drift in these sensors suggests that the engine is nearing failure, with a clear trend towards RUL reduction.\n\nRUL_ESTIMATE: 12\nREASONING: The sensor data shows a consistent increase in degradation-related parameters (s7, s8) and a decrease in efficiency-related parameters (s4), indicating an approaching fault. This pattern suggests the engine is nearing failure within the next cycle(s).",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a trend where degradation-related sensors (e.g., s2, s3, s4) are increasing in value, while efficiency-related sensors (e.g., s9, s14) are decreasing. This indicates a gradual decline in engine health, with signs of monotonic drift suggesting approaching failure within the next cycle. RUL_ESTIMATE: 10 REASONING: The sensor readings exhibit a clear degradation pattern where key wear indicators like s2 and s3 are consistently increasing towards their maximum value (1), while efficiency metrics such as s9 and s14 are decreasing. This trend, combined with potential monotonic drift in other sensors, suggests the engine is nearing failure within approximately 10 cycles. RUL_ESTIMATE: 8 REASONING: The data indicates a significant decline in engine health based on increasing values of degradation-related sensors (e.g., s2, s3) and decreasing efficiency-related sensors (e.g., s9, s14). This pattern suggests that the turbofan engine is experiencing rapid wear and reduced efficiency, pointing towards an imminent failure within approximately 8 cycles. RUL_ESTIMATE: 6 REASONING: The sensor readings reveal a concerning trend where multiple degradation indicators are rising while efficiency metrics are falling. This combination of increasing variance and monotonic drift in key sensors strongly indicates that the turbofan engine is degrading rapidly, with an estimated remaining useful life of around 6 cycles. RUL_ESTIMATE: 4 REASONING: The sensor data shows a clear indication of impending failure through the consistent increase in degradation-related sensors (e.g., s2, s3) and decrease in efficiency-related sensors (e.g., s9, s14). This trend suggests that the turbofan engine is experiencing significant wear and reduced operational efficiency, with an estimated remaining useful life of approximately 4 cycles. RUL_ESTIMATE: 2 REASONING: The sensor readings indicate a critical decline in engine health through rising values of key degradation sensors (e.g., s2, s3) and falling efficiency metrics (e.g., s9, s14). This monotonic drift suggests that the turbofan engine is rapidly approaching failure, with an estimated remaining useful life of just 2 cycles. RUL_ESTIMATE: 0 REASONING: The sensor data shows a clear and rapid decline in engine health through significant increases in degradation-related sensors (e.g., s2, s3) and substantial decreases in efficiency-related sensors (e.g., s9, s14). This indicates that the turbofan engine has already reached an imminent failure state within 0 cycles.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12\nREASONING: The sensor data shows a trend where degradation-related sensors (e.g., s2, s3, s4) are increasing in value, while efficiency-related sensors (e.g., s9, s14) are decreasing. This indicates a gradual decline in engine health, with signs of monotonic drift suggesting approaching failure within the next cycle.\n\nRUL_ESTIMATE: 10\nREASONING: The sensor readings exhibit a clear degradation pattern where key wear indicators like s2 and s3 are consistently increasing towards their maximum value (1), while efficiency metrics such as s9 and s14 are decreasing. This trend, combined with potential monotonic drift in other sensors, suggests the engine is nearing failure within approximately 10 cycles.\n\nRUL_ESTIMATE: 8\nREASONING: The data indicates a significant decline in engine health based on increasing values of degradation-related sensors (e.g., s2, s3) and decreasing efficiency-related sensors (e.g., s9, s14). This pattern suggests that the turbofan engine is experiencing rapid wear and reduced efficiency, pointing towards an imminent failure within approximately 8 cycles.\n\nRUL_ESTIMATE: 6\nREASONING: The sensor readings reveal a concerning trend where multiple degradation indicators are rising while efficiency metrics are falling. This combination of increasing variance and monotonic drift in key sensors strongly indicates that the turbofan engine is degrading rapidly, with an estimated remaining useful life of around 6 cycles.\n\nRUL_ESTIMATE: 4\nREASONING: The sensor data shows a clear indication of impending failure through the consistent increase in degradation-related sensors (e.g., s2, s3) and decrease in efficiency-related sensors (e.g., s9, s14). This trend suggests that the turbofan engine is experiencing significant wear and reduced operational efficiency, with an estimated remaining useful life of approximately 4 cycles.\n\nRUL_ESTIMATE: 2\nREASONING: The sensor readings indicate a critical decline in engine health through rising values of key degradation sensors (e.g., s2, s3) and falling efficiency metrics (e.g., s9, s14). This monotonic drift suggests that the turbofan engine is rapidly approaching failure, with an estimated remaining useful life of just 2 cycles.\n\nRUL_ESTIMATE: 0\nREASONING: The sensor data shows a clear and rapid decline in engine health through significant increases in degradation-related sensors (e.g., s2, s3) and substantial decreases in efficiency-related sensors (e.g., s9, s14). This indicates that the turbofan engine has already reached an imminent failure state within 0 cycles.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 23,
+    "reasoning": "The degradation-related sensors (s11, s12, s15) show increasing values with some variance, while efficiency-related sensors (s9, s14) have decreasing trends. These patterns suggest a monotonic drift towards failure, indicating an RUL of approximately 23 cycles remaining. RUL_ESTIMATE: 23 REASONING: The sensor data indicates a gradual increase in degradation-related parameters and a corresponding decrease in efficiency-related parameters, suggesting that the engine is nearing failure at a rate of about 1 cycle per month.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 23  \nREASONING: The degradation-related sensors (s11, s12, s15) show increasing values with some variance, while efficiency-related sensors (s9, s14) have decreasing trends. These patterns suggest a monotonic drift towards failure, indicating an RUL of approximately 23 cycles remaining.\n\nRUL_ESTIMATE: 23  \nREASONING: The sensor data indicates a gradual increase in degradation-related parameters and a corresponding decrease in efficiency-related parameters, suggesting that the engine is nearing failure at a rate of about 1 cycle per month.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 20,
+    "reasoning": "The sensor data shows mixed trends with some signs of potential wear in certain sensors, particularly s15 and s7, which have higher values indicating degradation. However, without a clear monotonic trend or significant variance across all relevant sensors, the RUL is estimated conservatively at 20 cycles remaining. RUL_ESTIMATE: 20 REASONING: The sensor data indicates moderate signs of wear in some components (e.g., s15 and s7) but lacks a consistent degradation pattern. Therefore, an estimated Remaining Useful Life of 20 cycles is provided as the safest assessment based on current trends.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 20  \nREASONING: The sensor data shows mixed trends with some signs of potential wear in certain sensors, particularly s15 and s7, which have higher values indicating degradation. However, without a clear monotonic trend or significant variance across all relevant sensors, the RUL is estimated conservatively at 20 cycles remaining.\n\nRUL_ESTIMATE: 20  \nREASONING: The sensor data indicates moderate signs of wear in some components (e.g., s15 and s7) but lacks a consistent degradation pattern. Therefore, an estimated Remaining Useful Life of 20 cycles is provided as the safest assessment based on current trends.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor data shows signs of early wear with efficiency-related sensors (s9, s14) indicating minimal usage and degradation-related sensors (s11, s12, s15) showing moderate values that slightly increase towards the end. These trends suggest a gradual decline in engine health, leading to an estimated RUL of 42 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 42  \nREASONING: The sensor data shows signs of early wear with efficiency-related sensors (s9, s14) indicating minimal usage and degradation-related sensors (s11, s12, s15) showing moderate values that slightly increase towards the end. These trends suggest a gradual decline in engine health, leading to an estimated RUL of 42 cycles remaining before failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 20,
+    "reasoning": "The sensor data shows increasing values for degradation-related sensors (e.g., s2, s3, s15) and decreasing or lower values for efficiency-related sensors (e.g., s9). This indicates a progressive wear trend towards failure with monotonic drift in key indicators.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 20  \nREASONING: The sensor data shows increasing values for degradation-related sensors (e.g., s2, s3, s15) and decreasing or lower values for efficiency-related sensors (e.g., s9). This indicates a progressive wear trend towards failure with monotonic drift in key indicators.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors such as s12 and s20, with some efficiency-related sensors showing normal performance. The trend suggests moderate wear across multiple components, leading to an estimated RUL of 30 cycles remaining before failure. RUL_ESTIMATE: 30 REASONING: The sensor data shows a steady increase in degradation indicators like s12 and s20, while efficiency-related sensors remain within normal operating ranges. This gradual trend points to moderate wear across several components, resulting in an estimated Remaining Useful Life of 30 cycles before failure.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor readings indicate a gradual increase in degradation-related sensors such as s12 and s20, with some efficiency-related sensors showing normal performance. The trend suggests moderate wear across multiple components, leading to an estimated RUL of 30 cycles remaining before failure.\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows a steady increase in degradation indicators like s12 and s20, while efficiency-related sensors remain within normal operating ranges. This gradual trend points to moderate wear across several components, resulting in an estimated Remaining Useful Life of 30 cycles before failure.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 5,
+    "reasoning": "The sensor data shows a consistent increase in degradation-related sensors (s2, s3, s4, s7, s11, s12, s15) with some efficiency-related sensors (s9, s14) showing lower values. The increasing trend and higher readings suggest approaching failure, indicating an RUL of 5 cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 5\nREASONING: The sensor data shows a consistent increase in degradation-related sensors (s2, s3, s4, s7, s11, s12, s15) with some efficiency-related sensors (s9, s14) showing lower values. The increasing trend and higher readings suggest approaching failure, indicating an RUL of 5 cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows slight increases in some degradation-related sensors like s7 and s8 over time, while efficiency-related sensors such as s9 have lower values. This indicates early signs of wear with monotonic drift towards failure. RUL_ESTIMATE: 10 REASONING: The recent trends show moderate signs of wear across several sensors, particularly in efficiency-related metrics (s9), suggesting an approaching failure within the next few cycles. RUL_ESTIMATE: 8 REASONING: There is a noticeable trend where some degradation-related sensors are increasing while efficiency-related sensors are decreasing. This combination indicates early signs of engine wear and potential failure in the near future. RUL_ESTIMATE: 15 REASONING: The sensor data shows mixed trends with some slight increases in degradation-related sensors, but overall, the efficiency-related sensors (s9) have lower values, suggesting moderate wear that could lead to failure within a few cycles. RUL_ESTIMATE: 20 REASONING: The presence of lower efficiency-related sensor readings and minor increases in other sensors indicate early signs of engine wear. This suggests an RUL estimate closer to the higher end but not yet critical. RUL_ESTIMATE: 5 REASONING: The recent data shows minimal changes across most sensors, with no clear trend towards either increased degradation or improved efficiency. This indicates a stable condition with no immediate signs of failure. RUL_ESTIMATE: 10 REASONING: The sensor readings show some signs of wear in both degradation and efficiency-related metrics, particularly s9, which is approaching critical levels. This suggests an RUL estimate within the medium range. RUL_ESTIMATE: 7 REASONING: The data indicates moderate wear across several sensors, with a noticeable trend towards failure in the next few operational cycles based on decreasing efficiency-related sensor values and increasing degradation-related ones. RUL_ESTIMATE: 12 REASONING: The sensor trends show signs of early wear with some degradation-related sensors increasing slightly while efficiency-related sensors decrease. This indicates an RUL estimate within the medium range, nearing a short-term failure. RUL_ESTIMATE: 5 REASONING: The recent operational cycle shows minimal changes across most sensors, indicating stable performance without clear signs of either imminent failure or significant wear. RUL_ESTIMATE: 10 REASONING: The sensor data indicates moderate wear with some degradation-related sensors increasing and efficiency-related ones decreasing. This suggests an RUL estimate within the medium range, nearing a short-term failure. RUL_ESTIMATE: 8 REASONING: The recent trends show signs of early wear across several sensors, particularly in efficiency-related metrics (s9), suggesting an approaching failure within the next few cycles. RUL_ESTIMATE: 15 REASONING: The sensor data shows mixed trends with some slight increases in degradation-related sensors and decreases in efficiency-related ones. This combination indicates early signs of engine wear and potential failure in the near future. RUL_ESTIMATE: 20 REASONING: The presence of lower efficiency-related sensor readings and minor increases in other sensors indicate early signs of engine wear, suggesting an RUL estimate closer to the higher end but not yet critical. RUL_ESTIMATE: 5 REASONING: The recent data shows minimal changes across most sensors, with no clear trend towards either increased degradation or improved efficiency. This indicates a stable condition with no immediate signs of failure. RUL_ESTIMATE: 10 REASONING: The sensor readings show some signs of wear in both degradation and efficiency-related metrics, particularly s9, which is approaching critical levels. This suggests an RUL estimate within the medium range. RUL_ESTIMATE: 7 REASONING: The data indicates moderate wear across several sensors, with a noticeable trend towards failure in the next few operational cycles based on decreasing efficiency-related sensor values and increasing degradation-related ones. RUL_ESTIMATE: 12 REASONING: The sensor trends show signs of early wear with some degradation-related sensors increasing slightly while efficiency-related sensors decrease. This indicates an RUL estimate within the medium range, nearing a short-term failure. RUL_ESTIMATE: 5 REASONING: The recent operational cycle shows minimal changes across most sensors, indicating stable performance without clear signs of either imminent failure or significant wear. RUL_ESTIMATE: 10 REASONING: The sensor data indicates moderate wear with some degradation-related sensors increasing and efficiency-related ones decreasing. This suggests an RUL estimate within the medium range, nearing a short-term failure. RUL_ESTIMATE: 8 REASONING: The recent trends show signs of early wear across several sensors, particularly in efficiency-related metrics (s9), suggesting an approaching failure within the next few cycles. RUL_ESTIMATE: 15 REASONING: The sensor data shows mixed trends with some slight increases in degradation-related sensors and decreases in efficiency-related ones. This combination indicates early signs of engine wear and potential failure in the near future. RUL_ESTIMATE: 20 REASONING: The presence of lower efficiency-related sensor readings and minor increases in other sensors indicate early signs of engine wear, suggesting an RUL estimate closer to the higher end but not yet critical.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12\nREASONING: The sensor data shows slight increases in some degradation-related sensors like s7 and s8 over time, while efficiency-related sensors such as s9 have lower values. This indicates early signs of wear with monotonic drift towards failure.\n\nRUL_ESTIMATE: 10\nREASONING: The recent trends show moderate signs of wear across several sensors, particularly in efficiency-related metrics (s9), suggesting an approaching failure within the next few cycles.\n\nRUL_ESTIMATE: 8\nREASONING: There is a noticeable trend where some degradation-related sensors are increasing while efficiency-related sensors are decreasing. This combination indicates early signs of engine wear and potential failure in the near future.\n\nRUL_ESTIMATE: 15\nREASONING: The sensor data shows mixed trends with some slight increases in degradation-related sensors, but overall, the efficiency-related sensors (s9) have lower values, suggesting moderate wear that could lead to failure within a few cycles.\n\nRUL_ESTIMATE: 20\nREASONING: The presence of lower efficiency-related sensor readings and minor increases in other sensors indicate early signs of engine wear. This suggests an RUL estimate closer to the higher end but not yet critical.\n\nRUL_ESTIMATE: 5\nREASONING: The recent data shows minimal changes across most sensors, with no clear trend towards either increased degradation or improved efficiency. This indicates a stable condition with no immediate signs of failure.\n\nRUL_ESTIMATE: 10\nREASONING: The sensor readings show some signs of wear in both degradation and efficiency-related metrics, particularly s9, which is approaching critical levels. This suggests an RUL estimate within the medium range.\n\nRUL_ESTIMATE: 7\nREASONING: The data indicates moderate wear across several sensors, with a noticeable trend towards failure in the next few operational cycles based on decreasing efficiency-related sensor values and increasing degradation-related ones.\n\nRUL_ESTIMATE: 12\nREASONING: The sensor trends show signs of early wear with some degradation-related sensors increasing slightly while efficiency-related sensors decrease. This indicates an RUL estimate within the medium range, nearing a short-term failure.\n\nRUL_ESTIMATE: 5\nREASONING: The recent operational cycle shows minimal changes across most sensors, indicating stable performance without clear signs of either imminent failure or significant wear.\n\nRUL_ESTIMATE: 10\nREASONING: The sensor data indicates moderate wear with some degradation-related sensors increasing and efficiency-related ones decreasing. This suggests an RUL estimate within the medium range, nearing a short-term failure.\n\nRUL_ESTIMATE: 8\nREASONING: The recent trends show signs of early wear across several sensors, particularly in efficiency-related metrics (s9), suggesting an approaching failure within the next few cycles.\n\nRUL_ESTIMATE: 15\nREASONING: The sensor data shows mixed trends with some slight increases in degradation-related sensors and decreases in efficiency-related ones. This combination indicates early signs of engine wear and potential failure in the near future.\n\nRUL_ESTIMATE: 20\nREASONING: The presence of lower efficiency-related sensor readings and minor increases in other sensors indicate early signs of engine wear, suggesting an RUL estimate closer to the higher end but not yet critical.\n\nRUL_ESTIMATE: 5\nREASONING: The recent data shows minimal changes across most sensors, with no clear trend towards either increased degradation or improved efficiency. This indicates a stable condition with no immediate signs of failure.\n\nRUL_ESTIMATE: 10\nREASONING: The sensor readings show some signs of wear in both degradation and efficiency-related metrics, particularly s9, which is approaching critical levels. This suggests an RUL estimate within the medium range.\n\nRUL_ESTIMATE: 7\nREASONING: The data indicates moderate wear across several sensors, with a noticeable trend towards failure in the next few operational cycles based on decreasing efficiency-related sensor values and increasing degradation-related ones.\n\nRUL_ESTIMATE: 12\nREASONING: The sensor trends show signs of early wear with some degradation-related sensors increasing slightly while efficiency-related sensors decrease. This indicates an RUL estimate within the medium range, nearing a short-term failure.\n\nRUL_ESTIMATE: 5\nREASONING: The recent operational cycle shows minimal changes across most sensors, indicating stable performance without clear signs of either imminent failure or significant wear.\n\nRUL_ESTIMATE: 10\nREASONING: The sensor data indicates moderate wear with some degradation-related sensors increasing and efficiency-related ones decreasing. This suggests an RUL estimate within the medium range, nearing a short-term failure.\n\nRUL_ESTIMATE: 8\nREASONING: The recent trends show signs of early wear across several sensors, particularly in efficiency-related metrics (s9), suggesting an approaching failure within the next few cycles.\n\nRUL_ESTIMATE: 15\nREASONING: The sensor data shows mixed trends with some slight increases in degradation-related sensors and decreases in efficiency-related ones. This combination indicates early signs of engine wear and potential failure in the near future.\n\nRUL_ESTIMATE: 20\nREASONING: The presence of lower efficiency-related sensor readings and minor increases in other sensors indicate early signs of engine wear, suggesting an RUL estimate closer to the higher end but not yet critical.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor data shows a gradual increase in degradation-related sensors like s11 and s12, indicating wear over time. Efficiency-related sensors such as s9 and s14 have lower values, consistent with advanced wear. The monotonic drift and increasing variance suggest the engine is nearing failure, with an estimated RUL of 30 cycles remaining.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 30  \nREASONING: The sensor data shows a gradual increase in degradation-related sensors like s11 and s12, indicating wear over time. Efficiency-related sensors such as s9 and s14 have lower values, consistent with advanced wear. The monotonic drift and increasing variance suggest the engine is nearing failure, with an estimated RUL of 30 cycles remaining.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensor readings indicate a gradual increase in degradation-related sensors (s2, s3, s4, s7, s8, s15) while efficiency-related sensors (s9, s14) show signs of increasing wear. This monotonic drift suggests the engine is nearing failure with an estimated remaining useful life of 15 cycles. RUL_ESTIMATE: 15 REASONING: The sensor data shows a consistent increase in degradation indicators and slight improvements in efficiency metrics that are typical as components degrade. The trend towards higher values across multiple sensors points to an imminent decline, with the RUL estimate at 15 cycles reflecting this progression.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 15  \nREASONING: The sensor readings indicate a gradual increase in degradation-related sensors (s2, s3, s4, s7, s8, s15) while efficiency-related sensors (s9, s14) show signs of increasing wear. This monotonic drift suggests the engine is nearing failure with an estimated remaining useful life of 15 cycles.\n\nRUL_ESTIMATE: 15  \nREASONING: The sensor data shows a consistent increase in degradation indicators and slight improvements in efficiency metrics that are typical as components degrade. The trend towards higher values across multiple sensors points to an imminent decline, with the RUL estimate at 15 cycles reflecting this progression.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 3,
+    "reasoning": "The sensor data shows increasing trends in several key sensors (e.g., s7, s8, s20, s21) that are indicative of component degradation. These trends suggest approaching failure within the next few cycles. RUL_ESTIMATE: 4 REASONING: Multiple sensors indicate a gradual decline in performance, with some showing increasing values over time. This pattern suggests an imminent or soon-to-occur failure, leading to a low RUL estimate.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 3  \nREASONING: The sensor data shows increasing trends in several key sensors (e.g., s7, s8, s20, s21) that are indicative of component degradation. These trends suggest approaching failure within the next few cycles.\n\nRUL_ESTIMATE: 4  \nREASONING: Multiple sensors indicate a gradual decline in performance, with some showing increasing values over time. This pattern suggests an imminent or soon-to-occur failure, leading to a low RUL estimate.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 12,
+    "reasoning": "The sensor data shows a consistent decline in efficiency-related sensors (s9, s14) and signs of wear in degradation-related sensors (s11, s12). These trends indicate an imminent decrease in engine performance, suggesting the turbofan is nearing failure within approximately 12 cycles.",
+    "parse_ok": true,
+    "raw": "\n\nRUL_ESTIMATE: 12  \nREASONING: The sensor data shows a consistent decline in efficiency-related sensors (s9, s14) and signs of wear in degradation-related sensors (s11, s12). These trends indicate an imminent decrease in engine performance, suggesting the turbofan is nearing failure within approximately 12 cycles.",
+    "model": "deepseek-r1:7b"
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 30,
+    "reasoning": "The sensor readings indicate a monotonic decline in efficiency-related sensors (s9, s14) and concurrent rise in degradation-related sensors (s11, s12, s15), suggesting an approaching failure. These trends point to an RUL of approximately 30 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "\n\nThe Remaining Useful Life (RUL) is estimated by analyzing trends in sensor data. Higher values for s11, s12, and s15 indicate degradation, while lower values for s9 and s14 suggest efficiency. Over time, these trends show increasing drift towards failure.\n\nRUL_ESTIMATE: 30\nREASONING: The sensor readings indicate a monotonic decline in efficiency-related sensors (s9, s14) and concurrent rise in degradation-related sensors (s11, s12, s15), suggesting an approaching failure. These trends point to an RUL of approximately 30 cycles remaining before failure.",
+    "model": "deepseek-r1:7b"
+  }
+]

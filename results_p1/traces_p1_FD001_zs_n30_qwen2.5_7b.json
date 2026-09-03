@@ -1,0 +1,902 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent decrease, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent decrease, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not significantly. The variance in these critical sensors suggests that the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not significantly. The variance in these critical sensors suggests that the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have been decreasing, suggesting a decline in performance. These trends suggest the engine is approaching failure within 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have been decreasing, suggesting a decline in performance. These trends suggest the engine is approaching failure within 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9 shows decreasing values, suggesting a decline in efficiency. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9 shows decreasing values, suggesting a decline in efficiency. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with only about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with only about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in engine health. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in engine health. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease, suggesting the engine's performance is deteriorating. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease, suggesting the engine's performance is deteriorating. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, suggesting a decline in performance. These trends suggest the engine is nearing failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, suggesting a decline in performance. These trends suggest the engine is nearing failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other critical sensors, suggesting that failure is imminent but not yet severe.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other critical sensors, suggesting that failure is imminent but not yet severe.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s13 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s13 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other critical sensors, suggesting that failure is approaching but has not yet become imminent.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other critical sensors, suggesting that failure is approaching but has not yet become imminent.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been steadily decreasing, further suggesting a degradation pattern. These trends suggest the engine is in an early stage of failure, with approximately 15 cycles remaining before imminent failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been steadily decreasing, further suggesting a degradation pattern. These trends suggest the engine is in an early stage of failure, with approximately 15 cycles remaining before imminent failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear. S9 and s14, which are efficiency-related, have decreasing values, also pointing to degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear. S9 and s14, which are efficiency-related, have decreasing values, also pointing to degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear. Sensor s9 shows a decreasing trend, suggesting reduced efficiency. These patterns suggest the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear. Sensor s9 shows a decreasing trend, suggesting reduced efficiency. These patterns suggest the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine is operating inefficiently as it approaches failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine is operating inefficiently as it approaches failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s17 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s17 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear. S9 and s14, which are efficiency-related, have decreasing values, also pointing to degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear. S9 and s14, which are efficiency-related, have decreasing values, also pointing to degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting a degradation process. The variance in these readings also indicates that the engine is approaching its failure state.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting a degradation process. The variance in these readings also indicates that the engine is approaching its failure state.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s17 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s17 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine's performance is deteriorating. These trends suggest that the engine is approaching failure within 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine's performance is deteriorating. These trends suggest that the engine is approaching failure within 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine's performance is deteriorating. These trends suggest that the engine is approaching failure within 15 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine's performance is deteriorating. These trends suggest that the engine is approaching failure within 15 operational cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the increase in degradation-related sensors, suggesting that failure is approaching but has not yet become imminent.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the increase in degradation-related sensors, suggesting that failure is approaching but has not yet become imminent.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s17 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s17 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been steadily decreasing, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been steadily decreasing, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other critical sensors, suggesting that failure is approaching but not imminent.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other critical sensors, suggesting that failure is approaching but not imminent.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting a decline in the engine's performance. These trends indicate that the engine is approaching failure within 15 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting a decline in the engine's performance. These trends indicate that the engine is approaching failure within 15 operational cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Meanwhile, efficiency-related sensors like s9 and s14 are showing decreasing values, which is a sign of degradation. These trends suggest that the engine is in an early stage of failure, with approximately 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Meanwhile, efficiency-related sensors like s9 and s14 are showing decreasing values, which is a sign of degradation. These trends suggest that the engine is in an early stage of failure, with approximately 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, also pointing towards degradation. These trends suggest the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, also pointing towards degradation. These trends suggest the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been decreasing, suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been decreasing, suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 operational cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, show decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with only about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, show decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with only about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent decrease, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent decrease, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is efficiency-related, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is efficiency-related, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are related to efficiency, have been steadily decreasing, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are related to efficiency, have been steadily decreasing, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, suggesting a decline in performance. These trends suggest the engine is nearing failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, suggesting a decline in performance. These trends suggest the engine is nearing failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not significantly. This suggests the engine is in an early stage of degradation with some cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not significantly. This suggests the engine is in an early stage of degradation with some cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease, suggesting the engine's performance is deteriorating. These trends suggest that the engine is approaching failure within 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease, suggesting the engine's performance is deteriorating. These trends suggest that the engine is approaching failure within 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease, suggesting the engine's performance is deteriorating. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease, suggesting the engine's performance is deteriorating. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have decreasing values, further suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 operational cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s17 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s17 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further supporting the approach to failure. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical levels.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further supporting the approach to failure. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical levels.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine is operating inefficiently. These trends suggest that the engine is approaching failure within 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine is operating inefficiently. These trends suggest that the engine is approaching failure within 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been decreasing slightly, suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. S9 and s14, which are efficiency-related, have been decreasing slightly, suggesting a decline in performance. These trends suggest the engine is nearing failure within 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows decreasing values, further suggesting a decline in performance. These trends suggest the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9 shows a decreasing trend, suggesting reduced efficiency. These patterns suggest the engine is nearing failure with about 15 cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9 shows a decreasing trend, suggesting reduced efficiency. These patterns suggest the engine is nearing failure with about 15 cycles remaining.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear. Sensor s9, which is efficiency-related, shows decreasing values, also pointing to degradation. The overall trend suggests the engine is in an early stage of failure, with RUL estimated around 15 cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear. Sensor s9, which is efficiency-related, shows decreasing values, also pointing to degradation. The overall trend suggests the engine is in an early stage of failure, with RUL estimated around 15 cycles remaining.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9 shows a decreasing trend, suggesting reduced efficiency. These patterns suggest that the engine is approaching failure within approximately 15 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values, indicating wear and tear. Sensor s9 shows a decreasing trend, suggesting reduced efficiency. These patterns suggest that the engine is approaching failure within approximately 15 cycles.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other sensors, suggesting the engine is nearing its operational limit.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a slight decrease but not as pronounced as the degradation in other sensors, suggesting the engine is nearing its operational limit.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine's performance is deteriorating. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a consistent low value, suggesting the engine's performance is deteriorating. These trends suggest that the engine is in an early stage of degradation but has not yet reached critical failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensors s9 and s14, which are related to efficiency, have decreasing values, further suggesting degradation. The overall trend suggests the engine is in a critical state with about 15 cycles remaining before failure.",
+    "model": "qwen2.5:7b"
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 15,
+    "reasoning": "The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 15\nREASONING: The sensors s11, s12, and s15 show increasing values over time, indicating wear and tear. Sensor s9, which is related to efficiency, shows a decreasing trend, further suggesting that the engine is approaching failure.",
+    "model": "qwen2.5:7b"
+  }
+]

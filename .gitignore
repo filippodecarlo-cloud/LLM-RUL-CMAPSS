@@ -1,0 +1,20 @@
+# Data (public NASA CMAPSS — not redistributed; fetch via download_data.py)
+cmapss_data/
+*.txt.gz
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets — never commit API keys
+.env
+config_local.py

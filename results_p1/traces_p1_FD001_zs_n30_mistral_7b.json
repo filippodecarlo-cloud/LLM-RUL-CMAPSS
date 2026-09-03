@@ -1,0 +1,902 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in readings for some sensors has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in readings for some sensors has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a downward trend in sensor readings for s9 and s14, suggesting efficiency degradation. The variance in these trends suggests that failure may occur within the next 60 operational cycles.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a downward trend in sensor readings for s9 and s14, suggesting efficiency degradation. The variance in these trends suggests that failure may occur within the next 60 operational cycles.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have shown a steady increase in values over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a decrease in values, suggesting efficiency degradation. The increasing variance in sensor readings also indicates approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have shown a steady increase in values over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a decrease in values, suggesting efficiency degradation. The increasing variance in sensor readings also indicates approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in the values of efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which further supports the prediction of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in the values of efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which further supports the prediction of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the readings of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the readings of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the reading of efficiency-related sensor s9, suggesting degradation. The variance in the readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the reading of efficiency-related sensor s9, suggesting degradation. The variance in the readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in values for efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which further indicates approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in values for efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which further indicates approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 45\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, there is a noticeable decrease in sensor s9, suggesting efficiency loss. These trends suggest that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, there is a noticeable decrease in sensor s9, suggesting efficiency loss. These trends suggest that the engine is approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which is a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which is a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in values for efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in values for efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings has also increased, further supporting the prediction of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a noticeable decrease in the values of efficiency-related sensors like s9 and s14. These trends suggest that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a noticeable decrease in the values of efficiency-related sensors like s9 and s14. These trends suggest that the engine is approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "Sensor s11, s12, and s15 have shown a steady increase in values over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a decrease in values, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be an indication of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 45\nREASONING: Sensor s11, s12, and s15 have shown a steady increase in values over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a decrease in values, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be an indication of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 45,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 45\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, there is a noticeable decrease in sensor s9 and s14 values, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, there is a noticeable decrease in sensor s9 and s14 values, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the readings of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the readings of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have shown a steady increase over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have shown a steady increase over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors like s9 and s14, suggesting degradation. The variance in sensor readings is also increasing, which further supports the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors like s9 and s14, suggesting degradation. The variance in sensor readings is also increasing, which further supports the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings show a general increase in values for degradation-related sensors (s11, s12, s15) over the last 30 cycles, indicating advanced wear. Additionally, there is a decrease in efficiency-related sensor readings (s9, s14), suggesting a decline in engine performance. The variance and drift patterns also indicate approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings show a general increase in values for degradation-related sensors (s11, s12, s15) over the last 30 cycles, indicating advanced wear. Additionally, there is a decrease in efficiency-related sensor readings (s9, s14), suggesting a decline in engine performance. The variance and drift patterns also indicate approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a downward trend in sensor readings for s9 and s14, suggesting decreased engine efficiency. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a downward trend in sensor readings for s9 and s14, suggesting decreased engine efficiency. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, a decrease in sensor s9 and s14 values suggests efficiency degradation. The variance in sensor readings has also increased, suggesting an approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, a decrease in sensor s9 and s14 values suggests efficiency degradation. The variance in sensor readings has also increased, suggesting an approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in the values of efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in the values of efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in the values of efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting a drop in efficiency. The variance in sensor readings has also increased, further suggesting degradation.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting a drop in efficiency. The variance in sensor readings has also increased, further suggesting degradation.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show a consistent increase over the last 30 cycles, indicating advanced wear. Simultaneously, there is a noticeable decrease in the values of sensors s9 and s14, suggesting efficiency degradation. The increasing variance in these trends suggests an approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show a consistent increase over the last 30 cycles, indicating advanced wear. Simultaneously, there is a noticeable decrease in the values of sensors s9 and s14, suggesting efficiency degradation. The increasing variance in these trends suggests an approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensor s9 has been decreasing, suggesting efficiency loss. The variance in these sensors is also increasing, which could indicate approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last 30 cycles, indicating advanced wear. Simultaneously, sensor s9 has been decreasing, suggesting efficiency loss. The variance in these sensors is also increasing, which could indicate approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 75,
+    "reasoning": "Sensor s11, s12, and s15 have shown a steady increase in values over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a decrease in values, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 75\nREASONING: Sensor s11, s12, and s15 have shown a steady increase in values over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a decrease in values, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a downward trend in sensor readings for s9 and s14, suggesting decreased efficiency. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, there is a downward trend in sensor readings for s9 and s14, suggesting decreased efficiency. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend. The variance in sensor readings has also increased, suggesting an approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend. The variance in sensor readings has also increased, suggesting an approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in the values of efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which further supports the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, a decrease in the values of efficiency-related sensors such as s9 and s14 suggests degradation. The variance in sensor readings is also increasing, which further supports the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a downward trend, suggesting decreased efficiency. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have shown a downward trend, suggesting decreased efficiency. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have shown a consistent increase in values over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have shown a consistent increase in values over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in values for efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, there is a decrease in values for efficiency-related sensors such as s9 and s14, suggesting degradation. The variance in sensor readings also appears to be increasing, which could indicate approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 show an increasing trend, indicating advanced wear. Additionally, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, there is a noticeable decrease in the readings of efficiency-related sensor s9, suggesting degradation. The variance in the readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor readings for s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Additionally, there is a noticeable decrease in the readings of efficiency-related sensor s9, suggesting degradation. The variance in the readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency loss. The variance in sensor readings has also increased, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of impending failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which could be a sign of impending failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, sensors s9 and s14 have shown a downward trend, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which is a sign of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a downward trend, suggesting degradation. The variance in sensor readings has also increased, which is a sign of approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11, s12, and s15 have been consistently increasing over the last few cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 have been decreasing, suggesting efficiency degradation. The variance in sensor readings has also increased, further supporting the approach to failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show an increasing trend over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which may indicate approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show an increasing trend over the last 30 cycles, indicating advanced wear. Simultaneously, sensors s9 and s14 exhibit a decreasing trend, suggesting efficiency loss. The variance in sensor readings is also increasing, which may indicate approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 40,
+    "reasoning": "Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a slight decrease in values. These trends suggest that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 40\nREASONING: Sensor s11 and s12 have been consistently increasing over the last few cycles, indicating advanced wear. On the other hand, efficiency-related sensors like s9 and s14 have shown a slight decrease in values. These trends suggest that the engine is approaching failure.",
+    "model": "mistral:7b"
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 60,
+    "reasoning": "Sensor readings for s11, s12, and s15 show a steady increase over the last 30 cycles, indicating advanced wear. Simultaneously, there is a decrease in the values of sensors s9 and s14, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be an indication of approaching failure.",
+    "parse_ok": true,
+    "raw": " RUL_ESTIMATE: 60\nREASONING: Sensor readings for s11, s12, and s15 show a steady increase over the last 30 cycles, indicating advanced wear. Simultaneously, there is a decrease in the values of sensors s9 and s14, suggesting efficiency degradation. The variance in sensor readings has also increased, which could be an indication of approaching failure.",
+    "model": "mistral:7b"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.387 to 0.339) and s12 (0.740 to 0.789), and decreasing values for efficiency-related sensors s9 (0.147 to 0.109) and s14 (0.205 to 0.171). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.387 to 0.339) and s12 (0.740 to 0.789), and decreasing values for efficiency-related sensors s9 (0.147 to 0.109) and s14 (0.205 to 0.171). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.417 to 0.488) and s12 (0.584 to 0.755), and decreasing values for efficiency-related sensors s9 (0.121 to 0.112) and s14 (0.155 to 0.133). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.417 to 0.488) and s12 (0.584 to 0.755), and decreasing values for efficiency-related sensors s9 (0.121 to 0.112) and s14 (0.155 to 0.133). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.613 at t-1) and s12 (0.456 at t-1), suggesting a decline in engine efficiency. Conversely, lower values for efficiency-related sensors like s9 (0.124 at t-1) and s14 (0.163 at t-1) also support this trend. The overall pattern suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.613 at t-1) and s12 (0.456 at t-1), suggesting a decline in engine efficiency. Conversely, lower values for efficiency-related sensors like s9 (0.124 at t-1) and s14 (0.163 at t-1) also support this trend. The overall pattern suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.423 to 0.500) and s12 (0.588 to 0.680), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.138 to 0.133) and s14 (0.188 to 0.174) show decreasing values, indicating a potential decrease in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.423 to 0.500) and s12 (0.588 to 0.680), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.138 to 0.133) and s14 (0.188 to 0.174) show decreasing values, indicating a potential decrease in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.399-0.536) and s12 (0.644-0.742). Conversely, efficiency-related sensors like s9 (0.132-0.169) and s14 (0.141-0.173) show decreasing values, suggesting a decline in engine performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.399-0.536) and s12 (0.644-0.742). Conversely, efficiency-related sensors like s9 (0.132-0.169) and s14 (0.141-0.173) show decreasing values, suggesting a decline in engine performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.369 to 0.612) and s12 (0.571 to 0.721), and decreasing values for efficiency-related sensors s9 (0.135 to 0.153) and s14 (0.181 to 0.202). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.369 to 0.612) and s12 (0.571 to 0.721), and decreasing values for efficiency-related sensors s9 (0.135 to 0.153) and s14 (0.181 to 0.202). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.446 at t-7) and s12 (0.851 at t-7), and decreasing values for efficiency-related sensors like s9 (0.156 at t-5). Additionally, the variance in some sensors, e.g., s2 (0.521 at t-8), suggests a monotonic drift towards failure, indicating an impending engine failure within 42 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.446 at t-7) and s12 (0.851 at t-7), and decreasing values for efficiency-related sensors like s9 (0.156 at t-5). Additionally, the variance in some sensors, e.g., s2 (0.521 at t-8), suggests a monotonic drift towards failure, indicating an impending engine failure within 42 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.542 at t-22 to 0.452 at t-1) and s12 (0.516 at t-28 to 0.392 at t-1), suggesting advanced wear. In contrast, efficiency-related sensors like s9 (0.083 at t-28 to 0.127 at t-1) and s14 (0.119 at t-28 to 0.144 at t-1) show relatively stable or slightly increasing values, indicating a mixed degradation pattern.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.542 at t-22 to 0.452 at t-1) and s12 (0.516 at t-28 to 0.392 at t-1), suggesting advanced wear. In contrast, efficiency-related sensors like s9 (0.083 at t-28 to 0.127 at t-1) and s14 (0.119 at t-28 to 0.144 at t-1) show relatively stable or slightly increasing values, indicating a mixed degradation pattern.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors s11 (0.554 -> 0.435) and s12 (0.533 -> 0.631), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.153 -> 0.161) and s14 (0.128 -> 0.180) show minimal changes, indicating that the engine's efficiency is not significantly impacted yet. The overall trend suggests a gradual degradation pattern, consistent with an RUL of approximately 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors s11 (0.554 -> 0.435) and s12 (0.533 -> 0.631), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.153 -> 0.161) and s14 (0.128 -> 0.180) show minimal changes, indicating that the engine's efficiency is not significantly impacted yet. The overall trend suggests a gradual degradation pattern, consistent with an RUL of approximately 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.440 at t-1) and s12 (0.667 at t-1), while efficiency-related sensors like s9 (0.176 at t-1) and s14 (0.217 at t-1) show lower values. The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.440 at t-1) and s12 (0.667 at t-1), while efficiency-related sensors like s9 (0.176 at t-1) and s14 (0.217 at t-1) show lower values. The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.554 to 0.488) and s12 (0.418 to 0.437), and decreasing values for efficiency-related sensors s9 (0.085 to 0.046) and s14 (0.107 to 0.086). The monotonic drift in these sensors suggests a steady progression towards failure, with the engine likely experiencing significant degradation over the next few cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.554 to 0.488) and s12 (0.418 to 0.437), and decreasing values for efficiency-related sensors s9 (0.085 to 0.046) and s14 (0.107 to 0.086). The monotonic drift in these sensors suggests a steady progression towards failure, with the engine likely experiencing significant degradation over the next few cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.292 to 0.310) and s12 (0.693 to 0.748), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.199 to 0.236) and s14 (0.243 to 0.288) show relatively stable or slightly decreasing values, indicating a lack of significant degradation in these areas. The overall pattern suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.292 to 0.310) and s12 (0.693 to 0.748), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.199 to 0.236) and s14 (0.243 to 0.288) show relatively stable or slightly decreasing values, indicating a lack of significant degradation in these areas. The overall pattern suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.280 to 0.399) and s12 (0.676 to 0.748), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.185 to 0.199) and s14 (0.224 to 0.242) are trending downwards, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.280 to 0.399) and s12 (0.676 to 0.748), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.185 to 0.199) and s14 (0.224 to 0.242) are trending downwards, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.435-0.589) and s12 (0.435-0.584), and decreasing or stable values for efficiency-related sensors like s9 (0.079-0.144) and s14 (0.090-0.130). The increasing variance in these sensors also suggests an approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.435-0.589) and s12 (0.435-0.584), and decreasing or stable values for efficiency-related sensors like s9 (0.079-0.144) and s14 (0.090-0.130). The increasing variance in these sensors also suggests an approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.357 to 0.238) and s12 (0.751 to 0.714), and decreasing values for efficiency-related sensors s9 (0.160 to 0.178) and s14 (0.196 to 0.190). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation observed over the last 30 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.357 to 0.238) and s12 (0.751 to 0.714), and decreasing values for efficiency-related sensors s9 (0.160 to 0.178) and s14 (0.196 to 0.190). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation observed over the last 30 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.292 to 0.310) and s12 (0.748 to 0.827), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.153 to 0.167) and s14 (0.204 to 0.219) show decreasing values, further supporting the degradation pattern. The increasing variance in these sensor readings also suggests an approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.292 to 0.310) and s12 (0.748 to 0.827), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.153 to 0.167) and s14 (0.204 to 0.219) show decreasing values, further supporting the degradation pattern. The increasing variance in these sensor readings also suggests an approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.476 to 0.417) and s12 (0.601 to 0.770), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.340 to 0.328) and s14 (0.344 to 0.372) show relatively stable or decreasing values, indicating a potential loss of efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident in recent cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.476 to 0.417) and s12 (0.601 to 0.770), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.340 to 0.328) and s14 (0.344 to 0.372) show relatively stable or decreasing values, indicating a potential loss of efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident in recent cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.542 at t-21 to 0.506 at t-1) and s12 (0.667 at t-21 to 0.505 at t-1), and decreasing values for efficiency-related sensors like s9 (0.169 at t-20 to 0.154 at t-1). Additionally, the variance of some sensors, such as s11 and s15, has increased over time, suggesting an approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.542 at t-21 to 0.506 at t-1) and s12 (0.667 at t-21 to 0.505 at t-1), and decreasing values for efficiency-related sensors like s9 (0.169 at t-20 to 0.154 at t-1). Additionally, the variance of some sensors, such as s11 and s15, has increased over time, suggesting an approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.417 to 0.393) and s12 (0.712 to 0.674), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.163 to 0.194) and s14 (0.216 to 0.208) are trending downwards, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.417 to 0.393) and s12 (0.712 to 0.674), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.163 to 0.194) and s14 (0.216 to 0.208) are trending downwards, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.708 at t-6) and s12 (0.407 at t-6), and decreasing values for efficiency-related sensors like s9 (0.191 at t-6) and s14 (0.223 at t-5). The variance in some sensor readings, particularly s15, also suggests an increasing risk of failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.708 at t-6) and s12 (0.407 at t-6), and decreasing values for efficiency-related sensors like s9 (0.191 at t-6) and s14 (0.223 at t-5). The variance in some sensor readings, particularly s15, also suggests an increasing risk of failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.393 to 0.363) and s12 (0.731 to 0.710), and decreasing values for efficiency-related sensors s9 (0.280 to 0.294) and s14 (0.261 to 0.354). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.393 to 0.363) and s12 (0.731 to 0.710), and decreasing values for efficiency-related sensors s9 (0.280 to 0.294) and s14 (0.261 to 0.354). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.470 at t-3) and s12 (0.710 at t-3), and decreasing values for efficiency-related sensors like s9 (0.116 at t-3). Additionally, the variance in some sensors, e.g., s7 (0.525 at t-3), suggests an increasing trend towards failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.470 at t-3) and s12 (0.710 at t-3), and decreasing values for efficiency-related sensors like s9 (0.116 at t-3). Additionally, the variance in some sensors, e.g., s7 (0.525 at t-3), suggests an increasing trend towards failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.369 to 0.386) and s12 (0.644 to 0.772), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.169 to 0.164) and s14 (0.192 to 0.174) show decreasing values, which is consistent with degradation. The overall trend suggests a gradual decline in engine health, warranting a RUL estimate of 42 cycles before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.369 to 0.386) and s12 (0.644 to 0.772), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.169 to 0.164) and s14 (0.192 to 0.174) show decreasing values, which is consistent with degradation. The overall trend suggests a gradual decline in engine health, warranting a RUL estimate of 42 cycles before failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.08) and s12 (average increase of 0.06), suggesting a decline in engine efficiency. Conversely, efficiency-related sensors s9 and s14 show decreasing values, further supporting the indication of wear. The monotonic drift in these trends suggests that failure is approaching within the next few cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.08) and s12 (average increase of 0.06), suggesting a decline in engine efficiency. Conversely, efficiency-related sensors s9 and s14 show decreasing values, further supporting the indication of wear. The monotonic drift in these trends suggests that failure is approaching within the next few cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.238 to 0.315) and s12 (0.674 to 0.812), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.139 to 0.110) and s14 (0.170 to 0.166) show decreasing values, indicating a potential decline in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.238 to 0.315) and s12 (0.674 to 0.812), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.139 to 0.110) and s14 (0.170 to 0.166) show decreasing values, indicating a potential decline in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.262 to 0.327) and s12 (0.772 to 0.904), and decreasing values for efficiency-related sensors s9 (0.174 to 0.235) and s14 (0.258 to 0.267). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.262 to 0.327) and s12 (0.772 to 0.904), and decreasing values for efficiency-related sensors s9 (0.174 to 0.235) and s14 (0.258 to 0.267). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.387 to 0.351) and s12 (0.744 to 0.629), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.103 to 0.124) and s14 (0.151 to 0.125) show decreasing values, indicating a potential decline in engine performance. The overall trend suggests that the engine is approaching failure, but with some remaining life.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.387 to 0.351) and s12 (0.744 to 0.629), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.103 to 0.124) and s14 (0.151 to 0.125) show decreasing values, indicating a potential decline in engine performance. The overall trend suggests that the engine is approaching failure, but with some remaining life.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.518 to 0.482) and s12 (0.642 to 0.565), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.131 to 0.164) and s14 (0.193 to 0.202) show relatively stable or slightly decreasing values, indicating a lack of significant degradation in these areas. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.518 to 0.482) and s12 (0.642 to 0.565), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.131 to 0.164) and s14 (0.193 to 0.202) show relatively stable or slightly decreasing values, indicating a lack of significant degradation in these areas. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.238 to 0.482) and s12 (0.625 to 0.758), and decreasing values for efficiency-related sensors s9 (0.202 to 0.235) and s14 (0.245 to 0.240). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of approximately 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.238 to 0.482) and s12 (0.625 to 0.758), and decreasing values for efficiency-related sensors s9 (0.202 to 0.235) and s14 (0.245 to 0.240). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of approximately 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.12), s12 (average increase of 0.15), and s15 (average increase of 0.13). In contrast, efficiency-related sensors s9 and s14 show decreasing values, suggesting a decline in engine performance. The monotonic drift in these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.12), s12 (average increase of 0.15), and s15 (average increase of 0.13). In contrast, efficiency-related sensors s9 and s14 show decreasing values, suggesting a decline in engine performance. The monotonic drift in these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.631 to 0.768) and s12 (0.507 to 0.335), and decreasing values for efficiency-related sensors s9 (0.264 to 0.245) and s14 (0.294 to 0.057). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.631 to 0.768) and s12 (0.507 to 0.335), and decreasing values for efficiency-related sensors s9 (0.264 to 0.245) and s14 (0.294 to 0.057). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 45,
+    "reasoning": "The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at an imminent state.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 45\nREASONING: The sensor readings show a gradual increase in s11, s12, and s15, indicating advanced wear. Meanwhile, s9 and s14 exhibit decreasing values, suggesting reduced efficiency. These trends suggest that the engine is approaching failure, but not yet at an imminent state.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.512 to 0.552) and s12 (0.478 to 0.693), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.175 to 0.148) and s14 (0.207 to 0.192) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, with a remaining useful life of approximately 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.512 to 0.552) and s12 (0.478 to 0.693), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.175 to 0.148) and s14 (0.207 to 0.192) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, with a remaining useful life of approximately 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.821 to 0.762) and s12 (0.356 to 0.160), and decreasing values for efficiency-related sensors s9 (0.109 to 0.065) and s14 (0.141 to 0.114). The monotonic drift in these sensors suggests a high likelihood of imminent failure, warranting an RUL estimate of 23 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.821 to 0.762) and s12 (0.356 to 0.160), and decreasing values for efficiency-related sensors s9 (0.109 to 0.065) and s14 (0.141 to 0.114). The monotonic drift in these sensors suggests a high likelihood of imminent failure, warranting an RUL estimate of 23 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.839) and s12 (0.392), and decreasing values for efficiency-related sensors like s9 (0.261) and s14 (0.278). Additionally, the variance in some sensors, e.g., s2 (0.660-0.726) and s3 (0.482-0.675), suggests a monotonic drift towards failure, supporting an RUL estimate of 23 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.839) and s12 (0.392), and decreasing values for efficiency-related sensors like s9 (0.261) and s14 (0.278). Additionally, the variance in some sensors, e.g., s2 (0.660-0.726) and s3 (0.482-0.675), suggests a monotonic drift towards failure, supporting an RUL estimate of 23 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.661 at t-9) and s12 (0.439 at t-9), suggesting a decline in engine efficiency. Conversely, lower values for efficiency-related sensors like s9 (0.150 at t-9) and s14 (0.175 at t-4) also support this trend. The overall pattern suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.661 at t-9) and s12 (0.439 at t-9), suggesting a decline in engine efficiency. Conversely, lower values for efficiency-related sensors like s9 (0.150 at t-9) and s14 (0.175 at t-4) also support this trend. The overall pattern suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.500 to 0.548) and s12 (0.471 to 0.512), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.095 to 0.090) and s14 (0.118 to 0.099) are trending downwards, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.500 to 0.548) and s12 (0.471 to 0.512), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.095 to 0.090) and s14 (0.118 to 0.099) are trending downwards, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.667 at t-3 to 0.601 at t-1) and s12 (0.475 at t-3 to 0.473 at t-1), and decreasing values for efficiency-related sensors s9 (0.271 at t-3 to 0.289 at t-1) and s14 (0.305 at t-3 to 0.314 at t-1). The variance of these sensors also shows a slight increase, suggesting an approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.667 at t-3 to 0.601 at t-1) and s12 (0.475 at t-3 to 0.473 at t-1), and decreasing values for efficiency-related sensors s9 (0.271 at t-3 to 0.289 at t-1) and s14 (0.305 at t-3 to 0.314 at t-1). The variance of these sensors also shows a slight increase, suggesting an approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.357 to 0.422) and s12 (0.554 to 0.740), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.149 to 0.180) and s14 (0.215 to 0.244) show relatively stable or decreasing values, indicating a potential imbalance in engine performance. The overall trend suggests an impending failure within the next 42 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.357 to 0.422) and s12 (0.554 to 0.740), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.149 to 0.180) and s14 (0.215 to 0.244) show relatively stable or decreasing values, indicating a potential imbalance in engine performance. The overall trend suggests an impending failure within the next 42 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.13), s12 (average increase of 0.06), and s15 (average increase of 0.08). Conversely, efficiency-related sensors s9 and s14 show decreasing values, suggesting a decline in engine performance. The monotonic drift in these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.13), s12 (average increase of 0.06), and s15 (average increase of 0.08). Conversely, efficiency-related sensors s9 and s14 show decreasing values, suggesting a decline in engine performance. The monotonic drift in these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.637 at t-5) and s12 (0.614 at t-10), and decreasing values for efficiency-related sensors s9 (0.080 at t-1) and s14 (0.082 at t-1). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.637 at t-5) and s12 (0.614 at t-10), and decreasing values for efficiency-related sensors s9 (0.080 at t-1) and s14 (0.082 at t-1). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.405 to 0.861) and s12 (0.567 to 0.728), and decreasing values for efficiency-related sensors s9 (0.092 to 0.023) and s14 (0.137 to 0.096). The monotonic drift in these sensors suggests a consistent degradation pattern, indicating that the engine is approaching failure within the next 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.405 to 0.861) and s12 (0.567 to 0.728), and decreasing values for efficiency-related sensors s9 (0.092 to 0.023) and s14 (0.137 to 0.096). The monotonic drift in these sensors suggests a consistent degradation pattern, indicating that the engine is approaching failure within the next 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.446 to 0.595) and s12 (0.437 to 0.569), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.167 to 0.190) and s14 (0.162 to 0.187) show relatively stable or decreasing values, indicating a lack of significant degradation in these areas. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.446 to 0.595) and s12 (0.437 to 0.569), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.167 to 0.190) and s14 (0.162 to 0.187) show relatively stable or decreasing values, indicating a lack of significant degradation in these areas. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 43,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.280 to 0.399) and s12 (0.591 to 0.648), and decreasing values for efficiency-related sensors s9 (0.147 to 0.162) and s14 (0.186 to 0.163). The variance in these sensors also increases, suggesting an approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 43\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.280 to 0.399) and s12 (0.591 to 0.648), and decreasing values for efficiency-related sensors s9 (0.147 to 0.162) and s14 (0.186 to 0.163). The variance in these sensors also increases, suggesting an approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.601 to 0.429) and s12 (0.531 to 0.576), and decreasing values for efficiency-related sensors s9 (0.188 to 0.173) and s14 (0.187 to 0.193). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation observed over the last 30 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.601 to 0.429) and s12 (0.531 to 0.576), and decreasing values for efficiency-related sensors s9 (0.188 to 0.173) and s14 (0.187 to 0.193). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation observed over the last 30 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.601 to 0.530) and s12 (0.710 to 0.544), and decreasing values for efficiency-related sensors s9 (0.244 to 0.264) and s14 (0.282 to 0.278). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.601 to 0.530) and s12 (0.710 to 0.544), and decreasing values for efficiency-related sensors s9 (0.244 to 0.264) and s14 (0.282 to 0.278). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.452 to 0.607) and s12 (0.493 to 0.768), and decreasing values for efficiency-related sensors s9 (0.060 to 0.124) and s14 (0.094 to 0.132). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.452 to 0.607) and s12 (0.493 to 0.768), and decreasing values for efficiency-related sensors s9 (0.060 to 0.124) and s14 (0.094 to 0.132). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.506) and s12 (0.712), and decreasing values for efficiency-related sensors s9 (0.145) and s14 (0.192). Additionally, the variance in some sensors, such as s7 and s8, suggests a monotonic drift towards failure, indicating that the engine is approaching its end of life.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.506) and s12 (0.712), and decreasing values for efficiency-related sensors s9 (0.145) and s14 (0.192). Additionally, the variance in some sensors, such as s7 and s8, suggests a monotonic drift towards failure, indicating that the engine is approaching its end of life.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.649 to 0.690) and s12 (0.341 to 0.337), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.151 to 0.138) and s14 (0.152 to 0.168) show relatively stable or slightly decreasing values, indicating no significant improvement in efficiency. The overall trend suggests that the engine is approaching failure within the next few cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.649 to 0.690) and s12 (0.341 to 0.337), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.151 to 0.138) and s14 (0.152 to 0.168) show relatively stable or slightly decreasing values, indicating no significant improvement in efficiency. The overall trend suggests that the engine is approaching failure within the next few cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.506) and s12 (0.631), and decreasing values for efficiency-related sensors like s9 (0.170) and s14 (0.217). Additionally, the variance in some sensors, e.g., s7 (0.536), suggests approaching failure, indicating a moderate level of degradation that warrants further investigation.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.506) and s12 (0.631), and decreasing values for efficiency-related sensors like s9 (0.170) and s14 (0.217). Additionally, the variance in some sensors, e.g., s7 (0.536), suggests approaching failure, indicating a moderate level of degradation that warrants further investigation.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.405 to 0.587) and s12 (0.535 to 0.665), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.105 to 0.194) and s14 (0.143 to 0.165) show decreasing values, indicating a potential decrease in engine performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.405 to 0.587) and s12 (0.535 to 0.665), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.105 to 0.194) and s14 (0.143 to 0.165) show decreasing values, indicating a potential decrease in engine performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.298-0.512) and s12 (0.586-0.631), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.268-0.453) and s14 (0.292-0.475) show decreasing values, indicating reduced efficiency. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.298-0.512) and s12 (0.586-0.631), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.268-0.453) and s14 (0.292-0.475) show decreasing values, indicating reduced efficiency. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.595), s12 (0.539), and s15 (0.511) over the last few cycles. Conversely, efficiency-related sensors s9 (0.347) and s14 (0.388) show lower values, suggesting a decline in engine performance. The monotonic drift of these trends suggests that the engine is approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.595), s12 (0.539), and s15 (0.511) over the last few cycles. Conversely, efficiency-related sensors s9 (0.347) and s14 (0.388) show lower values, suggesting a decline in engine performance. The monotonic drift of these trends suggests that the engine is approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.292 at t-1) and s12 (0.765 at t-1), and decreasing values for efficiency-related sensors like s9 (0.192 at t-1). Additionally, the variance in some sensors, e.g., s15 (0.260 at t-1), suggests a monotonic drift towards failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.292 at t-1) and s12 (0.765 at t-1), and decreasing values for efficiency-related sensors like s9 (0.192 at t-1). Additionally, the variance in some sensors, e.g., s15 (0.260 at t-1), suggests a monotonic drift towards failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.202 to 0.387) and s12 (0.567 to 0.829), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.155 to 0.192) and s14 (0.175 to 0.217) show relatively stable or decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.202 to 0.387) and s12 (0.567 to 0.829), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.155 to 0.192) and s14 (0.175 to 0.217) show relatively stable or decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.792 at t-10) and s12 (0.435 at t-10), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.062 at t-1) and s14 (0.086 at t-1) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.792 at t-10) and s12 (0.435 at t-10), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.062 at t-1) and s14 (0.086 at t-1) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.482 to 0.623) and s12 (0.542 to 0.623), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.116 to 0.099) and s14 (0.182 to 0.164) show decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.482 to 0.623) and s12 (0.542 to 0.623), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.116 to 0.099) and s14 (0.182 to 0.164) show decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure, but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.506 to 0.589) and s12 (0.416 to 0.531), and decreasing values for efficiency-related sensors s9 (0.161 to 0.187) and s14 (0.190 to 0.177). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.506 to 0.589) and s12 (0.416 to 0.531), and decreasing values for efficiency-related sensors s9 (0.161 to 0.187) and s14 (0.190 to 0.177). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.315 to 0.357) and s12 (0.804 to 0.940), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.164 to 0.192) and s14 (0.173 to 0.198) show relatively stable or decreasing values, indicating a lack of significant degradation in these areas. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.315 to 0.357) and s12 (0.804 to 0.940), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.164 to 0.192) and s14 (0.173 to 0.198) show relatively stable or decreasing values, indicating a lack of significant degradation in these areas. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.351 to 0.405) and s12 (0.704 to 0.748), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.163 to 0.146) and s14 (0.187 to 0.166) show decreasing values, indicating a potential decrease in engine performance. The overall trend suggests that the engine is approaching failure, but with some remaining life left.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.351 to 0.405) and s12 (0.704 to 0.748), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.163 to 0.146) and s14 (0.187 to 0.166) show decreasing values, indicating a potential decrease in engine performance. The overall trend suggests that the engine is approaching failure, but with some remaining life left.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.661 at t-11) and s12 (0.482 at t-11), and decreasing values for efficiency-related sensors like s9 (0.234 at t-10). Additionally, the variance in some sensor readings, particularly s7 and s8, suggests a gradual degradation pattern, indicating that the engine is approaching failure but still has a significant number of operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.661 at t-11) and s12 (0.482 at t-11), and decreasing values for efficiency-related sensors like s9 (0.234 at t-10). Additionally, the variance in some sensor readings, particularly s7 and s8, suggests a gradual degradation pattern, indicating that the engine is approaching failure but still has a significant number of operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.452 to 0.494) and s12 (0.650 to 0.759), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.238 to 0.305) and s14 (0.276 to 0.389) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.452 to 0.494) and s12 (0.650 to 0.759), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.238 to 0.305) and s14 (0.276 to 0.389) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.536 to 0.560) and s12 (0.510 to 0.580), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.096 to 0.138) and s14 (0.148 to 0.162) are trending downward, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure within the next 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.536 to 0.560) and s12 (0.510 to 0.580), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.096 to 0.138) and s14 (0.148 to 0.162) are trending downward, suggesting reduced efficiency. The overall trend suggests the engine is approaching failure within the next 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.643 at t-10) and s12 (0.599 at t-9), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.160 at t-10) and s14 (0.156 at t-10) show decreasing values, further supporting the wear pattern. The overall trend suggests that the engine is approaching failure within the next 45 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 45\nREASONING: The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.643 at t-10) and s12 (0.599 at t-9), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.160 at t-10) and s14 (0.156 at t-10) show decreasing values, further supporting the wear pattern. The overall trend suggests that the engine is approaching failure within the next 45 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.321 -> 0.238) and s12 (0.898 -> 0.721), while efficiency-related sensors like s9 (0.216 -> 0.173) and s14 (0.276 -> 0.269) show decreasing or stable values, suggesting a degradation pattern. The variance in some sensor readings also increases over time, further indicating approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.321 -> 0.238) and s12 (0.898 -> 0.721), while efficiency-related sensors like s9 (0.216 -> 0.173) and s14 (0.276 -> 0.269) show decreasing or stable values, suggesting a degradation pattern. The variance in some sensor readings also increases over time, further indicating approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.583 to 0.637) and s12 (0.437 to 0.439), and decreasing values for efficiency-related sensors s9 (0.315 to 0.451) and s14 (0.358 to 0.504). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.583 to 0.637) and s12 (0.437 to 0.439), and decreasing values for efficiency-related sensors s9 (0.315 to 0.451) and s14 (0.358 to 0.504). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.250-0.369) and s12 (0.627-0.896), while efficiency-related sensors like s9 (0.137-0.187) and s14 (0.205-0.242) show decreasing values. The monotonic drift in these trends suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.250-0.369) and s12 (0.627-0.896), while efficiency-related sensors like s9 (0.137-0.187) and s14 (0.205-0.242) show decreasing values. The monotonic drift in these trends suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.661-0.726) and s12 (0.290-0.352), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.271-0.291) and s14 (0.265-0.312) show relatively stable or slightly decreasing values, indicating some level of degradation but not yet severe enough to indicate imminent failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.661-0.726) and s12 (0.290-0.352), suggesting a decline in engine performance. Conversely, efficiency-related sensors like s9 (0.271-0.291) and s14 (0.265-0.312) show relatively stable or slightly decreasing values, indicating some level of degradation but not yet severe enough to indicate imminent failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.351 to 0.310) and s12 (0.706 to 0.672), suggesting advanced wear in the engine's compressor or turbine section. Conversely, efficiency-related sensors like s9 (0.124 to 0.094) and s14 (0.135 to 0.160) show decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure, but with some remaining life left.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.351 to 0.310) and s12 (0.706 to 0.672), suggesting advanced wear in the engine's compressor or turbine section. Conversely, efficiency-related sensors like s9 (0.124 to 0.094) and s14 (0.135 to 0.160) show decreasing values, indicating a potential loss of performance. The overall trend suggests that the engine is approaching failure, but with some remaining life left.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.429 to 0.488) and s12 (0.542 to 0.693), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.150 to 0.085) and s14 (0.173 to 0.171) show decreasing values, indicating a potential decline in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.429 to 0.488) and s12 (0.542 to 0.693), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.150 to 0.085) and s14 (0.173 to 0.171) show decreasing values, indicating a potential decline in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.268 to 0.298) and s12 (0.765 to 0.795), while efficiency-related sensors like s9 (0.198 to 0.210) and s14 (0.251 to 0.239) show decreasing values. The increasing variance in these sensors also suggests approaching failure, indicating a moderate level of degradation that warrants further investigation.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.268 to 0.298) and s12 (0.765 to 0.795), while efficiency-related sensors like s9 (0.198 to 0.210) and s14 (0.251 to 0.239) show decreasing values. The increasing variance in these sensors also suggests approaching failure, indicating a moderate level of degradation that warrants further investigation.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.292 to 0.500) and s12 (0.631 to 0.593), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.234 to 0.226) and s14 (0.245 to 0.255) show relatively stable or decreasing values, indicating a potential imbalance in the engine's performance. The overall trend suggests that the engine is approaching failure, but with some remaining life left.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.292 to 0.500) and s12 (0.631 to 0.593), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.234 to 0.226) and s14 (0.245 to 0.255) show relatively stable or decreasing values, indicating a potential imbalance in the engine's performance. The overall trend suggests that the engine is approaching failure, but with some remaining life left.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.411) and s12 (0.710), and decreasing values for efficiency-related sensors like s9 (0.133) and s14 (0.191). Additionally, the variance in some sensors, e.g., s7 (0.734), suggests a monotonic drift towards failure, indicating that the engine is likely to fail within 42 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.411) and s12 (0.710), and decreasing values for efficiency-related sensors like s9 (0.133) and s14 (0.191). Additionally, the variance in some sensors, e.g., s7 (0.734), suggests a monotonic drift towards failure, indicating that the engine is likely to fail within 42 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.440 -> 0.411) and s12 (0.480 -> 0.576), while efficiency-related sensors like s9 (0.210 -> 0.187) and s14 (0.231 -> 0.205) show decreasing values, suggesting a decline in engine performance. The monotonic drift of these trends suggests that the engine is approaching failure, with an estimated remaining useful life of 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.440 -> 0.411) and s12 (0.480 -> 0.576), while efficiency-related sensors like s9 (0.210 -> 0.187) and s14 (0.231 -> 0.205) show decreasing values, suggesting a decline in engine performance. The monotonic drift of these trends suggests that the engine is approaching failure, with an estimated remaining useful life of 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.518 at t-3) and s12 (0.755 at t-2), and decreasing values for efficiency-related sensors like s9 (0.133 at t-1). Additionally, the variance in some sensors, e.g., s7 (0.686 at t-1), suggests an increasing trend towards failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.518 at t-3) and s12 (0.755 at t-2), and decreasing values for efficiency-related sensors like s9 (0.133 at t-1). Additionally, the variance in some sensors, e.g., s7 (0.686 at t-1), suggests an increasing trend towards failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.696 to 0.714) and s12 (0.326 to 0.352), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.391 to 0.418) and s14 (0.397 to 0.426) show decreasing values, further supporting the indication of wear. The overall trend suggests that the engine is approaching failure within the next 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.696 to 0.714) and s12 (0.326 to 0.352), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.391 to 0.418) and s14 (0.397 to 0.426) show decreasing values, further supporting the indication of wear. The overall trend suggests that the engine is approaching failure within the next 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.387 to 0.571) and s12 (0.640 to 0.644), and decreasing values for efficiency-related sensors s9 (0.090 to 0.106) and s14 (0.131 to 0.146). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.387 to 0.571) and s12 (0.640 to 0.644), and decreasing values for efficiency-related sensors s9 (0.090 to 0.106) and s14 (0.131 to 0.146). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of around 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.280 at t-9 to 0.208 at t-1) and s12 (0.819 at t-9 to 0.814 at t-1), suggesting a decline in engine efficiency. Conversely, efficiency-related sensors s9 and s14 show decreasing values, further supporting the indication of wear. The monotonic drift in these trends suggests that failure is approaching.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.280 at t-9 to 0.208 at t-1) and s12 (0.819 at t-9 to 0.814 at t-1), suggesting a decline in engine efficiency. Conversely, efficiency-related sensors s9 and s14 show decreasing values, further supporting the indication of wear. The monotonic drift in these trends suggests that failure is approaching.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 42,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.482 at t-1) and s12 (0.610 at t-1). Conversely, efficiency-related sensors like s9 (0.084 at t-1) and s14 (0.132 at t-1) are decreasing, indicating a decline in performance. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.482 at t-1) and s12 (0.610 at t-1). Conversely, efficiency-related sensors like s9 (0.084 at t-1) and s14 (0.132 at t-1) are decreasing, indicating a decline in performance. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.417-0.518) and s12 (0.533-0.633), and relatively stable or decreasing values for efficiency-related sensors like s9 (0.208-0.230) and s14 (0.247-0.222). The increasing variance in these sensors also suggests an approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.417-0.518) and s12 (0.533-0.633), and relatively stable or decreasing values for efficiency-related sensors like s9 (0.208-0.230) and s14 (0.247-0.222). The increasing variance in these sensors also suggests an approaching failure, with a moderate level of degradation consistent with an RUL estimate of 42 cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.637 to 0.750) and s15 (0.506 to 0.726), suggesting a decline in engine efficiency. Conversely, lower values for efficiency-related sensors s9 (0.225 to 0.240) and s14 (0.221 to 0.250) also support this trend. The increasing variance and monotonic drift of these sensors suggest approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.637 to 0.750) and s15 (0.506 to 0.726), suggesting a decline in engine efficiency. Conversely, lower values for efficiency-related sensors s9 (0.225 to 0.240) and s14 (0.221 to 0.250) also support this trend. The increasing variance and monotonic drift of these sensors suggest approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.804), s12 (0.299), and s15 (0.722) over the last few cycles. Conversely, efficiency-related sensors s9 (0.128) and s14 (0.144) show lower values, suggesting a decline in engine performance. The monotonic drift of these sensors suggests an imminent failure within 23 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.804), s12 (0.299), and s15 (0.722) over the last few cycles. Conversely, efficiency-related sensors s9 (0.128) and s14 (0.144) show lower values, suggesting a decline in engine performance. The monotonic drift of these sensors suggests an imminent failure within 23 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (average increase of 0.05 over the last 30 cycles) and s12 (average increase of 0.03). Conversely, efficiency-related sensors like s9 and s14 show relatively stable or decreasing values, suggesting a gradual decline in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational life left.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (average increase of 0.05 over the last 30 cycles) and s12 (average increase of 0.03). Conversely, efficiency-related sensors like s9 and s14 show relatively stable or decreasing values, suggesting a gradual decline in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational life left.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.506 to 0.657) and s12 (0.384 to 0.731), and decreasing values for efficiency-related sensors s9 (0.137 to 0.129) and s14 (0.174 to 0.158). The monotonic drift in these sensors suggests a steady degradation pattern, indicating an RUL of approximately 42 cycles before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.506 to 0.657) and s12 (0.384 to 0.731), and decreasing values for efficiency-related sensors s9 (0.137 to 0.129) and s14 (0.174 to 0.158). The monotonic drift in these sensors suggests a steady degradation pattern, indicating an RUL of approximately 42 cycles before failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.524) and s12 (0.584), and decreasing values for efficiency-related sensors s9 (0.105) and s14 (0.138). Additionally, the variance in some sensors, such as s7 (0.596) and s20 (0.543), suggests a monotonic drift towards failure, indicating that the engine is likely to fail within 42 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.524) and s12 (0.584), and decreasing values for efficiency-related sensors s9 (0.105) and s14 (0.138). Additionally, the variance in some sensors, such as s7 (0.596) and s20 (0.543), suggests a monotonic drift towards failure, indicating that the engine is likely to fail within 42 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values in degradation-related sensors such as s11 (0.369 to 0.399) and s12 (0.625 to 0.663), suggesting advanced wear. In contrast, efficiency-related sensors like s9 (0.187 to 0.237) and s14 (0.234 to 0.249) show relatively stable or slightly decreasing values, indicating a lack of significant improvement in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values in degradation-related sensors such as s11 (0.369 to 0.399) and s12 (0.625 to 0.663), suggesting advanced wear. In contrast, efficiency-related sensors like s9 (0.187 to 0.237) and s14 (0.234 to 0.249) show relatively stable or slightly decreasing values, indicating a lack of significant improvement in engine performance. The overall trend suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.339 to 0.327) and s12 (0.674 to 0.738), and decreasing values for efficiency-related sensors s9 (0.180 to 0.158) and s14 (0.234 to 0.243). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.339 to 0.327) and s12 (0.674 to 0.738), and decreasing values for efficiency-related sensors s9 (0.180 to 0.158) and s14 (0.234 to 0.243). The monotonic drift in these sensors suggests approaching failure, with a moderate level of degradation consistent with an RUL estimate of 23 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 22,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.542), s12 (0.565), and s15 (0.538). Conversely, efficiency-related sensors s9 (0.105) and s14 (0.135) show lower values, suggesting a decline in engine performance. The monotonic drift of these sensors suggests an approaching failure within the next 22 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 22\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.542), s12 (0.565), and s15 (0.538). Conversely, efficiency-related sensors s9 (0.105) and s14 (0.135) show lower values, suggesting a decline in engine performance. The monotonic drift of these sensors suggests an approaching failure within the next 22 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.482 to 0.512) and s12 (0.507 to 0.593), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.107 to 0.161) and s14 (0.162 to 0.159) show decreasing values, which is consistent with degradation. The overall pattern suggests a gradual decline in engine health, warranting an RUL estimate of 42 cycles before failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.482 to 0.512) and s12 (0.507 to 0.593), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.107 to 0.161) and s14 (0.162 to 0.159) show decreasing values, which is consistent with degradation. The overall pattern suggests a gradual decline in engine health, warranting an RUL estimate of 42 cycles before failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 22,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (trend: 720 -> 685) and s12 (trend: 591 -> 561), and decreasing values for efficiency-related sensors s9 (trend: 0.199 -> 0.296) and s14 (trend: 0.262 -> 0.292). The monotonic drift in these sensors suggests approaching failure, with a moderate to high risk of engine degradation within the next 22 operational cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 22\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (trend: 720 -> 685) and s12 (trend: 591 -> 561), and decreasing values for efficiency-related sensors s9 (trend: 0.199 -> 0.296) and s14 (trend: 0.262 -> 0.292). The monotonic drift in these sensors suggests approaching failure, with a moderate to high risk of engine degradation within the next 22 operational cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 43,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.655 to 0.690) and s12 (0.373 to 0.484), suggesting a decline in engine health. Conversely, efficiency-related sensors s9 (0.124 to 0.136) and s14 (0.132 to 0.123) show minimal variation, indicating stable performance. The overall trend suggests an impending failure within the next 43 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 43\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.655 to 0.690) and s12 (0.373 to 0.484), suggesting a decline in engine health. Conversely, efficiency-related sensors s9 (0.124 to 0.136) and s14 (0.132 to 0.123) show minimal variation, indicating stable performance. The overall trend suggests an impending failure within the next 43 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 23,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.649 to 0.780) and s12 (0.394 to 0.309), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.091 to 0.129) and s14 (0.087 to 0.141) show decreasing values, further supporting the indication of wear. The monotonic drift in these trends suggests an imminent failure within the next few cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.649 to 0.780) and s12 (0.394 to 0.309), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 (0.091 to 0.129) and s14 (0.087 to 0.141) show decreasing values, further supporting the indication of wear. The monotonic drift in these trends suggests an imminent failure within the next few cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 23,
+    "reasoning": "The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.631 to 0.488) and s12 (0.473 to 0.420), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.249 to 0.238) and s14 (0.271 to 0.287) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure within the next 23 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 23\nREASONING: The engine is showing signs of advanced wear, with increasing values in degradation-related sensors such as s11 (0.631 to 0.488) and s12 (0.473 to 0.420), indicating a decline in performance. Conversely, efficiency-related sensors like s9 (0.249 to 0.238) and s14 (0.271 to 0.287) are trending downwards, suggesting reduced efficiency. The overall trend suggests that the engine is approaching failure within the next 23 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (trend: 440 -> 571), s12 (trend: 461 -> 412), and s15 (trend: 617 -> 738). Conversely, efficiency-related sensors s9 and s14 show decreasing values, suggesting a decline in performance. The monotonic drift of these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (trend: 440 -> 571), s12 (trend: 461 -> 412), and s15 (trend: 617 -> 738). Conversely, efficiency-related sensors s9 and s14 show decreasing values, suggesting a decline in performance. The monotonic drift of these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.405 at t-10) and s12 (0.744 at t-10), and decreasing values for efficiency-related sensors like s9 (0.084 at t-10). Additionally, the variance in some sensor readings, such as s2 (0.636 at t-12) and s15 (0.461 at t-6), suggests a drift towards failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced level of wear, with increasing values for degradation-related sensors such as s11 (0.405 at t-10) and s12 (0.744 at t-10), and decreasing values for efficiency-related sensors like s9 (0.084 at t-10). Additionally, the variance in some sensor readings, such as s2 (0.636 at t-12) and s15 (0.461 at t-6), suggests a drift towards failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.256 to 0.351) and s12 (0.627 to 0.791), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.206 to 0.226) and s14 (0.243 to 0.249) show relatively stable or decreasing values, indicating a lack of significant degradation in these areas. The overall pattern suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate level of wear, with increasing values for degradation-related sensors such as s11 (0.256 to 0.351) and s12 (0.627 to 0.791), suggesting advanced wear. Conversely, efficiency-related sensors like s9 (0.206 to 0.226) and s14 (0.243 to 0.249) show relatively stable or decreasing values, indicating a lack of significant degradation in these areas. The overall pattern suggests that the engine is approaching failure but still has some operational cycles remaining.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.393 at t-10 to 0.387 at t-2) and s12 (0.697 at t-10 to 0.719 at t-2). Conversely, efficiency-related sensors like s9 show decreasing values (0.245 at t-10 to 0.280 at t-2), suggesting a degradation pattern consistent with approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors such as s11 (0.393 at t-10 to 0.387 at t-2) and s12 (0.697 at t-10 to 0.719 at t-2). Conversely, efficiency-related sensors like s9 show decreasing values (0.245 at t-10 to 0.280 at t-2), suggesting a degradation pattern consistent with approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.446-0.512) and s12 (0.576-0.744), and relatively stable or decreasing values for efficiency-related sensors like s9 (0.163-0.233) and s14 (0.199-0.246). The variance in some sensor readings, such as s11 and s15, also suggests an approaching failure.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate a moderate to advanced wear pattern, with increasing values for degradation-related sensors such as s11 (0.446-0.512) and s12 (0.576-0.744), and relatively stable or decreasing values for efficiency-related sensors like s9 (0.163-0.233) and s14 (0.199-0.246). The variance in some sensor readings, such as s11 and s15, also suggests an approaching failure.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.15) and s12 (average increase of 0.08), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 and s14 show relatively stable or decreasing values, indicating reduced efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (average increase of 0.15) and s12 (average increase of 0.08), suggesting a decline in engine performance. Conversely, efficiency-related sensors s9 and s14 show relatively stable or decreasing values, indicating reduced efficiency. The overall trend suggests that the engine is approaching failure, with a moderate level of degradation evident across multiple sensors.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 42,
+    "reasoning": "The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.565), s12 (0.507), and s15 (0.636) over the last few cycles. Conversely, efficiency-related sensors s9 (0.598) and s14 (0.592) show decreasing values, suggesting a decline in engine performance. The monotonic drift of these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "parse_ok": true,
+    "raw": "RUL_ESTIMATE: 42\nREASONING: The sensor trends indicate advanced wear, with increasing values for degradation-related sensors s11 (0.565), s12 (0.507), and s15 (0.636) over the last few cycles. Conversely, efficiency-related sensors s9 (0.598) and s14 (0.592) show decreasing values, suggesting a decline in engine performance. The monotonic drift of these sensors suggests an approaching failure, warranting a RUL estimate of 42 cycles.",
+    "model": "llama3.1:8b-instruct-q8_0"
+  }
+]
