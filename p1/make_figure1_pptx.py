@@ -83,26 +83,27 @@ def main():
     prs.slide_height = Cm(15)
     slide = prs.slides.add_slide(prs.slide_layouts[6])   # blank
 
-    label(slide, 0.6, 0.3, 24, "Figure 1. Experimental pipeline and the four-part "
-                               "evaluation protocol", size=12, colour=INK, bold=True)
+    # No title here: the caption is set in the manuscript, and one baked
+    # into the artwork would appear twice on the page.
 
     # ---- row 1: data to prediction -------------------------------------
     y = 1.6
     box(slide, 0.6, y, 3.6, 1.6,
-        "CMAPSS\nFD001-FD004", fill=PALE, bold=True)
+        "C-MAPSS\nFD001-FD004", fill=PALE, bold=True)
     box(slide, 4.7, y, 3.6, 1.6,
         "Last n cycles\nn = 5 / 15 / 30\nmin-max scaled", fill=PALE)
     box(slide, 8.8, y, 4.2, 1.6,
         "Prompt template\nzero-shot / few-shot", fill=PALE)
-    box(slide, 13.5, y, 4.2, 1.6,
-        "LLM via Ollama\nllama3.1 8B (Q4, Q8)\nmistral 7B, qwen2.5 7B", fill=PALE)
-    box(slide, 18.2, y, 3.4, 1.6, "Parse\nRUL + reasoning", fill=PALE)
+    box(slide, 13.5, y - 0.3, 4.6, 2.2,
+        "LLM via Ollama\nllama3.1 8B (Q4, Q8)\nmistral 7B, qwen2.5 7B\ndeepseek-r1 7B", fill=PALE,
+        size=9)
+    box(slide, 18.6, y, 3.4, 1.6, "Parse\nRUL + reasoning", fill=PALE)
 
-    for x1, x2 in ((4.2, 4.7), (8.3, 8.8), (13.0, 13.5), (17.7, 18.2)):
+    for x1, x2 in ((4.2, 4.7), (8.3, 8.8), (13.0, 13.5), (18.1, 18.6)):
         arrow(slide, x1, y + 0.8, x2, y + 0.8)
 
     # ---- split into the two things being evaluated ---------------------
-    box(slide, 18.6, y + 2.3, 2.6, 1.0, "RUL number", fill=INK, line=INK,
+    box(slide, 19.0, y + 2.3, 2.6, 1.0, "RUL number", fill=INK, line=INK,
         font_colour=WHITE, bold=True, size=10)
     box(slide, 18.6, y + 3.7, 2.6, 1.0, "Explanation", fill=ACCENT, line=ACCENT,
         font_colour=WHITE, bold=True, size=10)
@@ -131,7 +132,7 @@ def main():
         ("3. Output entropy",
          "Distinct values and modal\nshare. Is it regressing or\nchoosing from a menu?", INK),
         ("4. Explanation faithfulness",
-         "Textbook agreement vs\nagreement with the window\nactually shown", ACCENT),
+         "Asserted direction vs\nthe window actually shown\nvs the measured direction", ACCENT),
     ]
     for i, (title, body, colour) in enumerate(items):
         x = 0.6 + i * (w + gap)
@@ -150,10 +151,10 @@ def main():
     label(slide, 0.6, cy + 0.2, 16,
           "Parts 1-3 test whether the number carries prognostic information. "
           "Part 4 tests whether the text describes the input it was given.",
-          size=9, colour=GREY)
+          size=10, colour=INK)
     label(slide, 0.6, cy + 1.0, 16,
           "Every arm is paired: same engines, same model, same template - one thing "
-          "changes at a time.", size=9, colour=GREY)
+          "changes at a time.", size=10, colour=INK)
 
     prs.save(OUT)
     print(f"[saved] {OUT}")

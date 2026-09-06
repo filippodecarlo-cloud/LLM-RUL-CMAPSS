@@ -41,8 +41,11 @@ FIGURES = {
         "reference. DeepSeek-R1, run on 50 engines, is reported in Table 3. A regressor "
         "spreads across the range; the prompted models do not."),
     4: ("The same integer comes out of all of them",
-        "Figure 4. Distinct predicted values and modal share on each of the four CMAPSS "
-        "sub-datasets, against the number of test engines. Note the logarithmic scale."),
+        "Figure 4. Share of predictions falling on the single most frequent value, on "
+        "each of the four C-MAPSS sub-datasets, zero-shot with n = 30. The label on each "
+        "bar gives the number of distinct values the model produced over the engines "
+        "named in the category label. A regressor would produce as many distinct values "
+        "as there are engines."),
     5: ("Figure 5 breaks these results down by sensor",
         "Figure 5. What the stated direction agrees with, per sensor: the direction the prompt asserts, the direction measured on the training set, the window actually supplied, and the base rate on the same claims. Cued sensors are the ones the prompt names. For s9, s12 and s14 the first two references disagree, and the claims follow the first. Faithfulness and the base rate track each other everywhere. Bars rest on between 10 (s4) and 947 (s11) directional claims."),
     6: ("The data was turned upside down and the explanation stayed the same",
@@ -52,7 +55,7 @@ FIGURES = {
     7: ("The examples determine where the anchor sits",
         "Figure 7. Mean predicted RUL against the mean RUL of the examples placed in the "
         "prompt, over seven example sets. The dashed line is the test-set mean."),
-    8: ("This is the clearest argument for reporting rank correlation",
+    8: ("Figure 8 reports the rank correlation of every FD001 configuration",
         "Figure 8. Spearman rank correlation between predicted and true RUL for the 15 FD001 "
         "runs of the main grid, with 95% bootstrap intervals. Random Forest reaches +0.813 "
         "and the repaired LSTM +0.889 on the same engines."),
@@ -72,8 +75,9 @@ ALT_TEXT = {
     3: "Distribution of predicted remaining useful life on FD001, one series per model, "
        "showing the prompted models concentrated in one or two bins while the reference "
        "distribution spreads across the range.",
-    4: "Distinct predicted values and modal share on each of the four C-MAPSS sub-datasets, "
-       "against the number of test engines.",
+    4: "Bar chart of the share of predictions falling on a single value for each of the "
+       "four C-MAPSS sub-datasets, between 51% and 83%, each bar labelled with the number "
+       "of distinct values produced.",
     5: "Per sensor, the share of directional claims that agree with the asserted direction, "
        "the share that agree with the window shown, and the base rate.",
     6: "Counts of paired responses in which the stated sensor direction did or did not follow "

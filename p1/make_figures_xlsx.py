@@ -491,7 +491,7 @@ def figure_multicondition(wb):
         tr = json.loads(p.read_text(encoding="utf-8"))
         v = np.array([t["pred_rul"] for t in tr], float)
         vals, counts = np.unique(v, return_counts=True)
-        rows.append({"Dataset": f"{ds}\n(1 condition)",
+        rows.append({"Dataset": f"{ds}\n1 condition, {len(v)} engines",
                      "Distinct predicted values": int(len(vals)),
                      "Modal share (%)": 100 * counts.max() / len(v),
                      "Engines": len(v)})
@@ -506,7 +506,7 @@ def figure_multicondition(wb):
         if not len(v):
             continue
         vals, counts = np.unique(v, return_counts=True)
-        rows.append({"Dataset": f"{ds}\n(6 conditions)",
+        rows.append({"Dataset": f"{ds}\n6 conditions, {len(v)} engines",
                      "Distinct predicted values": int(len(vals)),
                      "Modal share (%)": 100 * counts.max() / len(v),
                      "Engines": len(v)})
@@ -534,38 +534,23 @@ def figure_multicondition(wb):
 
     chart = wb.add_chart({"type": "column"})
     chart.add_series({
-        "name": [name, r0, 1],
-        "categories": [name, first, 0, last, 0],
-        "values": [name, first, 1, last, 1],
-        "fill": {"color": INK}, "border": {"none": True}, "gap": 70,
-    })
-    chart.add_series({                       # engines, as the ceiling
-        "name": [name, r0, 3],
-        "categories": [name, first, 0, last, 0],
-        "values": [name, first, 3, last, 3],
-        "fill": {"color": LIGHT}, "border": {"none": True}, "gap": 70,
-    })
-    line = wb.add_chart({"type": "line"})
-    line.add_series({
         "name": [name, r0, 2],
         "categories": [name, first, 0, last, 0],
         "values": [name, first, 2, last, 2],
-        "line": {"color": ACCENT, "width": 2.0},
-        "marker": {"type": "circle", "size": 7, "fill": {"color": ACCENT},
-                   "border": {"none": True}},
-        "y2_axis": True,
+        "fill": {"color": INK}, "border": BAR_EDGE, "gap": 80,
+        # the number of distinct values belongs on the bar, not on a second axis
+        "data_labels": {
+            "value": True, "font": {"name": "Calibri", "size": 11, "color": INK},
+            "position": "outside_end", "num_format": "0",
+            "custom": [{"value": f"{int(v)} value{'s' if v != 1 else ''}"}
+                       for v in df["Distinct predicted values"]],
+        },
     })
-    chart.combine(line)
-    chart.set_title({"name": "Distinct predicted values and modal share by sub-dataset (zero-shot, n = 30)",
-                     "name_font": TITLE_FONT})
-    style_axes(chart, "Dataset", "Count (log scale)")
-    chart.set_y_axis({"name": "Distinct values / engines", "name_font": FONT,
-                      "num_font": FONT, "log_base": 10, "line": {"color": GREY},
-                      "major_gridlines": {"visible": True,
-                                          "line": {"color": GRID, "width": 0.75}}})
-    line.set_y2_axis({"name": "Modal share (%)", "name_font": FONT, "num_font": FONT,
-                      "num_format": "0", "min": 0, "max": 100})
-    chart.set_legend({"position": "bottom", "font": FONT})
+    chart.set_title({
+        "name": "Share of predictions on a single value, by sub-dataset (zero-shot, n = 30)",
+        "name_font": TITLE_FONT})
+    style_axes(chart, "Sub-dataset", "Predictions on the modal value (%)", y_max=100)
+    chart.set_legend({"none": True})
     add_chart_sheet(wb, "FIG_4", chart, 1.8, 1.4)
     return True
 
