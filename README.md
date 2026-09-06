@@ -2,7 +2,7 @@
 
 Code, inference traces and analysis for:
 
-> **Evaluating large language models for remaining useful life prediction: a protocol, and what it reveals on CMAPSS**
+> **Evaluating large language models for remaining useful life prediction: a protocol and evidence from C-MAPSS
 > Filippo De Carlo, University of Florence.
 
 This repository evaluates open-weight language models prompted **without fine-tuning** for

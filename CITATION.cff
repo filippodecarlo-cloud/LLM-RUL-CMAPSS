@@ -31,7 +31,7 @@ abstract: >-
   the scripts that generate every table and figure in the paper.
 preferred-citation:
   type: article
-  title: "Evaluating large language models for remaining useful life prediction: a protocol, and what it reveals on CMAPSS"
+  title: "Evaluating large language models for remaining useful life prediction: a protocol and evidence from C-MAPSS"
   authors:
     - family-names: "De Carlo"
       given-names: "Filippo"
