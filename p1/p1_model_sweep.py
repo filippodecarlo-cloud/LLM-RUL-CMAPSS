@@ -1,9 +1,8 @@
 """
 P1.1 / P1.2 - Is the collapse a property of llama3.1:8b Q4, or of the approach?
 
-Reviewers argued the categorical collapse could be an artefact of this one model
-at this one quantisation (critiques C, D, R1.8, R2.1, R2.3, R4.4). This script
-holds everything else fixed and swaps the model.
+The categorical collapse could be an artefact of this one model at this one
+quantisation. This script holds everything else fixed and swaps the model.
 
 Canonical configuration, identical to the P0 `repl` arm so the results are
 directly comparable to the 5 existing runs of it:

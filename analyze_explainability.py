@@ -163,15 +163,29 @@ def render_markdown_table(stats, n_total, label):
     # Summary statistics across the 7 physically informative sensors
     n_sensors = len(SENSOR_PHYSICS)
     tot_correct = sum(stats[s]["correct"] for s in SENSOR_PHYSICS)
-    tot_wrong = sum(stats[s]["wrong"] + stats[s].get("stable_called", 0) for s in SENSOR_PHYSICS)
-    tot_mentions = tot_correct + tot_wrong + sum(stats[s].get("unspecified", 0) for s in SENSOR_PHYSICS)
+    # A "directional claim" is one that names a direction: increase or decrease.
+    # Verdicts of "stable" are counted on their own line. Release 1.0 of this
+    # script folded them into the wrong-direction count and therefore into this
+    # denominator, which is why its report read 3,825 claims and 91.1% where
+    # this one reads 3,816 and 91.3% on the same traces.
+    tot_wrong = sum(stats[s]["wrong"] for s in SENSOR_PHYSICS)
+    tot_stable = sum(stats[s].get("stable_called", 0) for s in SENSOR_PHYSICS)
+    tot_dir = tot_correct + tot_wrong
     lines.append("**Summary across the 7 informative sensors:**")
-    lines.append(f"- Total directional mentions: **{tot_correct + tot_wrong}** "
-                 f"({(tot_correct + tot_wrong) / (n_total * n_sensors) * 100:.1f}% "
+    lines.append(f"- Directional claims (increase or decrease): **{tot_dir}** "
+                 f"({tot_dir / (n_total * n_sensors) * 100:.1f}% "
                  f"of {n_total * n_sensors} sensor-trace opportunities).")
-    if tot_correct + tot_wrong > 0:
-        lines.append(f"- Of these, **{tot_correct}** ({tot_correct/(tot_correct+tot_wrong)*100:.1f}%) correctly identify the physically expected direction; "
-                     f"**{tot_wrong}** ({tot_wrong/(tot_correct+tot_wrong)*100:.1f}%) state the wrong direction (factual hallucination of trend).")
+    if tot_dir > 0:
+        lines.append(f"- Of these, **{tot_correct}** ({tot_correct / tot_dir * 100:.1f}%) name the "
+                     f"canonical degradation direction and **{tot_wrong}** "
+                     f"({tot_wrong / tot_dir * 100:.1f}%) name the opposite one.")
+    lines.append(f"- A further **{tot_stable}** mentions call the sensor stable; they state no "
+                 "direction and are excluded from the two percentages above.")
+    lines.append("")
+    lines.append("Agreement with the canonical direction is not a measure of whether the "
+                 "explanation describes the input. For that, see "
+                 "`p0/p0_2a_faithfulness.py` and `results_p0/p0_2a_report.md`, which score the "
+                 "same claims against the sensor window actually shown in each prompt.")
     return "\n".join(lines)
 
 

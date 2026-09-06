@@ -1,9 +1,9 @@
 """
 P0.4 - The collapse is not caused by the few-shot examples.
 
-Reviewers argued that the categorical collapse could be an artefact of the
-stratified few-shot construction (critique C): examples drawn one per RUL bin
-would hand the model a small menu of values to copy.
+One explanation for the categorical collapse is that it is an artefact of the
+stratified few-shot construction: examples drawn one per RUL bin would hand the
+model a small menu of values to copy.
 
 That hypothesis makes a prediction: remove the examples and the collapse should
 weaken. This script tests it on the existing traces. Zero-shot prompts contain
@@ -101,7 +101,7 @@ def main():
              f"zero-shot it is {zs_anchor[0] if len(zs_anchor) == 1 else zs_anchor} for "
              "every window length and both datasets. The window length moves the anchor "
              "only when examples are present to supply candidate values - an anchoring "
-             "effect, not improved temporal modelling (reviewer R1.7).")
+             "effect, not improved temporal modelling.")
 
     (OUT / "p0_4_report.md").write_text("\n".join(L), encoding="utf-8")
     print("\n".join(L))

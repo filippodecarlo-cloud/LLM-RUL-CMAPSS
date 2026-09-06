@@ -36,7 +36,7 @@ Mean excess agreement: **k3-k5 +11.3 points**, in line with the +10.0 of true re
 
 - **The k ablation is not an ablation over k.** Every 'k=3' and 'k=5' result in the paper comes from one example; 'k=10' from three. Any statement of the form 'performance improves with more examples' is unsupported - two of the three levels are the same condition.
 - **The stratification described in the methods never happened.** All examples sit in one RUL bin, and it is the bin at failure.
-- **This is a plausible mechanism for the low anchors.** The model is shown engines with RUL 0 described as badly worn, then asked about a test set whose mean RUL is 74.5. Few-shot predictions collapse onto 23, 45 and 95 - all far below the mean. This is now a testable hypothesis rather than speculation (reviewer R4.7), and P1.3 tests it by supplying genuinely stratified examples.
-- **Reviewer R1.10 was right to ask.** The released code and the described procedure diverge, and the divergence has to be disclosed in v14 whatever else changes.
+- **This is a plausible mechanism for the low anchors.** The model is shown engines with RUL 0 described as badly worn, then asked about a test set whose mean RUL is 74.5. Few-shot predictions collapse onto 23, 45 and 95 - all far below the mean. This is a testable hypothesis rather than speculation, and P1.3 tests it by supplying genuinely stratified examples.
+- **The released code and the described procedure diverge.** Anything that reports a k must therefore say which of the two samplers produced it.
 
 > Note: the categorical collapse itself does **not** depend on this defect. Zero-shot prompts contain no examples at all and collapse harder (P0.4), and the collapse reproduces on mistral, qwen2.5 and llama-q8_0 (P1.2). What the defect invalidates is specifically the k ablation and the stratification claim.

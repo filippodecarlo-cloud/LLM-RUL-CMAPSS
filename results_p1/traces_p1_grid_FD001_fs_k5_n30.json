@@ -1,0 +1,802 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with most sensors trending towards higher values. This pattern is consistent with normal wear and tear, indicating that the engine has some remaining life but will likely require maintenance soon.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point, indicating an estimated Remaining Useful Life (RUL) of approximately 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical point where failure is imminent.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 105 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a slight increase in values. However, there is no clear indication of catastrophic failure or sudden drop in performance, suggesting that the engine has around 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady increase in values. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching its end-of-life, but at a slower rate than in previous examples, indicating a RUL estimate of around 100-110 cycles remaining.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation pattern, with some sensors experiencing significant changes over time. However, the overall trend suggests that the engine is still operating within normal parameters, indicating a remaining useful life (RUL) of approximately 95 cycles before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a Remaining Useful Life (RUL) of approximately 45 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 105 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is approaching its end-of-life, but there are no sudden anomalies or extreme values that would indicate an imminent failure.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with most sensors trending towards higher values. This pattern suggests that the engine is experiencing normal wear and tear, but there are no signs of catastrophic failure or sudden changes in behavior. Based on this analysis, it is estimated that the Remaining Useful Life (RUL) of the engine is approximately 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, consistent with an estimated Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, indicating an estimated Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, indicating an estimated Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching its end-of-life, but at a slower rate than in previous examples, indicating an estimated remaining useful life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point, indicating an estimated Remaining Useful Life (RUL) of approximately 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 105 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is approaching the end of its lifespan, but there are no signs of catastrophic failure or sudden drops in performance.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 20-25 cycles of remaining useful life (RUL) before it reaches its expected end-of-life threshold.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, indicating an estimated Remaining Useful Life (RUL) of around 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near their baseline values. However, there is a slight degradation in some key sensors over the last few cycles, indicating that the engine may be approaching its end-of-life within the next 30-40 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. However, there is no clear indication of impending failure or catastrophic change in behavior, suggesting that the remaining useful life (RUL) is likely to be around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching the end of its lifespan, and further analysis indicates that it has approximately 15-20 cycles remaining before failure.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with moderate drift in key sensors. The degradation is not as severe as in previous examples, indicating that the engine still has some remaining life left, but it is nearing its end-of-life threshold.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 105 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady increase in values. This pattern suggests that the engine is experiencing normal wear and tear, but there are no signs of catastrophic failure or sudden changes in behavior. Based on this analysis, it appears that the Remaining Useful Life (RUL) of the engine is approximately 45 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 45 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, consistent with an RUL of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point. Based on this analysis, we estimate the remaining useful life (RUL) of the engine to be approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but at a relatively slow rate, indicating an estimated remaining useful life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is likely to fail within the next few cycles, but not immediately, indicating an estimated Remaining Useful Life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors experiencing significant changes in their values. However, there is no clear indication of catastrophic failure or sudden drop in performance, suggesting that the engine still has a reasonable amount of remaining useful life (RUL).",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, indicating an estimated Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is approaching the end of its lifespan, but there are no signs of catastrophic failure or sudden anomalies in the data.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point, indicating an estimated Remaining Useful Life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation pattern, with some sensors experiencing significant changes over time. However, the overall trend suggests that the engine is still operating within normal limits, and the RUL estimate of 95 cycles indicates that it has about 25% of its expected lifespan remaining.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a slight increase in values. However, there is no clear indication of catastrophic failure or sudden drop in performance, suggesting that the engine has around 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is likely to fail within the next few cycles, but not immediately, indicating an estimated RUL of around 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors trending towards their baseline values. However, there is no clear indication of impending failure or significant anomalies in the data, suggesting that the engine has around 20-25 cycles of remaining useful life (RUL) based on its current trend.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but not yet at critical levels, indicating an estimated Remaining Useful Life (RUL) of approximately 45 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but there are no sudden spikes or anomalies that would indicate an imminent failure.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached critical failure levels, indicating an estimated Remaining Useful Life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors experiencing significant changes in their values. However, there is no clear indication of catastrophic failure or sudden drop in performance, suggesting that the engine still has a considerable amount of life left before reaching its true Remaining Useful Life (RUL).",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching the end of its lifespan, but there are no sudden spikes or anomalies that would indicate an imminent failure. Based on this analysis, it appears that the engine has approximately 105 cycles remaining before it reaches the end of its expected life.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, indicating an estimated Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but it is not yet critical, indicating an estimated Remaining Useful Life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching the end of its lifespan, but there are no sudden spikes or anomalies that would indicate an imminent failure.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady increase in values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point. Based on this analysis, we estimate the remaining useful life (RUL) of the engine to be approximately 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the past 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate degradation pattern, with some sensors experiencing significant changes over time. However, the overall trend is not as severe as in previous examples, suggesting that the engine still has some remaining life left before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 20-25 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point. Based on this analysis, we estimate the remaining useful life (RUL) of the engine to be approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching its end-of-life, but the rate of degradation is not extremely rapid, indicating an estimated remaining useful life (RUL) of around 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is likely to fail within the next few cycles, but not immediately, indicating an estimated RUL of around 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. However, there is a slight increase in some sensor values over the last few cycles, indicating potential degradation or wear on the engine. Given this trend and the fact that the engine has been operating stably for an extended period, it is estimated to have a Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, indicating an estimated Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. However, the overall pattern suggests that the engine is still operating within normal limits, indicating an estimated Remaining Useful Life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but at a relatively slow rate, indicating an estimated Remaining Useful Life (RUL) of approximately 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting significant deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but not to an extent that would cause it to fail immediately. Based on this analysis, we estimate the remaining useful life (RUL) of the engine to be approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady increase in values while others remain relatively stable. This pattern suggests that the engine is experiencing normal wear and tear, but there are no signs of catastrophic failure or sudden changes in behavior that would indicate an imminent shutdown.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point, indicating an estimated Remaining Useful Life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, consistent with an RUL of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but at a relatively slow rate, indicating an estimated Remaining Useful Life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a slight increase in values. However, there is no clear indication of catastrophic failure or sudden drop in performance, suggesting that the engine has around 20-25 cycles of remaining useful life left before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is likely to fail within the next few cycles, but not immediately, indicating an estimated Remaining Useful Life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady decline in values. This pattern suggests that the engine is experiencing wear and tear, but at a relatively slow rate, indicating an estimated remaining useful life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 45 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching its end-of-life, but the rate of degradation is not as rapid as in previous examples.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the past 30 cycles, with some sensors experiencing more significant changes than others. This pattern suggests that the engine is approaching the end of its lifespan, but there are no sudden spikes or anomalies that would indicate an imminent failure.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a slight increase in values. However, there is no significant deviation from normal operation, indicating that the engine still has a relatively long remaining useful life (RUL).",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but at a relatively slow rate, indicating an estimated Remaining Useful Life (RUL) of around 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is likely to fail within the next few cycles, consistent with an estimated Remaining Useful Life (RUL) of around 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady increase in values. This pattern suggests that the engine is experiencing normal wear and tear, but there are no signs of catastrophic failure or sudden changes in behavior.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern is consistent with normal wear and tear, suggesting that the engine has approximately 95 cycles of remaining useful life (RUL) before it requires maintenance or replacement.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but it has not yet reached a critical failure point, indicating an estimated Remaining Useful Life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 95,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting a steady increase in values while others remain relatively stable. This pattern suggests that the engine is experiencing normal wear and tear, but not at an alarming rate, indicating a Remaining Useful Life (RUL) of approximately 95 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life threshold, indicating an estimated Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a moderate degradation over the last 30 cycles, with some sensors exhibiting increasing deviations from their baseline values. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 105,
+    "reasoning": "The engine's sensor readings show a gradual degradation over the last 30 cycles, with some sensors exhibiting moderate drift. This pattern suggests that the engine is experiencing wear and tear, but not at an alarming rate, indicating a remaining useful life (RUL) of approximately 105 cycles.",
+    "k": 5,
+    "n": 30
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors remaining near their baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life threshold, consistent with an RUL of 125 cycles.",
+    "k": 5,
+    "n": 30
+  }
+]

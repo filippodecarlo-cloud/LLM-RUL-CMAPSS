@@ -1,11 +1,10 @@
 """
 P2.1 - Fixing the baselines.
 
-P0.1b found that the LSTM baseline reported in the submitted paper is a
-degenerate constant predictor: its whole output range over the 100 test engines
-is below 1e-3. This script (a) diagnoses why, (b) retrains it properly, and
-(c) adds XGBoost, so the rewritten paper compares the LLM against baselines
-that actually regress.
+P0.1b found that the LSTM baseline in release 1.0.0 is a degenerate constant
+predictor: its whole output range over the 100 test engines is below 1e-3. This
+script (a) diagnoses why, (b) retrains it properly, and (c) adds XGBoost, so the
+LLM is compared against baselines that actually regress.
 
 Models, all on identical inputs where the representation allows:
   const_trainmean   no-skill reference
@@ -217,7 +216,7 @@ def main():
     pd.DataFrame(diag).T.rename_axis("dataset").to_csv(OUT / "p2_1_lstm_diagnostics.csv")
 
     L = ["# P2.1 - Repairing the baselines\n"]
-    L.append("The submitted paper's LSTM baseline is a constant predictor (P0.1b). Here it is "
+    L.append("The LSTM baseline of release 1.0.0 is a constant predictor (P0.1b). Here it is "
              "diagnosed and retrained, and XGBoost is added as a strong tabular reference.\n")
 
     for ds in ("FD001", "FD003"):

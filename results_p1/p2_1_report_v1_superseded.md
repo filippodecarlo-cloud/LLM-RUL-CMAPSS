@@ -1,6 +1,6 @@
 # P2.1 - Repairing the baselines
 
-The submitted paper's LSTM baseline is a constant predictor (P0.1b). Here it is diagnosed and retrained, and XGBoost is added as a strong tabular reference.
+The LSTM baseline of release 1.0.0 is a constant predictor (P0.1b). Here it is diagnosed and retrained, and XGBoost is added as a strong tabular reference.
 
 
 ## FD001

@@ -4,13 +4,13 @@ the results move when it is resampled?
 
 P1.0 established that the shipped few-shot builder never stratifies: its pool is
 the last cycle of every training engine, so every example is labelled RUL = 0 and
-"k" examples are really 1 (k=3, k=5) or 3 (k=10). That makes two reviewer
-objections testable rather than rhetorical:
+"k" examples are really 1 (k=3, k=5) or 3 (k=10). That makes two questions
+testable rather than rhetorical:
 
-  P1.3 (critique C, R1.3, and the mechanism behind R4.7)
+  P1.3
         if the low anchors come from being shown only end-of-life engines, then
         supplying genuinely stratified examples should move them.
-  P1.4 (R4.6, R3)
+  P1.4
         results from one arbitrary example set were never robustness-checked.
 
 Three conditions, everything else fixed (FD001, k=5, n=5, 100 engines, T=0.1,

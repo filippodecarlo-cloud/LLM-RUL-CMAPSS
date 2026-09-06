@@ -1,9 +1,9 @@
 """
-P1.0 - The few-shot examples in the published experiment are all RUL = 0,
-and k does not do what the paper says it does.
+P1.0 - The few-shot examples built by the original sampler are all RUL = 0,
+and k is not the number of examples that reaches the prompt.
 
-Reviewer R1.10 asked whether the released code matches the few-shot procedure
-described in the manuscript. It does not. This script demonstrates it two ways.
+This script demonstrates the behaviour two ways, statically and on the stored
+traces, so that the two sampling conditions can be told apart.
 
 STATIC. `run_llm` builds its example pool as
 
@@ -150,11 +150,10 @@ def main():
     L.append("- **This is a plausible mechanism for the low anchors.** The model is shown "
              "engines with RUL 0 described as badly worn, then asked about a test set whose "
              f"mean RUL is 74.5. Few-shot predictions collapse onto 23, 45 and 95 - all far "
-             "below the mean. This is now a testable hypothesis rather than speculation "
-             "(reviewer R4.7), and P1.3 tests it by supplying genuinely stratified examples.")
-    L.append("- **Reviewer R1.10 was right to ask.** The released code and the described "
-             "procedure diverge, and the divergence has to be disclosed in v14 whatever else "
-             "changes.")
+             "below the mean. This is a testable hypothesis rather than speculation, and "
+             "P1.3 tests it by supplying genuinely stratified examples.")
+    L.append("- **The released code and the described procedure diverge.** Anything that "
+             "reports a k must therefore say which of the two samplers produced it.")
     L.append("\n> Note: the categorical collapse itself does **not** depend on this defect. "
              "Zero-shot prompts contain no examples at all and collapse harder (P0.4), and "
              "the collapse reproduces on mistral, qwen2.5 and llama-q8_0 (P1.2). What the "

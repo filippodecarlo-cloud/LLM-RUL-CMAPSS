@@ -155,9 +155,9 @@ def main():
                  + "; ".join(f"({r.dataset}: {r.pred_min:.4f})" for _, r in deg.iterrows())
                  + ". Spearman rho is therefore undefined for it and is reported as n/a - "
                  "ranking that noise yields a large negative rho that means nothing. "
-                 "This invalidates the submitted paper's framing of the LLM as "
-                 "'competitive with the LSTM baseline': the comparison was between two "
-                 "constant predictors, and the LLM's constant was the worse one.\n")
+                 "Calling the LLM 'competitive with the LSTM baseline' would therefore "
+                 "compare two constant predictors, and the LLM's constant is the worse "
+                 "one.\n")
 
     L.append("\n## LLM configurations, corrected for multiple testing\n")
     L.append("| Dataset | Config | rho | 95% CI | p raw | p FDR | p Bonf | sig (FDR) |")

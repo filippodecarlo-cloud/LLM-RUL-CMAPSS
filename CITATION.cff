@@ -5,8 +5,9 @@ authors:
   - family-names: "De Carlo"
     given-names: "Filippo"
     affiliation: "University of Florence"
-version: "2.0.0"
-date-released: "2026-09-03"
+    orcid: "https://orcid.org/0000-0003-4695-5956"
+version: "2.1.0"
+date-released: "2026-09-06"
 license: MIT
 repository-code: "https://github.com/filippodecarlo-cloud/LLM-RUL-CMAPSS"
 doi: "10.5281/zenodo.20820859"
@@ -22,10 +23,11 @@ abstract: >-
   Code, inference traces and analysis for a four-part protocol for evaluating
   large language models on remaining useful life prediction: no-skill baselines,
   rank correlation, output entropy, and a faithfulness test for the generated
-  explanations. Applied to five open-weight models at two quantisation levels
-  across all four CMAPSS sub-datasets. Version 2.0.0 also corrects two defects
-  present in version 1.0.0, in the LSTM baseline and in the few-shot example
-  selection; both are documented in the README and in Appendix A of the paper.
+  explanations. Five open-weight model configurations were evaluated on FD001,
+  including Llama 3.1 8B at two quantisation levels, with the reference model run
+  on all four CMAPSS sub-datasets. The release holds the complete corpus of 5,557
+  model responses, a manifest with per-run checksums and recomputed metrics, and
+  the scripts that generate every table and figure in the paper.
 preferred-citation:
   type: article
   title: "Evaluating large language models for remaining useful life prediction: a protocol, and what it reveals on CMAPSS"
@@ -33,5 +35,6 @@ preferred-citation:
     - family-names: "De Carlo"
       given-names: "Filippo"
       affiliation: "University of Florence"
+      orcid: "https://orcid.org/0000-0003-4695-5956"
   year: 2026
   notes: "Under review. Journal and DOI to be added on acceptance."

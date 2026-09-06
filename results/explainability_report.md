@@ -13,5 +13,8 @@ Aggregated across **2700 reasoning traces** from all LLM configurations (zero-sh
 | s15 | Bypass ratio | ↑ (increase) | 306 (11%) | 0 (0%) | 179 (7%) | 2215 (82%) |
 
 **Summary across the 7 informative sensors:**
-- Total directional mentions: **3825** (20.2% of 18900 sensor-trace opportunities).
-- Of these, **3484** (91.1%) correctly identify the physically expected direction; **341** (8.9%) state the wrong direction (factual hallucination of trend).
+- Directional claims (increase or decrease): **3816** (20.2% of 18900 sensor-trace opportunities).
+- Of these, **3484** (91.3%) name the canonical degradation direction and **332** (8.7%) name the opposite one.
+- A further **9** mentions call the sensor stable; they state no direction and are excluded from the two percentages above.
+
+Agreement with the canonical direction is not a measure of whether the explanation describes the input. For that, see `p0/p0_2a_faithfulness.py` and `results_p0/p0_2a_report.md`, which score the same claims against the sensor window actually shown in each prompt.

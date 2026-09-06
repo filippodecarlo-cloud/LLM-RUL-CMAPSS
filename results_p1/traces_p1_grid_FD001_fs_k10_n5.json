@@ -1,0 +1,802 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate drift in key sensors, indicating progressive degradation. This pattern is consistent with Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with significant deviations in efficiency sensors (s7 and s8) and some wear on other sensors. However, the patterns are not as pronounced as in Examples 1-4, suggesting that the engine is still operational but nearing the end of its life.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s2 and s7. This is consistent with the behavior observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with significant deviations in efficiency sensors (s7 and s8) and some signs of wear on other sensors. However, the patterns are not as pronounced as in Examples 1-4, suggesting that the engine is still operational but nearing the end of its life.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors. This is similar to Examples 5 and 6, where the true RUL was 74 and 72, respectively. However, considering the overall trend and the fact that some sensors are deviating more significantly than others, I estimate the remaining useful life to be around 45 cycles.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with significant deviations in efficiency sensors (s7 and s8) and some signs of wear on other sensors. However, the patterns are not as pronounced as in Examples 1-4, suggesting that the engine is still operational but nearing the end of its life.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors such as s2 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with some sensors showing significant deviations from their baseline values. However, the pattern is not as pronounced as in examples where advanced wear was observed, suggesting that the engine has not yet reached a critical point of failure.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is similar to Examples 5 and 6, which had true RULs of 74 and 72, respectively, indicating that the engine has some wear but still has significant life left.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with significant deviations in efficiency sensors (s7 and s12) over the last few cycles. This is consistent with Example 5, which had a similar pattern and an estimated RUL of 74; however, considering the more pronounced deviation in this case, I estimate the RUL to be lower at 45.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72 respectively, indicating that the engine has some wear but still has significant life remaining.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with some sensors showing significant deviations from their baseline values. This pattern is consistent with Example 5 (True RUL: 74), where the engine exhibited progressive degradation and moderate drift in key sensors. However, considering the overall trend and the fact that the engine has not yet reached the end of its life, a more conservative estimate is provided.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors. This is consistent with Example 5 and Example 6, where the true RUL was 74 and 72, respectively. However, considering the overall trend and the fact that some sensors are deviating more significantly than others, I estimate the remaining useful life to be around 45 cycles.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with significant deviations in efficiency sensors (s2 and s4) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with some sensors showing significant deviations from their baseline values. However, the pattern is not as pronounced as in examples where advanced wear was observed, and the overall trend suggests a more gradual decline in performance, consistent with progressive degradation.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with significant deviations in efficiency sensors (s7 and s8) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is similar to Examples 5 and 6, which had true RULs of 74 and 72, respectively, indicating that the engine has some wear but still has significant life left.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with significant deviations in efficiency sensors (s7 and s8) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors. This is similar to Examples 5 and 6, where the true RUL was 74 and 72, respectively. However, considering the overall trend and the fact that some sensors are deviating more significantly than others, I estimate the remaining useful life to be around 45 cycles.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with significant deviations in efficiency sensors (s7 and s12) and moderate drift in key sensors. This is consistent with Examples 5 and 6, which had similar patterns and RUL estimates of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s2 and s7. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s2 and s7. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 43,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with significant deviations in efficiency sensors (s7 and s8) and some wear patterns observed. However, the overall trend is not as severe as in Examples 1-4, suggesting a more stable operation than advanced wear or progressive degradation.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s2 and s7. This is consistent with Examples 5 and 6, which also showed progressive degradation patterns with similar sensor reading trends, resulting in estimated RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate drift in key sensors, indicating progressive degradation. However, the deviation is not as severe as in examples with advanced wear patterns, suggesting that the engine still has some remaining useful life but is nearing the end of its operational cycle.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s2 and s7. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with significant deviations in efficiency sensors (s7 and s12) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the examples where RUL was estimated to be around 40-60 cycles, indicating that the engine has some remaining life but is nearing the end of its useful lifespan.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors such as s2 and s8. This is consistent with the behavior observed in Examples 5 and 6, which had similar RUL values (74 and 72, respectively).",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with Example 5, where the true RUL was 74, but the current reading patterns are more severe, indicating an earlier stage of wear.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a moderate level of degradation, with some sensors showing significant deviations from their baseline values. This pattern is consistent with progressive wear and tear, suggesting that the engine has approximately 45 cycles remaining before it reaches its end-of-life.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s2 and s7. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is similar to Examples 5 and 6, which had true RULs of 74 and 72, respectively, indicating that the engine has some wear but still has significant life left.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s2 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with significant deviations in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 43,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with significant deviations in efficiency sensors (s2 and s3) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with Example 5, where the true RUL was 74, but the current reading patterns are less severe, suggesting an estimated RUL of around 45 cycles remaining.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors. This is similar to Examples 5 and 6, which had true RULs of 74 and 72, respectively. However, the current engine's readings are not as severe as those in Example 8 (true RUL: 125), indicating a lower remaining useful life.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with significant deviations in efficiency sensors (s2 and s4) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors. This is similar to Examples 5 and 6, which had true RULs of 74 and 72, respectively, indicating that the engine has some wear but still has significant life left.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with significant drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with significant deviations in efficiency sensors (s7 and s8) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with significant deviations in efficiency sensors (s7 and s8) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with significant deviations in efficiency sensors (s7 and s8) and moderate drift in key sensors. This is consistent with Examples 5 and 6, which had similar patterns and RUL estimates of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s2 and s7. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with significant deviations in efficiency sensors (s7 and s12) and moderate drift in key sensors. This is consistent with Examples 5 and 6, which had similar patterns and RUL estimates of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors. This is similar to Examples 5 and 6, which had true RULs of 74 and 72, respectively. However, the current engine's readings are not as severe as those in Example 8 (true RUL: 125), indicating a lower remaining useful life.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors. Specifically, the efficiency sensors (s7 and s8) show a gradual increase in deviation from baseline values, indicating wear on the engine's components. This pattern is consistent with Examples 5-10, which also showed progressive degradation and moderate drift in key sensors.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the examples where RUL was estimated to be around 40-60 cycles, indicating that the engine has some wear but still has significant life left.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate drift in key sensors, indicating progressive degradation. This pattern is similar to Examples 5 and 6, where the true RUL was around 70-80 cycles, but with some differences in the magnitude of the deviations.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s8. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings indicate a progressive degradation pattern, with significant deviations in efficiency sensors (s7 and s12) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors such as s7 and s12. This is consistent with the patterns observed in Examples 5 and 6, which had true RULs of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a moderate drift in key sensors, indicating progressive degradation. This pattern is similar to Examples 5 and 6, where the true RUL was around 70-80 cycles, but with some differences in the magnitude of the deviations. Considering these factors, an estimated RUL of 45 seems reasonable.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with significant deviations in efficiency sensors (s7 and s12) and moderate drift in key sensors. This is consistent with the patterns observed in Examples 5 and 6, which had true RUL values of 74 and 72, respectively.",
+    "k": 10,
+    "n": 5
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 45,
+    "reasoning": "The engine's sensor readings show a pattern of progressive degradation, with moderate drift in key sensors. Specifically, the efficiency sensors (s7 and s8) are deviating from their baseline values, indicating wear on the engine's components. This is consistent with Example 5, which had a similar pattern and an estimated RUL of 74; however, considering the more pronounced deviation in this case, I estimate the RUL to be lower at 45.",
+    "k": 10,
+    "n": 5
+  }
+]

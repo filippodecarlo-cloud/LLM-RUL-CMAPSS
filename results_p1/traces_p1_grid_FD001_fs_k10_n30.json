@@ -1,0 +1,802 @@
+[
+  {
+    "engine_id": 1,
+    "true_rul": 112.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations or anomalies in the recent data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 2,
+    "true_rul": 98.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations or anomalies in the recent data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 3,
+    "true_rul": 69.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the slight deviations from baseline in some sensors suggest that the engine is approaching its end-of-life, consistent with a remaining useful life (RUL) of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 4,
+    "true_rul": 82.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 5,
+    "true_rul": 91.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 6,
+    "true_rul": 93.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 7,
+    "true_rul": 91.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on past trends and patterns observed in the data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 8,
+    "true_rul": 95.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the pattern of readings is consistent with a gradual increase in some sensor values over time, suggesting that the engine may be approaching its end-of-life at cycle 125.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 9,
+    "true_rul": 111.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of a previously evaluated engine with a true RUL of 125, suggesting that this engine may also be approaching the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 10,
+    "true_rul": 96.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals that some sensors (s7, s8) have been consistently higher than usual over the past few cycles, suggesting potential issues with the engine's performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 11,
+    "true_rul": 97.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the slight deviations in some sensors' values over time suggest a potential issue that may not be critical yet, but could lead to failure within the next 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 12,
+    "true_rul": 124.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals that some sensors (s7, s8) have been consistently higher than usual in recent cycles, suggesting potential issues with the engine's performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 13,
+    "true_rul": 95.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125, suggesting that the engine has not yet reached a critical failure point based on the provided data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 14,
+    "true_rul": 107.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 15,
+    "true_rul": 83.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the RUL estimate is not affected by any anomalies or deviations from the expected behavior, suggesting that the engine has a remaining useful life of approximately 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 16,
+    "true_rul": 84.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors near baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life threshold of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 17,
+    "true_rul": 50.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that the engine may be approaching the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 18,
+    "true_rul": 28.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be nearing the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 19,
+    "true_rul": 87.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 20,
+    "true_rul": 16.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on the provided data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 21,
+    "true_rul": 57.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals that some sensors have started to deviate from their expected values, suggesting potential issues with the engine's performance. Given the pattern of deviations, it is estimated that the Remaining Useful Life (RUL) of the engine is approximately 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 22,
+    "true_rul": 111.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations from the expected behavior in the provided data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 23,
+    "true_rul": 113.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations or anomalies in the sensor data that would indicate a potential failure or degradation in performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 24,
+    "true_rul": 20.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for its remaining lifespan of approximately 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 25,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be nearing the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 26,
+    "true_rul": 119.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on the provided data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 27,
+    "true_rul": 66.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 28,
+    "true_rul": 97.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for its remaining lifespan of approximately 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 29,
+    "true_rul": 90.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings indicate stable operation with sensors near baseline values, suggesting that the engine is functioning normally. However, a closer examination of the data reveals some minor deviations from normalcy, but these are not indicative of any significant issues or anomalies that would suggest an impending failure within the next 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 30,
+    "true_rul": 115.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations or anomalies in the recent data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 31,
+    "true_rul": 8.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for a long period of time, consistent with an RUL estimate of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 32,
+    "true_rul": 48.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on historical data patterns.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 33,
+    "true_rul": 106.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 34,
+    "true_rul": 7.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals that some sensors (s7, s8) have been consistently reading above their typical ranges for several cycles, suggesting potential issues with the engine's performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 35,
+    "true_rul": 11.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 36,
+    "true_rul": 19.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the slight deviations from baseline in some sensors suggest that the engine is approaching its end-of-life, consistent with a Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 37,
+    "true_rul": 21.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 38,
+    "true_rul": 50.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 39,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still set to 125 due to the lack of significant deviations or anomalies in the recent data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 40,
+    "true_rul": 28.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors near baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, consistent with an RUL of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 41,
+    "true_rul": 18.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that observed in Example 10, which had a true RUL of 125, suggesting that this engine may also be approaching its end-of-life at cycle 125.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 42,
+    "true_rul": 10.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings indicate a stable operation with sensors near baseline values, suggesting that the engine is functioning normally. However, upon closer inspection of the data, there are some minor deviations from the expected patterns, which may indicate potential issues or wear and tear on the engine.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 43,
+    "true_rul": 59.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations or anomalies in the recent data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 44,
+    "true_rul": 109.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 45,
+    "true_rul": 114.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that of the example with a true RUL of 125, suggesting that the engine is likely approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 46,
+    "true_rul": 47.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors near baseline values. This suggests that the engine is functioning normally and has not yet reached its end-of-life, consistent with an RUL of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 47,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 48,
+    "true_rul": 92.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 49,
+    "true_rul": 21.0,
+    "pred_rul": 125,
+    "reasoning": "The sensor readings show a stable operation pattern, with most sensors near baseline values. This suggests that the engine is functioning normally and has not yet reached the end of its life expectancy.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 50,
+    "true_rul": 79.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another cycle, consistent with its true Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 51,
+    "true_rul": 114.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for its remaining lifespan of approximately 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 52,
+    "true_rul": 29.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals that some sensors have started to deviate from their expected values, suggesting potential issues with the engine's performance. Given this trend, it is estimated that the Remaining Useful Life (RUL) of the engine is approximately 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 53,
+    "true_rul": 26.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 54,
+    "true_rul": 97.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the sensors' values are not significantly deviating from their typical ranges, suggesting that the engine is likely to continue operating normally for a while longer.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 55,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 56,
+    "true_rul": 15.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 57,
+    "true_rul": 103.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, a closer examination of the data reveals slight deviations from the expected patterns, suggesting that the engine is approaching its end-of-life with a remaining useful life (RUL) estimate of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 58,
+    "true_rul": 37.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the slight deviations from baseline in some sensors suggest that the engine is approaching its end-of-life, consistent with a remaining useful life (RUL) of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 59,
+    "true_rul": 114.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 60,
+    "true_rul": 100.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals slight deviations from the expected patterns, suggesting that the engine is approaching its end-of-life with an estimated remaining useful life (RUL) of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 61,
+    "true_rul": 21.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that the engine may be approaching the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 62,
+    "true_rul": 54.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 63,
+    "true_rul": 72.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, a closer examination of the data reveals that some sensors (s2, s3, s4) have been consistently higher than usual over the past few cycles, suggesting a potential issue with the engine's performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 64,
+    "true_rul": 28.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals slight deviations from the expected patterns, suggesting that the engine is approaching its end-of-life at cycle 125.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 65,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the sensors' values have been consistently high for a long time, suggesting that the engine is approaching its end-of-life, which aligns with an RUL of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 66,
+    "true_rul": 14.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations or anomalies in the data that would indicate a potential failure or degradation in performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 67,
+    "true_rul": 77.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the RUL estimate is still 125 cycles, as there are no significant deviations or anomalies in the data that would suggest a shorter remaining useful life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 68,
+    "true_rul": 8.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 due to the lack of significant deviations or anomalies in the recent data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 69,
+    "true_rul": 121.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of a previously evaluated engine with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 70,
+    "true_rul": 94.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that in Example 10, which had a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 71,
+    "true_rul": 118.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 72,
+    "true_rul": 50.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on historical data patterns.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 73,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached a critical failure point.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 74,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles before reaching its end-of-life threshold.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 75,
+    "true_rul": 113.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 76,
+    "true_rul": 10.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer look at the data reveals some minor fluctuations in certain sensors, but overall, there is no indication of impending failure or significant degradation. Therefore, based on this analysis, the estimated Remaining Useful Life (RUL) of the engine is 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 77,
+    "true_rul": 34.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 78,
+    "true_rul": 107.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors near baseline values. This suggests that the engine is functioning normally and has not yet reached the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 79,
+    "true_rul": 63.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that the engine is likely approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 80,
+    "true_rul": 90.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline values, indicating normal operation. However, the pattern of readings is similar to that of a previously evaluated engine with a true RUL of 125, suggesting that this engine may also be approaching the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 81,
+    "true_rul": 8.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on historical data patterns.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 82,
+    "true_rul": 9.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for its remaining lifespan of approximately 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 83,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that in Example 10, which had a true RUL of 125, suggesting that this engine may also be approaching its end-of-life at around cycle 125.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 84,
+    "true_rul": 58.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that the engine is likely approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 85,
+    "true_rul": 118.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the slight deviations from baseline in some sensors suggest that the engine is approaching its end-of-life, consistent with a Remaining Useful Life (RUL) of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 86,
+    "true_rul": 89.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that of the example with a true RUL of 125, suggesting that this engine may also be approaching its end-of-life.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 87,
+    "true_rul": 116.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on the provided data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 88,
+    "true_rul": 115.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that of the example with a true RUL of 125, suggesting that the engine may be approaching the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 89,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals that some sensors (s7, s8) have been consistently higher than usual over the past few cycles, suggesting potential issues with the engine's performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 90,
+    "true_rul": 28.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors near baseline values. This suggests that the engine is functioning normally and has not yet reached the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 91,
+    "true_rul": 38.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. However, the slight increase in some sensor values over time suggests that the engine is approaching its end-of-life, consistent with an RUL of 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 92,
+    "true_rul": 20.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern, with most sensors near baseline values. However, there are some minor fluctuations in certain sensors, but they do not indicate any significant anomalies or deviations from normal behavior, suggesting that the engine is likely to continue operating normally for at least another 125 cycles.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 93,
+    "true_rul": 85.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on the provided data.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 94,
+    "true_rul": 55.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, a closer examination of the data reveals that some sensors (s8, s9) have been slightly deviating from their expected values over the past few cycles, suggesting potential issues with the engine's performance.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 95,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating a normal operating condition. However, the RUL estimate is still 125 cycles, suggesting that the engine has not yet reached its end-of-life threshold.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 96,
+    "true_rul": 125.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on historical data patterns.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 97,
+    "true_rul": 82.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is similar to that of the example with a true RUL of 125, suggesting that the engine may be approaching the end of its lifespan.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 98,
+    "true_rul": 59.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of readings is not significantly different from the previous example, suggesting that the engine has been operating within a similar range for some time, which could indicate an impending failure at cycle 125.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 99,
+    "true_rul": 117.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings show a stable operation pattern with most sensors near baseline values, indicating no significant anomalies or degradation. This suggests that the engine is likely to continue operating normally for at least another 125 cycles based on historical data patterns.",
+    "k": 10,
+    "n": 30
+  },
+  {
+    "engine_id": 100,
+    "true_rul": 20.0,
+    "pred_rul": 125,
+    "reasoning": "The engine's sensor readings are stable and near baseline, indicating normal operation. However, the pattern of sensor values is similar to that of the example with true RUL 125, suggesting a potential failure in the near future.",
+    "k": 10,
+    "n": 30
+  }
+]

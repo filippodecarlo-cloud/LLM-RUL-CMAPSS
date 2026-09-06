@@ -12,7 +12,7 @@ Family of 27 tests (all trace files, both datasets). Bootstrap: 10,000 resamples
 | FD003 | RandomForest | 17.68 | 1,337 | +0.873 | [+0.80, +0.92] | 2.18e-32 | 6.195-125.000 | 100 |
 | FD003 | LSTM | 40.07 | 5,872 | n/a | n/a | n/a | 65.318-65.318 | 1 |
 
-> **The LSTM baseline is itself a constant predictor.** Its entire output range across the 100 test engines is below 1e-3, i.e. floating-point noise: it emits one number for every engine (FD001: 56.6908); (FD003: 65.3180). Spearman rho is therefore undefined for it and is reported as n/a - ranking that noise yields a large negative rho that means nothing. This invalidates the submitted paper's framing of the LLM as 'competitive with the LSTM baseline': the comparison was between two constant predictors, and the LLM's constant was the worse one.
+> **The LSTM baseline is itself a constant predictor.** Its entire output range across the 100 test engines is below 1e-3, i.e. floating-point noise: it emits one number for every engine (FD001: 56.6908); (FD003: 65.3180). Spearman rho is therefore undefined for it and is reported as n/a - ranking that noise yields a large negative rho that means nothing. Calling the LLM 'competitive with the LSTM baseline' would therefore compare two constant predictors, and the LLM's constant is the worse one.
 
 
 ## LLM configurations, corrected for multiple testing

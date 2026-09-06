@@ -1,11 +1,11 @@
 # Numeri chiave per v14 — fonte unica di verita
 
-**Generato automaticamente** da `experiment/p1/make_key_numbers.py` il 2026-09-03, direttamente dai CSV e dalle tracce.
+**Generato automaticamente** da `experiment/p1/make_key_numbers.py` il 2026-09-06, direttamente dai CSV e dalle tracce.
 
 > Se un numero nel manoscritto non coincide con questo file, **questo file ha ragione**: e derivato dai dati, non ricopiato da un report. Rilancia lo script dopo ogni nuovo esperimento.
 
 
-**Inferenze LLM totali del progetto:** 4,657
+**Inferenze LLM totali del progetto:** 5,557
 
 
 ## Baseline no-skill (FD001)

@@ -1,6 +1,19 @@
-openai>=1.0
-numpy
-pandas
-scikit-learn
-tensorflow
-matplotlib
+# Versions used for the runs reported in the paper (see REPRODUCIBILITY.md).
+# Pinned so the analysis can be re-derived exactly; relax them if you only need
+# to re-run inference.
+openai==2.33.0
+numpy==2.4.1
+pandas==3.0.0
+scikit-learn==1.8.0
+scipy==1.17.1
+tensorflow==2.21.0
+xgboost==3.4.1
+matplotlib==3.10.9
+openpyxl==3.1.5
+
+# Only needed by p1/verify_tables.py, which reads the manuscript.
+python-docx==1.2.0
+
+# Only needed by p1/export_figures_png.py, which drives Excel and PowerPoint.
+# Windows only; skip it elsewhere.
+pywin32==311 ; sys_platform == "win32"

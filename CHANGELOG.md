@@ -1,5 +1,66 @@
 # Changelog
 
+## 2.1.0 - 2026-09-06
+
+Brings the repository into line with the manuscript. Release 2.0.0 held 4,657 of the
+model responses the paper reports; this one holds all 5,557.
+
+### Added
+
+- `results_p1/traces_p1_grid_FD001_fs_k*_n*.json` - the nine cells of the k x n grid
+  re-run with the stratified example sampler, 900 responses, with
+  `p1_grid_fixed_summary.csv` and `p1_grid_report.md`.
+- `p1/p1_grid_analyze.py` - the analysis behind that grid.
+- `p1/verify_tables.py` - recomputes every table cell in the manuscript from the traces
+  and compares it with what the manuscript says. Needs the .docx; set `PAPER_DOCX`.
+- `p1/export_figures_png.py` - renders the figures from the Excel and PowerPoint sources.
+- `p1/make_manifest.py`, `manifest.json`, `manifest.csv` - one record per inference run:
+  which experiment it belongs to, its configuration, its SHA-256, and the metrics
+  recomputed from the file rather than copied from a report.
+- `REPRODUCIBILITY.md` - Ollama version, model tags and digests, hardware, generation
+  settings, retry and timeout behaviour, baseline hyperparameters, seeds, and an
+  explicit statement of what cannot be reproduced exactly.
+- `figures_png/` - the eight figures as they appear in the paper.
+
+### Changed
+
+- `requirements.txt` now pins the versions actually used.
+- `figures/` renamed to `figures_original_grid/`. Those matplotlib figures belong to the
+  first release and their numbering does not correspond to the paper's figures, which
+  was a live source of confusion while they shared a directory name with the current
+  ones.
+- `figures_v14/` updated to the renumbered figures, so the workbook matches the paper.
+- README rewritten: every claim is now scoped to the experiment it holds for, since the
+  model sweep is FD001 only and the four sub-datasets were run with the reference model
+  only.
+
+### Fixed
+
+- `analyze_explainability.py` counted the nine verdicts of "stable" as wrong-direction
+  claims, and therefore inside the denominator of "directional mentions". Its report
+  read 3,825 claims and 91.1% agreement where the paper reads 3,816 and 91.3% on the
+  same traces. A claim that names no direction is now reported on its own line, and the
+  regenerated `results/explainability_report.md` agrees with the manuscript. The
+  underlying classifier is unchanged, so nothing else moves.
+- `p1/p1_grid_analyze.py` compared a range across k with a standard deviation across
+  example draws, which understates the noise, and concluded from it that k has no
+  effect. The comparison is now range against range (15.13 against 16.34), the
+  conclusion is scoped to RMSE, and the report states separately what k does to
+  concentration: mean modal share moves 79% to 55% to 99% as k goes 3, 5, 10.
+
+### Note
+
+The 2.0.0 changelog listed the k ablation as withdrawn. It is no longer withdrawn: the
+grid was re-run with a corrected sampler and is reported in the paper. The original
+27 traces are unchanged and are kept as the first of two sampling conditions.
+
+Entries below this one are left as written. Two of their wordings would not be used
+today: the 2.0.0 note says the concentration reproduces "across four models, two
+quantisation levels and all four sub-datasets", where in fact the model sweep is FD001
+only and the four sub-datasets were run with the reference model only; and it treats the
+quantisation comparison as showing no effect, where Q4 to Q8 leaves the concentration at
+85% and 80% but does move the error and the number of distinct values.
+
 ## 2.0.0 — 2026-09-03
 
 New study on the same benchmark, with an evaluation protocol as the main contribution, and

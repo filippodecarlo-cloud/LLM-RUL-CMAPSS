@@ -2,7 +2,7 @@
 P2.2 - Does the collapse survive multiple operating conditions?
 
 FD002 (6 conditions, 1 fault mode) and FD004 (6 conditions, 2 fault modes) are
-the hard half of CMAPSS, and reviewer critique D asked why they were left out.
+the hard half of CMAPSS, and the obvious question is why they would be left out.
 One canonical configuration per dataset, matching the P0 `repl` arm:
 zero-shot, n=30, T=0.1, shipped template, every test engine.
 

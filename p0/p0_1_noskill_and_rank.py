@@ -1,8 +1,9 @@
 """
 P0.1 - No-skill baselines + rank-correlation audit for ALL LLM configurations.
 
-Answers reviewer critiques A (missing no-skill baseline) and R1.7 (ablations move
-the anchor, they do not create prognostic capability).
+Answers two questions the error metrics leave open: whether any configuration
+beats a predictor that ignores its input, and whether the ablations move the
+anchor rather than creating prognostic capability.
 
 Pure post-hoc computation on the existing trace JSONs - no LLM inference.
 

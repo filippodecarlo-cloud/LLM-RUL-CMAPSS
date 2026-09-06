@@ -1,16 +1,17 @@
 """
 Audit: does every number in the manuscript match the data?
 
-Extracts numeric claims from paper_v14_draft.md and checks them against values
-recomputed from the result files. Catches the failure mode that matters most in
-a paper like this one: a number that was right when it was written, and stale
-after the experiment that produced it was rerun.
+Extracts numeric claims from paper_v15.docx, the Word master, and checks them
+against values recomputed from the result files. Catches the failure mode that
+matters most here: a number that was right when written, and stale after the
+experiment that produced it was rerun.
 
 Run it before every submission, and after any new experiment.
 
     python p1/audit_numbers.py
 """
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -23,7 +24,28 @@ HERE = Path(__file__).resolve().parent
 EXP = HERE.parent
 sys.path.insert(0, str(EXP))
 P0, P1 = EXP / "results_p0", EXP / "results_p1"
-PAPER = EXP.parent / "paper_v14_draft.md"
+# The manuscript is not redistributed here while it is under review. Point
+# PAPER_DOCX at a copy, or drop the .docx beside the repository. Everything it
+# is checked against is public, in results/, results_p0/ and results_p1/.
+PAPER = Path(os.environ.get("PAPER_DOCX", EXP.parent / "paper_v15.docx"))
+
+
+def read_manuscript():
+    """Text of the manuscript, from the DOCX master (tables included)."""
+    if not PAPER.exists():
+        raise SystemExit(
+            f"Manuscript not found at {PAPER}.\n"
+            "This script checks the manuscript against the data in this repository, "
+            "so it needs the .docx. Set PAPER_DOCX to its path.")
+    if PAPER.suffix == ".docx":
+        from docx import Document
+        d = Document(PAPER)
+        parts = [p.text for p in d.paragraphs]
+        for tb in d.tables:
+            for row in tb.rows:
+                parts.extend(c.text for c in row.cells)
+        return "\n".join(parts)
+    return PAPER.read_text(encoding="utf-8")
 
 
 def rmse(y, p):
@@ -148,6 +170,11 @@ def facts():
         for p in EXP.glob(pat):
             tot += len(json.loads(p.read_text(encoding="utf-8")))
     f["total inferences"] = tot
+    # verified by reading the PDFs; see letteratura/note_lettura_4_paper.md
+    f["lit: Guo 2024 FD001"] = 11.92
+    f["lit: Guo 2024 FD003"] = 10.63
+    f["lit: Chen 2023 FD001"] = 13.23
+    f["lit: Chen 2023 FD003"] = 12.17
     return f
 
 
@@ -171,13 +198,17 @@ CHECKS = [
     ("62.32", "arm invcue RMSE"), ("61.21", "arm revdata RMSE"),
     ("253", "reversed pairs"), ("2.4", "claims changed %"),
     ("0.941", "anchoring r"), ("89", "anchoring R2 %"),
-    ("4,657", "total inferences"),
+    ("5,557", "total inferences"),
+    # literature values read from the PDFs in letteratura/pdf and checked there,
+    # not recomputable here; listed so a later edit cannot silently drift
+    ("11.92", "lit: Guo 2024 FD001"), ("10.63", "lit: Guo 2024 FD003"),
+    ("13.23", "lit: Chen 2023 FD001"), ("12.17", "lit: Chen 2023 FD003"),
 ]
 
 
 def main():
     f = facts()
-    text = PAPER.read_text(encoding="utf-8")
+    text = read_manuscript()
 
     print(f"Audit of {PAPER.name} against the result files\n" + "=" * 62)
     bad, missing, ok = [], [], 0
