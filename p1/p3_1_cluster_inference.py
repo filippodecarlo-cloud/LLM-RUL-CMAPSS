@@ -107,13 +107,22 @@ def rec(store, **kw):
 
 
 # ------------------------------------------------------------------ data
-def load_main():
-    c = pd.read_csv(P0 / "p0_2a_claims.csv")
-    c = c[c.claimed.isin(["increase", "decrease"])].reset_index(drop=True)
+def _keys(c):
     c["engine"] = c.dataset + "-" + c.engine_id.astype(str)
     c["config"] = (c.dataset + "|" + c["mode"] + "|k" + c.k.astype(str)
                    + "|n" + c.n_cycles.astype(str) + "|" + c.run)
     return c
+
+
+def load_main():
+    c = pd.read_csv(P0 / "p0_2a_claims.csv")
+    return _keys(c[c.claimed.isin(["increase", "decrease"])].reset_index(drop=True))
+
+
+def load_all():
+    """Every opportunity, claim or not. The window direction is defined for all
+    of them, which is what the permutation needs to re-index engines."""
+    return _keys(pd.read_csv(P0 / "p0_2a_claims.csv").reset_index(drop=True))
 
 
 def load_arms():
@@ -248,50 +257,118 @@ def main():
 
     # ---- 4. per-sensor association --------------------------------------
     L.append("\n## Association between the stated direction and the window, sensor by sensor\n")
-    L.append("| Sensor | Claims | Cramer's V | 95% CI (cluster) | Cluster permutation p |")
-    L.append("|---|---|---|---|---|")
-    claimed_c, _ = np.unique(c.claimed.to_numpy(), return_inverse=True)
-    cl_codes = np.unique(c.claimed.to_numpy(), return_inverse=True)[1]
+    claimed_c, cl_codes = np.unique(c.claimed.to_numpy(), return_inverse=True)
     aw_levels, aw_codes = np.unique(c.actual_in_window.to_numpy(), return_inverse=True)
     n_cl, n_aw = len(claimed_c), len(aw_levels)
     eng_codes, _ = cluster_index(c.engine.to_numpy())
+    cfg_codes2, _ = cluster_index(c.config.to_numpy())
+    ds_codes, _ = cluster_index(c.dataset.to_numpy())
+    full = load_all()
+    aw_index = {v: i for i, v in enumerate(aw_levels)}
+    ds_index = {v: i for i, v in enumerate(sorted(full.dataset.unique()))}
 
+    per_sensor = []
     for s in sorted(set(sensor)):
         sel = np.where(sensor == s)[0]
-        sub_cl = cl_codes[sel]
-        sub_aw = aw_codes[sel]
-        sub_eng = eng_codes[sel]
+        sub_cl, sub_aw = cl_codes[sel], aw_codes[sel]
+        sub_eng, sub_cfg, sub_ds = eng_codes[sel], cfg_codes2[sel], ds_codes[sel]
         obs = cramers_v_codes(sub_cl, sub_aw, n_cl, n_aw)
         if not np.isfinite(obs):
-            L.append(f"| {s} | {len(sel)} | not defined | not defined | not defined |")
-            rec(out, contrast=f"claim vs window association, {s}", estimate=np.nan,
-                ci_lo=np.nan, ci_hi=np.nan, unit="Cramer's V", n=len(sel),
-                p_cluster=np.nan, note="the model states a single direction; V undefined")
+            per_sensor.append({"sensor": s, "n": len(sel), "V": np.nan,
+                               "lo": np.nan, "hi": np.nan, "p": np.nan})
             continue
-        _, groups_s = cluster_index(sub_eng)
-        stat = lambda r: cramers_v_codes(sub_cl[r], sub_aw[r], n_cl, n_aw)  # noqa: E731
-        lo, hi = boot_ci(groups_s, stat)
-        # permute the window direction across engines, engines kept intact
-        ue, inv = np.unique(sub_eng, return_inverse=True)
-        eng_aw = np.array([sub_aw[sub_eng == e][0] for e in ue])
+
+        def stat(r, _cl=sub_cl, _aw=sub_aw):
+            return cramers_v_codes(_cl[r], _aw[r], n_cl, n_aw)
+
+        _, gp_eng = cluster_index(sub_eng)
+        _, gp_cfg = cluster_index(sub_cfg)
+        lo, hi = widest(boot_ci(gp_eng, stat), boot_ci(gp_cfg, stat))
+
+        # Cluster permutation. The direction in the window depends on the window
+        # length, so one engine carries different directions in different
+        # configurations: for s11, 99 of 200 engines do. The table is built from
+        # every opportunity, not only from the cells where a claim was made,
+        # because a table built from claims alone is 15% to 28% full and most
+        # permuted lookups would miss and fall back to the observed value.
+        full_s = full[full.sensor == s]
+        f_eng = full_s.engine.to_numpy()
+        f_cfg = full_s.config.to_numpy()
+        f_aw = np.array([aw_index[v] for v in full_s.actual_in_window.to_numpy()])
+        eng_u, eng_pos = np.unique(f_eng, return_inverse=True)
+        cfg_u, cfg_pos = np.unique(f_cfg, return_inverse=True)
+        table = np.full((len(eng_u), len(cfg_u)), -1, dtype=np.int64)
+        table[eng_pos, cfg_pos] = f_aw
+        e_ix = {e: i for i, e in enumerate(eng_u)}
+        c_ix = {cc: i for i, cc in enumerate(cfg_u)}
+        obs_e = np.array([e_ix[e] for e in c.engine.to_numpy()[sel]])
+        obs_c = np.array([c_ix[cc] for cc in c.config.to_numpy()[sel]])
+        # engines are permuted only within their own dataset
+        eng_ds = np.empty(len(eng_u), dtype=np.int64)
+        eng_ds[eng_pos] = np.array([ds_index[v] for v in full_s.dataset.to_numpy()])
+        blocks = [np.where(eng_ds == v)[0] for v in np.unique(eng_ds)]
+        # a cell can only be missing where the engine does not belong to that
+        # configuration's dataset, and the permutation never crosses datasets
+        assert (table[np.ix_(blocks[0], np.unique(obs_c[np.isin(obs_e, blocks[0])]))]
+                >= 0).all(), "permutation table has holes within a dataset"
+
         rng2 = np.random.default_rng(SEED)
-        perm = eng_aw.copy()
         cnt = 0
         for _ in range(N_PERM):
-            rng2.shuffle(perm)
-            v = cramers_v_codes(sub_cl, perm[inv], n_cl, n_aw)
+            perm = np.arange(len(eng_u))
+            for b in blocks:
+                perm[b] = rng2.permutation(b)
+            permuted = table[perm[obs_e], obs_c]
+            v = cramers_v_codes(sub_cl, permuted, n_cl, n_aw)
             if np.isfinite(v) and v >= obs - 1e-12:
                 cnt += 1
         p = (cnt + 1) / (N_PERM + 1)
-        L.append(f"| {s} | {len(sel)} | {obs:.3f} | [{lo:.3f}, {hi:.3f}] | {p:.4f} |")
-        rec(out, contrast=f"claim vs window association, {s}", estimate=obs,
-            ci_lo=lo, ci_hi=hi, unit="Cramer's V", n=len(sel), p_cluster=p,
-            note="permutation moves whole engines")
-    L.append("\nThe conclusion in the manuscript does not change, and its wording is already "
-             "the careful one: no statistically detectable association for six of the seven "
-             "sensors. What changes is that the p-values now come from a procedure that does "
-             "not assume independence, and every association carries an interval, so a reader "
-             "can see how weak the one detectable association is.\n")
+        per_sensor.append({"sensor": s, "n": len(sel), "V": obs,
+                           "lo": lo, "hi": hi, "p": p})
+
+    # Benjamini-Hochberg across the sensors for which a test is computable.
+    live = [r for r in per_sensor if np.isfinite(r["p"])]
+    ps = np.array([r["p"] for r in live])
+    order = np.argsort(ps)
+    adj = np.empty_like(ps)
+    prev = 1.0
+    for rank, idx in enumerate(order[::-1]):
+        k = len(ps) - rank
+        prev = min(prev, ps[idx] * len(ps) / k)
+        adj[idx] = prev
+    for r, a in zip(live, adj):
+        r["p_bh"] = float(a)
+
+    L.append(f"Six of the seven sensors admit a test; for s15 the model states one direction "
+             f"in every claim, so no association can be computed. Benjamini-Hochberg is "
+             f"applied across the {len(live)} computable tests, which was missing before.\n")
+    L.append("| Sensor | Claims | Cramer's V | 95% CI (cluster) | p | p (BH) |")
+    L.append("|---|---|---|---|---|---|")
+    for r in per_sensor:
+        if not np.isfinite(r["V"]):
+            L.append(f"| {r['sensor']} | {r['n']} | not defined | not defined | "
+                     f"not defined | not defined |")
+            rec(out, contrast=f"claim vs window association, {r['sensor']}",
+                estimate=np.nan, ci_lo=np.nan, ci_hi=np.nan, unit="Cramer's V",
+                n=r["n"], p_cluster=np.nan,
+                note="the model states a single direction; V undefined")
+            continue
+        L.append(f"| {r['sensor']} | {r['n']} | {r['V']:.3f} | "
+                 f"[{r['lo']:.3f}, {r['hi']:.3f}] | {r['p']:.4f} | {r['p_bh']:.4f} |")
+        rec(out, contrast=f"claim vs window association, {r['sensor']}",
+            estimate=r["V"], ci_lo=r["lo"], ci_hi=r["hi"], unit="Cramer's V",
+            n=r["n"], p_cluster=r["p"],
+            note=f"BH-adjusted p = {r['p_bh']:.4f} across {len(live)} sensors")
+
+    sig = [r for r in live if r["p_bh"] < 0.05]
+    L.append(f"\nAfter correction across the six tests, "
+             + (f"{len(sig)} sensor(s) retain a detectable association: "
+                + ", ".join(f"{r['sensor']} (V = {r['V']:.2f}, BH p = {r['p_bh']:.3f})"
+                            for r in sig)
+                if sig else
+                "no sensor retains a detectable association")
+             + ". The largest association anywhere is Cramer's V of "
+             + f"{max(r['V'] for r in live):.2f}, which is weak on any reading.\n")
 
     # ---- 5. control arms, paired by engine ------------------------------
     L.append("\n## Control arms, paired by engine\n")

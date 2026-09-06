@@ -26,14 +26,15 @@ Share of training engines in which the sensor is higher at the end than at the s
 
 A direction counts as attested when at least 65% of engines show it. The two methods agree everywhere: the sign of the median rank correlation with engine age gives the same direction as the endpoint comparison for every sensor and both sub-datasets.
 
-On FD001, the reference sub-dataset:
+On FD001, the reference sub-dataset, the seven scored sensors fall into three groups at the 65% attestation threshold:
 
-- The prompt is right about 4 of the 7 scored sensors.
-- It asserts the **opposite** of what the data shows for s9, s12, s14.
+- **Agrees** (4): s4, s7, s11, s15. The direction the prompt gives is the one the data shows.
+- **Conflicts** (2): s9, s12. The direction is attested and is the opposite of the one the prompt gives.
+- **No consistent direction** (1): s14. The prompt asserts a direction the data does not support either way.
 
   - **s9** (Nc, Physical core speed): the prompt says decrease, the data shows increase in 70% of engines.
   - **s12** (phi, Ratio of fuel flow to Ps30): the prompt says increase, the data shows decrease in 100% of engines.
-  - **s14** (NRc, Corrected core speed): the prompt says decrease, the data shows increase in 57% of engines.
+  - **s14** (NRc, Corrected core speed): the prompt says decrease; the majority trend is increase but only in 57% of engines, below the threshold, so the sensor has no consistent direction in this benchmark.
 
 FD003 carries two fault modes and its directions are correspondingly less consistent, which is worth noting but does not change the picture on FD001.
 
@@ -53,10 +54,12 @@ FD003 carries two fault modes and its directions are correspondingly less consis
 | s9 (Nc) | **conflict** | 879 | 95.6% | 4.4% | 27.1% |
 | s11 (Ps30) | agree | 947 | 98.4% | 98.4% | 62.1% |
 | s12 (phi) | **conflict** | 527 | 78.7% | 21.3% | 47.2% |
-| s14 (NRc) | **conflict** | 877 | 96.6% | 3.4% | 27.7% |
+| s14 (NRc) | no consistent direction | 877 | 96.6% | 3.4% | 27.7% |
 | s15 (BPR) | agree | 306 | 100.0% | 100.0% | 56.9% |
 
-**The decisive subset.** On the 3 sensors where the prompt and the benchmark disagree (s9, s12, s14), a claim cannot follow both. Over the 2,283 claims about them the model follows the prompt 92.1% of the time and the benchmark 7.9%. Where the two references part company, the model goes with the prompt.
+**The decisive subset.** On the 2 sensors whose attested direction is the opposite of the asserted one (s9, s12), a claim cannot follow both. Over the 1,406 claims about them the model follows the prompt 89.3% of the time and the benchmark 10.7%. Where the two references part company, the model goes with the prompt.
+
+The ambiguous case is reported separately: for s14 the prompt asserts decrease and the model states it in 96.6% of its 877 claims, while the benchmark supports no direction. This shows the same cue-following but cannot be scored against the data, so it is excluded from the figures above.
 
 
 ## What this changes

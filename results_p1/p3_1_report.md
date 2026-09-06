@@ -23,17 +23,19 @@ Input faithfulness is 42.7% while the canonical direction is actually present in
 
 ## Association between the stated direction and the window, sensor by sensor
 
-| Sensor | Claims | Cramer's V | 95% CI (cluster) | Cluster permutation p |
-|---|---|---|---|---|
-| s11 | 947 | 0.054 | [0.015, 0.168] | 0.3307 |
-| s12 | 527 | 0.197 | [0.098, 0.313] | 0.0140 |
-| s14 | 877 | 0.065 | [0.014, 0.151] | 0.2475 |
-| s15 | 306 | not defined | not defined | not defined |
-| s4 | 10 | 0.167 | [0.048, 0.829] | 1.0000 |
-| s7 | 270 | 0.101 | [0.026, 0.251] | 0.3589 |
-| s9 | 879 | 0.047 | [0.012, 0.137] | 0.4403 |
+Six of the seven sensors admit a test; for s15 the model states one direction in every claim, so no association can be computed. Benjamini-Hochberg is applied across the 6 computable tests, which was missing before.
 
-The conclusion in the manuscript does not change, and its wording is already the careful one: no statistically detectable association for six of the seven sensors. What changes is that the p-values now come from a procedure that does not assume independence, and every association carries an interval, so a reader can see how weak the one detectable association is.
+| Sensor | Claims | Cramer's V | 95% CI (cluster) | p | p (BH) |
+|---|---|---|---|---|---|
+| s11 | 947 | 0.054 | [0.013, 0.168] | 0.3202 | 0.6205 |
+| s12 | 527 | 0.197 | [0.098, 0.313] | 0.1964 | 0.6205 |
+| s14 | 877 | 0.065 | [0.014, 0.151] | 0.2449 | 0.6205 |
+| s15 | 306 | not defined | not defined | not defined | not defined |
+| s4 | 10 | 0.167 | [0.048, 0.845] | 0.8343 | 0.8343 |
+| s7 | 270 | 0.101 | [0.026, 0.273] | 0.5170 | 0.6205 |
+| s9 | 879 | 0.047 | [0.012, 0.137] | 0.4563 | 0.6205 |
+
+After correction across the six tests, no sensor retains a detectable association. The largest association anywhere is Cramer's V of 0.20, which is weak on any reading.
 
 
 ## Control arms, paired by engine

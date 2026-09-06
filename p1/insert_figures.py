@@ -33,8 +33,9 @@ FIGURES = {
         "part 4 tests whether the explanation describes the input it was given."),
     2: ("Figure 2 plots predicted against true RUL",
         "Figure 2. Predicted against true RUL on FD001. Points on the dashed diagonal would be "
-        "exact. The prompted model forms horizontal bands: its output does not depend on the "
-        "engine."),
+        "exact. The prompted model forms horizontal bands: its output varies little with the "
+        "engine, and the bands themselves show that the dependence is weak rather than "
+        "absent."),
     3: ("The anchor is model-specific",
         "Figure 3. Distribution of predicted RUL on FD001 for the four models run on all 100 "
         "test engines at the canonical configuration, with XGBoost and the true RUL for "
@@ -44,15 +45,16 @@ FIGURES = {
         "Figure 4. Share of predictions falling on the single most frequent value, on "
         "each of the four C-MAPSS sub-datasets, zero-shot with n = 30. The label on each "
         "bar gives the number of distinct values the model produced over the engines "
-        "named in the category label. A regressor would produce as many distinct values "
-        "as there are engines."),
+        "named in the category label. For comparison, the supervised regressors on FD001 and "
+        "FD003 occupy 59 to 69 values on a one-cycle grid, with no value taking more than "
+        "6% of the predictions."),
     5: ("Figure 5 breaks these results down by sensor",
-        "Figure 5. What the stated direction agrees with, per sensor: the direction the prompt asserts, the direction measured on the training set, the window actually supplied, and the base rate on the same claims. Cued sensors are the ones the prompt names. For s9, s12 and s14 the first two references disagree, and the claims follow the first. Faithfulness and the base rate track each other everywhere. Bars rest on between 10 (s4) and 947 (s11) directional claims."),
-    6: ("The data was turned upside down and the explanation stayed the same",
-        "Figure 6. The trend-reversal test. For each sensor, the number of (engine, sensor) "
+        "Figure 5. What the stated direction agrees with, per sensor: the direction the prompt asserts, the direction measured on the training set, the window actually supplied, and the base rate on the same claims. Cued sensors are the ones the prompt names. For s9 and s12 the first two references are opposite and the claims follow the first; for s14 the benchmark supports no direction while the prompt asserts one. Faithfulness and the base rate track each other everywhere. Bars rest on between 10 (s4) and 947 (s11) directional claims."),
+    6: ("Reversing the series left the stated directions where they were",
+        "Figure 6. The trend-reversal test, with each bar labelled and the share shown on the changed-claim series, since 6 pairs against 253 is otherwise invisible. For each sensor, the number of (engine, sensor) "
         "pairs whose trend genuinely reversed between the two arms, and the number of those "
         "in which the direction stated by the model reversed with it."),
-    7: ("The examples determine where the anchor sits",
+    7: ("Figure 7 plots that relation over the seven example sets",
         "Figure 7. Mean predicted RUL against the mean RUL of the examples placed in the "
         "prompt, over seven example sets. The dashed line is the test-set mean."),
     8: ("Figure 8 reports the rank correlation of every FD001 configuration",
@@ -84,8 +86,8 @@ ALT_TEXT = {
        "the reversal applied to the input trend.",
     7: "Mean predicted remaining useful life against the mean remaining useful life of the "
        "few-shot examples, one point per example set, with a fitted line.",
-    8: "Rank correlation with bootstrap intervals for every FD001 configuration of the main "
-       "grid, against the supervised baselines on the same engines.",
+    8: "Rank correlation with bootstrap intervals for the 15 FD001 runs of the main grid, "
+       "against the supervised baselines on the same engines.",
 }
 
 def add_figure(doc_body, after_par, img, caption, width_cm=15.5, alt=None, num=None):

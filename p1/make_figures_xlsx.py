@@ -262,13 +262,24 @@ def figure_reversed_trends(wb):
                               "Source: results_p0/p0_23_report.md")
     first, last = r0 + 1, r0 + len(df)
     chart = wb.add_chart({"type": "column"})
+    # The changed-claim series is a handful of pairs against a couple of hundred,
+    # so on a shared axis it is invisible. Both series carry direct labels, and
+    # the second one carries the share as well, which is the quantity of interest.
+    pct = [f"{cc} ({100 * cc / f:.0f}%)" if f else str(cc)
+           for cc, f in zip(df["Pairs where the model's claim changed"],
+                            df["Pairs where the real trend reversed"])]
     for col, colour, gap in ((1, INK, 60), (2, ACCENT, 60)):
-        chart.add_series({
+        series = {
             "name": [name, r0, col],
             "categories": [name, first, 0, last, 0],
             "values": [name, first, col, last, col],
             "fill": {"color": colour}, "border": BAR_EDGE, "gap": gap,
-        })
+            "data_labels": {"value": True, "position": "outside_end",
+                            "font": {"name": "Calibri", "size": 10, "color": INK}},
+        }
+        if col == 2:
+            series["data_labels"]["custom"] = [{"value": v} for v in pct]
+        chart.add_series(series)
     chart.set_title({"name": f"Paired trend reversals and the claims that followed "
                              f"them ({100 * tot_c / max(tot_f, 1):.1f}%)",
                      "name_font": TITLE_FONT})
@@ -393,6 +404,11 @@ def figure_anchoring(wb):
         # the name is set explicitly, or Excel invents one in its own language.
         "trendline": {"type": "linear", "name": "Linear fit",
                       "line": {"color": ACCENT, "width": 1.0, "dash_type": "dash"}},
+        # seven unlabelled points tell a reader nothing about which set is which
+        "data_labels": {"value": False,
+                        "custom": [{"value": str(v)} for v in df["Run"]],
+                        "position": "above",
+                        "font": {"name": "Calibri", "size": 9, "color": GREY}},
     })
     chart.add_series({
         "name": [name, r0, 3],

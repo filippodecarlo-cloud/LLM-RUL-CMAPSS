@@ -1,8 +1,8 @@
-sensor,symbol,conflict,claims,follows_prompt_pct,follows_data_pct,follows_window_pct
-s4,T50,False,10,60.0,60.0,50.0
-s7,P30,False,270,51.1,51.1,49.3
-s9,Nc,True,879,95.6,4.4,27.1
-s11,Ps30,False,947,98.4,98.4,62.1
-s12,phi,True,527,78.7,21.3,47.2
-s14,NRc,True,877,96.6,3.4,27.7
-s15,BPR,False,306,100.0,100.0,56.9
+sensor,symbol,conflict,unattested,claims,follows_prompt_pct,follows_data_pct,follows_window_pct
+s4,T50,False,False,10,60.0,60.0,50.0
+s7,P30,False,False,270,51.1,51.1,49.3
+s9,Nc,True,False,879,95.6,4.4,27.1
+s11,Ps30,False,False,947,98.4,98.4,62.1
+s12,phi,True,False,527,78.7,21.3,47.2
+s14,NRc,False,True,877,96.6,3.4,27.7
+s15,BPR,False,False,306,100.0,100.0,56.9
