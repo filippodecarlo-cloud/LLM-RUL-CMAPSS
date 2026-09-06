@@ -50,17 +50,26 @@ ACCENT = "#C2553F"   # brick, for the "what matters" series
 GREY = "#8C8C8C"
 GRID = "#D9D9D9"
 
-FONT = {"name": "Calibri", "size": 10}
-TITLE_FONT = {"name": "Calibri", "size": 11, "bold": True}
+# 11 pt on the axes and 12 pt on titles. A figure reduced to a single column in
+# print loses about a third of its linear size, and 10 pt did not survive that.
+FONT = {"name": "Calibri", "size": 11}
+TITLE_FONT = {"name": "Calibri", "size": 12, "bold": True}
+# A thin dark outline separates adjacent bars when the page is printed in
+# greyscale, which fill colour alone does not do reliably.
+BAR_EDGE = {"color": "#3A3A3A", "width": 0.75}
 
 
 def style_axes(chart, x_name, y_name, y_max=None, y_min=0):
     chart.set_x_axis({
         "name": x_name, "name_font": FONT, "num_font": FONT,
+        "num_format": "General",
         "line": {"color": GREY},
         "major_gridlines": {"visible": False},
     })
+    # Integer tick labels: Excel would otherwise inherit the locale's decimal
+    # separator and print "100,00" on an English figure.
     y = {"name": y_name, "name_font": FONT, "num_font": FONT,
+         "num_format": "0",
          "line": {"color": GREY},
          "major_gridlines": {"visible": True, "line": {"color": GRID, "width": 0.75}},
          "min": y_min}
@@ -105,54 +114,60 @@ def add_chart_sheet(wb, sheet_name, chart, width=1.6, height=1.4):
 
 # ---------------------------------------------------------------- figure 3
 def figure_faithfulness(wb):
-    """Textbook agreement vs input faithfulness, per sensor, with base rate."""
+    """What the stated direction agrees with, per sensor."""
     src = P0 / "p0_2a_claims.csv"
     if not src.exists():
         return False
     cl = pd.read_csv(src)
     d = cl[cl.claimed.isin(["increase", "decrease"])].copy()
-    d["textbook_hit"] = d.claimed == d.expected_textbook
+    d["prompt_hit"] = d.claimed == d.expected_textbook
     d["input_hit"] = d.claimed == d.actual_in_window
+    # direction measured on the FD001 training set, from p1/p3_5_prompt_vs_benchmark.py
+    MEASURED = {"s4": "increase", "s7": "decrease", "s9": "increase", "s11": "increase",
+                "s12": "decrease", "s14": "increase", "s15": "increase"}
+    d["data_hit"] = d.claimed == d.sensor.map(MEASURED)
 
     rows = []
     for s in ["s4", "s7", "s9", "s11", "s12", "s14", "s15"]:
         sub = d[d.sensor == s]
-        base = cl[cl.sensor == s]
         if not len(sub):
             continue
+        # the base rate has to share its denominator with faithfulness, so it is
+        # computed on the directional claims and not on every opportunity
         rows.append({
             "Sensor": f"{s} ({'cued' if s in {'s9','s11','s12','s14','s15'} else 'not cued'})",
-            "Agreement with textbook direction (%)": 100 * sub.textbook_hit.mean(),
-            "Faithfulness to the input window (%)": 100 * sub.input_hit.mean(),
-            "Base rate: canonical direction present (%)":
-                100 * (base.expected_textbook == base.actual_in_window).mean(),
+            "Agrees with the direction the prompt asserts (%)": 100 * sub.prompt_hit.mean(),
+            "Agrees with the direction the data shows (%)": 100 * sub.data_hit.mean(),
+            "Agrees with the window supplied (%)": 100 * sub.input_hit.mean(),
+            "Base rate, same claims (%)":
+                100 * (sub.expected_textbook == sub.actual_in_window).mean(),
             "n claims": int(len(sub)),
         })
     df = pd.DataFrame(rows)
 
-    name = "DATI_fig3"
+    name = "DATI_fig5"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 3 - explanations agree with the textbook, not with the "
-                              "data. Source: results_p0/p0_2a_report.md")
+                         note="Figure 5 - what the stated direction agrees with, per sensor. "
+                              "Sources: results_p0/p0_2a_report.md and "
+                              "results_p1/p3_5_report.md")
     n = len(df)
     first, last = r0 + 1, r0 + n
 
     chart = wb.add_chart({"type": "column"})
-    for col, colour in ((1, INK), (2, ACCENT), (3, LIGHT)):
+    for col, colour in ((1, INK), (2, ACCENT), (3, LIGHT), (4, GREY)):
         chart.add_series({
             "name": [name, r0, col],
             "categories": [name, first, 0, last, 0],
             "values": [name, first, col, last, col],
-            "fill": {"color": colour},
-            "border": {"none": True},
+            "fill": {"color": colour}, "border": BAR_EDGE,
             "gap": 60,
         })
-    chart.set_title({"name": "Explanations track the canonical narrative, not the input",
+    chart.set_title({"name": "Directional claims per sensor: what the stated direction agrees with",
                      "name_font": TITLE_FONT})
     style_axes(chart, "Sensor (cued = named in the prompt)", "Percentage of directional claims",
                y_max=100)
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_3", chart, 1.9, 1.5)
+    add_chart_sheet(wb, "FIG_5", chart, 1.9, 1.5)
     return True
 
 
@@ -184,9 +199,9 @@ def figure_collapse(wb):
         data["True RUL (reference)"] = np.histogram(b.true_rul.values, bins=edges)[0].tolist()
 
     df = pd.DataFrame(data)
-    name = "DATI_fig2"
+    name = "DATI_fig3"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 2 - how many of the 100 test engines fall in each "
+                         note="Figure 3 - how many of the 100 test engines fall in each "
                               "predicted-RUL bin. A regressor spreads out; the LLMs do not.")
     n = len(df)
     first, last = r0 + 1, r0 + n
@@ -198,15 +213,14 @@ def figure_collapse(wb):
             "name": [name, r0, j],
             "categories": [name, first, 0, last, 0],
             "values": [name, first, j, last, j],
-            "fill": {"color": palette[(j - 1) % len(palette)]},
-            "border": {"none": True},
+            "fill": {"color": palette[(j - 1) % len(palette)]}, "border": BAR_EDGE,
             "gap": 40,
         })
     chart.set_title({"name": "Distribution of predicted RUL, FD001 (100 engines)",
                      "name_font": TITLE_FONT})
     style_axes(chart, "Predicted RUL (cycles)", "Number of engines")
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_2", chart, 2.1, 1.5)
+    add_chart_sheet(wb, "FIG_3", chart, 2.1, 1.5)
     return True
 
 
@@ -241,9 +255,9 @@ def figure_reversed_trends(wb):
                  "Pairs where the model's claim changed": tot_c})
     df = pd.DataFrame(rows)
 
-    name = "DATI_fig4"
+    name = "DATI_fig6"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 4 - each engine's sensor window was reversed in time, so "
+                         note="Figure 6 - each engine's sensor window was reversed in time, so "
                               "every trend flipped sign. The stated directions did not follow. "
                               "Source: results_p0/p0_23_report.md")
     first, last = r0 + 1, r0 + len(df)
@@ -253,14 +267,14 @@ def figure_reversed_trends(wb):
             "name": [name, r0, col],
             "categories": [name, first, 0, last, 0],
             "values": [name, first, col, last, col],
-            "fill": {"color": colour}, "border": {"none": True}, "gap": gap,
+            "fill": {"color": colour}, "border": BAR_EDGE, "gap": gap,
         })
-    chart.set_title({"name": f"Trends reversed in the data, claims unchanged "
-                             f"({100 * tot_c / max(tot_f, 1):.1f}% followed)",
+    chart.set_title({"name": f"Paired trend reversals and the claims that followed "
+                             f"them ({100 * tot_c / max(tot_f, 1):.1f}%)",
                      "name_font": TITLE_FONT})
     style_axes(chart, "Sensor", "Number of (engine, sensor) pairs")
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_4", chart, 1.8, 1.4)
+    add_chart_sheet(wb, "FIG_6", chart, 1.8, 1.4)
     return True
 
 
@@ -285,9 +299,9 @@ def figure_pred_vs_true(wb):
                      "Perfect prediction": r.true_rul})
     df = pd.DataFrame(rows).sort_values("True RUL").reset_index(drop=True)
 
-    name = "DATI_fig5"
+    name = "DATI_fig2"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 5 - predicted vs true RUL, FD001. Points on the diagonal "
+                         note="Figure 2 - predicted vs true RUL, FD001. Points on the diagonal "
                               "are perfect. The LLM forms horizontal bands: its output does not "
                               "depend on the engine.")
     first, last = r0 + 1, r0 + len(df)
@@ -314,11 +328,12 @@ def figure_pred_vs_true(wb):
                      "name_font": TITLE_FONT})
     style_axes(chart, "True RUL (cycles)", "Predicted RUL (cycles)", y_max=130)
     chart.set_x_axis({"name": "True RUL (cycles)", "name_font": FONT, "num_font": FONT,
+                      "num_format": "0",
                       "min": 0, "max": 130, "line": {"color": GREY},
                       "major_gridlines": {"visible": True,
                                           "line": {"color": GRID, "width": 0.75}}})
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_5", chart, 1.6, 1.6)
+    add_chart_sheet(wb, "FIG_2", chart, 1.6, 1.6)
     return True
 
 
@@ -360,9 +375,9 @@ def figure_anchoring(wb):
                      "Test-set mean RUL": 74.5})
     df = pd.DataFrame(rows).dropna().sort_values("Mean RUL of the prompt examples")
 
-    name = "DATI_fig6"
+    name = "DATI_fig7"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 6 - the anchor follows the examples. Each point is one "
+                         note="Figure 7 - the anchor follows the examples. Each point is one "
                               "few-shot example set. Source: results_p1/p1_34_report.md")
     first, last = r0 + 1, r0 + len(df)
 
@@ -374,6 +389,10 @@ def figure_anchoring(wb):
         "marker": {"type": "circle", "size": 9, "fill": {"color": ACCENT},
                    "border": {"none": True}},
         "line": {"none": True},
+        # the paper leans on r = +0.941; show the fit rather than assert it.
+        # the name is set explicitly, or Excel invents one in its own language.
+        "trendline": {"type": "linear", "name": "Linear fit",
+                      "line": {"color": ACCENT, "width": 1.0, "dash_type": "dash"}},
     })
     chart.add_series({
         "name": [name, r0, 3],
@@ -382,12 +401,16 @@ def figure_anchoring(wb):
         "marker": {"type": "none"},
         "line": {"color": GREY, "width": 1.25, "dash_type": "dash"},
     })
-    chart.set_title({"name": "The predicted value follows the examples, not the engine",
+    chart.set_title({"name": "Mean predicted RUL versus mean RUL of the few-shot examples (n = 7, r = 0.94)",
                      "name_font": TITLE_FONT})
     style_axes(chart, "Mean RUL of the examples placed in the prompt",
                "Mean predicted RUL (100 engines)", y_max=130)
+    chart.set_x_axis({"name": "Mean RUL of the examples placed in the prompt",
+                      "name_font": FONT, "num_font": FONT, "num_format": "0",
+                      "min": 0, "max": 120, "line": {"color": GREY},
+                      "major_gridlines": {"visible": False}})
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_6", chart, 1.6, 1.4)
+    add_chart_sheet(wb, "FIG_7", chart, 1.6, 1.4)
     return True
 
 
@@ -415,9 +438,9 @@ def figure_rank_correlation(wb):
                      "LSTM (repaired)": 0.889})
     df = pd.DataFrame(rows)
 
-    name = "DATI_fig7"
+    name = "DATI_fig8"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 7 - rank correlation with 95% bootstrap CI, FD001. The "
+                         note="Figure 8 - rank correlation with 95% bootstrap CI, FD001. The "
                               "two reference lines are models that actually regress.")
     first, last = r0 + 1, r0 + len(df)
 
@@ -435,15 +458,17 @@ def figure_rank_correlation(wb):
     chart.set_title({"name": "Rank correlation with the true RUL (FD001)",
                      "name_font": TITLE_FONT})
     chart.set_x_axis({"name": "Spearman rho", "name_font": FONT, "num_font": FONT,
+                      "num_format": "[$-409]0.0",
                       "min": -0.4, "max": 1.0, "line": {"color": GREY},
                       "major_gridlines": {"visible": True,
                                           "line": {"color": GRID, "width": 0.75}}})
     chart.set_y_axis({"name": "", "num_font": {"name": "Calibri", "size": 9},
+                      "label_position": "low",
                       "line": {"color": GREY}})
     chart.set_chartarea({"border": {"none": True}, "fill": {"color": "#FFFFFF"}})
     chart.set_plotarea({"border": {"none": True}, "fill": {"none": True}})
     chart.set_legend({"none": True})
-    add_chart_sheet(wb, "FIG_7", chart, 1.7, 1.8)
+    add_chart_sheet(wb, "FIG_8", chart, 1.7, 1.8)
 
     ws.write(r0 + len(df) + 3, 0,
              "Reference: Random Forest rho = +0.813, repaired LSTM rho = +0.889 on the same "
@@ -497,13 +522,13 @@ def figure_multicondition(wb):
         ds = r["Dataset"].split("\n")[0]
         if r["Engines"] < expected.get(ds, 0):
             partial.append(f"{ds}: {int(r['Engines'])}/{expected[ds]}")
-    note = ("Figure 8 - the collapse across all four CMAPSS subsets, zero-shot n=30. "
+    note = ("Figure 4 - the collapse across all four CMAPSS subsets, zero-shot n=30. "
             "A regressor would produce as many distinct values as there are engines.")
     if partial:
         note += "  *** PARTIAL RUN, regenerate when finished: " + "; ".join(partial) + " ***"
         print(f"    (figure 8: partial data - {'; '.join(partial)})")
 
-    name = "DATI_fig8"
+    name = "DATI_fig4"
     ws, r0 = write_table(wb, name, df, note=note)
     first, last = r0 + 1, r0 + len(df)
 
@@ -531,7 +556,7 @@ def figure_multicondition(wb):
         "y2_axis": True,
     })
     chart.combine(line)
-    chart.set_title({"name": "Output collapse on every CMAPSS subset (zero-shot, n=30)",
+    chart.set_title({"name": "Distinct predicted values and modal share by sub-dataset (zero-shot, n = 30)",
                      "name_font": TITLE_FONT})
     style_axes(chart, "Dataset", "Count (log scale)")
     chart.set_y_axis({"name": "Distinct values / engines", "name_font": FONT,
@@ -539,15 +564,16 @@ def figure_multicondition(wb):
                       "major_gridlines": {"visible": True,
                                           "line": {"color": GRID, "width": 0.75}}})
     line.set_y2_axis({"name": "Modal share (%)", "name_font": FONT, "num_font": FONT,
-                      "min": 0, "max": 100})
+                      "num_format": "0", "min": 0, "max": 100})
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_8", chart, 1.8, 1.4)
+    add_chart_sheet(wb, "FIG_4", chart, 1.8, 1.4)
     return True
 
 
-BUILDERS = {2: figure_collapse, 3: figure_faithfulness, 4: figure_reversed_trends,
-            5: figure_pred_vs_true, 6: figure_anchoring, 7: figure_rank_correlation,
-            8: figure_multicondition}
+# numbered in order of first citation in the manuscript
+BUILDERS = {2: figure_pred_vs_true, 3: figure_collapse, 4: figure_multicondition,
+            5: figure_faithfulness, 6: figure_reversed_trends, 7: figure_anchoring,
+            8: figure_rank_correlation}
 
 
 def main():
