@@ -4,7 +4,7 @@ Aggregated across **2700 reasoning traces** from all LLM configurations (zero-sh
 
 | Sensor | Physical Quantity | Expected Trend | Correctly Identified | Wrong Direction | Mentioned but Unspecified | Not Mentioned |
 |---|---|---|---|---|---|---|
-| s4 | Total temperature at HPC outlet | ↑ (increase) | 6 (0%) | 4 (0%) | 29 (1%) | 2661 (99%) |
+| s4 | Total temperature at LPT outlet | ↑ (increase) | 6 (0%) | 4 (0%) | 29 (1%) | 2661 (99%) |
 | s7 | Total pressure at HPC outlet | ↓ (decrease) | 138 (5%) | 132 (5%) | 631 (23%) | 1799 (67%) |
 | s9 | Physical core speed | ↓ (decrease) | 840 (31%) | 45 (2%) | 54 (2%) | 1761 (65%) |
 | s11 | Static pressure at HPC outlet | ↑ (increase) | 932 (35%) | 16 (1%) | 245 (9%) | 1507 (56%) |

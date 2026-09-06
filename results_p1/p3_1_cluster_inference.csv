@@ -1,0 +1,15 @@
+contrast,estimate,ci_lo,ci_hi,unit,n,p_cluster,note
+"cued vs uncued sensors, canonical agreement",43.028442146089205,28.602390358576258,60.66640206663594,percentage points,3816,0.04839516048395161,permutation over sensors; smallest attainable p is 0.048
+"cued prompt vs uncued prompt, canonical agreement",33.09437195644418,23.808569328890734,44.361876994445964,percentage points,3816,0.001999800019998,permutation over configurations
+input faithfulness minus base rate,0.7337526205450695,-0.5277079673071089,2.0546614683060334,percentage points,3816,,negative means worse than ignoring the input
+"claim vs window association, s11",0.05364469702951135,0.01514017217332846,0.16752706086653057,Cramer's V,947,0.33066693330666935,permutation moves whole engines
+"claim vs window association, s12",0.19691991808575363,0.09804782221948616,0.313410128080274,Cramer's V,527,0.013998600139986002,permutation moves whole engines
+"claim vs window association, s14",0.06487325150195666,0.01448014903093071,0.15111682642479932,Cramer's V,877,0.24747525247475252,permutation moves whole engines
+"claim vs window association, s15",,,,Cramer's V,306,,the model states a single direction; V undefined
+"claim vs window association, s4",0.16666666666666663,0.047619047619047616,0.82915619758885,Cramer's V,10,1.0,permutation moves whole engines
+"claim vs window association, s7",0.10132288005992411,0.026249301108253083,0.25098144559912233,Cramer's V,270,0.3588641135886411,permutation moves whole engines
+"claim vs window association, s9",0.04658084343198215,0.012124345543866407,0.13748582887829178,Cramer's V,879,0.44025597440255976,permutation moves whole engines
+paired arm: cue removed minus replication,12.5,0.0,26.53061224489796,percentage points,48,0.14808519148085192,"paired on (engine, sensor), 45 engine clusters"
+paired arm: cue inverted minus replication,-34.62897526501767,-42.90909090909091,-26.258992805755394,percentage points,283,9.999000099990002e-05,"paired on (engine, sensor), 100 engine clusters"
+paired arm: trends reversed minus replication,-0.6711409395973155,-2.684563758389262,1.006711409395973,percentage points,298,0.7554244575542446,"paired on (engine, sensor), 100 engine clusters"
+stated direction changes when the shown trend reverses,2.371541501976284,0.4016064257028112,4.705882352941177,%,253,,6 of 253 reversed pairs; 84.9% of paired claims retained

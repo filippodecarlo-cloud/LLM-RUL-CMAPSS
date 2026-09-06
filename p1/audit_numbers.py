@@ -1,7 +1,7 @@
 """
 Audit: does every number in the manuscript match the data?
 
-Extracts numeric claims from paper_v15.docx, the Word master, and checks them
+Extracts numeric claims from paper_v16.docx, the Word master, and checks them
 against values recomputed from the result files. Catches the failure mode that
 matters most here: a number that was right when written, and stale after the
 experiment that produced it was rerun.
@@ -11,7 +11,6 @@ Run it before every submission, and after any new experiment.
     python p1/audit_numbers.py
 """
 import json
-import os
 import re
 import sys
 from pathlib import Path
@@ -24,19 +23,11 @@ HERE = Path(__file__).resolve().parent
 EXP = HERE.parent
 sys.path.insert(0, str(EXP))
 P0, P1 = EXP / "results_p0", EXP / "results_p1"
-# The manuscript is not redistributed here while it is under review. Point
-# PAPER_DOCX at a copy, or drop the .docx beside the repository. Everything it
-# is checked against is public, in results/, results_p0/ and results_p1/.
-PAPER = Path(os.environ.get("PAPER_DOCX", EXP.parent / "paper_v15.docx"))
+PAPER = EXP.parent / "paper_v16.docx"   # the Word file is the master; v14 is frozen
 
 
 def read_manuscript():
     """Text of the manuscript, from the DOCX master (tables included)."""
-    if not PAPER.exists():
-        raise SystemExit(
-            f"Manuscript not found at {PAPER}.\n"
-            "This script checks the manuscript against the data in this repository, "
-            "so it needs the .docx. Set PAPER_DOCX to its path.")
     if PAPER.suffix == ".docx":
         from docx import Document
         d = Document(PAPER)
@@ -110,10 +101,71 @@ def facts():
     f["directional claims"] = int(len(d))
     f["textbook agreement %"] = round(100 * (d.claimed == d.expected_textbook).mean(), 1)
     f["input faithfulness %"] = round(100 * (d.claimed == d.actual_in_window).mean(), 1)
-    f["base rate %"] = round(100 * (cl.expected_textbook == cl.actual_in_window).mean(), 1)
+    # same rows as faithfulness, otherwise the two are not comparable
+    f["base rate %, same claims as faithfulness"] = round(
+        100 * (d.expected_textbook == d.actual_in_window).mean(), 1)
     f["cued agreement %"] = round(100 * (d[d.cued].claimed == d[d.cued].expected_textbook).mean(), 1)
     f["uncued agreement %"] = round(
         100 * (d[~d.cued].claimed == d[~d.cued].expected_textbook).mean(), 1)
+
+    # cluster-aware inference (P3.1) and multiplicity (P3.2)
+    ci_path = P1 / "p3_1_cluster_inference.csv"
+    if ci_path.exists():
+        ci = pd.read_csv(ci_path).set_index("contrast")
+
+        def _ci(name, field):
+            return round(float(ci.loc[name, field]), 1)
+
+        f["cued minus uncued, points"] = _ci(
+            "cued vs uncued sensors, canonical agreement", "estimate")
+        f["cued minus uncued CI lo"] = _ci(
+            "cued vs uncued sensors, canonical agreement", "ci_lo")
+        f["cued minus uncued CI hi"] = _ci(
+            "cued vs uncued sensors, canonical agreement", "ci_hi")
+        f["cued prompt minus uncued prompt, points"] = _ci(
+            "cued prompt vs uncued prompt, canonical agreement", "estimate")
+        # the paper writes this as "a drop of 34.6 points", so the magnitude
+        f["inverted cue paired drop, points"] = abs(_ci(
+            "paired arm: cue inverted minus replication", "estimate"))
+        f["reversal claim-change CI lo"] = _ci(
+            "stated direction changes when the shown trend reverses", "ci_lo")
+        f["reversal claim-change CI hi"] = _ci(
+            "stated direction changes when the shown trend reverses", "ci_hi")
+
+    # the bibliographic screen, recomputed from the Scopus export
+    sc = EXP.parent / "letteratura" / "scopus_llm_phm.csv"
+    if sc.exists():
+        s = pd.read_csv(sc)
+        blob = s[["Title", "Abstract", "Author Keywords"]].fillna("").agg(
+            " ".join, axis=1).str.lower()
+        f["scopus records"] = len(s)
+        f["scopus RUL/CMAPSS screened records"] = int(blob.str.contains(
+            r"remaining useful life|\brul\b|c-mapss|cmapss|turbofan", regex=True).sum())
+
+    ag_path = P1 / "p3_5_agreement.csv"
+    if ag_path.exists():
+        ag = pd.read_csv(ag_path)
+        conf = ag[ag.conflict]
+        tot = conf.claims.sum()
+        f["claims on conflicting sensors"] = int(tot)
+        f["follows prompt on conflicting sensors %"] = round(
+            float((conf.follows_prompt_pct * conf.claims).sum() / tot), 1)
+        f["follows data on conflicting sensors %"] = round(
+            float((conf.follows_data_pct * conf.claims).sum() / tot), 1)
+        # computed from the claims, not by reweighting rounded per-sensor figures
+        MEASURED = {"s4": "increase", "s7": "decrease", "s9": "increase",
+                    "s11": "increase", "s12": "decrease", "s14": "increase",
+                    "s15": "increase"}
+        f["agreement with benchmark direction %"] = round(
+            100 * (d.claimed == d.sensor.map(MEASURED)).mean(), 1)
+
+    disc_path = P1 / "p3_2_discretised.csv"
+    if disc_path.exists():
+        dsc = pd.read_csv(disc_path)
+        sup = dsc[(dsc.kind == "supervised")
+                  & (~dsc.model.str.contains("const|LSTM_original"))]
+        f["supervised distinct on common grid, min"] = int(sup.distinct.min())
+        f["supervised distinct on common grid, max"] = int(sup.distinct.max())
 
     # control arms
     a = pd.read_csv(P0 / "p0_23_arm_summary.csv").set_index("arm")
@@ -193,7 +245,19 @@ CHECKS = [
     ("63.20", "FD002 LLM RMSE"), ("66.56", "FD004 LLM RMSE"),
     ("18,900", "sensor-trace opportunities"), ("3,816", "directional claims"),
     ("91.3", "textbook agreement %"), ("42.7", "input faithfulness %"),
-    ("46.7", "base rate %"), ("94.5", "cued agreement %"), ("51.4", "uncued agreement %"),
+    ("42.0", "base rate %, same claims as faithfulness"),
+    ("43.0", "cued minus uncued, points"),
+    ("28.6", "cued minus uncued CI lo"), ("60.7", "cued minus uncued CI hi"),
+    ("33.1", "cued prompt minus uncued prompt, points"),
+    ("34.6", "inverted cue paired drop, points"),
+    ("0.4", "reversal claim-change CI lo"), ("4.7", "reversal claim-change CI hi"),
+    ("81", "scopus RUL/CMAPSS screened records"),
+    ("2,283", "claims on conflicting sensors"),
+    ("92.1", "follows prompt on conflicting sensors %"),
+    ("7.9", "follows data on conflicting sensors %"),
+    ("41.0", "agreement with benchmark direction %"),
+    ("59", "supervised distinct on common grid, min"),
+    ("69", "supervised distinct on common grid, max"), ("94.5", "cued agreement %"), ("51.4", "uncued agreement %"),
     ("61.57", "arm repl RMSE"), ("59.13", "arm nocue RMSE"),
     ("62.32", "arm invcue RMSE"), ("61.21", "arm revdata RMSE"),
     ("253", "reversed pairs"), ("2.4", "claims changed %"),

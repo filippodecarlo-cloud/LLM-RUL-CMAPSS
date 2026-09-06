@@ -1,0 +1,16 @@
+dataset,model,kind,distinct_raw,n,distinct,modal_value,modal_share_pct,entropy_bits,entropy_ceiling_bits
+FD001,const_trainmean,supervised,1,100,1,87,100.0,0.0,6.64
+FD001,RandomForest,supervised,100,100,59,105,5.0,5.71,6.64
+FD001,XGBoost,supervised,100,100,63,96,5.0,5.781,6.64
+FD001,LSTM_original,supervised,4,100,1,57,100.0,0.0,6.64
+FD001,LSTM_fixed,supervised,100,100,62,98,6.0,5.722,6.64
+FD003,const_trainmean,supervised,1,100,1,93,100.0,0.0,6.64
+FD003,RandomForest,supervised,100,100,64,124,6.0,5.786,6.64
+FD003,XGBoost,supervised,100,100,69,118,5.0,5.917,6.64
+FD003,LSTM_original,supervised,1,100,1,66,100.0,0.0,6.64
+FD003,LSTM_fixed,supervised,98,100,64,122,5.0,5.782,6.64
+FD001,llama3.1:8b (reference),prompted,2,100,2,23,85.0,0.61,6.64
+FD001,llama3.1:8b-instruct-q8_0,prompted,5,100,5,42,80.0,0.993,6.64
+FD001,mistral:7b,prompted,4,100,4,60,50.0,1.234,6.64
+FD001,qwen2.5:7b,prompted,1,100,1,15,100.0,0.0,6.64
+FD001,deepseek-r1:7b,prompted,19,50,19,12,24.0,3.518,5.64

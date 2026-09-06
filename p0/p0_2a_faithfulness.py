@@ -1,23 +1,22 @@
 """
 P0.2a - Is the explanation about the input, or about the prompt?
 
-Scoring an explanation "correct" when the direction it claims for a sensor
-matches the textbook degradation direction has a problem: the zero-shot prompt
-STATES those directions:
+The submitted paper scored an explanation "correct" when the direction it
+claimed for a sensor matched the textbook degradation direction. But the
+zero-shot prompt STATES those directions:
 
     "Higher values for degradation-related sensors (e.g., s11, s12, s15)
      and lower values for efficiency-related sensors (e.g., s9, s14)
      typically indicate advanced wear."
 
-so the metric rewards echoing the prompt, which is leakage rather than
-explanation.
+so the metric rewards echoing the prompt (reviewer critique B, prompt leakage).
 This script separates two different questions, over all existing traces:
 
   TEXTBOOK AGREEMENT  claimed direction == canonical degradation direction
-                      (the measure usually reported)
+                      (what the paper measured - the 91.1%)
   INPUT FAITHFULNESS  claimed direction == the direction actually present in
                       the n-cycle window that was placed in that engine's prompt
-                      (what "explanation" has to mean)
+                      (what "explanation" has to mean - reviewer R1.6)
 
 Two built-in controls make this a real experiment on existing data:
   * CUED vs UNCUED SENSORS. The zero-shot prompt names s9,s11,s12,s14,s15 but
@@ -119,9 +118,13 @@ def main():
     d["textbook_hit"] = d.claimed == d.expected_textbook
     d["input_hit"] = d.claimed == d.actual_in_window
 
-    # Base rate: what a predictor that ignores the text and always says the
-    # canonical direction would score against the real windows.
-    base = cl.copy()
+    # Base rate: what a rule that ignores the text and always asserts the
+    # canonical direction would score. It must be computed on the SAME rows as
+    # faithfulness, i.e. the directional claims. Over all 18,900 opportunities
+    # the same rule scores 46.7% and over the 3,816 claims 42.0%; only the
+    # second is a like-for-like comparison, because faithfulness is undefined
+    # wherever the model stated no direction.
+    base = d.copy()
     base["textbook_vs_actual"] = base.expected_textbook == base.actual_in_window
 
     def block(sub):
@@ -146,8 +149,11 @@ def main():
              f"**{tot['textbook_agreement_pct']:.1f}%** |")
     L.append(f"| **Input faithfulness** (claim matches the window shown) | "
              f"**{tot['input_faithfulness_pct']:.1f}%** |")
-    L.append(f"| Canonical direction actually present in the window | "
+    L.append(f"| Base rate: canonical direction present, same claims | "
              f"{100 * base.textbook_vs_actual.mean():.1f}% |")
+    L.append(f"| (the same rule over all {len(cl):,} opportunities, different "
+             f"denominator, not comparable) | "
+             f"{100 * (cl.expected_textbook == cl.actual_in_window).mean():.1f}% |")
 
     # -- control 1: cued vs uncued sensors ---------------------------------
     L.append("\n## Control 1 - sensors the prompt names vs sensors it does not\n")
@@ -227,11 +233,13 @@ def main():
         c2 = cl.assign(actual=act)
         d2 = c2[c2.claimed.isin(["increase", "decrease"])]
         L.append(f"| {eps:.3f} | {100 * (d2.claimed == d2.actual).mean():.1f}% | "
-                 f"{100 * (c2.expected_textbook == c2.actual).mean():.1f}% | "
+                 f"{100 * (d2.expected_textbook == d2.actual).mean():.1f}% | "
                  f"{int((c2.actual == 'stable').sum()):,} |")
-    L.append("\nAt every threshold the explanations are *less* accurate about the input "
+    L.append("\nAt every threshold the explanations are no more accurate about the input "
              "than a rule that ignores the input entirely and always asserts the canonical "
-             "direction. The conclusion does not depend on the threshold.\n")
+             "direction. The gap never exceeds about one point in either direction, well "
+             "inside the interval reported in P3.1, so the two are indistinguishable. The "
+             "conclusion does not depend on the threshold.")
 
     # -- is the claim informative about the window at all? -----------------
     # If explanations described the input, the claimed direction would be

@@ -1,0 +1,15 @@
+sensor,symbol,measurement,dataset,median_rho_with_RUL,engines_agreeing_pct,n_engines,measured_direction
+s4,T50,Total temperature at LPT outlet,FD001,-0.789,100.0,100,increase
+s7,P30,Total pressure at HPC outlet,FD001,0.783,100.0,100,decrease
+s9,Nc,Physical core speed,FD001,-0.744,71.0,100,increase
+s11,Ps30,Static pressure at HPC outlet,FD001,-0.819,100.0,100,increase
+s12,phi,Ratio of fuel flow to Ps30,FD001,0.801,100.0,100,decrease
+s14,NRc,Corrected core speed,FD001,-0.665,60.0,100,increase
+s15,BPR,Bypass ratio,FD001,-0.726,100.0,100,increase
+s4,T50,Total temperature at LPT outlet,FD003,-0.76,100.0,100,increase
+s7,P30,Total pressure at HPC outlet,FD003,0.714,56.0,100,decrease
+s9,Nc,Physical core speed,FD003,-0.844,84.0,100,increase
+s11,Ps30,Static pressure at HPC outlet,FD003,-0.806,100.0,100,increase
+s12,phi,Ratio of fuel flow to Ps30,FD003,0.733,56.0,100,decrease
+s14,NRc,Corrected core speed,FD003,-0.837,76.0,100,increase
+s15,BPR,Bypass ratio,FD003,-0.668,56.0,100,increase

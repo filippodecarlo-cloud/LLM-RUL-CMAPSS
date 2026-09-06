@@ -1,0 +1,15 @@
+dataset,sensor,symbol,meaning,engines,share_rising_whole_life,share_rising_last30,share_rising_last15,share_rising_last5,median_rank_corr_with_age,measured_direction,share_supporting,attested,asserted_by_prompt,prompt_matches_data
+FD001,s4,T50,Total temperature at LPT outlet,100,100.0,97.0,94.0,70.0,0.784,increase,100.0,True,increase,True
+FD001,s7,P30,Total pressure at HPC outlet,100,0.0,4.0,13.0,31.0,-0.774,decrease,100.0,True,decrease,True
+FD001,s9,Nc,Physical core speed,100,70.0,66.0,65.0,57.0,0.739,increase,70.0,True,decrease,False
+FD001,s11,Ps30,Static pressure at HPC outlet,100,100.0,99.0,89.0,70.0,0.819,increase,100.0,True,increase,True
+FD001,s12,phi,Ratio of fuel flow to Ps30,100,0.0,2.0,12.0,28.0,-0.808,decrease,100.0,True,increase,False
+FD001,s14,NRc,Corrected core speed,100,57.0,58.0,57.0,55.0,0.663,increase,57.0,False,decrease,False
+FD001,s15,BPR,Bypass ratio,100,100.0,92.0,81.0,62.0,0.721,increase,100.0,True,increase,True
+FD003,s4,T50,Total temperature at LPT outlet,100,100.0,96.0,91.0,73.0,0.742,increase,100.0,True,increase,True
+FD003,s7,P30,Total pressure at HPC outlet,100,44.0,44.0,53.0,63.0,-0.692,decrease,56.0,False,decrease,False
+FD003,s9,Nc,Physical core speed,100,83.0,80.0,79.0,71.0,0.86,increase,83.0,True,decrease,False
+FD003,s11,Ps30,Static pressure at HPC outlet,100,100.0,100.0,97.0,69.0,0.795,increase,100.0,True,increase,True
+FD003,s12,phi,Ratio of fuel flow to Ps30,100,44.0,45.0,46.0,61.0,-0.733,decrease,56.0,False,increase,False
+FD003,s14,NRc,Corrected core speed,100,76.0,75.0,76.0,78.0,0.864,increase,76.0,True,decrease,False
+FD003,s15,BPR,Bypass ratio,100,56.0,52.0,52.0,61.0,0.657,increase,56.0,False,increase,False

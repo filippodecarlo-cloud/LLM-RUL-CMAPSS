@@ -30,9 +30,13 @@ except Exception:
 
 
 # Expected direction of each sensor under engine degradation
-# (based on the established literature on turbofan wear; see Saxena et al. 2008 [6])
+# (as asserted by the zero-shot prompt; see p1/p3_5_prompt_vs_benchmark.py)
+# Column identities follow the variable list of Saxena et al. (2008): s4 is T50,
+# the LPT outlet temperature, not T30, which is s3. The directions below are the
+# ones the zero-shot prompt asserts; p1/p3_5_prompt_vs_benchmark.py measures what
+# the benchmark actually does, and the two disagree for s9, s12 and s14.
 SENSOR_PHYSICS = {
-    "s4":  ("increase", "Total temperature at HPC outlet"),
+    "s4":  ("increase", "Total temperature at LPT outlet"),
     "s7":  ("decrease", "Total pressure at HPC outlet"),
     "s9":  ("decrease", "Physical core speed"),
     "s11": ("increase", "Static pressure at HPC outlet"),

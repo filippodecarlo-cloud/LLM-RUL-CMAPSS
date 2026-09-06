@@ -37,8 +37,17 @@ all four sub-datasets, over 100 to 259 engines, under different operating condit
 modes and normalisation.
 
 **Explanations.** Over 18,900 sensor-trace opportunities the reference model makes 3,816
-explicit directional claims. They agree with canonical degradation physics 91.3% of the time
-and with the data actually supplied 42.7%, below the 46.7% obtained by ignoring the input.
+explicit directional claims. They agree with the degradation directions the prompt asserts
+91.3% of the time and with the data actually supplied 42.7% — against 42.0% for a rule that
+never looks at the input, on the same claims, so the two are indistinguishable.
+
+**The prompt is not right about the benchmark.** For three of the five sensors the zero-shot
+template names, the direction it asserts is the opposite of the one FD001 exhibits: the ratio
+of fuel flow to static pressure falls in 100 of 100 training engines while the prompt says it
+rises, physical core speed rises in 70% while the prompt says it falls, and corrected core
+speed has no consistent direction at all. On the 2,283 claims about those three sensors the
+model follows the prompt 92.1% of the time and the benchmark 7.9%. Agreement with the asserted
+directions is 91.3%; agreement with the measured ones is 41.0%.
 Reversing every trend in the input changes 2.4% of the stated directions. Across seven example
 sets, the mean prediction tracks the mean RUL of the examples with r = +0.941 over those seven
 aggregate points.
@@ -81,6 +90,10 @@ sub-datasets were run with the reference model only; the quantisation comparison
 | `p0/p0_2a_faithfulness.py` | Textbook agreement vs input faithfulness over 3,816 directional claims |
 | `p0/p0_23_control_prompts.py` | The four paired control arms (replication, cue removed, cue inverted, trends reversed) |
 | `p0/p0_4_zeroshot_collapse.py` | Concentration by prompting mode |
+| `p1/p3_1_cluster_inference.py` | Every faithfulness contrast redone at the cluster level: claims are nested in engines and configurations |
+| `p1/p3_2_multiplicity_examples_grid.py` | All 27 rank tests with the family stated, the example-set association as an exploratory result, and a common one-cycle grid for comparing concentration across model families |
+| `p1/p3_3_extractor_sample.py`, `p1/p3_3_extractor_validate.py` | Draw and score a hand-annotated sample validating the claim extractor |
+| `p1/p3_5_prompt_vs_benchmark.py` | Whether the degradation directions the prompt asserts are the ones the benchmark exhibits |
 | `p1/p1_model_sweep.py` | Same configuration, different model; robust parsing, raw responses kept |
 | `p1/p1_34_fewshot_sampling.py` | The example-set experiment: k fixed, only the examples change |
 | `p1/p1_grid_fixed.py`, `p1/p1_grid_analyze.py` | The k x n grid re-run with a stratified sampler, and its analysis |
