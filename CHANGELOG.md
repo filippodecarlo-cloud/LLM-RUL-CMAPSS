@@ -1,5 +1,50 @@
 # Changelog
 
+## 2.2.1 - 2026-09-06
+
+Corrections after a second external review of the manuscript. The analysis
+changed in one place and the conclusion did not.
+
+### Fixed
+
+- **The per-sensor permutation test was wrong.** It collapsed each engine to the
+  first window direction observed for it, but the direction depends on the
+  window length and n takes three values: for s11, 99 of 200 engines carry more
+  than one. The null was built from a quantity that does not exist in the data.
+  The test now builds an engine x configuration table from every opportunity,
+  not only from the cells where a claim was made, and permutes engines within a
+  dataset so an engine's whole profile moves together. An intermediate version
+  built the table from the claims alone; at 15% to 28% occupancy most permuted
+  lookups missed and fell back to the observed value, which pushed p toward 1
+  instead. Both the intermediate and the final version give the same answer.
+- **Intervals and multiplicity in the same test.** Per-sensor intervals are now
+  clustered on engine and on configuration with the wider reported, as the
+  method always claimed, and Benjamini-Hochberg is applied across the six
+  computable tests, which was missing. s12's uncorrected p moves from 0.014 to
+  0.20 and after correction no sensor shows a detectable association between the
+  stated direction and the window.
+- **s14 was counted as contradicting the prompt.** It rises in 57% of engines,
+  below the 65% this code uses to call a direction attested, so it has no
+  consistent direction and cannot contradict anything. The comparison is now on
+  s9 and s12: 1,406 claims, 89.3% following the asserted direction against 10.7%
+  following the benchmark, with s14 reported separately.
+- **Stale outputs.** `p1_model_summary.csv` carried a partial row from an
+  interrupted sweep, Mistral at n = 2 against the 100 responses in its trace
+  file; `p1_comparison.csv` predated the DeepSeek run. Both rebuilt from the
+  traces.
+
+### Added
+
+- `p1/p3_8_write_zotero_fields.py`, which applies the Crossref lookup of
+  `p3_7` to the local Zotero database. It fills empty fields only, refuses to
+  run while Zotero is open, backs the database up first, and skips any record
+  whose Crossref match `p3_7` flagged as approximate.
+
+### Changed
+
+- Figure 6 labels both series and shows the share, since 6 pairs against 253 was
+  invisible on a shared axis. Figure 7 labels its seven points.
+
 ## 2.2.0 - 2026-09-06
 
 Answers the statistical objections to the faithfulness analysis, and reports one
