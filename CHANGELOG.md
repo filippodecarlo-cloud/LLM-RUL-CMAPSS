@@ -1,5 +1,71 @@
 # Changelog
 
+## 2.2.0 - 2026-09-06
+
+Answers the statistical objections to the faithfulness analysis, and reports one
+finding that came out of answering them.
+
+### Added
+
+- `p1/p3_1_cluster_inference.py` - every inferential claim in the faithfulness
+  sections recomputed at the cluster level. The 3,816 directional claims are
+  nested in responses, engines and configurations, so the published chi-squares
+  reported p-values that were too small. Cluster bootstrap for intervals, cluster
+  permutation for p-values, clustering once on engine and once on configuration
+  with the wider interval kept.
+- `p1/p3_2_multiplicity_examples_grid.py` - all 27 rank tests with the family
+  defined and pre-specification stated; the example-set association reported as
+  exploratory with n, p, a bootstrap interval and leave-one-out; and
+  concentration recomputed on a common one-cycle grid, since counting distinct
+  values favours a continuous model over one instructed to answer with an
+  integer. On that grid the supervised regressors still occupy 59 to 69 values
+  against 1 to 19 for the prompted ones.
+- `p1/p3_3_extractor_sample.py` and `p1/p3_3_extractor_validate.py` - the claim
+  extractor validated against 139 hand-read cases. Directional precision 0.95,
+  recall 0.88, sign correct in 93%, 95% agreement over the corpus once
+  reweighted. Both failure modes are conservative for the argument.
+- `p1/p3_4_sensor_directions.py` and `p1/p3_5_prompt_vs_benchmark.py` - the
+  degradation direction of each scored sensor measured on the training set
+  instead of asserted, and compared with what the prompt claims.
+- `p1/p3_6_word_layout.py`, `p1/p3_7_reference_metadata.py` - manuscript layout
+  fixes, and a Crossref lookup for the bibliographic fields that were missing.
+
+### The finding
+
+The zero-shot prompt states which sensors rise and which fall with wear. Measured
+on FD001, three of the five it names are the wrong way round: the ratio of fuel
+flow to static pressure falls in 100 of 100 training engines where the prompt
+says it rises, physical core speed rises in 70% where the prompt says it falls,
+and corrected core speed has no consistent direction. Two independent methods
+agree and the pattern holds at every window length. On the 2,283 claims about
+those three sensors the model follows the prompt in 92.1% of cases and the
+benchmark in 7.9%. Agreement with the asserted directions is 91.3%; with the
+measured ones, 41.0%.
+
+### Fixed
+
+- `p0/p0_2a_faithfulness.py` computed the base rate over all 18,900 opportunities
+  while faithfulness was computed over the 3,816 directional claims. On matched
+  denominators the base rate is 42.0%, not 46.7%, so faithfulness is
+  indistinguishable from a rule that ignores the input rather than below it. True
+  at every threshold tested. The same mismatch was in the figure 5 data.
+- `analyze_explainability.py` labelled s4 as the HPC outlet temperature. Under the
+  Saxena et al. column order s4 is T50, the LPT outlet; T30 is s3. Verified by
+  requiring the constant columns to be the ambient and demanded quantities.
+- Two chart series set `border` twice in the same dict, so the outline meant to
+  separate bars in greyscale was being discarded.
+
+### Changed
+
+- Axis and legend text from 10 to 11 pt, titles to 12 pt.
+- Figure 1: the model box overflowed its border; enlarged and re-flowed.
+- Figure 4 redrawn on a single linear axis. It carried three quantities on two
+  axes with a logarithmic scale that existed only to fit 2 against 259.
+- Figure 5 now shows four series on matched denominators, including agreement
+  with the measured direction.
+- Terminology throughout: the measure is agreement with the direction the prompt
+  asserts, not with canonical physics, since on this benchmark those differ.
+
 ## 2.1.0 - 2026-09-06
 
 Brings the repository into line with the manuscript. Release 2.0.0 held 4,657 of the

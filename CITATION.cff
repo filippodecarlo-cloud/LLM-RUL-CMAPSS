@@ -6,7 +6,7 @@ authors:
     given-names: "Filippo"
     affiliation: "University of Florence"
     orcid: "https://orcid.org/0000-0003-4695-5956"
-version: "2.1.0"
+version: "2.2.0"
 date-released: "2026-09-06"
 license: MIT
 repository-code: "https://github.com/filippodecarlo-cloud/LLM-RUL-CMAPSS"
@@ -23,7 +23,8 @@ abstract: >-
   Code, inference traces and analysis for a four-part protocol for evaluating
   large language models on remaining useful life prediction: no-skill baselines,
   rank correlation, output entropy, and a faithfulness test for the generated
-  explanations. Five open-weight model configurations were evaluated on FD001,
+  explanations, with cluster-aware inference throughout and a hand-validated
+  claim extractor. Five open-weight model configurations were evaluated on FD001,
   including Llama 3.1 8B at two quantisation levels, with the reference model run
   on all four CMAPSS sub-datasets. The release holds the complete corpus of 5,557
   model responses, a manifest with per-run checksums and recomputed metrics, and
