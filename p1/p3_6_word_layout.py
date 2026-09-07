@@ -15,7 +15,7 @@ paragraph and on every row of the table except the last, which is the mechanism
 Word itself uses. Header rows are marked as such so Word repeats them. Alt text
 is written into the drawing description of each inline image.
 
-    python p1/p3_6_word_layout.py [--paper paper_v16.docx]
+    python p1/p3_6_word_layout.py [--paper paper_v17.docx]
 
 The script is idempotent: running it twice changes nothing the second time.
 """
@@ -84,7 +84,7 @@ def cant_split(row):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--paper", default=str(ROOT / "paper_v16.docx"))
+    ap.add_argument("--paper", default=str(ROOT / "paper_v17.docx"))
     args = ap.parse_args()
     path = Path(args.paper)
     if not path.exists():

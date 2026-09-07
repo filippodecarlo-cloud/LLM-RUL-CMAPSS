@@ -2,7 +2,7 @@
 
 Code, inference traces and analysis for:
 
-> **Evaluating large language models for remaining useful life prediction: a protocol and evidence from C-MAPSS
+> **Evaluating large language models for remaining useful life prediction: a protocol and evidence from C-MAPSS**
 > Filippo De Carlo, University of Florence.
 
 This repository evaluates open-weight language models prompted **without fine-tuning** for
@@ -17,8 +17,8 @@ The contribution is a **four-part evaluation protocol** and what it finds when a
    testing, to separate ordering ability from point accuracy.
 3. **Output entropy.** Distinct predicted values, modal share and Shannon entropy, which make
    categorical collapse measurable.
-4. **Explanation faithfulness.** Whether a stated sensor direction matches the canonical
-   physics is a different question from whether it matches the window actually supplied. Three
+4. **Explanation faithfulness.** Whether a stated sensor direction matches the reference
+   direction is a different question from whether it matches the window actually supplied. Three
    controls separate them: remove the prompt cue, invert it, and reverse the sensor trends in
    the data.
 
@@ -37,26 +37,30 @@ all four sub-datasets, over 100 to 259 engines, under different operating condit
 modes and normalisation.
 
 **Explanations.** Over 18,900 sensor-trace opportunities the reference model makes 3,816
-explicit directional claims. They agree with the degradation directions the prompt asserts
-91.3% of the time and with the data actually supplied 42.7% — against 42.0% for a rule that
-never looks at the input, on the same claims, so the two are indistinguishable.
+explicit directional claims. They agree with the reference direction 91.3% of the
+time and with the direction in the supplied window 42.7%, against 42.0% for a rule that never
+looks at the input on the same claims, so no detectable difference was observed.
 
-**The prompt is not right about the benchmark.** For three of the five sensors the zero-shot
-template names, the direction it asserts is the opposite of the one FD001 exhibits: the ratio
-of fuel flow to static pressure falls in 100 of 100 training engines while the prompt says it
-rises, physical core speed rises in 70% while the prompt says it falls, and corrected core
-speed has no consistent direction at all. On the 2,283 claims about those three sensors the
-model follows the prompt 92.1% of the time and the benchmark 7.9%. Agreement with the asserted
-directions is 91.3%; agreement with the measured ones is 41.0%.
+**The prompt is not right about the benchmark.** In each single-condition sub-dataset two of
+the five sensors the zero-shot template names run opposite to the direction it asserts, and they
+are not the same two: on FD001 the ratio of fuel flow to static pressure falls in 100 of 100
+training engines while the prompt says it rises, and physical core speed rises in 70% while the
+prompt says it falls; on FD003 the pair is physical core speed and corrected core speed. A
+direction counts only where at least 65% of the training engines show it, which excludes s14 on
+FD001 and s7, s12 and s15 on FD003. On the 1,484 claims about a sensor the prompt has backwards
+in its own sub-dataset, the model follows the prompt 89.5% of the time and the benchmark 10.5%.
+Over the 2,754 claims a sub-dataset can score, agreement with the reference direction is 89.9%
+and agreement with the measured one is 47.4%.
 Reversing every trend in the input changes 2.4% of the stated directions. Across seven example
 sets, the mean prediction tracks the mean RUL of the examples with r = +0.941 over those seven
 aggregate points.
 
-**Reasoning models are a separate case.** DeepSeek-R1 7B breaks the categorical collapse,
-producing 19 distinct values over 50 engines rather than 1 to 5. It does not become
-predictive: RMSE 67.31 against 39.93 for a constant on the same engines, and rho = -0.12.
-Output collapse and absence of prognostic capability are separate failures, and explicit
-reasoning fixes only the first.
+**Reasoning models are a separate case.** DeepSeek-R1 7B is far less concentrated, producing 19
+distinct values over 50 engines rather than 1 to 5. It is not more predictive: RMSE 67.31
+against 39.93 for a constant on the same engines, and rho = -0.12. Output collapse and absence
+of prognostic capability are therefore separate failures. Which property of this model accounts
+for the difference is not identified here, since it differs from the others in training data and
+architecture as well as in reasoning explicitly.
 
 Scope matters when reading any of the above. The model sweep is FD001 only; the four
 sub-datasets were run with the reference model only; the quantisation comparison is Llama 3.1

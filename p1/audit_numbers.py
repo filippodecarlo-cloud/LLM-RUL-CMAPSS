@@ -1,7 +1,7 @@
 """
 Audit: does every number in the manuscript match the data?
 
-Extracts numeric claims from paper_v16.docx, the Word master, and checks them
+Extracts numeric claims from paper_v17.docx, the Word master, and checks them
 against values recomputed from the result files. Catches the failure mode that
 matters most here: a number that was right when written, and stale after the
 experiment that produced it was rerun.
@@ -23,7 +23,10 @@ HERE = Path(__file__).resolve().parent
 EXP = HERE.parent
 sys.path.insert(0, str(EXP))
 P0, P1 = EXP / "results_p0", EXP / "results_p1"
-PAPER = EXP.parent / "paper_v16.docx"   # the Word file is the master; v14 is frozen
+import os
+# The manuscript is not redistributed while it is under review; point
+# PAPER_DOCX at a copy. Everything it is checked against is public and here.
+PAPER = Path(os.environ.get("PAPER_DOCX", EXP.parent / "paper_v17.docx"))
 
 
 def read_manuscript():
@@ -142,22 +145,31 @@ def facts():
         f["scopus RUL/CMAPSS screened records"] = int(blob.str.contains(
             r"remaining useful life|\brul\b|c-mapss|cmapss|turbofan", regex=True).sum())
 
-    ag_path = P1 / "p3_5_agreement.csv"
-    if ag_path.exists():
-        ag = pd.read_csv(ag_path)
-        conf = ag[ag.conflict]
-        tot = conf.claims.sum()
-        f["claims on conflicting sensors"] = int(tot)
+    dir_path = P1 / "p3_5_directions.csv"
+    if dir_path.exists():
+        key = pd.read_csv(dir_path).set_index(["dataset", "sensor"])
+        ASSERTED = {"s4": "increase", "s7": "decrease", "s9": "decrease", "s11": "increase",
+                    "s12": "increase", "s14": "decrease", "s15": "increase"}
+        dd = d.copy()
+        dd["measured"] = [key.loc[(r.dataset, r.sensor), "measured_direction"]
+                          for r in dd.itertuples()]
+        dd["attested"] = [bool(key.loc[(r.dataset, r.sensor), "attested"])
+                          for r in dd.itertuples()]
+        dd["conflict"] = dd.attested & (dd.measured != dd.sensor.map(ASSERTED))
+        conf = dd[dd.conflict]
+        f["claims on conflicting sensors"] = int(len(conf))
         f["follows prompt on conflicting sensors %"] = round(
-            float((conf.follows_prompt_pct * conf.claims).sum() / tot), 1)
+            100 * float((conf.claimed == conf.sensor.map(ASSERTED)).mean()), 1)
         f["follows data on conflicting sensors %"] = round(
-            float((conf.follows_data_pct * conf.claims).sum() / tot), 1)
-        # computed from the claims, not by reweighting rounded per-sensor figures
-        MEASURED = {"s4": "increase", "s7": "decrease", "s9": "increase",
-                    "s11": "increase", "s12": "decrease", "s14": "increase",
-                    "s15": "increase"}
+            100 * float((conf.claimed == conf.measured).mean()), 1)
+        sc_claims = dd[dd.attested]
+        f["scorable claims"] = int(len(sc_claims))
         f["agreement with benchmark direction %"] = round(
-            100 * (d.claimed == d.sensor.map(MEASURED)).mean(), 1)
+            100 * float((sc_claims.claimed == sc_claims.measured).mean()), 1)
+        f["agreement with reference on scorable claims %"] = round(
+            100 * float((sc_claims.claimed == sc_claims.sensor.map(ASSERTED)).mean()), 1)
+        f["claims covered by the zero-shot cue"] = int(
+            len(d[(d["mode"] == "zero_shot") & d.sensor.isin(ASSERTED) & d.cued]))
 
     disc_path = P1 / "p3_2_discretised.csv"
     if disc_path.exists():
@@ -252,10 +264,13 @@ CHECKS = [
     ("34.6", "inverted cue paired drop, points"),
     ("0.4", "reversal claim-change CI lo"), ("4.7", "reversal claim-change CI hi"),
     ("81", "scopus RUL/CMAPSS screened records"),
-    ("1,406", "claims on conflicting sensors"),
-    ("89.3", "follows prompt on conflicting sensors %"),
-    ("10.7", "follows data on conflicting sensors %"),
-    ("41.0", "agreement with benchmark direction %"),
+    ("1,484", "claims on conflicting sensors"),
+    ("89.5", "follows prompt on conflicting sensors %"),
+    ("10.5", "follows data on conflicting sensors %"),
+    ("47.4", "agreement with benchmark direction %"),
+    ("2,754", "scorable claims"),
+    ("89.9", "agreement with reference on scorable claims %"),
+    ("3,419", "claims covered by the zero-shot cue"),
     ("59", "supervised distinct on common grid, min"),
     ("69", "supervised distinct on common grid, max"), ("94.5", "cued agreement %"), ("51.4", "uncued agreement %"),
     ("61.57", "arm repl RMSE"), ("59.13", "arm nocue RMSE"),

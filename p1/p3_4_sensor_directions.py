@@ -120,12 +120,26 @@ def main():
     L.append(f"\nThe two sub-datasets agree on {int(agree.sum())} of {len(agree)} sensors"
              + ("" if agree.all() else f" (disagreement: {list(agree[~agree].index)})") + ".\n")
 
-    hard = df[df.engines_agreeing_pct < 80]
+    # Same attestation threshold as p3_5, so the two scripts classify the same
+    # sensors. p3_5 measures the share of engines from the endpoint comparison,
+    # this one from the per-engine rank correlation; at 65% the two agree on
+    # every sensor and sub-dataset.
+    THRESHOLD = 65
+    hard = df[df.engines_agreeing_pct < THRESHOLD]
     if len(hard):
-        L.append("Not every direction is equally well attested. These sensors have the "
-                 "measured direction in fewer than 80% of engines, so calling their canonical "
-                 "direction established would overstate the evidence:\n")
+        L.append(f"Not every direction is attested. These show the measured direction in "
+                 f"fewer than {THRESHOLD}% of engines, the threshold used in p3_5, so they "
+                 "have no consistent direction to be scored against and are excluded from the "
+                 "benchmark-agreement figures there:\n")
         for _, r in hard.iterrows():
+            L.append(f"- {r.sensor} ({r.symbol}) on {r.dataset}: "
+                     f"{r.engines_agreeing_pct:.0f}% of engines, median rho "
+                     f"{r.median_rho_with_RUL:+.3f}")
+        L.append("")
+    near = df[(df.engines_agreeing_pct >= THRESHOLD) & (df.engines_agreeing_pct < 80)]
+    if len(near):
+        L.append("These clear the threshold without being strongly attested, and are kept:\n")
+        for _, r in near.iterrows():
             L.append(f"- {r.sensor} ({r.symbol}) on {r.dataset}: "
                      f"{r.engines_agreeing_pct:.0f}% of engines, median rho "
                      f"{r.median_rho_with_RUL:+.3f}")

@@ -1,8 +1,8 @@
 """
 Place the figure PNGs into the Word file, each after the paragraph that cites it.
 
-Reads paper_v16_zotero.docx (the version with live citation fields) and writes
-paper_v16_submission.docx, the file to submit.
+Reads paper_v17_zotero.docx (the version with live citation fields) and writes
+paper_v17_submission.docx, the file to submit.
 
 Each figure is inserted centred, with a caption below it in the usual style.
 If a figure needs changing later, edit figures_v14.xlsx or the PowerPoint,
@@ -22,8 +22,8 @@ HERE = Path(__file__).resolve().parent
 EXP = HERE.parent
 ROOT = EXP.parent
 PNG = EXP / "figures_png"
-SRC = ROOT / "paper_v16_zotero.docx"
-OUT = ROOT / "paper_v16_submission.docx"
+SRC = ROOT / "paper_v17_zotero.docx"
+OUT = ROOT / "paper_v17_submission.docx"
 
 # figure -> (anchor: a distinctive phrase in the paragraph it belongs after, caption)
 FIGURES = {
@@ -49,7 +49,7 @@ FIGURES = {
         "FD003 occupy 59 to 69 values on a one-cycle grid, with no value taking more than "
         "6% of the predictions."),
     5: ("Figure 5 breaks these results down by sensor",
-        "Figure 5. What the stated direction agrees with, per sensor: the direction the prompt asserts, the direction measured on the training set, the window actually supplied, and the base rate on the same claims. Cued sensors are the ones the prompt names. For s9 and s12 the first two references are opposite and the claims follow the first; for s14 the benchmark supports no direction while the prompt asserts one. Faithfulness and the base rate track each other everywhere. Bars rest on between 10 (s4) and 947 (s11) directional claims."),
+        "Figure 5. What the stated direction agrees with, per sensor: the reference direction, the empirical benchmark direction, the direction in the supplied window, and the base rate on the same claims. Cued sensors are the ones the prompt names. The benchmark series is computed only where the sub-dataset attests a direction, which excludes s7, s12 and s15 on FD003 and s14 on FD001 and leaves 2,754 of the 3,816 claims; the other three series use all of them. Where the two references are opposite, at s9, s12 and s14, the claims follow the reference. Faithfulness and the base rate track each other everywhere. Bars rest on between 10 (s4) and 947 (s11) directional claims."),
     6: ("Reversing the series left the stated directions where they were",
         "Figure 6. The trend-reversal test, with each bar labelled and the share shown on the changed-claim series, since 6 pairs against 253 is otherwise invisible. For each sensor, the number of (engine, sensor) "
         "pairs whose trend genuinely reversed between the two arms, and the number of those "
@@ -80,8 +80,9 @@ ALT_TEXT = {
     4: "Bar chart of the share of predictions falling on a single value for each of the "
        "four C-MAPSS sub-datasets, between 51% and 83%, each bar labelled with the number "
        "of distinct values produced.",
-    5: "Per sensor, the share of directional claims that agree with the asserted direction, "
-       "the share that agree with the window shown, and the base rate.",
+    5: "Per sensor, the share of directional claims agreeing with the reference direction, "
+       "with the direction measured in the benchmark, with the window shown, and the "
+       "base rate on the same claims.",
     6: "Counts of paired responses in which the stated sensor direction did or did not follow "
        "the reversal applied to the input trend.",
     7: "Mean predicted remaining useful life against the mean remaining useful life of the "
@@ -151,7 +152,7 @@ def main():
     cp.author = "Filippo De Carlo"
     cp.last_modified_by = "Filippo De Carlo"
     cp.title = ("Evaluating large language models for remaining useful life prediction: "
-                "a protocol, and what it reveals on CMAPSS")
+                "a protocol and evidence from C‑MAPSS")
     cp.comments = ""
     cp.category = ""
     cp.keywords = ("large language models; remaining useful life; prognostics and health "

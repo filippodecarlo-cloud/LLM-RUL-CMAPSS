@@ -1,22 +1,23 @@
 """
 P0.2a - Is the explanation about the input, or about the prompt?
 
-The submitted paper scored an explanation "correct" when the direction it
-claimed for a sensor matched the textbook degradation direction. But the
-zero-shot prompt STATES those directions:
+It is common to score an explanation "correct" when the direction it claims
+for a sensor matches the expected degradation direction. But the zero-shot
+prompt STATES those directions:
 
     "Higher values for degradation-related sensors (e.g., s11, s12, s15)
      and lower values for efficiency-related sensors (e.g., s9, s14)
      typically indicate advanced wear."
 
-so the metric rewards echoing the prompt (reviewer critique B, prompt leakage).
+so the metric rewards echoing the prompt, which is prompt leakage rather than
+domain knowledge.
 This script separates two different questions, over all existing traces:
 
-  TEXTBOOK AGREEMENT  claimed direction == canonical degradation direction
-                      (what the paper measured - the 91.1%)
+  REFERENCE AGREEMENT claimed direction == the expected degradation direction
+                      (the measure usually reported)
   INPUT FAITHFULNESS  claimed direction == the direction actually present in
                       the n-cycle window that was placed in that engine's prompt
-                      (what "explanation" has to mean - reviewer R1.6)
+                      (what "explanation" has to mean)
 
 Two built-in controls make this a real experiment on existing data:
   * CUED vs UNCUED SENSORS. The zero-shot prompt names s9,s11,s12,s14,s15 but

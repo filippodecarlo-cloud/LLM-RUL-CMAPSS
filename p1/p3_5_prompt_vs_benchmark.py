@@ -141,107 +141,130 @@ def main():
              "rank correlation with engine age gives the same direction as the endpoint "
              "comparison for every sensor and both sub-datasets.\n")
 
-    fd1 = dirs[dirs.dataset == "FD001"].set_index("sensor")
-    # Three cases, and they must not be merged. A sensor whose direction is not
-    # attested at the threshold has no direction to contradict, so it cannot be
-    # counted among the sensors the prompt gets backwards.
-    conflict = [s for s in SCORED
-                if fd1.loc[s, "attested"]
-                and fd1.loc[s, "measured_direction"] != ASSERTED[s]]
-    unattested = [s for s in SCORED if not fd1.loc[s, "attested"]]
-    agree = [s for s in SCORED if s not in conflict and s not in unattested]
-    L.append("On FD001, the reference sub-dataset, the seven scored sensors fall into three "
-             f"groups at the {100 * THRESHOLD:.0f}% attestation threshold:\n")
-    L.append(f"- **Agrees** ({len(agree)}): {', '.join(agree)}. The direction the prompt "
-             "gives is the one the data shows.")
-    L.append(f"- **Conflicts** ({len(conflict)}): {', '.join(conflict)}. The direction is "
-             "attested and is the opposite of the one the prompt gives.")
-    L.append(f"- **No consistent direction** ({len(unattested)}): {', '.join(unattested)}. "
-             "The prompt asserts a direction the data does not support either way.")
+    # Attestation is a property of a sensor within a sub-dataset, not of a sensor.
+    # FD003 carries two fault modes and does not attest the same set as FD001, so
+    # each claim is scored against the direction measured where it was made.
+    key = dirs.set_index(["dataset", "sensor"])
+    groups = {}
+    for ds in ("FD001", "FD003"):
+        k = key.loc[ds]
+        conflict = [s for s in SCORED
+                    if k.loc[s, "attested"] and k.loc[s, "measured_direction"] != ASSERTED[s]]
+        unattested = [s for s in SCORED if not k.loc[s, "attested"]]
+        agree = [s for s in SCORED if s not in conflict and s not in unattested]
+        groups[ds] = {"conflict": conflict, "unattested": unattested, "agree": agree}
+
+    L.append(f"At the {100 * THRESHOLD:.0f}% attestation threshold the seven scored sensors "
+             "fall into three groups, and the grouping is not the same in the two "
+             "sub-datasets:\n")
+    L.append("| Sub-dataset | Prompt direction is the one the data shows | Prompt direction is "
+             "the opposite of it | No consistent direction |")
+    L.append("|---|---|---|---|")
+    for ds, g in groups.items():
+        L.append(f"| {ds} | {', '.join(g['agree']) or 'none'} | "
+                 f"**{', '.join(g['conflict']) or 'none'}** | "
+                 f"{', '.join(g['unattested']) or 'none'} |")
     L.append("")
-    for s in conflict:
-        r = fd1.loc[s]
-        L.append(f"  - **{s}** ({r.symbol}, {r.meaning}): the prompt says "
-                 f"{ASSERTED[s]}, the data shows {r.measured_direction} in "
-                 f"{r.share_supporting:.0f}% of engines.")
-    for s in unattested:
-        r = fd1.loc[s]
-        L.append(f"  - **{s}** ({r.symbol}, {r.meaning}): the prompt says "
-                 f"{ASSERTED[s]}; the majority trend is {r.measured_direction} but only in "
-                 f"{r.share_supporting:.0f}% of engines, below the threshold, so the sensor "
-                 "has no consistent direction in this benchmark.")
-    L.append("")
-    wrong = conflict
-    L.append("FD003 carries two fault modes and its directions are correspondingly less "
-             "consistent, which is worth noting but does not change the picture on FD001.\n")
+    for ds, g in groups.items():
+        k = key.loc[ds]
+        for s in g["conflict"]:
+            r = k.loc[s]
+            L.append(f"  - **{s}** ({SYMBOL[s]}, {MEANING[s]}) on {ds}: the prompt says "
+                     f"{ASSERTED[s]}, the data shows {r.measured_direction} in "
+                     f"{r.share_supporting:.0f}% of engines.")
+        for s in g["unattested"]:
+            r = k.loc[s]
+            L.append(f"  - {s} ({SYMBOL[s]}) on {ds}: majority trend {r.measured_direction} in "
+                     f"only {r.share_supporting:.0f}% of engines, below the threshold, so the "
+                     "sensor has no direction to be scored against here.")
+    L.append("\nTwo of the five sensors the prompt names are the wrong way round in each "
+             "single-condition sub-dataset, but not the same two: s9 and s12 on FD001, s9 and "
+             "s14 on FD003.\n")
 
     # ---- what the model follows -----------------------------------------
     c = pd.read_csv(P0 / "p0_2a_claims.csv")
     d = c[c.claimed.isin(["increase", "decrease"])].copy()
     d["asserted"] = d.sensor.map(ASSERTED)
-    d["measured"] = d.sensor.map(fd1.measured_direction.to_dict())
+    d["measured"] = [key.loc[(r.dataset, r.sensor), "measured_direction"]
+                     for r in d.itertuples()]
+    d["attested"] = [bool(key.loc[(r.dataset, r.sensor), "attested"]) for r in d.itertuples()]
     d["follows_prompt"] = d.claimed == d.asserted
     d["follows_data"] = d.claimed == d.measured
     d["follows_window"] = d.claimed == d.actual_in_window
+    sc = d[d.attested]
 
     L.append("\n## What the model follows\n")
-    L.append(f"| Reference | Agreement over {len(d):,} directional claims |")
-    L.append("|---|---|")
-    L.append(f"| The direction the prompt asserts | **{100 * d.follows_prompt.mean():.1f}%** |")
-    L.append(f"| The direction measured in the benchmark | "
-             f"**{100 * d.follows_data.mean():.1f}%** |")
-    L.append(f"| The direction in the window actually shown | "
+    L.append(f"The first and third rows are defined for every claim. The second is defined "
+             f"only where the sub-dataset attests a direction, which is {len(sc):,} of the "
+             f"{len(d):,} claims.\n")
+    L.append("| Reference | Claims | Agreement |")
+    L.append("|---|---|---|")
+    L.append(f"| The direction the prompt asserts | {len(d):,} | "
+             f"**{100 * d.follows_prompt.mean():.1f}%** |")
+    L.append(f"| The direction measured in the benchmark | {len(sc):,} | "
+             f"**{100 * sc.follows_data.mean():.1f}%** |")
+    L.append(f"| The direction in the window actually shown | {len(d):,} | "
              f"{100 * d.follows_window.mean():.1f}% |")
+    L.append(f"\nOn the same {len(sc):,} claims, agreement with the direction the prompt "
+             f"asserts is {100 * sc.follows_prompt.mean():.1f}%, so the gap is not an artefact "
+             "of the restriction.\n")
 
-    L.append("\n| Sensor | Prompt vs data | Claims | Follows prompt | Follows data | "
-             "Follows window |")
-    L.append("|---|---|---|---|---|---|")
+    L.append("\n| Sensor | Sub-dataset | Prompt vs data | Claims | Follows prompt | "
+             "Follows data | Follows window |")
+    L.append("|---|---|---|---|---|---|---|")
     agg = []
-    for s in SCORED:
-        x = d[d.sensor == s]
-        if not len(x):
-            continue
-        if s in unattested:
-            tag = 'no consistent direction'
-        elif s in conflict:
-            tag = '**conflict**'
-        else:
-            tag = 'agree'
-        L.append(f"| {s} ({SYMBOL[s]}) | {tag} | {len(x):,} | "
-                 f"{100 * x.follows_prompt.mean():.1f}% | "
-                 f"{100 * x.follows_data.mean():.1f}% | "
-                 f"{100 * x.follows_window.mean():.1f}% |")
-        agg.append({"sensor": s, "symbol": SYMBOL[s], "conflict": s in conflict, "unattested": s in unattested,
-                    "claims": len(x),
-                    "follows_prompt_pct": round(100 * x.follows_prompt.mean(), 1),
-                    "follows_data_pct": round(100 * x.follows_data.mean(), 1),
-                    "follows_window_pct": round(100 * x.follows_window.mean(), 1)})
+    for ds in ("FD001", "FD003"):
+        g = groups[ds]
+        for s in SCORED:
+            x = d[(d.sensor == s) & (d.dataset == ds)]
+            if not len(x):
+                continue
+            if s in g["unattested"]:
+                tag, fd_cell = "no consistent direction", "n/a"
+            else:
+                tag = "**conflict**" if s in g["conflict"] else "agree"
+                fd_cell = f"{100 * x.follows_data.mean():.1f}%"
+            L.append(f"| {s} ({SYMBOL[s]}) | {ds} | {tag} | {len(x):,} | "
+                     f"{100 * x.follows_prompt.mean():.1f}% | {fd_cell} | "
+                     f"{100 * x.follows_window.mean():.1f}% |")
+            agg.append({"sensor": s, "symbol": SYMBOL[s], "dataset": ds,
+                        "conflict": s in g["conflict"], "attested": s not in g["unattested"],
+                        "claims": len(x),
+                        "follows_prompt_pct": round(100 * x.follows_prompt.mean(), 1),
+                        "follows_data_pct": (round(100 * x.follows_data.mean(), 1)
+                                             if s not in g["unattested"] else None),
+                        "follows_window_pct": round(100 * x.follows_window.mean(), 1)})
     pd.DataFrame(agg).to_csv(P1 / "p3_5_agreement.csv", index=False)
 
-    sub = d[d.sensor.isin(conflict)]
-    L.append(f"\n**The decisive subset.** On the {len(conflict)} sensors whose attested "
-             f"direction is the opposite of the asserted one ({', '.join(conflict)}), a claim "
-             f"cannot follow both. Over the {len(sub):,} claims about them the model follows "
-             f"the prompt {100 * sub.follows_prompt.mean():.1f}% of the time and the "
-             f"benchmark {100 * sub.follows_data.mean():.1f}%. Where the two references part "
-             "company, the model goes with the prompt.\n")
-    for s in unattested:
-        x = d[d.sensor == s]
-        L.append(f"The ambiguous case is reported separately: for {s} the prompt asserts "
-                 f"{ASSERTED[s]} and the model states it in {100 * x.follows_prompt.mean():.1f}% "
-                 f"of its {len(x):,} claims, while the benchmark supports no direction. This "
-                 "shows the same cue-following but cannot be scored against the data, so it "
-                 "is excluded from the figures above.\n")
+    mask = [r.sensor in groups[r.dataset]["conflict"] for r in d.itertuples()]
+    sub = d[mask]
+    L.append(f"\n**The decisive subset.** Where the attested direction is the opposite of the "
+             f"asserted one, a claim cannot follow both. Over the {len(sub):,} claims about "
+             "such a sensor in such a sub-dataset the model follows the prompt "
+             f"{100 * sub.follows_prompt.mean():.1f}% of the time and the benchmark "
+             f"{100 * sub.follows_data.mean():.1f}%. Where the two references part company, "
+             "the model goes with the prompt.\n")
+    for ds in ("FD001", "FD003"):
+        for s in groups[ds]["unattested"]:
+            x = d[(d.sensor == s) & (d.dataset == ds)]
+            if not len(x):
+                continue
+            L.append(f"Reported separately because it cannot be scored: on {ds} the prompt "
+                     f"asserts {ASSERTED[s]} for {s} and the model states it in "
+                     f"{100 * x.follows_prompt.mean():.1f}% of its {len(x):,} claims, while "
+                     "the benchmark supports no direction either way.")
+    L.append("")
 
     L.append("\n## What this changes\n")
     L.append("The headline figure is unchanged as a number and changes as a claim. Agreement "
              "of 91.3% is agreement with the direction the prompt supplies, and it was "
              "described as agreement with established degradation physics. On this benchmark "
              "those are not the same thing: measured against the data the same claims are "
-             f"right {100 * d.follows_data.mean():.1f}% of the time. It also explains why "
+             f"right {100 * sc.follows_data.mean():.1f}% of the time, on the claims where the "
+             "benchmark attests a direction at all. It also explains why "
              "input faithfulness sits at the level a rule that ignores the input would "
              "reach, since the reference the model is echoing is itself uninformative about "
-             "the sensor windows for three of the five sensors the prompt names.\n")
+             "the sensor windows for the sensors it gets backwards.\n")
 
     (P1 / "p3_5_report.md").write_text("\n".join(L), encoding="utf-8")
     print("\n".join(L))

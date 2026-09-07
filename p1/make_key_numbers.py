@@ -1,5 +1,5 @@
 """
-Single source of truth for every number that goes into v14.
+Single source of truth for every number that goes into the manuscript.
 
 Regenerates `numeri_chiave.md` straight from the result CSVs and trace files.
 When a number in the manuscript disagrees with this file, this file is right and
@@ -33,7 +33,7 @@ def add(s=""):
 
 
 def main():
-    add("# Numeri chiave per v14 — fonte unica di verita\n")
+    add("# Numeri chiave — fonte unica di verita\n")
     add(f"**Generato automaticamente** da `experiment/p1/make_key_numbers.py` il "
         f"{date.today().isoformat()}, direttamente dai CSV e dalle tracce.\n")
     add("> Se un numero nel manoscritto non coincide con questo file, **questo file ha "
@@ -124,10 +124,25 @@ def main():
     cl = pd.read_csv(P0 / "p0_2a_claims.csv")
     d = cl[cl.claimed.isin(["increase", "decrease"])]
     add(f"- Opportunita sensore-traccia: **{len(cl):,}**; affermazioni direzionali: **{len(d):,}**")
-    add(f"- Accordo con la direzione canonica: **{100 * (d.claimed == d.expected_textbook).mean():.1f}%**")
-    add(f"- Fedelta alla finestra mostrata: **{100 * (d.claimed == d.actual_in_window).mean():.1f}%**")
-    add(f"- Tasso di base (asserire sempre il canonico): "
-        f"**{100 * (cl.expected_textbook == cl.actual_in_window).mean():.1f}%**")
+    add(f"- Accordo con la direzione di riferimento: "
+        f"**{100 * (d.claimed == d.expected_textbook).mean():.1f}%**")
+    add(f"- Fedelta alla direzione nella finestra mostrata: "
+        f"**{100 * (d.claimed == d.actual_in_window).mean():.1f}%**")
+    # the base rate has to share the denominator with faithfulness: over all
+    # 18,900 opportunities the same rule scores 46.7%, which is not comparable
+    add(f"- Tasso di base sulle stesse affermazioni: "
+        f"**{100 * (d.expected_textbook == d.actual_in_window).mean():.1f}%**")
+    dirs = P1 / "p3_5_directions.csv"
+    if dirs.exists():
+        key = pd.read_csv(dirs).set_index(["dataset", "sensor"])
+        meas = [key.loc[(r.dataset, r.sensor), "measured_direction"] for r in d.itertuples()]
+        att = [bool(key.loc[(r.dataset, r.sensor), "attested"]) for r in d.itertuples()]
+        dd = d.assign(measured=meas, attested=att)
+        sc = dd[dd.attested]
+        add(f"- Accordo con la direzione misurata nel benchmark, sulle "
+            f"**{len(sc):,}** affermazioni con direzione attestata nel proprio sotto-dataset: "
+            f"**{100 * (sc.claimed == sc.measured).mean():.1f}%** "
+            f"(riferimento sulle stesse: {100 * (sc.claimed == sc.expected_textbook).mean():.1f}%)")
     cued = d[d.cued]
     unc = d[~d.cued]
     add(f"- Sensori citati nel prompt: {100 * (cued.claimed == cued.expected_textbook).mean():.1f}% "

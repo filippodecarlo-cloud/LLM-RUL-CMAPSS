@@ -122,10 +122,14 @@ def figure_faithfulness(wb):
     d = cl[cl.claimed.isin(["increase", "decrease"])].copy()
     d["prompt_hit"] = d.claimed == d.expected_textbook
     d["input_hit"] = d.claimed == d.actual_in_window
-    # direction measured on the FD001 training set, from p1/p3_5_prompt_vs_benchmark.py
-    MEASURED = {"s4": "increase", "s7": "decrease", "s9": "increase", "s11": "increase",
-                "s12": "decrease", "s14": "increase", "s15": "increase"}
-    d["data_hit"] = d.claimed == d.sensor.map(MEASURED)
+    # The measured direction is a property of a sensor within a sub-dataset, and
+    # the two do not attest the same set, so it is read per claim from p3_5.
+    key = pd.read_csv(P1 / "p3_5_directions.csv").set_index(["dataset", "sensor"])
+    d["measured"] = [key.loc[(r.dataset, r.sensor), "measured_direction"]
+                     for r in d.itertuples()]
+    d["attested"] = [bool(key.loc[(r.dataset, r.sensor), "attested"])
+                     for r in d.itertuples()]
+    d["data_hit"] = d.claimed == d.measured
 
     rows = []
     for s in ["s4", "s7", "s9", "s11", "s12", "s14", "s15"]:
@@ -134,22 +138,28 @@ def figure_faithfulness(wb):
             continue
         # the base rate has to share its denominator with faithfulness, so it is
         # computed on the directional claims and not on every opportunity
+        att = sub[sub.attested]
         rows.append({
             "Sensor": f"{s} ({'cued' if s in {'s9','s11','s12','s14','s15'} else 'not cued'})",
             "Agrees with the direction the prompt asserts (%)": 100 * sub.prompt_hit.mean(),
-            "Agrees with the direction the data shows (%)": 100 * sub.data_hit.mean(),
+            # empty where no sub-dataset attests a direction for this sensor
+            "Agrees with the direction the data shows (%)":
+                (100 * att.data_hit.mean()) if len(att) else None,
             "Agrees with the window supplied (%)": 100 * sub.input_hit.mean(),
             "Base rate, same claims (%)":
                 100 * (sub.expected_textbook == sub.actual_in_window).mean(),
             "n claims": int(len(sub)),
+            "n claims where a direction is attested": int(len(att)),
         })
     df = pd.DataFrame(rows)
 
     name = "DATI_fig5"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 5 - what the stated direction agrees with, per sensor. "
-                              "Sources: results_p0/p0_2a_report.md and "
-                              "results_p1/p3_5_report.md")
+                         note="Figure 5 - what the stated direction agrees with, per sensor. The "
+                              "benchmark series is computed only on the claims whose "
+                              "sub-dataset attests a direction for that sensor, and is "
+                              "blank where none does. Sources: results_p0/p0_2a_report.md "
+                              "and results_p1/p3_5_report.md")
     n = len(df)
     first, last = r0 + 1, r0 + n
 

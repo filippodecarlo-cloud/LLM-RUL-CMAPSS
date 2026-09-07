@@ -16,7 +16,6 @@ P0.2a report, which is itself generated from the claims file.
 """
 import json
 import math
-import os
 import re
 import sys
 from collections import Counter
@@ -101,11 +100,6 @@ def check(results, label, shown, actual, tol=TOL):
 
 
 def main():
-    if not PAPER.exists():
-        raise SystemExit(
-            f"Manuscript not found at {PAPER}.\n"
-            "This script compares the manuscript's tables with the data in this "
-            "repository, so it needs the .docx. Set PAPER_DOCX to its path.")
     doc = Document(PAPER)
     tabs = doc.tables
     if len(tabs) < 7:

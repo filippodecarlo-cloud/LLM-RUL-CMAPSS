@@ -1,5 +1,49 @@
 # Changelog
 
+## 2.2.2 - 2026-09-07
+
+A third external review found that the manuscript declared one sensor unscorable
+and then counted its claims in the aggregate that scores against the measured
+direction. Checking that turned up a larger problem of the same kind, which is
+what most of this release is about.
+
+### Fixed
+
+- **The measured direction was taken from FD001 and applied to claims made on
+  FD003.** The corpus of 3,816 directional claims spans both sub-datasets, 2,396
+  and 1,420, and the two do not attest the same directions: FD003 carries two
+  fault modes, and there s14 is attested while s7, s12 and s15 are not. Every
+  benchmark comparison is now computed within the sub-dataset the claim was made
+  in. `p1/p3_5_prompt_vs_benchmark.py`, `p1/make_figures_xlsx.py` and
+  `p1/audit_numbers.py` all changed; the audit computes it independently of p3_5,
+  so the two would have to drift together to agree wrongly.
+- **A sensor with no attested direction was being scored against one.** s14 rises
+  in 57% of FD001 engines, below the 65% threshold the same script uses, so it
+  has no direction to be right or wrong about there. Aggregate agreement with the
+  measured direction is now reported over the 2,754 claims a sub-dataset can
+  score, and is 47.4%, against 89.9% agreement with the reference direction on
+  those same claims. The previously reported 41.0% carried both defects.
+- **The conflicting-sensor result is unchanged in substance and now spans both
+  sub-datasets.** Two of the five sensors the prompt names run the wrong way in
+  each single-condition sub-dataset, and they are not the same two: s9 and s12 on
+  FD001, s9 and s14 on FD003. Over the 1,484 claims about them the model follows
+  the prompt 89.5% of the time and the benchmark 10.5%, against 89.3% and 10.7%
+  on the narrower FD001-only subset reported before.
+- `p1/p3_4_sensor_directions.py` used an 80% attestation threshold where
+  `p3_5` used 65%, so the two scripts disagreed about s14 on FD003. Aligned to
+  65%. The endpoint comparison and the per-engine rank correlation then classify
+  every sensor and sub-dataset identically, which is a check worth having.
+- `numeri_chiave.md` still reported the base rate over all 18,900 opportunities,
+  46.7%, which is not the denominator faithfulness is measured on. It reads 42.0%
+  now, matching the manuscript, and carries the benchmark-agreement line.
+- `README.md` carried the superseded reading of three conflicting sensors, an
+  unterminated bold marker in the title, and a causal claim that explicit
+  reasoning fixes output collapse, which the single-run comparison cannot support.
+- `p0/p0_2a_faithfulness.py` still named the earlier peer review in its
+  docstring. The questions are unchanged; the attribution is gone.
+- The 2.2.0 entry below has been corrected for the same defect and carries a note
+  saying so.
+
 ## 2.2.1 - 2026-09-06
 
 Corrections after a second external review of the manuscript. The analysis
@@ -77,15 +121,21 @@ finding that came out of answering them.
 
 ### The finding
 
-The zero-shot prompt states which sensors rise and which fall with wear. Measured
-on FD001, three of the five it names are the wrong way round: the ratio of fuel
-flow to static pressure falls in 100 of 100 training engines where the prompt
-says it rises, physical core speed rises in 70% where the prompt says it falls,
-and corrected core speed has no consistent direction. Two independent methods
-agree and the pattern holds at every window length. On the 2,283 claims about
-those three sensors the model follows the prompt in 92.1% of cases and the
-benchmark in 7.9%. Agreement with the asserted directions is 91.3%; with the
-measured ones, 41.0%.
+The zero-shot prompt states which sensors rise and which fall with wear, and in
+each single-condition sub-dataset two of the five it names are the wrong way
+round. On FD001 the ratio of fuel flow to static pressure falls in 100 of 100
+training engines where the prompt says it rises, and physical core speed rises in
+70% where the prompt says it falls; on FD003 the pair is physical core speed and
+corrected core speed. Two independent methods agree and the pattern holds at
+every window length. On the 1,484 claims about a sensor the prompt has backwards
+in its own sub-dataset, the model follows the prompt 89.5% of the time and the
+benchmark 10.5%. Over the 2,754 claims a sub-dataset can score, agreement with
+the reference direction is 89.9% and with the measured one 47.4%.
+
+(The figures in this entry were corrected in 2.2.2. As first published they read
+three sensors, 2,283 claims and 92.1% against 7.9%, counting corrected core speed
+as conflicting on FD001 when it does not reach the attestation threshold there,
+and scoring FD003 claims against FD001 directions.)
 
 ### Fixed
 
