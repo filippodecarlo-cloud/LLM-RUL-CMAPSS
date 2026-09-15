@@ -1,6 +1,6 @@
-# Numeri chiave per v14 — fonte unica di verita
+# Numeri chiave — fonte unica di verita
 
-**Generato automaticamente** da `experiment/p1/make_key_numbers.py` il 2026-09-06, direttamente dai CSV e dalle tracce.
+**Generato automaticamente** da `experiment/p1/make_key_numbers.py` il 2026-09-15, direttamente dai CSV e dalle tracce.
 
 > Se un numero nel manoscritto non coincide con questo file, **questo file ha ragione**: e derivato dai dati, non ricopiato da un report. Rilancia lo script dopo ogni nuovo esperimento.
 
@@ -32,7 +32,7 @@
 - Nominalmente significativi (p<0,05): **10**
 - Sopravvivono a BH-FDR 5%: **3**
 - Sopravvivono a Bonferroni 5%: **1**
-- Massimo |rho| su configurazioni LLM: **0.312** (varianza dei ranghi spiegata: 9.7%)
+- Massimo |rho| su configurazioni LLM: **0.312** (correlazione di rango al quadrato: 9.7%, non una quota di varianza in senso ordinario)
 
 ## Baseline supervisionate (P2.1, dopo riparazione)
 
@@ -77,9 +77,10 @@
 ## Fedelta delle spiegazioni (P0.2a / P0.3)
 
 - Opportunita sensore-traccia: **18,900**; affermazioni direzionali: **3,816**
-- Accordo con la direzione canonica: **91.3%**
-- Fedelta alla finestra mostrata: **42.7%**
-- Tasso di base (asserire sempre il canonico): **46.7%**
+- Accordo con la direzione di riferimento: **91.3%**
+- Fedelta alla direzione nella finestra mostrata: **42.7%**
+- Tasso di base sulle stesse affermazioni: **42.0%**
+- Accordo con la direzione misurata nel benchmark, sulle **2,754** affermazioni con direzione attestata nel proprio sotto-dataset: **47.4%** (riferimento sulle stesse: 89.9%)
 - Sensori citati nel prompt: 94.5% vs non citati: 51.4%
 
 ### Bracci di controllo
@@ -95,6 +96,6 @@
 
 - Set di esempi testati: **7**
 - Pearson r fra RUL medio degli esempi e media predetta: **+0.941** (p=0.0016)
-- **Varianza dell'output spiegata dagli esempi: 89%**
+- r al quadrato fra le due medie sui 7 punti: **89%** (associazione fra 7 punti aggregati, non la quota di varianza dei singoli output spiegata dagli esempi; il paper la confronta esplicitamente con la correlazione di rango al quadrato su 100 motori, che e un'altra grandezza)
 - Retta: media_pred = 22.34 + 0.440 x media_esempi
 - Media predetta minima/massima: 26.3 / 67.2 (media reale del test: 74,5)

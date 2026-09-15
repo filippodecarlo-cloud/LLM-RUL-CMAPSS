@@ -234,6 +234,34 @@ def facts():
         for p in EXP.glob(pat):
             tot += len(json.loads(p.read_text(encoding="utf-8")))
     f["total inferences"] = tot
+    # fifth external review, 2026-09-15: Table 2's common-grid range, the 65%
+    # attestation threshold's own sensitivity, and the cued/uncued n's
+    bp = pd.read_csv(P1 / "p2_1_baseline_predictions.csv")
+    grid = {}
+    for ds, g in bp.groupby("dataset"):
+        for col in ("RandomForest", "XGBoost", "LSTM_fixed"):
+            grid[(ds, col)] = g[col].round().nunique()
+    f["y: FD001 grid min"] = min(v for k, v in grid.items() if k[0] == "FD001")
+    f["y: FD001 grid max"] = max(v for k, v in grid.items() if k[0] == "FD001")
+    f["y: combined grid min"] = min(grid.values())
+    f["y: combined grid max"] = max(grid.values())
+
+    dirs = pd.read_csv(P1 / "p3_5_directions.csv")
+    at = lambda th: (dirs.share_supporting >= th)  # noqa: E731
+    f["y: attestation unchanged 60-70"] = int((at(60) == at(65)).all() and (at(65) == at(70)).all())
+    f["y: attested pairs total"] = len(dirs)
+    d9 = dirs[(dirs.dataset == "FD001") & (dirs.sensor == "s9")].iloc[0]
+    d15 = dirs[(dirs.dataset == "FD001") & (dirs.sensor == "s15")].iloc[0]
+    f["y: s9 last5 share"] = d9.share_rising_last5  # already the increase-share for s9
+    f["y: s15 last5 share"] = d15.share_rising_last5
+    f["y: s9 whole life share"] = d9.share_supporting
+    f["y: s15 whole life share"] = d15.share_supporting
+
+    cc2 = pd.read_csv(P0 / "p0_2a_claims.csv")
+    cc2 = cc2[cc2.claimed.isin(["increase", "decrease"])]
+    f["y: cued claims (both modes)"] = int(cc2.cued.sum())
+    f["y: uncued claims (both modes)"] = int((~cc2.cued).sum())
+
     # how the 3,816 claims split by the cue in their own prompt (Table 5 caption)
     cc = pd.read_csv(P0 / "p0_2a_claims.csv")
     cc = cc[cc.claimed.isin(["increase", "decrease"])]
@@ -420,6 +448,27 @@ PHRASES = [
     ("table 5 caption", lambda f: f"the cued and uncued figures are "
                                   f"{f['s: named agreement, without']:.1f}% and "
                                   f"{f['s: uncued agreement, without']:.1f}%"),
+    # fifth external review (ChatGPT-5.6 Sol Ultra), 2026-09-15
+    ("table 2 grid range", lambda f: f"between {f['y: FD001 grid min']:.0f} and "
+                                     f"{f['y: FD001 grid max']:.0f} values on FD001, and between "
+                                     f"{f['y: combined grid min']:.0f} and "
+                                     f"{f['y: combined grid max']:.0f} across FD001 and FD003"),
+    ("60-70 unchanged", lambda f: "the classification is unchanged at 60% and at 70% for all "
+                                  "fourteen sensor-and-sub-dataset pairs"
+     if f["y: attestation unchanged 60-70"] else "<classification now changes at 60/70%>"),
+    ("s9 s15 last5", lambda f: f"s9 and s15 fall just below the 65% attestation bar "
+                               f"({f['y: s9 last5 share']:.0f}% and "
+                               f"{f['y: s15 last5 share']:.0f}%)"),
+    ("cued n", lambda f: f"Claims about cued sensors ({f['y: cued claims (both modes)']:,}, "
+                         "pooling both prompt modes)"),
+    ("uncued n", lambda f: f"claims about uncued sensors "
+                           f"({f['y: uncued claims (both modes)']:,}) 51.4%"),
+    ("figure 9 scope", lambda f: "Figure 9 reports the rank correlation of the 15 FD001 runs "
+                                 "of the main grid"),
+    ("non-flat trend", lambda f: "every non-flat trend flips sign"),
+    ("consistent with anchoring", lambda f: "Its lower RMSE is consistent with anchoring"),
+    ("cramers v bias", lambda f: "Cramer's V cannot be negative, so a percentile bootstrap on "
+                                 "it is biased away from zero"),
 ]
 
 

@@ -1,5 +1,37 @@
 # Changelog
 
+## 2.2.5 - 2026-09-15
+
+`numeri_chiave.md` calls itself the single source of truth for every number in the
+manuscript. It had not been regenerated since 2026-09-06 and was wrong on exactly
+the numbers the manuscript had already corrected.
+
+### Fixed
+
+- **The base rate read 46.7%, the manuscript's 42.0%.** The 46.7% figure is
+  computed over all 18,900 sensor-trace opportunities; the manuscript scores it
+  over the 3,816 directional claims that faithfulness is measured on, which is
+  the comparison that is actually like-for-like. Regenerated with
+  `p1/make_key_numbers.py`; the file now also states the 2,754-claim empirical
+  benchmark comparison alongside it.
+- **Two rho-squared figures were labelled "variance explained".** The maximum
+  rank correlation across the main grid (0.312, squared 9.7%) and the
+  association between mean prediction and mean example RUL across seven
+  aggregate points (r=+0.941, squared 89%) are both now described as squared
+  correlations rather than a share of variance, matching the wording already
+  used throughout the manuscript for the same reason - the phrase reads as a
+  causal, R-squared-style claim that neither number supports on its own.
+- File title and generation date, which still read "per v14" and 2026-09-06.
+- `README.md` still said "the same eight figures"; corrected to nine.
+
+### Added
+
+- `p1/audit_numbers.py` gained checks for a Table 2 range corrected the same day
+  (the common-grid distinct-value count is 59-63 on FD001 and 59-69 across
+  FD001 and FD003, not 59-64 as an earlier draft had it) and for the 65%
+  attestation threshold's own sensitivity, confirmed unchanged at 60% and 70%
+  for all fourteen sensor-and-sub-dataset pairs.
+
 ## 2.2.4 - 2026-09-15
 
 A ninth figure, and a fix to three scripts that had stopped matching the manuscript

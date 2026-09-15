@@ -79,7 +79,7 @@ sub-datasets were run with the reference model only; the quantisation comparison
 | `results_p0/` | Protocol outputs: no-skill tables, rank-correlation audit, faithfulness analysis, control arms |
 | `results_p1/` | Model sweep, corrected grid, repaired baselines, example-set experiment, FD002/FD004 |
 | `figures_v14/` | The paper's figures as **native Excel charts** and an editable PowerPoint diagram |
-| `figures_png/` | The same eight figures rendered, as they appear in the paper |
+| `figures_png/` | The same nine figures rendered, as they appear in the paper |
 | `figures_original_grid/` | Matplotlib figures from the first release, kept for reference; they are **not** the paper's figures and their numbering does not correspond |
 | `manifest.json`, `manifest.csv` | One record per inference run: configuration, experiment, SHA-256, and metrics recomputed from the file |
 | `numeri_chiave.md` | Every number in the paper, regenerated from the data |

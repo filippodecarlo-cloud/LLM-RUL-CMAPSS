@@ -71,7 +71,8 @@ def main():
     add(f"- Sopravvivono a BH-FDR 5%: **{int(rk.sig_fdr_5pct.sum())}**")
     add(f"- Sopravvivono a Bonferroni 5%: **{int(rk.sig_bonf_5pct.sum())}**")
     add(f"- Massimo |rho| su configurazioni LLM: **{rk.spearman_rho.abs().max():.3f}** "
-        f"(varianza dei ranghi spiegata: {100 * rk.spearman_rho.abs().max() ** 2:.1f}%)")
+        f"(correlazione di rango al quadrato: {100 * rk.spearman_rho.abs().max() ** 2:.1f}%, "
+        "non una quota di varianza in senso ordinario)")
 
     # ---------- baselines ----------
     add("\n## Baseline supervisionate (P2.1, dopo riparazione)\n")
@@ -182,7 +183,10 @@ def main():
         add(f"- Set di esempi testati: **{len(xs)}**")
         add(f"- Pearson r fra RUL medio degli esempi e media predetta: "
             f"**{pr.statistic:+.3f}** (p={pr.pvalue:.4f})")
-        add(f"- **Varianza dell'output spiegata dagli esempi: {100 * pr.statistic ** 2:.0f}%**")
+        add(f"- r al quadrato fra le due medie sui 7 punti: **{100 * pr.statistic ** 2:.0f}%** "
+            "(associazione fra 7 punti aggregati, non la quota di varianza dei singoli output "
+            "spiegata dagli esempi; il paper la confronta esplicitamente con la correlazione "
+            "di rango al quadrato su 100 motori, che e un'altra grandezza)")
         add(f"- Retta: media_pred = {ic:.2f} + {sl:.3f} x media_esempi")
         add(f"- Media predetta minima/massima: {min(ys):.1f} / {max(ys):.1f} "
             "(media reale del test: 74,5)")
