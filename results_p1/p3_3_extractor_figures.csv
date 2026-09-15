@@ -1,0 +1,60 @@
+figure,value
+pairs read,139.0
+ambiguous,0.0
+"precision, directional",0.875
+"recall, directional",0.8641975308641975
+both see a claim,70.0
+same sign,65.0
+"corpus agreement, full label %",86.48994708994708
+"corpus agreement, claim and sign %",93.6068783068783
+absent sampled,20.0
+absent read otherwise,2.0
+unspecified or stable sampled,39.0
+missed among unspecified or stable,11.0
+"missed, corpus estimate",489.2
+missed stating reference,11.0
+directional calls sampled,80.0
+calls not counted by author,10.0
+"of which deviation, variance or level wording",5.0
+wrong sign,5.0
+author claims,81.0
+author claims stating reference,81.0
+author conflict claims,32.0
+author conflict claims stating reference,32.0
+extractor departures from reference,6.0
+extractor departures the author confirms,0.0
+"rescored claims, extractor",3816.0
+"rescored claims, author",3828.2
+"rescored claims, difference",12.199999999999818
+"rescored claims, CI lo",-377.03416666666664
+"rescored claims, CI hi",385.33749999999964
+"rescored ref, extractor",92.43710691823898
+"rescored ref, author",100.0
+"rescored ref, difference",7.562893081761018
+"rescored ref, CI lo",2.5
+"rescored ref, CI hi",13.844339622641513
+"rescored window, extractor",49.49685534591194
+"rescored window, author",45.93194364627415
+"rescored window, difference",-3.56491169963779
+"rescored window, CI lo",-10.966239061951244
+"rescored window, CI hi",3.8964571588344525
+"rescored base, extractor",50.715408805031444
+"rescored base, author",45.93194364627415
+"rescored base, difference",-4.783465158757295
+"rescored base, CI lo",-10.15354378348108
+"rescored base, CI hi",0.6815686916718096
+"rescored gap, extractor",-1.2185534591195029
+"rescored gap, author",0.0
+"rescored gap, difference",1.2185534591195029
+"rescored gap, CI lo",-3.9072327044025195
+"rescored gap, CI hi",7.374213836477984
+"rescored bench, extractor",48.36601307189542
+"rescored bench, author",39.879346771728876
+"rescored bench, difference",-8.486666300166547
+"rescored bench, CI lo",-18.997437592787232
+"rescored bench, CI hi",1.4907437179503702
+"rescored conflict_ref, extractor",84.3361801242236
+"rescored conflict_ref, author",100.0
+"rescored conflict_ref, difference",15.663819875776397
+"rescored conflict_ref, CI lo",3.7132867100817877
+"rescored conflict_ref, CI hi",29.131200459849314

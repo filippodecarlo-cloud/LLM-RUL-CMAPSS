@@ -96,7 +96,8 @@ sub-datasets were run with the reference model only; the quantisation comparison
 | `p0/p0_4_zeroshot_collapse.py` | Concentration by prompting mode |
 | `p1/p3_1_cluster_inference.py` | Every faithfulness contrast redone at the cluster level: claims are nested in engines and configurations |
 | `p1/p3_2_multiplicity_examples_grid.py` | All 27 rank tests with the family stated, the example-set association as an exploratory result, and a common one-cycle grid for comparing concentration across model families |
-| `p1/p3_3_extractor_sample.py`, `p1/p3_3_extractor_validate.py` | Draw and score a hand-annotated sample validating the claim extractor |
+| `p1/p3_3_extractor_sample.py`, `p1/p3_3_import_readings.py`, `p1/p3_3_extractor_validate.py` | Draw the validation sample, import the author's blind reading of it, and score the claim extractor against that reading |
+| `p1/p3_3_extractor_sensitivity.py` | The cue comparisons recomputed without the clauses about deviations, variance or levels that the extractor misreads |
 | `p1/p3_5_prompt_vs_benchmark.py` | Whether the degradation directions the prompt asserts are the ones the benchmark exhibits |
 | `p1/p1_model_sweep.py` | Same configuration, different model; robust parsing, raw responses kept |
 | `p1/p1_34_fewshot_sampling.py` | The example-set experiment: k fixed, only the examples change |

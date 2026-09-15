@@ -1,0 +1,15 @@
+set,contrast,estimate,a,b,ci_lo,ci_hi,p,n_a,n_b
+Validation sample,pairs whose clause uses that wording,16.0,,,,,,,
+Validation sample,"of those, labelled unspecified by the author",16.0,,,,,,,
+All claims (the figures of record),"reference agreement, named vs uncued sensors",43.028442146089205,94.45701357466064,51.42857142857142,28.602390358576258,60.66640206663594,0.04839516048395161,3536.0,280.0
+All claims (the figures of record),"reference agreement, zero-shot vs few-shot",33.09437195644418,94.61269656377402,61.518324607329845,23.808569328890734,44.361876994445964,0.001999800019998,3434.0,382.0
+All claims (the figures of record),"faithfulness, named vs uncued sensors",-7.091144149967682,42.19457013574661,49.28571428571429,-14.372581228969402,1.280920645784973,,3536.0,280.0
+All claims (the figures of record),"faithfulness minus base rate, named sensors",0.8484162895927627,42.19457013574661,41.34615384615385,-0.23239627996731013,1.9602890368103352,,3536.0,3536.0
+All claims (the figures of record),"faithfulness minus base rate, s4/s7",-0.7142857142857117,49.28571428571429,50.0,-12.130270357257805,11.274698340874801,,280.0,280.0
+All claims (the figures of record),faithfulness minus base rate,0.7337526205450695,42.71488469601677,41.9811320754717,-0.5277079673071089,2.0546614683060334,,3816.0,3816.0
+"Without clauses about deviations, variance or levels","reference agreement, named vs uncued sensors",15.960767468499427,94.43298969072164,78.47222222222221,8.774085570891472,23.57434774001554,0.14608539146085392,3395.0,144.0
+"Without clauses about deviations, variance or levels","reference agreement, zero-shot vs few-shot",18.94874795098176,94.96684749849307,76.01809954751131,11.879689964349307,28.202792681367146,0.001999800019998,3318.0,221.0
+"Without clauses about deviations, variance or levels","faithfulness, named vs uncued sensors",-12.76980036000655,42.091310751104565,54.861111111111114,-22.268767673176693,-2.722897889897825,,3395.0,144.0
+"Without clauses about deviations, variance or levels","faithfulness minus base rate, named sensors",0.8541973490427124,42.091310751104565,41.23711340206185,-0.265021572052949,2.0034869254622145,,3395.0,3395.0
+"Without clauses about deviations, variance or levels","faithfulness minus base rate, s4/s7",0.6944444444444531,54.861111111111114,54.166666666666664,-7.746478873239432,12.739009616585484,,144.0,144.0
+"Without clauses about deviations, variance or levels",faithfulness minus base rate,0.8476970895733238,42.610907035885845,41.76320994631252,-0.329960443750666,2.041928360747378,,3539.0,3539.0

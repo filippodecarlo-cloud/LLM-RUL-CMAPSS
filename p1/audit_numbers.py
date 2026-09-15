@@ -1,7 +1,7 @@
 """
 Audit: does every number in the manuscript match the data?
 
-Extracts numeric claims from paper_v17.docx, the Word master, and checks them
+Extracts numeric claims from paper_v18.docx, the Word master, and checks them
 against values recomputed from the result files. Catches the failure mode that
 matters most here: a number that was right when written, and stale after the
 experiment that produced it was rerun.
@@ -26,7 +26,7 @@ P0, P1 = EXP / "results_p0", EXP / "results_p1"
 import os
 # The manuscript is not redistributed while it is under review; point
 # PAPER_DOCX at a copy. Everything it is checked against is public and here.
-PAPER = Path(os.environ.get("PAPER_DOCX", EXP.parent / "paper_v17.docx"))
+PAPER = Path(os.environ.get("PAPER_DOCX", EXP.parent / "paper_v18.docx"))
 
 
 def read_manuscript():
@@ -234,6 +234,51 @@ def facts():
         for p in EXP.glob(pat):
             tot += len(json.loads(p.read_text(encoding="utf-8")))
     f["total inferences"] = tot
+    # how the 3,816 claims split by the cue in their own prompt (Table 5 caption)
+    cc = pd.read_csv(P0 / "p0_2a_claims.csv")
+    cc = cc[cc.claimed.isin(["increase", "decrease"])]
+    zs_ = cc["mode"] == "zero_shot"
+    f["claims without a cue in their prompt"] = int((~(zs_ & cc.cued)).sum())
+    f["few-shot claims"] = int((~zs_).sum())
+    f["zero-shot claims about s4 and s7"] = int((zs_ & ~cc.cued).sum())
+
+    # extractor validation against the author's reading (p3_3_extractor_validate.py)
+    # and the sensitivity of the cue comparisons (p3_3_extractor_sensitivity.py)
+    fx = P1 / "p3_3_extractor_figures.csv"
+    if fx.exists():
+        for k, v in pd.read_csv(fx).set_index("figure").value.items():
+            f[f"x: {k}"] = float(v)
+        pilot = P1 / "p3_3_author_reading_pilot.json"
+        if pilot.exists():
+            f["x: pilot pairs"] = len(json.loads(pilot.read_text(encoding="utf-8"))["readings"])
+    fs_ = P1 / "p3_3_extractor_sensitivity.csv"
+    if fs_.exists():
+        s = pd.read_csv(fs_)
+        wo = s[s.set.str.startswith("Without")].set_index("contrast")
+        al = s[s.set.str.startswith("All")].set_index("contrast")
+        for c, tag in [("reference agreement, named vs uncued sensors", "named-uncued"),
+                       ("reference agreement, zero-shot vs few-shot", "zs-fs")]:
+            f[f"s: {tag}, without"] = float(wo.loc[c, "estimate"])
+            f[f"s: {tag}, without, CI lo"] = float(wo.loc[c, "ci_lo"])
+            f[f"s: {tag}, without, CI hi"] = float(wo.loc[c, "ci_hi"])
+        f["s: named agreement, without"] = float(wo.loc["reference agreement, named vs uncued sensors", "a"])
+        f["s: uncued agreement, without"] = float(wo.loc["reference agreement, named vs uncued sensors", "b"])
+        f["s: uncued claims, all"] = int(al.loc["reference agreement, named vs uncued sensors", "n_b"])
+        f["s: uncued claims, without"] = int(wo.loc["reference agreement, named vs uncued sensors", "n_b"])
+        vs = s[s.set == "Validation sample"].set_index("contrast").estimate
+        f["s: sampled clauses with that wording"] = int(vs["pairs whose clause uses that wording"])
+        f["s: of those, read as unspecified"] = int(
+            vs["of those, labelled unspecified by the author"])
+        gaps = s[s.contrast.str.startswith("faithfulness minus base rate, ")]
+        f["s: largest group gap to base rate"] = float(gaps.estimate.abs().max())
+        f["s: widest uncued gap bound"] = float(
+            gaps[gaps.contrast.str.endswith("s4/s7")][["ci_lo", "ci_hi"]].abs().max().max())
+        fs_all = al.loc["reference agreement, zero-shot vs few-shot", "n_b"]
+        fs_wo = wo.loc["reference agreement, zero-shot vs few-shot", "n_b"]
+        f["s: few-shot share with that wording %"] = 100 * (1 - fs_wo / fs_all)
+        f["s: uncued share with that wording %"] = 100 * (
+            1 - f["s: uncued claims, without"] / f["s: uncued claims, all"])
+
     # verified by reading the PDFs; see letteratura/note_lettura_4_paper.md
     f["lit: Guo 2024 FD001"] = 11.92
     f["lit: Guo 2024 FD003"] = 10.63
@@ -282,6 +327,99 @@ CHECKS = [
     # not recomputable here; listed so a later edit cannot silently drift
     ("11.92", "lit: Guo 2024 FD001"), ("10.63", "lit: Guo 2024 FD003"),
     ("13.23", "lit: Chen 2023 FD001"), ("12.17", "lit: Chen 2023 FD003"),
+    # extractor validation and the sensitivity of the cue comparisons
+    ("0.88", "x: precision, directional"), ("0.86", "x: recall, directional"),
+    ("93.6", "x: corpus agreement, claim and sign %"),
+    ("86.5", "x: corpus agreement, full label %"),
+    ("490", "x: missed, corpus estimate"),
+    ("7.6", "x: rescored ref, difference"), ("2.5", "x: rescored ref, CI lo"),
+    ("13.8", "x: rescored ref, CI hi"),
+    ("16.0", "s: named-uncued, without"), ("8.8", "s: named-uncued, without, CI lo"),
+    ("23.6", "s: named-uncued, without, CI hi"),
+    ("18.9", "s: zs-fs, without"), ("11.9", "s: zs-fs, without, CI lo"),
+    ("28.2", "s: zs-fs, without, CI hi"),
+    ("94.4", "s: named agreement, without"), ("78.5", "s: uncued agreement, without"),
+]
+
+NUMBER_WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six",
+                7: "seven", 8: "eight", 9: "nine", 10: "ten", 12: "twelve", 16: "sixteen"}
+
+# Phrases rebuilt from the data, which must occur verbatim. A number check alone
+# cannot see "65 of 70" or "the six sampled calls", and these counts carry claims.
+PHRASES = [
+    ("pairs read", lambda f: f"the author's reading of {f['x: pairs read']:.0f} pairs"),
+    ("pilot", lambda f: f"first pass over {f['x: pilot pairs']:.0f} pairs"),
+    ("same sign", lambda f: f"same sign in {f['x: same sign']:.0f} of "
+                            f"{f['x: both see a claim']:.0f} cases"),
+    ("absent read otherwise", lambda f: f"{NUMBER_WORDS[int(f['x: absent read otherwise'])]} "
+                                        f"of the {f['x: absent sampled']:.0f} sampled pairs "
+                                        "the extractor calls absent"),
+    ("missed", lambda f: f"{f['x: missed among unspecified or stable']:.0f} of the "
+                         f"{f['x: unspecified or stable sampled']:.0f} sampled pairs it labels "
+                         "unspecified or stable"),
+    ("not counted", lambda f: f"{f['x: directional calls sampled']:.0f} sampled calls it counts "
+                              f"as directional, the author did not count "
+                              f"{f['x: calls not counted by author']:.0f}"),
+    ("half of them", lambda f: "half of them clauses about deviations"
+     if f["x: of which deviation, variance or level wording"] * 2
+     == f["x: calls not counted by author"] else "<count no longer half>"),
+    ("wrong sign", lambda f: f"wrong sign in {f['x: wrong sign']:.0f} of those "
+                             f"{f['x: directional calls sampled']:.0f}"),
+    ("one in sixteen", lambda f: "one call in "
+     + NUMBER_WORDS.get(round(f["x: directional calls sampled"] / f["x: wrong sign"]), "?")),
+    ("all claims reference", lambda f: f"all {f['x: author claims']:.0f} sampled directional "
+                                       "claims state the reference direction"
+     if f["x: author claims"] == f["x: author claims stating reference"] else "<not all>"),
+    ("missed all reference", lambda f: f"including the {f['x: missed stating reference']:.0f} "
+                                       "the extractor misses"),
+    ("conflict all reference", lambda f: f"the {f['x: author conflict claims']:.0f} about a "
+                                         "sensor its own sub-dataset has the other way round"
+     if f["x: author conflict claims"] == f["x: author conflict claims stating reference"]
+     else "<not all>"),
+    ("departures all errors", lambda f: f"the {NUMBER_WORDS[int(f['x: extractor departures from reference'])]} "
+                                        "sampled calls in which the extractor finds a departure"
+     if f["x: extractor departures the author confirms"] == 0 else "<some confirmed>"),
+    ("faithfulness equals base", lambda f: "a faithfulness equal to the base rate"
+     if abs(f["x: rescored gap, author"]) < 1e-9 else "<no longer equal>"),
+    ("almost half", lambda f: "Almost half of the claims about uncued sensors"
+     if 40 <= f["s: uncued share with that wording %"] < 50 else "<not almost half>"),
+    ("few-shot share", lambda f: f"{f['s: few-shot share with that wording %']:.0f}% of those "
+                                 "from the few-shot template"),
+    ("instances", lambda f: f"all {f['s: sampled clauses with that wording']} sampled instances"
+     if f["s: sampled clauses with that wording"] == f["s: of those, read as unspecified"]
+     else "<not all read as unspecified>"),
+    ("within one point", lambda f: "within one point of the base rate"
+     if f["s: largest group gap to base rate"] < 1.0 else "<a gap exceeds one point>"),
+    ("uncued claims", lambda f: f"on {f['s: uncued claims, without']:.0f} to "
+                                f"{f['s: uncued claims, all']:.0f} claims"),
+    ("about twelve", lambda f: "the interval extends to about twelve points"
+     if 11 <= f["s: widest uncued gap bound"] < 13.5 else "<not about twelve>"),
+    # the figures themselves, in context, since a bare "0.88" also matches "+0.889"
+    ("precision and recall", lambda f: f"precision of {f['x: precision, directional']:.2f} and "
+                                       f"a recall of {f['x: recall, directional']:.2f}"),
+    ("claim and sign", lambda f: f"for {f['x: corpus agreement, claim and sign %']:.1f}% of the "
+                                 "18,900 pairs"),
+    ("full label", lambda f: f"On the full label the figure is "
+                             f"{f['x: corpus agreement, full label %']:.1f}%"),
+    ("roughly missed", lambda f: f"roughly {round(f['x: missed, corpus estimate'], -1):.0f} claims"),
+    ("rescored reference", lambda f: f"{f['x: rescored ref, difference']:.1f} points higher than "
+                                     f"the extractor does, with a 95% interval of "
+                                     f"{f['x: rescored ref, CI lo']:.1f} to "
+                                     f"{f['x: rescored ref, CI hi']:.1f}"),
+    ("cue without", lambda f: f"{f['s: named-uncued, without']:.1f} points, interval "
+                              f"{f['s: named-uncued, without, CI lo']:.1f} to "
+                              f"{f['s: named-uncued, without, CI hi']:.1f}, and "
+                              f"{f['s: zs-fs, without']:.1f} points, interval "
+                              f"{f['s: zs-fs, without, CI lo']:.1f} to "
+                              f"{f['s: zs-fs, without, CI hi']:.1f}"),
+    ("uncued partition", lambda f: f"The remaining {f['claims without a cue in their prompt']} "
+                                   f"claims have no cue in their own prompt: "
+                                   f"{f['few-shot claims']} come from few-shot runs"),
+    ("uncued partition, zero-shot", lambda f: f"and {f['zero-shot claims about s4 and s7']} are "
+                                              "zero-shot claims about s4 and s7"),
+    ("table 5 caption", lambda f: f"the cued and uncued figures are "
+                                  f"{f['s: named agreement, without']:.1f}% and "
+                                  f"{f['s: uncued agreement, without']:.1f}%"),
 ]
 
 
@@ -305,6 +443,17 @@ def main():
             ok += 1
         else:
             bad.append((shown, key, actual))
+
+    for name, build in PHRASES:
+        try:
+            phrase = build(f)
+        except KeyError as e:
+            missing.append((name, f"phrase needs {e}, which is unavailable"))
+            continue
+        if phrase in text:
+            ok += 1
+        else:
+            bad.append(("(absent)", f"phrase: {name}", phrase))
 
     if bad:
         print("\nMISMATCHES (paper says X, data says Y):")

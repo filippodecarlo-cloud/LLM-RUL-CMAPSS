@@ -26,6 +26,15 @@ run, and it is why the paper reports four replicates of the reference configurat
 62.8 and the modal share 80% to 85%. That spread is the scale on which any single-run
 difference in this paper should be read.
 
+One step is a human judgement and cannot be rerun from code at all: the author's reading
+of the 139 (response, sensor) pairs against which the claim extractor is validated. What
+can be released is released: the sample (`results_p1/p3_3_extractor_sample.csv`), the
+guideline the reading followed (`results_p1/p3_3_reading_guideline.md`), the raw export
+of the reading with the first label given for each case
+(`results_p1/p3_3_author_reading_export.json`), and the labels derived from it. A
+replication has to repeat the reading, ideally with more than one reader, since a single
+reader allows no inter-annotator statistic.
+
 ## Software
 
 | Component | Version |

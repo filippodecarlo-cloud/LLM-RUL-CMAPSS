@@ -1,5 +1,66 @@
 # Changelog
 
+## 2.2.3 - 2026-09-15
+
+The claim extractor is now validated against the author's own reading of the 139
+sampled cases, made in shuffled order and without the extractor's verdicts. The labels
+released from 2.2.0 to 2.2.2 were provisional. They did not come from a reading by hand,
+as the report released with them stated, but were produced with an AI assistant that
+could see the extractor's verdicts. They are withdrawn, and no figure in this release
+uses them.
+
+### Changed
+
+- **The validation figures now come from the author's reading.** In the sample the
+  extractor's directional calls have a precision of 0.88 and a recall of 0.86, and
+  where both see a claim the sign agrees in 65 of 70 cases. Weighted by corpus
+  frequency, the two agree on whether a pair carries a directional claim, and on its
+  sign, for 93.6% of the 18,900 pairs, and on the full label for 86.5%; the difference
+  is two of the 20 sampled pairs the extractor calls absent, which the author read as
+  unspecified. The provisional figures were 0.95, 0.88, 93% and 95%.
+- **Wrong sign is one call in sixteen, not one in ten.** The earlier script counted a
+  reading of unspecified as a sign error. It now counts only opposite signs: 5 of 80,
+  each where the contrary word belongs to the consequence, as in "increasing values in
+  s11 and s12, indicating a decline in performance".
+- **Missed claims are scaled stratum by stratum**: 11 of the 39 sampled pairs called
+  unspecified or stable carry a claim, roughly 490 in the corpus, all stating the
+  reference direction. The pooled rate used before mixed a census stratum with a
+  sampled one.
+
+### Found
+
+- **A failure mode the provisional labels did not show.** Of the 80 sampled
+  directional calls, the author did not count 10, half of them clauses about
+  deviations, variance or a level relative to normal, which the guideline counts as
+  naming the sensor without a direction. Such clauses make up 48.6% of the claims about
+  s4 and s7 and 42.1% of the few-shot claims, against 4.0% and 3.4% on the other side,
+  so they inflate the two cue comparisons of the paper: without them, named against
+  uncued sensors goes from 43.0 to 16.0 points and zero-shot against few-shot from 33.1
+  to 18.9, with the same cluster procedure as `p1/p3_1_cluster_inference.py`.
+  Faithfulness stays within one point of the base rate on both sides either way.
+  `p1/p3_3_extractor_sensitivity.py`.
+- **What the errors do to the headline comparison, computed.** In the author's reading
+  all 81 sampled directional claims state the reference direction, including the 32
+  about a sensor that its own sub-dataset has the other way round, and the six sampled
+  calls in which the extractor finds a departure from the reference are all its own
+  errors. Rescoring the sample as read raises agreement with the reference direction by
+  7.6 points (95% interval 2.5 to 13.8) and puts faithfulness exactly at the base rate.
+
+### Added
+
+- `p1/p3_3_import_readings.py`, which turns the reading into
+  `results_p1/p3_3_author_labels.csv`; the raw export of the reading,
+  `results_p1/p3_3_author_reading_export.json`, with the first label given for each
+  case and whether the provisional label was opened afterwards (it never was); the
+  40-case first pass, set aside once it showed the guideline was not being read as
+  intended, in `results_p1/p3_3_author_reading_pilot.json`; the shuffling key; and the
+  guideline, `results_p1/p3_3_reading_guideline.md`.
+- `results_p1/p3_3_extractor_figures.csv`, every validation figure the paper quotes,
+  and checks for them in `p1/audit_numbers.py`, including phrases rebuilt from the data
+  so that a count such as "65 of 70" cannot drift.
+- `REPRODUCIBILITY.md` states that the reading is the one step that cannot be rerun
+  from code.
+
 ## 2.2.2 - 2026-09-07
 
 A third external review found that the manuscript declared one sensor unscorable
@@ -113,6 +174,8 @@ finding that came out of answering them.
   extractor validated against 139 hand-read cases. Directional precision 0.95,
   recall 0.88, sign correct in 93%, 95% agreement over the corpus once
   reweighted. Both failure modes are conservative for the argument.
+  *(Note added in 2.2.3: these labels were provisional and not a reading by hand;
+  see 2.2.3 for the validation against the author's reading.)*
 - `p1/p3_4_sensor_directions.py` and `p1/p3_5_prompt_vs_benchmark.py` - the
   degradation direction of each scored sensor measured on the training set
   instead of asserted, and compared with what the prompt claims.
