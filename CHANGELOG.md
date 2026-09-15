@@ -1,5 +1,33 @@
 # Changelog
 
+## 2.2.4 - 2026-09-15
+
+A ninth figure, and a fix to three scripts that had stopped matching the manuscript
+two versions ago.
+
+### Added
+
+- **Figure 7**, a worked example of the trend-reversal result: FD001 engine 1,
+  sensor s11, read in its original window and in the same window reversed in
+  time. The window's first-to-last direction flips (-0.16 to +0.16); the
+  model's stated direction does not ("increase" in both), and its predicted
+  RUL moves by one cycle. Selected by a rule fixed before it was read - the
+  lowest-numbered engine among the pairs for which this sensor's claim did
+  not change despite the reversal (94 of 94 such pairs) - not chosen after
+  reading the responses. `p1/p3_9_trend_reversal_figure.py`, reproducible from
+  the trace files already in this repository.
+- The two figures after it are renumbered: the example-set anchoring plot is
+  now Figure 8 and the rank-correlation plot Figure 9. `figures_v14/figures_v14.xlsx`
+  and `figures_png/` updated to match; `p1/make_figures_xlsx.py` and
+  `p1/insert_figures.py` carry the new numbering for anyone rebuilding the
+  manuscript.
+
+### Fixed
+
+- `p1/insert_figures.py`, `p1/make_figures_xlsx.py` and `p1/export_figures_png.py`
+  still read and wrote `paper_v17_*.docx`, unchanged since the manuscript moved
+  to `paper_v18` on 2026-09-14. Retargeted; unrelated to the figure above.
+
 ## 2.2.3 - 2026-09-15
 
 The claim extractor is now validated against the author's own reading of the 139

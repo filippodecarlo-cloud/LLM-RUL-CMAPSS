@@ -50,18 +50,25 @@ ACCENT = "#C2553F"   # brick, for the "what matters" series
 GREY = "#8C8C8C"
 GRID = "#D9D9D9"
 
-# 11 pt on the axes and 12 pt on titles. A figure reduced to a single column in
-# print loses about a third of its linear size, and 10 pt did not survive that.
-FONT = {"name": "Calibri", "size": 11}
-TITLE_FONT = {"name": "Calibri", "size": 12, "bold": True}
+# Charts are built at the width they are printed at, PRINT_WIDTH_CM below, so a
+# point here is a point on the page: 9 pt on the axes prints at 9 pt, next to a
+# 9 pt caption. Before this the workbook was authored at 20 to 27 cm and the
+# export overrode every size anyway, which put 5 pt on the page.
+FONT = {"name": "Times New Roman", "size": 9}
+TITLE_FONT = {"name": "Times New Roman", "size": 10, "bold": True}
+LABEL_PT = 8               # data labels, one step below the axes
+PRINT_WIDTH_CM = 15.5      # must match width_cm in p1/insert_figures.py
+CHART_W_PX = round(PRINT_WIDTH_CM / 2.54 * 96)   # xlsxwriter sizes are 96 dpi
 # A thin dark outline separates adjacent bars when the page is printed in
 # greyscale, which fill colour alone does not do reliably.
 BAR_EDGE = {"color": "#3A3A3A", "width": 0.75}
 
 
-def style_axes(chart, x_name, y_name, y_max=None, y_min=0):
+def style_axes(chart, x_name, y_name, y_max=None, y_min=0, x_rotation=None):
+    # x_rotation tilts the category labels when they are too wide for their slot
+    num_font = dict(FONT, rotation=x_rotation) if x_rotation is not None else FONT
     chart.set_x_axis({
-        "name": x_name, "name_font": FONT, "num_font": FONT,
+        "name": x_name, "name_font": FONT, "num_font": num_font,
         "num_format": "General",
         "line": {"color": GREY},
         "major_gridlines": {"visible": False},
@@ -105,10 +112,23 @@ def write_table(wb, name, df, note=None):
     return ws, r0
 
 
-def add_chart_sheet(wb, sheet_name, chart, width=1.6, height=1.4):
+def short_run(run):
+    """asis_seed1 -> asis1, random_seed3 -> rand3. Point labels have to fit."""
+    cond, _, seed = run.partition("_seed")
+    return {"random": "rand", "strat": "strat", "asis": "asis"}.get(cond, cond) + seed
+
+
+def add_chart_sheet(wb, sheet_name, chart, aspect):
+    """Place a chart at the printed width, with the figure's own proportions.
+
+    aspect is width / height. The chart is sized rather than scaled, so what the
+    sheet shows is the figure at its final size and the point sizes above are the
+    point sizes on the page.
+    """
     ws = wb.add_worksheet(sheet_name)
     ws.hide_gridlines(2)
-    ws.insert_chart("B2", chart, {"x_scale": width, "y_scale": height})
+    chart.set_size({"width": CHART_W_PX, "height": round(CHART_W_PX / aspect)})
+    ws.insert_chart("B2", chart)
     return ws
 
 
@@ -141,11 +161,11 @@ def figure_faithfulness(wb):
         att = sub[sub.attested]
         rows.append({
             "Sensor": f"{s} ({'cued' if s in {'s9','s11','s12','s14','s15'} else 'not cued'})",
-            "Agrees with the direction the prompt asserts (%)": 100 * sub.prompt_hit.mean(),
+            "Agrees with the reference direction (%)": 100 * sub.prompt_hit.mean(),
             # empty where no sub-dataset attests a direction for this sensor
-            "Agrees with the direction the data shows (%)":
+            "Agrees with the empirical benchmark direction (%)":
                 (100 * att.data_hit.mean()) if len(att) else None,
-            "Agrees with the window supplied (%)": 100 * sub.input_hit.mean(),
+            "Agrees with the direction in the supplied window (%)": 100 * sub.input_hit.mean(),
             "Base rate, same claims (%)":
                 100 * (sub.expected_textbook == sub.actual_in_window).mean(),
             "n claims": int(len(sub)),
@@ -177,7 +197,7 @@ def figure_faithfulness(wb):
     style_axes(chart, "Sensor (cued = named in the prompt)", "Percentage of directional claims",
                y_max=100)
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_5", chart, 1.9, 1.5)
+    add_chart_sheet(wb, "FIG_5", chart, 2.111)
     return True
 
 
@@ -228,9 +248,11 @@ def figure_collapse(wb):
         })
     chart.set_title({"name": "Distribution of predicted RUL, FD001 (100 engines)",
                      "name_font": TITLE_FONT})
-    style_axes(chart, "Predicted RUL (cycles)", "Number of engines")
+    # thirteen bin labels such as "110-119" do not fit side by side at the printed
+    # width, and in Times the last three ran together
+    style_axes(chart, "Predicted RUL (cycles)", "Number of engines", x_rotation=-45)
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_3", chart, 2.1, 1.5)
+    add_chart_sheet(wb, "FIG_3", chart, 2.333)
     return True
 
 
@@ -285,7 +307,7 @@ def figure_reversed_trends(wb):
             "values": [name, first, col, last, col],
             "fill": {"color": colour}, "border": BAR_EDGE, "gap": gap,
             "data_labels": {"value": True, "position": "outside_end",
-                            "font": {"name": "Calibri", "size": 10, "color": INK}},
+                            "font": {"name": "Times New Roman", "size": LABEL_PT, "color": INK}},
         }
         if col == 2:
             series["data_labels"]["custom"] = [{"value": v} for v in pct]
@@ -295,7 +317,7 @@ def figure_reversed_trends(wb):
                      "name_font": TITLE_FONT})
     style_axes(chart, "Sensor", "Number of (engine, sensor) pairs")
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_6", chart, 1.8, 1.4)
+    add_chart_sheet(wb, "FIG_6", chart, 2.143)
     return True
 
 
@@ -354,11 +376,11 @@ def figure_pred_vs_true(wb):
                       "major_gridlines": {"visible": True,
                                           "line": {"color": GRID, "width": 0.75}}})
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_2", chart, 1.6, 1.6)
+    add_chart_sheet(wb, "FIG_2", chart, 1.667)
     return True
 
 
-# ---------------------------------------------------------------- figure 6
+# ---------------------------------------------------------------- figure 7
 def figure_anchoring(wb):
     """Mean prediction follows the mean RUL of the examples in the prompt."""
     src = P1 / "p1_34_analysis.csv"
@@ -396,9 +418,9 @@ def figure_anchoring(wb):
                      "Test-set mean RUL": 74.5})
     df = pd.DataFrame(rows).dropna().sort_values("Mean RUL of the prompt examples")
 
-    name = "DATI_fig7"
+    name = "DATI_fig8"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 7 - the anchor follows the examples. Each point is one "
+                         note="Figure 8 - the anchor follows the examples. Each point is one "
                               "few-shot example set. Source: results_p1/p1_34_report.md")
     first, last = r0 + 1, r0 + len(df)
 
@@ -415,10 +437,16 @@ def figure_anchoring(wb):
         "trendline": {"type": "linear", "name": "Linear fit",
                       "line": {"color": ACCENT, "width": 1.0, "dash_type": "dash"}},
         # seven unlabelled points tell a reader nothing about which set is which
+        # the full run names run into each other at the right of the plot and the
+        # leftmost one is clipped, so they are abbreviated: the condition plus the
+        # seed is all that distinguishes them
         "data_labels": {"value": False,
-                        "custom": [{"value": str(v)} for v in df["Run"]],
-                        "position": "above",
-                        "font": {"name": "Calibri", "size": 9, "color": GREY}},
+                        "custom": [{"value": short_run(v)} for v in df["Run"]],
+                        # centred above, the label for the point at x = 0 hangs
+                        # over the left edge of the plot and is cut; to the right
+                        # of the marker every label stays inside
+                        "position": "right",
+                        "font": {"name": "Times New Roman", "size": LABEL_PT, "color": GREY}},
     })
     chart.add_series({
         "name": [name, r0, 3],
@@ -436,11 +464,11 @@ def figure_anchoring(wb):
                       "min": 0, "max": 120, "line": {"color": GREY},
                       "major_gridlines": {"visible": False}})
     chart.set_legend({"position": "bottom", "font": FONT})
-    add_chart_sheet(wb, "FIG_7", chart, 1.6, 1.4)
+    add_chart_sheet(wb, "FIG_8", chart, 1.905)
     return True
 
 
-# ---------------------------------------------------------------- figure 7
+# ---------------------------------------------------------------- figure 8
 def figure_rank_correlation(wb):
     """Rank correlation for every configuration, against the baselines."""
     src = P0 / "p0_1b_rank_significance.csv"
@@ -464,9 +492,9 @@ def figure_rank_correlation(wb):
                      "LSTM (repaired)": 0.889})
     df = pd.DataFrame(rows)
 
-    name = "DATI_fig8"
+    name = "DATI_fig9"
     ws, r0 = write_table(wb, name, df,
-                         note="Figure 8 - rank correlation with 95% bootstrap CI, FD001. The "
+                         note="Figure 9 - rank correlation with 95% bootstrap CI, FD001. The "
                               "two reference lines are models that actually regress.")
     first, last = r0 + 1, r0 + len(df)
 
@@ -488,13 +516,13 @@ def figure_rank_correlation(wb):
                       "min": -0.4, "max": 1.0, "line": {"color": GREY},
                       "major_gridlines": {"visible": True,
                                           "line": {"color": GRID, "width": 0.75}}})
-    chart.set_y_axis({"name": "", "num_font": {"name": "Calibri", "size": 9},
+    chart.set_y_axis({"name": "", "num_font": {"name": "Times New Roman", "size": LABEL_PT},
                       "label_position": "low",
                       "line": {"color": GREY}})
     chart.set_chartarea({"border": {"none": True}, "fill": {"color": "#FFFFFF"}})
     chart.set_plotarea({"border": {"none": True}, "fill": {"none": True}})
     chart.set_legend({"none": True})
-    add_chart_sheet(wb, "FIG_8", chart, 1.7, 1.8)
+    add_chart_sheet(wb, "FIG_9", chart, 1.574)
 
     ws.write(r0 + len(df) + 3, 0,
              "Reference: Random Forest rho = +0.813, repaired LSTM rho = +0.889 on the same "
@@ -566,7 +594,7 @@ def figure_multicondition(wb):
         "fill": {"color": INK}, "border": BAR_EDGE, "gap": 80,
         # the number of distinct values belongs on the bar, not on a second axis
         "data_labels": {
-            "value": True, "font": {"name": "Calibri", "size": 11, "color": INK},
+            "value": True, "font": {"name": "Times New Roman", "size": LABEL_PT + 1, "color": INK},
             "position": "outside_end", "num_format": "0",
             "custom": [{"value": f"{int(v)} value{'s' if v != 1 else ''}"}
                        for v in df["Distinct predicted values"]],
@@ -577,14 +605,16 @@ def figure_multicondition(wb):
         "name_font": TITLE_FONT})
     style_axes(chart, "Sub-dataset", "Predictions on the modal value (%)", y_max=100)
     chart.set_legend({"none": True})
-    add_chart_sheet(wb, "FIG_4", chart, 1.8, 1.4)
+    add_chart_sheet(wb, "FIG_4", chart, 2.143)
     return True
 
 
-# numbered in order of first citation in the manuscript
+# numbered in order of first citation in the manuscript. Figure 7, the s11
+# trend-reversal worked example, is a standalone PNG (p1/p3_9_trend_reversal_figure.py)
+# and is not built here.
 BUILDERS = {2: figure_pred_vs_true, 3: figure_collapse, 4: figure_multicondition,
-            5: figure_faithfulness, 6: figure_reversed_trends, 7: figure_anchoring,
-            8: figure_rank_correlation}
+            5: figure_faithfulness, 6: figure_reversed_trends, 8: figure_anchoring,
+            9: figure_rank_correlation}
 
 
 def main():

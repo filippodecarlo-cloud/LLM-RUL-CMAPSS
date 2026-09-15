@@ -1,8 +1,8 @@
 """
 Place the figure PNGs into the Word file, each after the paragraph that cites it.
 
-Reads paper_v17_zotero.docx (the version with live citation fields) and writes
-paper_v17_submission.docx, the file to submit.
+Reads paper_v18_zotero.docx (the version with live citation fields) and writes
+paper_v18_submission.docx, the file to submit.
 
 Each figure is inserted centred, with a caption below it in the usual style.
 If a figure needs changing later, edit figures_v14.xlsx or the PowerPoint,
@@ -22,8 +22,8 @@ HERE = Path(__file__).resolve().parent
 EXP = HERE.parent
 ROOT = EXP.parent
 PNG = EXP / "figures_png"
-SRC = ROOT / "paper_v17_zotero.docx"
-OUT = ROOT / "paper_v17_submission.docx"
+SRC = ROOT / "paper_v18_zotero.docx"
+OUT = ROOT / "paper_v18_submission.docx"
 
 # figure -> (anchor: a distinctive phrase in the paragraph it belongs after, caption)
 FIGURES = {
@@ -54,11 +54,18 @@ FIGURES = {
         "Figure 6. The trend-reversal test, with each bar labelled and the share shown on the changed-claim series, since 6 pairs against 253 is otherwise invisible. For each sensor, the number of (engine, sensor) "
         "pairs whose trend genuinely reversed between the two arms, and the number of those "
         "in which the direction stated by the model reversed with it."),
-    7: ("Figure 7 plots that relation over the seven example sets",
-        "Figure 7. Mean predicted RUL against the mean RUL of the examples placed in the "
+    7: ("Figure 7 shows one such pair for s11",
+        "Figure 7. A single (engine, sensor) pair from the trend-reversal test of Figure 6, "
+        "chosen before it was read: the lowest-numbered FD001 engine among the pairs where "
+        "s11's claim did not change although the window's first-to-last direction did (94 of "
+        "94 such pairs for this sensor). The model states “increase” for s11 in both "
+        "the original window (first-to-last -0.16) and the same window reversed in time "
+        "(first-to-last +0.16); its predicted RUL moves by one cycle, 42 to 43."),
+    8: ("Figure 8 plots that relation over the seven example sets",
+        "Figure 8. Mean predicted RUL against the mean RUL of the examples placed in the "
         "prompt, over seven example sets. The dashed line is the test-set mean."),
-    8: ("Figure 8 reports the rank correlation of every FD001 configuration",
-        "Figure 8. Spearman rank correlation between predicted and true RUL for the 15 FD001 "
+    9: ("Figure 9 reports the rank correlation of every FD001 configuration",
+        "Figure 9. Spearman rank correlation between predicted and true RUL for the 15 FD001 "
         "runs of the main grid, with 95% bootstrap intervals. Random Forest reaches +0.813 "
         "and the repaired LSTM +0.889 on the same engines."),
 }
@@ -85,9 +92,11 @@ ALT_TEXT = {
        "base rate on the same claims.",
     6: "Counts of paired responses in which the stated sensor direction did or did not follow "
        "the reversal applied to the input trend.",
-    7: "Mean predicted remaining useful life against the mean remaining useful life of the "
+    7: "Two line charts of the same sensor window for one engine, original and reversed in "
+       "time, with the model's stated direction unchanged in both.",
+    8: "Mean predicted remaining useful life against the mean remaining useful life of the "
        "few-shot examples, one point per example set, with a fitted line.",
-    8: "Rank correlation with bootstrap intervals for the 15 FD001 runs of the main grid, "
+    9: "Rank correlation with bootstrap intervals for the 15 FD001 runs of the main grid, "
        "against the supervised baselines on the same engines.",
 }
 
